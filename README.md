@@ -1,4 +1,5 @@
-![Hacker Animation](https://media.tenor.com/5LoB8JxdvyYAAAAd/hacker.gif)
+![Hacker Animation](https://i.imgur.com/l9UljvW.gif)
+
 
 
 # Hey there, I’m Dany! 😃
