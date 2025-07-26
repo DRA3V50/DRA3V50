@@ -1,4 +1,4 @@
-# Hey there, I’m Dany! 👋
+# Hey there, I’m Dany! :wave: 
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Architecture | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
 
