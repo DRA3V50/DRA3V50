@@ -1,6 +1,6 @@
 # Hey there, I’m Dany! 😃
 
-![Waving Hand](https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif)
+![Lightbulb Idea](https://media.giphy.com/media/l3vR9O1TyZBBOiZ7y/giphy.gif)
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Architecture | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
 Languages & tools:  
