@@ -1,4 +1,4 @@
-# Hey there, I’m Dany! :wave:
+# Hey there, I’m Dany! 😃
 
 ![Waving Hand](https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif)
 
