@@ -1,4 +1,5 @@
-![Cyber Hologram](https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif)
+![Hologram Cloud](https://media.giphy.com/media/l4FGI8GoTL7N4DsyI/giphy.gif)  
+![Gear Lock](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
 
 
 # Hey there, I’m Dany! 😃
