@@ -1,6 +1,8 @@
-# Hey there, I’m Dany! 😃
+![Lightbulb Idea](./assets/lightbulb.gif)
 
-![Lightbulb Idea](./assets/lightbulb-idea.gif)
+
+
+# Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Architecture | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
 Languages & tools:  
