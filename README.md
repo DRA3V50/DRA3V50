@@ -1,4 +1,5 @@
-![Cyber Polygon Gear Lock](https://i.imgur.com/NKKZJZa.gif)
+![Cybersecurity & Network Animation](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVtemcxaDAycXQzdHQzMGp5dXM5bzY2YmQ2d3dyb3RsNXloYW4zciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ITRemFlr5tS39AzQUL/giphy.gif)
+
 
 # Hey there, I’m Dany! 😃
 
