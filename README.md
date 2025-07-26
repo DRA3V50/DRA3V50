@@ -1,4 +1,4 @@
-![Cyber Polygon Gear Lock](https://giphy.com/gifs/network-technologies-connectivity-ITRemFlr5tS39AzQUL)
+![Cyber Polygon Gear Lock](https://i.imgur.com/NKKZJZa.gif)
 
 # Hey there, I’m Dany! 😃
 
