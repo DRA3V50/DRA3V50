@@ -1,5 +1,5 @@
+![Cyber Network Animation](./assets/cyber_animation.gif)
 
-  <img src="https://media4.giphy.com/media/ITRemFlr5tS39AzQUL/giphy.gif" alt="Cybersecurity Animation" width="600"/>
 
 
 
