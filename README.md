@@ -1,8 +1,9 @@
 # Hey there, I’m Dany! :wave:
-![Coding GIF](https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif)
 
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Architecture | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
+Languages & tools:  
+🐍 Python | ☕ Java | 💎 Ruby | 🐚 Bash | 🗄️ SQL
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, cryptography, AI security, machine learning models, and manufacturing technologies.
 
