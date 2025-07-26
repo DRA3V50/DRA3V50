@@ -1,5 +1,5 @@
-![Hologram Cloud](https://media.giphy.com/media/l4FGI8GoTL7N4DsyI/giphy.gif)  
-![Gear Lock](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+![Custom Hologram](https://raw.githubusercontent.com/YourUser/YourRepo/main/assets/hologram_gear_lock.gif)
+
 
 
 # Hey there, I’m Dany! 😃
