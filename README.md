@@ -1,4 +1,4 @@
-![Hacker Animation](https://i.imgur.com/l9UljvW.gif)
+![Hacker Animation]([https://i.imgur.com/l9UljvW.gif](https://imgur.com/a/AueEzWw))
 
 
 # Hey there, I’m Dany! 😃
