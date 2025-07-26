@@ -1,4 +1,5 @@
-![Lightbulb Idea](https://github.com/DRA3V50/DRA3V50/blob/main/assets/lightbulb.gif?raw=true)
+![Lightbulb Idea](https://github.com/YourUsername/YourRepoName/blob/main/assets/lightbulb.gif?raw=true)
+
 
 
 
