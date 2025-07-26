@@ -1,8 +1,4 @@
-<p float="left">
-  <img src="https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif" width="100" />
-  <img src="https://media.giphy.com/media/L71a8LW2Ur5U0/giphy.gif" width="100" />
-</p>
-
+![Cyber Mechanical](https://media.giphy.com/media/j5o7ccnSxWlJfEYoPc/giphy.gif)
 
 
 # Hey there, I’m Dany! 😃
