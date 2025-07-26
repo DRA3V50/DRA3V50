@@ -1,4 +1,4 @@
-![Cyborg Head](https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif)
+![Futuristic Cyborg](https://media.giphy.com/media/26tPoyDhjiJ2g7rEs/giphy.gif)
 
 
 
