@@ -1,6 +1,5 @@
-<p align="center">
+
   <img src="https://media4.giphy.com/media/ITRemFlr5tS39AzQUL/giphy.gif" alt="Cybersecurity Animation" width="600"/>
-</p>
 
 
 
