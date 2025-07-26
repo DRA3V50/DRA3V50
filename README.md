@@ -1,5 +1,5 @@
 # Hey there, I’m Dany! :wave:
-![AI GIF](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
+![Coding GIF](https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif)
 
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Architecture | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
