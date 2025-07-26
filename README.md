@@ -1,4 +1,4 @@
-![Cyber Mechanical](https://media.giphy.com/media/j5o7ccnSxWlJfEYoPc/giphy.gif)
+![Cyber Hologram](https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif)
 
 
 # Hey there, I’m Dany! 😃
