@@ -1,7 +1,4 @@
-![Robot Eye](https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKQ/giphy.gif)
-
-
-
+![Cyborg Head](https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif)
 
 
 # Hey there, I’m Dany! 😃
