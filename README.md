@@ -1,7 +1,4 @@
-![Lightbulb Idea](https://github.com/YourUsername/YourRepoName/blob/main/assets/lightbulb.gif?raw=true)
-
-
-
+![Lightbulb Idea](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif)
 
 
 # Hey there, I’m Dany! 😃
