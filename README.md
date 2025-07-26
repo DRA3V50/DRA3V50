@@ -1,4 +1,5 @@
-![Cyborg Head](https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif)
+![Cyber Polygon Lock](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
 
 
 # Hey there, I’m Dany! 😃
