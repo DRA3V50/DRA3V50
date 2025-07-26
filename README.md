@@ -1,4 +1,5 @@
-![Custom Hologram](https://raw.githubusercontent.com/YourUser/YourRepo/main/assets/hologram_gear_lock.gif)
+![Cyborg Head](https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif)
+
 
 
 
