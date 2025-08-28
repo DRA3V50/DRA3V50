@@ -1,3 +1,8 @@
+![Hacker Animation](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamlkNWU3YnIwNmVuaTh2cmI1d2J3dGVwbml3cTQ2NHY1ODBiN2FmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dP0WAyNyTKSNqNm6zn/giphy.gif)
+
+
+
+
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
@@ -38,4 +43,3 @@ Thanks for visiting! Feel free to explore my projects or reach out — I’m alw
 
 
 ![Hacker Animation](https://i.gifer.com/J5A.gif)
-![Hacker Animation](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwybGowbHAxN2JqdmRtMGZrb29xbXd0MWNmaXlyZzdib3pyNWU4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i4jKn7itdV2Tvjzj6Y/giphy.gif)
