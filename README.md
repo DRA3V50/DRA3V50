@@ -1,4 +1,4 @@
-![Hacker Animation](https://i.gifer.com/Dfrz.gif)
+![Hacker Animation](https://i.gifer.com/4NB4.gif)
 
 
 # Hey there, I’m Dany! 😃
