@@ -1,6 +1,3 @@
-![Hacker Animation](https://i.gifer.com/4NB4.gif)
-
-
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP (In Progress) | STEM Advocate**
@@ -41,3 +38,4 @@ Thanks for visiting! Feel free to explore my projects or reach out — I’m alw
 
 
 ![Hacker Animation](https://i.gifer.com/J5A.gif)
+![Hacker Animation](https://i.gifer.com/4NB4.gif)
