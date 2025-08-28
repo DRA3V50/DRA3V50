@@ -1,4 +1,4 @@
-![Hacker Animation](https://i.imgur.com/tm0UFyG.gif)
+![Hacker Animation](https://giphy.com/gifs/loop-black-xT0BKsuAQgI5u9SZMc)
 
 
 # Hey there, I’m Dany! 😃
@@ -40,4 +40,4 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 Thanks for visiting! Feel free to explore my projects or reach out — I’m always excited to connect with fellow tech enthusiasts and professionals.
 
 
-![Hacker Animation](https://i.imgur.com/qLx5nnd.gif)
+![Hacker Animation](https://giphy.com/gifs/visuals-network-connectivity-5owNSuvkqgLg1iqNrF)
