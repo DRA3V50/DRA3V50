@@ -38,4 +38,4 @@ Thanks for visiting! Feel free to explore my projects or reach out — I’m alw
 
 
 ![Hacker Animation](https://i.gifer.com/J5A.gif)
-![Hacker Animation](https://i.gifer.com/4NB4.gif)
+![Hacker Animation](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwybGowbHAxN2JqdmRtMGZrb29xbXd0MWNmaXlyZzdib3pyNWU4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i4jKn7itdV2Tvjzj6Y/giphy.gif)
