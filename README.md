@@ -35,7 +35,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### 📬 Let’s Connect
 
 - [LinkedIn](https://www.linkedin.com/in/danyarabo/)  
-- [Portfolio](https://github.com/DRA3V50/DanyArabo_Portfolio.github.io/blob/main/Portfolio.html)
+- [Portfolio Website](https://dra3v50.github.io/DanyArabo_Portfolio.github.io/)
+
 
 
 ---
