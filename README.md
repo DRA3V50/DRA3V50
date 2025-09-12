@@ -6,6 +6,7 @@
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Double Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP & CISA (In Progress) | Embedded C (In Progress) | STEM Advocate**
+
 Languages & tools:  
 🐍 Python | ⚙️ C# | 💎 Ruby | 🖥️ Bash | 🧮 SQL | 🌐 HTML | 📃 CSS |
 
