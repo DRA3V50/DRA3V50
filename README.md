@@ -5,8 +5,7 @@
 
 # Hey there, I’m Dany! 😃
 
-**Cybersecurity & Mechanical Engineering Double Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | CSSP & CISA (In Progress) | Embedded C (In Progress) | STEM Advocate**
-
+**Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CompTIA Network+ & CompTIA A+ & Cyber Defense Path | STEM Advocate**
 Languages & tools:  
 🐍 Python | ⚙️ C# | 💎 Ruby | 🖥️ Bash | 🧮 SQL | 🌐 HTML | 📃 CSS |
 
@@ -16,7 +15,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 🔍 What I Do
 
-- **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. (CSSP & CISA in progress).  
+- **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CompTIA Network+ & CompTIA A+ & Cyber Defense Path in progress.)**  
 - **Programming:** Fluent in Python, Java, C#, Ruby, SQL, and Bash scripting — building tools, automating tasks, developing security solutions, and working with machine learning models.  
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
