@@ -1,6 +1,7 @@
 ![Hacker Animation](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamlkNWU3YnIwNmVuaTh2cmI1d2J3dGVwbml3cTQ2NHY1ODBiN2FmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dP0WAyNyTKSNqNm6zn/giphy.gif)
 
 
+![resident-evil](https://github.com/user-attachments/assets/39a9b58e-a292-49de-b4f3-ad587c9e0217)
 
 
 # Hey there, I’m Dany! 😃
@@ -38,7 +39,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - [Portfolio Website](https://dra3v50.github.io/Website/)
 
 
-![giphy](https://github.com/user-attachments/assets/69cb7111-2b44-412c-8f76-585c6f9e2b38)
 
 ---
 
