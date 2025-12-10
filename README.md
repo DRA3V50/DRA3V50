@@ -38,6 +38,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - [Portfolio Website](https://dra3v50.github.io/Website/)
 
 
+![giphy](https://github.com/user-attachments/assets/69cb7111-2b44-412c-8f76-585c6f9e2b38)
 
 ---
 
