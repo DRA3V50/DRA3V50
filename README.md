@@ -10,7 +10,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-### 🔍 What I Do
+###  ⚙️ What I Build & Secure 🔍
 
 - **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CCSP & SIS & Net+ in progress.)**  
 - **Programming:** Fluent in Python, SQL, Ruby, Batch and Bash scripting — building tools, automating tasks, developing security solutions, working with machine learning models, and data analyzation.
@@ -19,7 +19,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ![Image](https://github.com/user-attachments/assets/fc61f0a3-74db-4310-804f-11412abf7287) ![Image](https://github.com/user-attachments/assets/4070db2c-f74e-4284-92de-7aed1272bc95)
 ---
 
-### 🚀 Featured Projects
+### 🔑 Key Projects 📊
 
 - [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
 - [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.
