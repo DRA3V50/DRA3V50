@@ -16,7 +16,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - **Programming:** Fluent in Python, SQL, Ruby, Batch and Bash scripting — building tools, automating tasks, developing security solutions, working with machine learning models, and data analyzation.
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
-![Image](https://github.com/user-attachments/assets/4070db2c-f74e-4284-92de-7aed1272bc95) ![Image](https://github.com/user-attachments/assets/408720b6-e65b-4d5e-888e-566e86d074b4)
+![Image](https://github.com/user-attachments/assets/4070db2c-f74e-4284-92de-7aed1272bc95) ![Image](https://github.com/user-attachments/assets/fc61f0a3-74db-4310-804f-11412abf7287)
 ---
 
 ### 🚀 Featured Projects
