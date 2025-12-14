@@ -42,7 +42,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 
 
-![Image](https://github.com/user-attachments/assets/bb245392-fc0f-4565-8a32-7c68ee911fd8) ![Image](https://github.com/user-attachments/assets/bb245392-fc0f-4565-8a32-7c68ee911fd8) ![Image](https://github.com/user-attachments/assets/bb245392-fc0f-4565-8a32-7c68ee911fd8)
+![Image](https://github.com/user-attachments/assets/8452e473-1359-4256-aaae-42ed566c0ad2) ![Image](https://github.com/user-attachments/assets/bb245392-fc0f-4565-8a32-7c68ee911fd8)
 
 
 
