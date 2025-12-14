@@ -1,8 +1,4 @@
-![Hacker Animation](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamlkNWU3YnIwNmVuaTh2cmI1d2J3dGVwbml3cTQ2NHY1ODBiN2FmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dP0WAyNyTKSNqNm6zn/giphy.gif)
-
-
 ![resident-evil](https://github.com/user-attachments/assets/39a9b58e-a292-49de-b4f3-ad587c9e0217)
-
 
 # Hey there, I’m Dany! 😃
 
@@ -19,6 +15,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CCSP & SIS & Net+ in progress.)**  
 - **Programming:** Fluent in Python, SQL, Ruby, Batch and Bash scripting — building tools, automating tasks, developing security solutions, working with machine learning models, and data analyzation.
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
+
+![Hacker Animation](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamlkNWU3YnIwNmVuaTh2cmI1d2J3dGVwbml3cTQ2NHY1ODBiN2FmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dP0WAyNyTKSNqNm6zn/giphy.gif)
 
 ---
 
