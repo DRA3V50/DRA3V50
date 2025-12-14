@@ -17,7 +17,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### 🔍 What I Do
 
 - **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CCSP & SIS & Net+ in progress.)**  
-- **Programming:** Fluent in Python, Java, C#, Ruby, SQL, and Bash scripting — building tools, automating tasks, developing security solutions, and working with machine learning models.  
+- **Programming:** Fluent in Python, SQL, Ruby, Batch and Bash scripting — building tools, automating tasks, developing security solutions, working with machine learning models, and data analyzation.
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
 ---
