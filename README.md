@@ -17,6 +17,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
 ![Image](https://github.com/user-attachments/assets/fc61f0a3-74db-4310-804f-11412abf7287) ![Image](https://github.com/user-attachments/assets/4070db2c-f74e-4284-92de-7aed1272bc95)
+
 ---
 
 ### 🔑 Key Projects 📊
