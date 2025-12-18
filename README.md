@@ -6,7 +6,7 @@
 
 Languages & tools:  🐍 Python | 🧮 SQL | 🖥️ Bash | 💎 Ruby | ⚙️ C# | 🌐 HTML | 📃 CSS |
 
-I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, cryptography, AI security, machine learning models, and manufacturing technologies.
+I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
 
 ---
 
