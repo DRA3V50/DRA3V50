@@ -3,20 +3,32 @@
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
-<div>
-  <h2 align="center">Languages | Tools</h2>
-  <br/>
-  <div align="center">
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" />
-    </a>
-  </div>
-  <br/>
-  <p align="center">
-    <b>Scripting & Data:</b> Python · SQL · Batch · Ruby · C#<br/>
-    <b>Security Tools:</b> Splunk · QRadar · Azure Sentinel · Wazuh · CrowdStrike · Nessus · TheHive · Wireshark
-  </p>
+<div align="center">
+  <!-- Language Icons -->
+  <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" width="250"/>
 </div>
+
+<br/>
+
+<div align="center">
+  <!-- Security Tool Badges -->
+  <img src="https://img.shields.io/badge/-Splunk-black?logo=splunk&logoColor=white" alt="Splunk" />
+  <img src="https://img.shields.io/badge/-QRadar-black?logo=ibm&logoColor=white" alt="QRadar" />
+  <img src="https://img.shields.io/badge/-Azure%20Sentinel-black?logo=azure&logoColor=white" alt="Azure Sentinel" />
+  <img src="https://img.shields.io/badge/-Wazuh-black?logo=wazuh&logoColor=white" alt="Wazuh" />
+  <img src="https://img.shields.io/badge/-CrowdStrike-black?logo=crowdstrike&logoColor=white" alt="CrowdStrike" />
+  <img src="https://img.shields.io/badge/-Nessus-black?logo=tenable&logoColor=white" alt="Nessus" />
+  <img src="https://img.shields.io/badge/-TheHive-black?logo=thehive&logoColor=white" alt="TheHive" />
+  <img src="https://img.shields.io/badge/-Wireshark-black?logo=wireshark&logoColor=white" alt="Wireshark" />
+</div>
+
+<br/>
+
+<p align="center">
+  <b>Scripting & Data:</b> Python · SQL · Batch · Ruby · C#<br/>
+  <b>Security Tools:</b> Splunk · QRadar · Azure Sentinel · Wazuh · CrowdStrike · Nessus · TheHive · Wireshark
+</p>
+
 
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
