@@ -6,14 +6,14 @@
 
 <h2 align="center">Cybersecurity Tools</h2>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.svg" width="55"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.svg" width="55"/>
 </p>
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
