@@ -3,8 +3,14 @@
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
-
-Languages & tools:  🐍 Python | 🧮 SQL | 🖥️ Bash | 💎 Ruby | ⚙️ C# | 🌐 HTML | 📃 CSS |
+<div>
+<h2 align="center"> Languages | Tools: </h2>  
+<br/>
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,SQL,batch,ruby,C#,HTML,CSS"/><br>
+  </a>
+</div>
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
 
