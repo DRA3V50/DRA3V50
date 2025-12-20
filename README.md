@@ -4,13 +4,20 @@
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
 <div>
-<h2 align="center"> Languages | Tools: </h2>  
-<br/>
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,sql,batch,ruby,C#,HTML,CSS"/><br>
-  </a>
+  <h2 align="center">Languages | Tools</h2>
+  <br/>
+  <div align="center">
+    <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" />
+    </a>
+  </div>
+  <br/>
+  <p align="center">
+    <b>Scripting & Data:</b> Python · SQL · Batch · Ruby · C#<br/>
+    <b>Security Tools:</b> Splunk · QRadar · Azure Sentinel · Wazuh · CrowdStrike · Nessus · TheHive · Wireshark
+  </p>
 </div>
+
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
 
