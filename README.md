@@ -5,16 +5,18 @@
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
 
 <h2 align="center">Cybersecurity Tools</h2>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.svg" width="70"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.jpg" width="75" height="75" />
 </p>
+
 
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
