@@ -4,30 +4,26 @@
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
 <div align="center">
-  <!-- Language Icons -->
-  <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" width="250"/>
+  <h2>Languages</h2>
+  <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" />
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- Security Tool Badges -->
-  <img src="https://img.shields.io/badge/-Splunk-black?logo=splunk&logoColor=white" alt="Splunk" />
-  <img src="https://img.shields.io/badge/-QRadar-black?logo=ibm&logoColor=white" alt="QRadar" />
-  <img src="https://img.shields.io/badge/-Azure%20Sentinel-black?logo=azure&logoColor=white" alt="Azure Sentinel" />
-  <img src="https://img.shields.io/badge/-Wazuh-black?logo=wazuh&logoColor=white" alt="Wazuh" />
-  <img src="https://img.shields.io/badge/-CrowdStrike-black?logo=crowdstrike&logoColor=white" alt="CrowdStrike" />
-  <img src="https://img.shields.io/badge/-Nessus-black?logo=tenable&logoColor=white" alt="Nessus" />
-  <img src="https://img.shields.io/badge/-TheHive-black?logo=thehive&logoColor=white" alt="TheHive" />
-  <img src="https://img.shields.io/badge/-Wireshark-black?logo=wireshark&logoColor=white" alt="Wireshark" />
+  <h2>Cybersecurity Tools</h2>
+
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/splunk.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/qradar.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/sentinel.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/wazuh.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/crowdstrike.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/nessus.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/thehive.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/wireshark.svg" width="48"/>
+
 </div>
 
-<br/>
-
-<p align="center">
-  <b>Scripting & Data:</b> Python · SQL · Batch · Ruby · C#<br/>
-  <b>Security Tools:</b> Splunk · QRadar · Azure Sentinel · Wazuh · CrowdStrike · Nessus · TheHive · Wireshark
-</p>
 
 
 
