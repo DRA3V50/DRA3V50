@@ -3,29 +3,18 @@
 # Hey there, I’m Dany! 😃
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
-<div align="center">
-  <h2>Languages</h2>
-  <img src="https://skillicons.dev/icons?i=python,cs,html,css,ruby" />
-</div>
 
-<br/>
-
-<div align="center">
-  <h2>Cybersecurity Tools</h2>
-
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/splunk.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/qradar.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/sentinel.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/wazuh.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/crowdstrike.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/nessus.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/thehive.svg" width="48"/>
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/icons/wireshark.svg" width="48"/>
-
-</div>
-
-
-
+<h2 align="center">Cybersecurity Tools</h2>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.svg" width="48"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.svg" width="48"/>
+</p>
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
 
