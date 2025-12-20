@@ -8,7 +8,7 @@
 <br/>
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,SQL,batch,ruby,C#,HTML,CSS"/><br>
+    <img src="https://skillicons.dev/icons?i=python,sql,batch,ruby,C#,HTML,CSS"/><br>
   </a>
 </div>
 
