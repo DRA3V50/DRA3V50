@@ -7,15 +7,16 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.jpg" width="75" height="75" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.jpg" width="75" height="75" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.jpg" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.jpg" width="80" height="80" />
 </p>
+
 
 
 
