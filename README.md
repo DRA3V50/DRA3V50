@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dra3v50.github.io/Website/" target="_blank">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Portfolio%20-darkviolet"><a href="https://dra3v50.github.io/Website/" target="_blank">
     <button style="padding: 10px 20px; font-size: 18px; cursor: pointer;">
       Visit My Portfolio
     </button>
