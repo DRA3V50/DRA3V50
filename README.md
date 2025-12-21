@@ -1,14 +1,139 @@
 ![resident-evil](https://github.com/user-attachments/assets/39a9b58e-a292-49de-b4f3-ad587c9e0217)
 
 <img src="data:image/svg+xml;utf8,
-<svg xmlns='http://www.w3.org/2000/svg' width='600' height='60'>
+<svg xmlns='http://www.w3.org/2000/svg' width='700' height='50'>
   <style>
     text { font: 24px monospace; fill: #00ff00; }
   </style>
-  <text x='0' y='40'>
+  <text x='0' y='35'>
     <tspan>
-      Hello... I'm Dany... Welcome to my profile!
-      <animate attributeName='opacity' from='0' to='1' begin='0s' dur='3s' fill='freeze' />
+      H<animate attributeName='opacity' values='0;1' begin='0s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      e<animate attributeName='opacity' values='0;1' begin='0.1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      l<animate attributeName='opacity' values='0;1' begin='0.2s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      l<animate attributeName='opacity' values='0;1' begin='0.3s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      o<animate attributeName='opacity' values='0;1' begin='0.4s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='0.5s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='0.6s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='0.7s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='0.8s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      I<animate attributeName='opacity' values='0;1' begin='0.9s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      ' <animate attributeName='opacity' values='0;1' begin='1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      m<animate attributeName='opacity' values='0;1' begin='1.1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='1.2s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      D<animate attributeName='opacity' values='0;1' begin='1.3s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      a<animate attributeName='opacity' values='0;1' begin='1.4s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      n<animate attributeName='opacity' values='0;1' begin='1.5s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      y<animate attributeName='opacity' values='0;1' begin='1.6s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='1.7s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='1.8s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      .<animate attributeName='opacity' values='0;1' begin='1.9s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='2s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      W<animate attributeName='opacity' values='0;1' begin='2.1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      e<animate attributeName='opacity' values='0;1' begin='2.2s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      l<animate attributeName='opacity' values='0;1' begin='2.3s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      c<animate attributeName='opacity' values='0;1' begin='2.4s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      o<animate attributeName='opacity' values='0;1' begin='2.5s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      m<animate attributeName='opacity' values='0;1' begin='2.6s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      e<animate attributeName='opacity' values='0;1' begin='2.7s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='2.8s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      t<animate attributeName='opacity' values='0;1' begin='2.9s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      o<animate attributeName='opacity' values='0;1' begin='3s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='3.1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      m<animate attributeName='opacity' values='0;1' begin='3.2s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      y<animate attributeName='opacity' values='0;1' begin='3.3s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+       <animate attributeName='opacity' values='0;1' begin='3.4s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      p<animate attributeName='opacity' values='0;1' begin='3.5s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      r<animate attributeName='opacity' values='0;1' begin='3.6s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      o<animate attributeName='opacity' values='0;1' begin='3.7s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      f<animate attributeName='opacity' values='0;1' begin='3.8s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      i<animate attributeName='opacity' values='0;1' begin='3.9s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      l<animate attributeName='opacity' values='0;1' begin='4s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      e<animate attributeName='opacity' values='0;1' begin='4.1s' dur='0.1s' fill='freeze' />
+    </tspan>
+    <tspan>
+      !<animate attributeName='opacity' values='0;1' begin='4.2s' dur='0.1s' fill='freeze' />
     </tspan>
   </text>
 </svg>"/>
