@@ -4,10 +4,11 @@
 </p>
 
 ---
-### ⬇️<img alt="GitHub Website Badge" src="https://img.shields.io/badge/GitHub%20Website-6D1EE6"> ⬇️
-[Portfolio Website](https://dra3v50.github.io/Website/)  
+<img alt="GitHub Website Badge" src="https://img.shields.io/badge/GitHub%20Website-6D1EE6">
 
-
+### Portfolio Website
+⬇️ [Visit my GitHub Portfolio](https://dra3v50.github.io/Website/) ⬇️
+  
 ---
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
