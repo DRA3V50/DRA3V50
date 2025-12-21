@@ -5,10 +5,8 @@
 
 ---
 ### Website
-⬇️ <img alt="Static Badge" src="https://img.shields.io/badge/GitHub%20Website%20-6D1EE6"> ⬇️
-
-[Portfolio Website](https://dra3v50.github.io/Website/)
-
+⬇️ [Portfolio Website](https://dra3v50.github.io/Website/) ⬇️  
+<img alt="GitHub Website Badge" src="https://img.shields.io/badge/GitHub%20Website-6D1EE6">
 
 ---
 
