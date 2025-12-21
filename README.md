@@ -1,8 +1,6 @@
-![resident-evil](https://github.com/user-attachments/assets/39a9b58e-a292-49de-b4f3-ad587c9e0217)
-
 <!-- Fun Animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=24&color=00FF00&center=true&vCenter=true&width=500&lines=Welcome+to+my+GitHub!;I+love+coding+💻;Let's+build+something+amazing!">
+<img src="https://readme-typing-svg.herokuapp.com?size=24&color=1E90FF&center=true&vCenter=true&width=650&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Data+Analyst+%7C+Python+%7C+SQL+%7C+Power+BI;Transforming+data+into+actionable+insights;Visualizing+patterns+and+driving+decisions">
 </p>
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
