@@ -1,6 +1,6 @@
 <!-- Fun Animation -->
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?size=28&color=2E99FF&center=true&vCenter=true&width=600&duration=6550&lines=Welcome+to+my+GitHub,+I%27m+Dany!+%F0%9F%91%8B;📊+Log+Analyst+%7C+Automating+Audits;🛡️+SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR&font=Fira+Code&background=00000000&repeat=false&gradient=ffffff,2E99FF">
+<img src="https://readme-typing-svg.herokuapp.com?size=28&color=2E99FF&center=true&vCenter=true&width=600&duration=6550&lines=Welcome+to+my+GitHub,+I%27m+Dany!+%F0%9F%91%8B;📊+Log+Analyst+%7C+Automating+Audits;🛡️+SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR&font=Fira+Code&background=00000000&repeat=true&gradient=ffffff,2E99FF">
 </p>
 
 ---
