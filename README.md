@@ -43,7 +43,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ###  ⚙️ What I Build & Secure 🔍
 
-- ### **Cybersecurity:**
+- ### **Cybersecurity & IT:**
   ### **Programming:**
   <img alt="Static Badge" src="https://img.shields.io/badge/Python-heavygreen"><img alt="Static Badge" src="https://img.shields.io/badge/SQL-3A6DDC"><img alt="Static Badge" src="https://img.shields.io/badge/Batch-FFBE26"><img alt="Static Badge" src="https://img.shields.io/badge/Ruby-D10304"><img alt="Static Badge" src="https://img.shields.io/badge/C%23-0C6905"><img alt="Static Badge" src="https://img.shields.io/badge/HTML%2FCSS-F86535">
   
