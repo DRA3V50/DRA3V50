@@ -1,6 +1,17 @@
 ![resident-evil](https://github.com/user-attachments/assets/39a9b58e-a292-49de-b4f3-ad587c9e0217)
 
-# Hey there, I’m Dany! 😃
+<img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='60'>
+  <style>
+    text { font: 24px monospace; fill: #00ff00; }
+  </style>
+  <text x='0' y='40'>
+    <tspan>
+      Hello... I'm Dany... Welcome to my profile!
+      <animate attributeName='opacity' from='0' to='1' begin='0s' dur='3s' fill='freeze' />
+    </tspan>
+  </text>
+</svg>"/>
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
 
