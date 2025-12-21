@@ -5,12 +5,7 @@
 
 ---
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/git-daft-punk-2.gif" alt="Daft Punk Git GIF" />
-</p>
-<h2 align="center">Welcome to My Portfolio Website</h2>
-<p align="center">⬇️⬇️⬇️</p>
-<p align="center">
-  <a href="https://dra3v50.github.io/Website/">Check it out here!</a>
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/OIP.jpg" alt="My Image" />
 </p>
 
 ---
