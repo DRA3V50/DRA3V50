@@ -4,10 +4,16 @@
 </p>
 
 ---
-<img alt="GitHub Website Badge" src="https://img.shields.io/badge/GitHub%20Website-6D1EE6">
+<p align="center">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="120" />
+</p>
 
-### Portfolio Website
-⬇️ [Visit my GitHub Portfolio](https://dra3v50.github.io/Website/) ⬇️
+<h2 align="center">Welcome to My Portfolio Website</h2>
+
+<p align="center">
+  <a href="https://dra3v50.github.io/Website/">Check it out here!</a>
+</p>
+
   
 ---
 
