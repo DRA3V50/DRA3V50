@@ -51,7 +51,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - <img alt="Static Badge" src="https://img.shields.io/badge/GitHub%20Website%20-6D1EE6">[Portfolio Website](https://dra3v50.github.io/Website/)
 
 ---
-Git Stats:
+### Git Stats:
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DRA3V50)](https://github.com/DRA3V50/github-readme-stats)
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
