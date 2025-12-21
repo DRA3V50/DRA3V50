@@ -5,7 +5,7 @@
 
 ---
 <p align="center">
-  <img src="https://github.com/DRA3V50/GIF/blob/main/icons8-github.gif?raw=true" alt="My GIF" width="150" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/git-daft-punk-2.gif" alt="Daft Punk Git GIF" />
 </p>
 <h2 align="center">Welcome to My Portfolio Website</h2>
 <p align="center">⬇️⬇️⬇️</p>
