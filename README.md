@@ -2,7 +2,6 @@
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?size=30&color=FF1A1A&center=true&vCenter=true&width=600&duration=6000&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Cybersecurity+Analyst+%7C+Blue+Team;🛡️ SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR;Threat+Analysis+%7C+Audit+Automation">
 </p>
-
 ---
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
