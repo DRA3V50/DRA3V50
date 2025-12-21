@@ -1,6 +1,6 @@
 <!-- Fun Animation -->
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?size=24&color=1E90FF&center=true&vCenter=true&width=750&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Cybersecurity+Analyst+%7C+Blue+Team+%7C+SOC+Operations+%7C+Incident+Response;SIEM+%7C+SOAR+%7C+CrowdStrike+%7C+Azure+Sentinel+%7C+Splunk;Investigating+threats+%7C+Automating+playbooks+%7C+Strengthening+enterprise+defenses;Enhancing+SOC+efficiency+%7C+Reducing+phishing+impact+%7C+Data-driven+insights">
+<img src="https://readme-typing-svg.herokuapp.com?size=28&color=1E90FF&center=true&vCenter=true&width=700&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Cybersecurity+Analyst+%7C+Blue+Team+%7C+SOC+Operations+%7C+Incident+Response;SIEM+%7C+SOAR+%7C+EDR+%7C+IR;Investigating+threats+%7C+Automating+playbooks+%7C+Reducing+phishing+impact;Enhancing+SOC+efficiency+%7C+Protecting+enterprise+systems+every+day">
 </p>
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
