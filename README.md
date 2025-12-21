@@ -52,8 +52,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 📬 Let’s Connect
 
-- <img alt="Static Badge" src="https://img.shields.io/badge/LinkedIn-067BE2">[LinkedIn](https://www.linkedin.com/in/danyarabo/)  
-- <img alt="Static Badge" src="https://img.shields.io/badge/GitHub%20Website%20-6D1EE6">[Portfolio Website](https://dra3v50.github.io/Website/)
+- <img alt="Static Badge" src="https://img.shields.io/badge/LinkedIn-067BE2">
+[LinkedIn](https://www.linkedin.com/in/danyarabo/)  
+- <img alt="Static Badge" src="https://img.shields.io/badge/GitHub%20Website%20-6D1EE6">
+[Portfolio Website](https://dra3v50.github.io/Website/)
 
 ---
 ### Git Stats:
