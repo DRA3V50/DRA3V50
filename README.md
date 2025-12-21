@@ -20,8 +20,7 @@
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" width="80" height="80" />  
 </p>
 
-
-
+--- 
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
 
@@ -30,14 +29,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ###  ⚙️ What I Build & Secure 🔍
 
 - **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CCSP & SIS & Net+ in progress.)**  
-- **Programming:** Fluent in Python, SQL, Ruby, Batch and Bash scripting — building tools, automating tasks, developing security solutions, working with machine learning models, and data analyzation.
+- **Programming:** <img alt="Static Badge" src="https://img.shields.io/badge/Python-heavygreen"><img alt="Static Badge" src="https://img.shields.io/badge/SQL-3A6DDC"><img alt="Static Badge" src="https://img.shields.io/badge/Batch-FFBE26"><img alt="Static Badge" src="https://img.shields.io/badge/Ruby-D10304"><img alt="Static Badge" src="https://img.shields.io/badge/C%23-0C6905"><img alt="Static Badge" src="https://img.shields.io/badge/HTML%2FCSS-F86535">
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
-
-![Image](https://github.com/user-attachments/assets/fc61f0a3-74db-4310-804f-11412abf7287) ![Image](https://github.com/user-attachments/assets/4070db2c-f74e-4284-92de-7aed1272bc95)
 
 ---
 
-### 🔑 Key Projects 📊
+### 🔑 Key Projects
 
 - [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
 - [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.
@@ -50,17 +47,15 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 📬 Let’s Connect
 
-- [LinkedIn](https://www.linkedin.com/in/danyarabo/)  
-- [Portfolio Website](https://dra3v50.github.io/Website/)
-
-
+- <img alt="Static Badge" src="https://img.shields.io/badge/LinkedIn-067BE2">[LinkedIn](https://www.linkedin.com/in/danyarabo/)  
+- <img alt="Static Badge" src="https://img.shields.io/badge/GitHub%20Website%20-6D1EE6">[Portfolio Website](https://dra3v50.github.io/Website/)
 
 ---
+Git Stats:
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DRA3V50)](https://github.com/DRA3V50/github-readme-stats)
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 
-
-![Image](https://github.com/user-attachments/assets/ea96ff21-7d43-434b-a156-c2aec2f2675d)
 
 
 
