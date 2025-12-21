@@ -1,6 +1,6 @@
 <!-- Fun Animation -->
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?size=24&color=1E90FF&center=true&vCenter=true&width=650&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Data+Analyst+%7C+Python+%7C+SQL+%7C+Power+BI;Transforming+data+into+actionable+insights;Visualizing+patterns+and+driving+decisions">
+<img src="https://readme-typing-svg.herokuapp.com?size=24&color=1E90FF&center=true&vCenter=true&width=700&lines=Hey+there+%E2%80%93+I%27m+Dany+👋;Cybersecurity+Specialist+%7C+SOC+Operations+%7C+Incident+Response;Threat+Detection+%7C+SIEM+%7C+Splunk+%7C+CrowdStrike;Analyzing+logs+and+securing+critical+systems">
 </p>
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
