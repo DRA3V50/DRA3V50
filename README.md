@@ -5,7 +5,7 @@
 
 ---
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/OIP.jpg" alt="My Image" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/user-account.gif" alt="User Account GIF" />
 </p>
 
 ---
