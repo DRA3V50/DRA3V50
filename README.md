@@ -1,6 +1,6 @@
 <!-- Fun Animation -->
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?size=28&color=FF1A1A&center=true&vCenter=true&width=600&duration=6000&lines=Hey+there+%E2%80%93+I%27m+Dany+%F0%9F%91%8B;Cybersecurity+Analyst+%7C+Blue+Team;%F0%9F%9B%A1%EF%B8%8F+SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR;Threat+Analysis+%7C+Audit+Automation">
+<img src="https://readme-typing-svg.herokuapp.com?size=28&color=1E97FF&center=true&vCenter=true&width=600&duration=6000&lines=Hey+there+%E2%80%93+I%27m+Dany+%F0%9F%91%8B;Cybersecurity+Analyst+%7C+Blue+Team;%F0%9F%9B%A1%EF%B8%8F+SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR;Threat+Analysis+%7C+Data+Audit+Automation">
 </p>
 
 ---
