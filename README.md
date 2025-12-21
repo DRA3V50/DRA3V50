@@ -5,18 +5,14 @@
 
 ---
 <p align="center">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="120" />
+  <img src="https://github.com/DRA3V50/GIF/blob/main/icons8-github.gif?raw=true" alt="My GIF" width="150" />
 </p>
-
 <h2 align="center">Welcome to My Portfolio Website</h2>
-
 <p align="center">⬇️⬇️⬇️</p>
 <p align="center">
   <a href="https://dra3v50.github.io/Website/">Check it out here!</a>
 </p>
 
-
-  
 ---
 
 **Cybersecurity & Mechanical Engineering Dual Major | Zero Trust Security | Ethical Hacking | DoD Cyber Sentinel | Cloud & OS Security | ISO 27001 | SIEM Engineering | Pursuing: CCSP & Cyber Defense & SIS & Net+ | STEM Advocate**
