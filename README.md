@@ -28,7 +28,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ###  ⚙️ What I Build & Secure 🔍
 
-- **Cybersecurity:** Cloud security, zero trust architecture, ethical hacking, risk management, cryptography, AI security, compliance, & ISO 27001. **(CCSP & SIS & Net+ in progress.)**  
+- ### **Cybersecurity:**
+  <img alt="Static Badge" src="https://img.shields.io/badge/SIEM%20Engineer%20-1E90FF"><img alt="Static Badge" src="https://img.shields.io/badge/DoD%20Cyber%20Sentinel%20-294E9B"><img alt="Static Badge" src="https://img.shields.io/badge/Zero%20Trust%20Security%20-4069E1"><img alt="Static Badge" src="https://img.shields.io/badge/Cloud%20%26%20OS%20Security%20-5E8D50"><img alt="Static Badge" src="https://img.shields.io/badge/ISO%2027001%20-FF7C09"><img alt="Static Badge" src="https://img.shields.io/badge/Ethical%20Hacking%20-FF0C50">
+  **Pursuing:**
+  <img alt="Static Badge" src="https://img.shields.io/badge/CCSP%20-5E99FF"><img alt="Static Badge" src="https://img.shields.io/badge/Cyber%20Defense%20-00CEC0"><img alt="Static Badge" src="https://img.shields.io/badge/SIS%20-2679FF"><img alt="Static Badge" src="https://img.shields.io/badge/Network%2B%20-FFD700">
 - **Programming:** <img alt="Static Badge" src="https://img.shields.io/badge/Python-heavygreen"><img alt="Static Badge" src="https://img.shields.io/badge/SQL-3A6DDC"><img alt="Static Badge" src="https://img.shields.io/badge/Batch-FFBE26"><img alt="Static Badge" src="https://img.shields.io/badge/Ruby-D10304"><img alt="Static Badge" src="https://img.shields.io/badge/C%23-0C6905"><img alt="Static Badge" src="https://img.shields.io/badge/HTML%2FCSS-F86535">
 - **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
