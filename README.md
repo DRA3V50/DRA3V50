@@ -7,8 +7,6 @@
 
 <div align="center">
   <h3>📫 Let’s Connect!</h3>
-  <a href="mailto:arabodanny002@gmail.com" title="Email me">
-    <img src="https://img.shields.io/badge/Email%20Me-555555?style=for-the-badge&logo=gmail&logoColor=D14836" />
   </a>
   <br><br>
   ⬇️⬇️⬇️
