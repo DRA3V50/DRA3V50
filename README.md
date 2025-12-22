@@ -29,9 +29,9 @@
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" height="80" alt="Microsoft Sentinel">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" height="95" alt="Nessus">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" height="95" alt="Splunk">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" height="95" alt="Wireshark">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.png" height="90" alt="qRadar">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" height="90" alt="TheHive">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" height="80" alt="Wireshark">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.png" height="80" alt="qRadar">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" height="80" alt="TheHive">
 </p>
 
 --- 
