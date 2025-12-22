@@ -25,15 +25,16 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="crowdstrike.png" height="90" alt="crowdstrike"/>
-  <img src="wazuh.png" height="90" alt="wazuh"/>
-  <img src="azuresentinel.png" height="90" alt="azuresentinel"/>
-  <img src="nessus.png" height="90" alt="nessus"/>
-  <img src="splunk.png" height="90" alt="splunk"/>
-  <img src="wireshark.png" height="90" alt="wireshark"/>
-  <img src="qradar.png" height="90" alt="qradar"/>
-  <img src="thehive.png" height="90" alt="thehive"/>
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/crowdstrike.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/wazuh.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/sentinel.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/nessus.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/splunk.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/wireshark.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/radar.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/thehive.gif" height="45">
 </p>
+
 
 
 --- 
