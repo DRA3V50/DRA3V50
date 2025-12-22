@@ -65,15 +65,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<div align="center">
-  <h2>🛡️ SOC Radar</h2>
-  <p>SOC Operations • SIEM • Incident Response • EDR • SOAR • Automation</p>
-  <img
-    src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/soc-radar.svg"
-    width="400"
-    alt="SOC Radar"
-  />
-</div>
+## GitHub Activity & SOC/Data Analytics Stats
+
+![GitHub Stats](github-stats.svg)
+
 
 ---
 ### Git Stats:
