@@ -5,8 +5,11 @@
 
 ---
 <div aling="center">
+  <p align="center" style="font-size: 30px;">
+  ⬇️⬇️⬇️
+</p>
   <a href="mailto:arabodanny002@gmail.com">
-    <img src="https//img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=black" target="_blank" />
+    <img src="https//img.shields.io/badge/Gmail-555555?style=for-the-badge&logo=gmail&logoColor=black" target="_blank" />
   </a>
   <a href="https://www.linkedin.com/in/danyarabo/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
@@ -15,17 +18,6 @@
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=red" target="_blank" />
   </a>
 
-<p align="center" style="font-size: 30px;">
-  ⬇️⬇️⬇️
-</p>
-
-<p align="center">
-  <a href="https://dra3v50.github.io/Website/" target="_blank">
-    <button style="padding: 10px 20px; font-size: 18px; cursor: pointer;">
-      Visit My Portfolio
-    </button>
-  </a>
-</p>
 
 ---
 
