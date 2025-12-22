@@ -18,6 +18,8 @@ jobs:
         with:
           image-file: soc-radar.svg
           include-title: false
-          colors: "00FF00,0077FF,00AAFF"  # green/blue shades for SOC
+          colors: "00FF00,0077FF,00AAFF"
           commit-and-push: true
           commit-message: "Update SOC Radar SVG"
+          # Pass the token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
