@@ -66,12 +66,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 <div align="center">
-  <h2>🛡️ Blue Team Operations Radar</h2>
-  <p>SOC Operations • SIEM • Incident Response • EDR • SOAR</p>
+  <h2>🛡️ SOC Radar</h2>
+  <p>SOC Operations • SIEM • Incident Response • EDR • SOAR • Automation</p>
   <img
-    src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/resident-evil-radar.svg"
+    src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/soc-radar.svg"
     width="400"
-    alt="Blue Team SOC Radar"
+    alt="SOC Radar"
   />
 </div>
 
