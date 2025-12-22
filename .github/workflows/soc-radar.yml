@@ -16,7 +16,7 @@ jobs:
       - name: Generate SOC radar SVG
         uses: cicirello/user-statistician@v1
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # <-- required for push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # <-- this fixes the KeyError
         with:
           image-file: soc-radar.svg
           include-title: false
