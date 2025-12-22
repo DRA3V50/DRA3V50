@@ -26,7 +26,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="80" height="115" alt="CrowdStrike">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.png" width="80" height="115" alt="Wazuh">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" width="90" height="80" alt="Microsoft Sentinel">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" width="80" height="80" alt="Microsoft Sentinel">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" width="80" height="115" alt="Nessus">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" width="80" height="115" alt="Splunk">
   <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" width="80" height="115" alt="Wireshark">
