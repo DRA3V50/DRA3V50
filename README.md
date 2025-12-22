@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>📫 Let’s Connect!</h3>
-  ⬇️                                                                                            ⬇️                                                                                                                             ⬇️
+  ⬇️ ⬇️ ⬇️
   <br>
   <a href="mailto:arabodanny002@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-555555?style=for-the-badge&logo=gmail&logoColor=D14836" />
@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://dra3v50.github.io/Website/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-6A0DAD?style=for-the-badge&logo=todoist&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-6A0DAD?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </div>
 
