@@ -4,9 +4,10 @@
 </p>
 
 ---
+
 <div aling="center">
   <p align="center" style="font-size: 30px;">
-  <h3>📫 Let’s Connect</h3>
+  <h3>📫 Let’s Connect!</h3>
 <a href="mailto:arabodanny002@gmail.com" title="Email me">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
        alt="Gmail"
