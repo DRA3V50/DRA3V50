@@ -65,11 +65,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-## GitHub Activity & SOC/Data Analytics Stats
 
-## My SOC / Data Activity Radar
-
-![SOC Radar](soc-radar.svg)
 
 ---
 ### Git Stats:
