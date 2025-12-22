@@ -67,12 +67,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 <div align="center">
   <h2>🛡️ Blue Team Operations Radar</h2>
-  <p>
-    SOC Operations • SIEM • Detection Engineering • Incident Response • EDR • SOAR
-  </p>
+  <p>SOC Operations • SIEM • Incident Response • EDR • SOAR</p>
   <img
     src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/resident-evil-radar.svg"
-    width="600"
+    width="400"
     alt="Blue Team SOC Radar"
   />
 </div>
