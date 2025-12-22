@@ -65,18 +65,21 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
- 
-
+<div align="center">
+  <h2>📡 Radar Activity Overview</h2>
+  <img 
+    src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/radar-stats.svg"
+    alt="Radar‑style GitHub Activity"
+    width="700"
+  />
+</div>
 
 ---
 ### Git Stats:
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DRA3V50)](https://github.com/DRA3V50/github-readme-stats)
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
-<div align="center">
-  <h2>🐍My contributes🐍</h2>
-  <img alt="snake eats my commitments!" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
-  <br/><br/><br/>
+
 
 
 
