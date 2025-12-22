@@ -5,28 +5,27 @@
 
 ---
 
-<div aling="center">
-  <p align="center" style="font-size: 30px;">
+<div align="center">
   <h3>📫 Let’s Connect!</h3>
-<a href="mailto:arabodanny002@gmail.com" title="Email me">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
-       alt="Gmail"
-       width="32"
-       height="32">
-</a>
-
+  <a href="mailto:arabodanny002@gmail.com" title="Email me">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+         alt="Gmail"
+         width="32"
+         height="32">
+  </a>
+  <br><br>
   ⬇️⬇️⬇️
-</p>
-  <a href="mailto:arabodanny002@gmail.com">
-    <img src="https//img.shields.io/badge/Gmail-555555?style=for-the-badge&logo=gmail&logoColor=black" target="_blank" />
+  <br><br>
+  <a href="mailto:arabodanny002@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/danyarabo/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
- </a>
-  <a href="https://dra3v50.github.io/Website/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=red" target="_blank" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-
+  <a href="https://dra3v50.github.io/Website/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" />
+  </a>
+</div>
 
 ---
 
