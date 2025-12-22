@@ -25,14 +25,14 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="105" height="105" />          
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.png" width="80" height="80" />
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" width="80" height="80" />  
+  <img src="crowdstrike.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="wazuh.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="sentinel.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="nessus.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="splunk.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="wireshark.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="radar.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="thehive.png" width="80" height="80" style="object-fit: contain;"/>
 </p>
 
 --- 
