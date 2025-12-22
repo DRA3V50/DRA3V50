@@ -25,7 +25,7 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/crowdstrike.gif" height="45">
+  <img src="https://raw.githubusercontent.com/DRA3V50/Icon/main/crowdstrike.png" height="90">
   <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/wazuh.gif" height="45">
   <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/sentinel.gif" height="45">
   <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/nessus.gif" height="45">
