@@ -1,82 +1,33 @@
-<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+name: Update Blue Team Radar
 
-  <!-- Background -->
-  <rect width="600" height="600" fill="#050b10"/>
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs daily at midnight
+  workflow_dispatch:     # Allows manual triggering
 
-  <!-- Glow -->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+jobs:
+  generate:
+    runs-on: ubuntu-latest
 
-    <!-- Blue-team radar sweep -->
-    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="rgba(0,180,255,0)"/>
-      <stop offset="100%" stop-color="rgba(0,180,255,0.45)"/>
-    </linearGradient>
-  </defs>
+    steps:
+      # Step 1: Checkout the repo
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-  <!-- Radar rings -->
-  <g stroke="#2cc7ff" stroke-width="1" fill="none" opacity="0.35">
-    <circle cx="300" cy="300" r="250"/>
-    <circle cx="300" cy="300" r="180"/>
-    <circle cx="300" cy="300" r="110"/>
-  </g>
+      # Step 2: Generate radar SVG based on GitHub activity
+      - name: Generate Blue Team Radar
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: resident-evil-radar.svg
+          include-title: false
+          colors: "00FF00,0077FF,00AAFF"
+          commit-and-push: true
+          commit-message: "Update Blue Team Radar"
 
-  <!-- Axis -->
-  <line x1="300" y1="40" x2="300" y2="560" stroke="#2cc7ff" opacity="0.2"/>
-  <line x1="40" y1="300" x2="560" y2="300" stroke="#2cc7ff" opacity="0.2"/>
-
-  <!-- Radar sweep -->
-  <path d="M300 300 L300 40 A260 260 0 0 1 560 300 Z"
-        fill="url(#sweep)">
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 300 300"
-      to="360 300 300"
-      dur="6s"
-      repeatCount="indefinite"/>
-  </path>
-
-  <!-- Detection blips -->
-  <g fill="#2cc7ff" filter="url(#glow)">
-    <circle cx="420" cy="210" r="5">
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="190" cy="170" r="4">
-      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="260" cy="430" r="6">
-      <animate attributeName="opacity" values="1;0.1;1" dur="1.8s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Core -->
-  <text x="300" y="315" text-anchor="middle"
-        font-size="56" fill="#2cc7ff" opacity="0.25">
-    ☣
-  </text>
-
-  <!-- Blue Team labels -->
-  <g font-family="monospace" font-size="12" fill="#7dd9ff">
-    <text x="300" y="28" text-anchor="middle">SOC MONITORING</text>
-    <text x="565" y="305" text-anchor="end">SIEM • DETECTION ENG</text>
-    <text x="300" y="590" text-anchor="middle">INCIDENT RESPONSE</text>
-    <text x="18" y="305">EDR • VULN MGMT</text>
-    <text x="410" y="520">SOAR • AUTOMATION</text>
-  </g>
-
-  <!-- Status -->
-  <text x="300" y="560" text-anchor="middle"
-        font-family="monospace"
-        font-size="12"
-        fill="#1a6a8f">
-    BLUE TEAM STATUS: MONITORING | CONTAINMENT | RECOVERY
-  </text>
-
-</svg>
+      # Step 3: Commit changes back to main branch
+      - name: Commit & Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "stats-bot"
+          author_email: "stats-bot@users.noreply.github.com"
+          message: "Update Blue Team Radar SVG"
