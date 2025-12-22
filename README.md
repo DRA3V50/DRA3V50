@@ -25,7 +25,7 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" height="1005" alt="CrowdStrike">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" height="115" alt="CrowdStrike">
 </p>
 
 
