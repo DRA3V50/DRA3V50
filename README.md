@@ -25,11 +25,15 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" height="115" alt="CrowdStrike">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="80" height="115" alt="CrowdStrike">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.png" width="80" height="115" alt="Wazuh">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/sentinel.png" width="80" height="115" alt="Microsoft Sentinel">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" width="80" height="115" alt="Nessus">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" width="80" height="115" alt="Splunk">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" width="80" height="115" alt="Wireshark">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/radar.png" width="80" height="115" alt="Radar">
+  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" width="80" height="115" alt="TheHive">
 </p>
-
-
-
 
 --- 
 
