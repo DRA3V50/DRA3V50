@@ -65,7 +65,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
+### SOC Radar
 
+![SOC Radar](soc-radar.svg)
 
 ---
 ### Git Stats:
