@@ -25,15 +25,16 @@
 <h2 align="center">Cybersecurity Tools</h2>
 
 <p align="center">
-  <img src="crowdstrike.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="wazuh.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="sentinel.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="nessus.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="splunk.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="wireshark.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="radar.png" width="80" height="80" style="object-fit: contain;"/>
-  <img src="thehive.png" width="80" height="80" style="object-fit: contain;"/>
+  <img src="crowdstrike.png" height="90" alt="CrowdStrike"/>
+  <img src="wazuh.png" height="90" alt="Wazuh"/>
+  <img src="sentinel.png" height="90" alt="Sentinel"/>
+  <img src="nessus.png" height="90" alt="Nessus"/>
+  <img src="splunk.png" height="90" alt="Splunk"/>
+  <img src="wireshark.png" height="90" alt="Wireshark"/>
+  <img src="radar.png" height="90" alt="Radar"/>
+  <img src="thehive.png" height="90" alt="TheHive"/>
 </p>
+
 
 --- 
 
