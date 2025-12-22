@@ -12,11 +12,8 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
  </a>
   <a href="https://dra3v50.github.io/Website/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=purple" target="_blank" />
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" />
   </a>
-<img alt="Static Badge" src="https://img.shields.io/badge/Portfolio%20-darkviolet"><p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/GIF/main/user-account.gif" alt="User Account GIF" width="150" />
-</p>
 
 <p align="center" style="font-size: 30px;">
   ⬇️⬇️⬇️
