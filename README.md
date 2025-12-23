@@ -67,7 +67,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 # *Cyber & Intelligence Operations Board*
 
-![Cyber & Intelligence Dashboard](intel_dashboard.svg)
+![Cyber & Intelligence Dashboard](assets/intel_dashboard.svg)
+
 
 ---
 ### Git Stats:
