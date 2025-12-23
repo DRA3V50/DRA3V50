@@ -2,9 +2,12 @@ import json
 from datetime import datetime
 import os
 
-# Paths
-DATA_FILE = "scripts/data.json"  # JSON data source
+DATA_FILE = "scripts/data.json"
 OUTPUT_SVG = "assets/intel_dashboard.svg"
+
+# Ensure assets folder exists
+os.makedirs(os.path.dirname(OUTPUT_SVG), exist_ok=True)
+
 
 # Lane definitions
 lanes = [
