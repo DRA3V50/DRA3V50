@@ -1,99 +1,74 @@
-import os
-import subprocess
+import json
+from pathlib import Path
+
+DATA_FILE = Path("scripts/data.json")
+OUTPUT_FILE = Path("assets/blue-team-radar.svg")
+
+data = json.loads(DATA_FILE.read_text())
+
+labels = data["labels"]
+values = data["values"]
+
+cx, cy = 200, 200
+radius = 120
+
+def escape(text):
+    return (
+        text.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+            .replace("'", "&apos;")
+    )
+
+svg = '''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400"
+     height="400"
+     viewBox="0 0 400 400"
+     role="img"
+     aria-label="Blue Team Capability Radar">
+
+<rect width="100%" height="100%" fill="#0d1117"/>
+
+<circle cx="200" cy="200" r="120" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="80" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="40" fill="none" stroke="#30363d"/>
+
+<g stroke="#30363d">
+'''
+
 import math
-from datetime import datetime, timedelta
+points = []
 
-print("Radar generator running")
+for i, value in enumerate(values):
+    angle = (2 * math.pi / len(values)) * i - math.pi / 2
+    x = cx + radius * math.cos(angle)
+    y = cy + radius * math.sin(angle)
+    svg += f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" />\n'
 
-# ---------------- CONFIG ----------------
-DAYS_LOOKBACK = 30
-OUTPUT_FILE = "assets/blue-team-radar.svg"
+    px = cx + (radius * value) * math.cos(angle)
+    py = cy + (radius * value) * math.sin(angle)
+    points.append(f"{px},{py}")
 
-AXES = {
-    "SOC Ops": ["soc", "investigation", "incident"],
-    "Incident Response": ["response", "playbook", "ir"],
-    "Threat Detection": ["siem", "alert", "detection"],
-    "Automation": [".py", ".ps1", ".sql"],
-    "Data & Analytics": ["sql", "report", "powerbi"],
-    "Cloud Security": ["azure", "aws", "cloud"]
-}
-# ----------------------------------------
+svg += "</g>\n"
 
-def get_commits():
-    since = (datetime.utcnow() - timedelta(days=DAYS_LOOKBACK)).isoformat()
-    cmd = [
-        "git", "log",
-        f"--since={since}",
-        "--name-only",
-        "--pretty=format:"
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    return result.stdout.lower().splitlines()
+svg += f'''
+<polygon points="{' '.join(points)}"
+         fill="rgba(88,166,255,0.35)"
+         stroke="#58a6ff"
+         stroke-width="2">
+  <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 200 200"
+      to="360 200 200"
+      dur="40s"
+      repeatCount="indefinite"/>
+</polygon>
+'''
 
-def score_axes(files):
-    scores = {k: 0 for k in AXES}
-
-    # Baseline so radar always renders
-    if not files:
-        return {k: 30 for k in AXES}
-
-    for f in files:
-        for axis, keywords in AXES.items():
-            if any(k in f for k in keywords):
-                scores[axis] += 1
-
-    max_score = max(scores.values()) or 1
-
-    return {
-        k: max(30, int((v / max_score) * 100))
-        for k, v in scores.items()
-    }
-
-def generate_svg(scores):
-    labels = list(scores.keys())
-    values = list(scores.values())
-    count = len(labels)
-
-    cx, cy, r = 200, 200, 140
-    points = []
-
-    for i, v in enumerate(values):
-        angle = (2 * math.pi / count) * i - math.pi / 2
-        radius = r * (v / 100)
-        x = cx + radius * math.cos(angle)
-        y = cy + radius * math.sin(angle)
-        points.append(f"{x},{y}")
-
-    svg = ""
-    svg += '<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
-    svg += "<style>\n"
-    svg += "polygon { fill: rgba(0,180,255,0.25); stroke: #00b4ff; stroke-width: 2; animation: pulse 6s infinite alternate; }\n"
-    svg += "text { fill: #cfefff; font-size: 12px; text-anchor: middle; }\n"
-    svg += "circle { stroke: #1e2a38; fill: none; }\n"
-    svg += "@keyframes pulse { from { fill-opacity: 0.2; } to { fill-opacity: 0.4; } }\n"
-    svg += "</style>\n"
-
-    svg += f'<circle cx="{cx}" cy="{cy}" r="{r}" />\n'
-    svg += f'<polygon points="{" ".join(points)}" />\n'
-
-    for i, label in enumerate(labels):
-        angle = (2 * math.pi / count) * i - math.pi / 2
-        x = cx + (r + 22) * math.cos(angle)
-        y = cy + (r + 22) * math.sin(angle)
-        svg += f'<text x="{x}" y="{y}">{label}</text>\n'
-
-    svg += "</svg>"
-    return svg
-
-if __name__ == "__main__":
-    os.makedirs("assets", exist_ok=True)
-
-    commits = get_commits()
-    scores = score_axes(commits)
-    svg = generate_svg(scores)
-
-    with open(OUTPUT_FILE, "w") as f:
-        f.write(svg)
-
-    print("SVG written to", OUTPUT_FILE)
+for i, label in enumerate(labels):
+    angle = (2 * math.pi / len(labels)) * i - math.pi / 2
+    lx = cx + 150 * math.cos(angle)*
 
