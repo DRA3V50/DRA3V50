@@ -1,35 +1,33 @@
 name: Update README GIF
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-  workflow_dispatch:
 
 jobs:
-  build-gif:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pillow
+        run: pip install pillow
 
-      - name: Generate animated GIF
-        run: python scripts/generate_gif.py
+      - name: Generate GIF
+        run: python generate_gif.py
 
-      - name: Commit updated GIF
+      - name: Commit GIF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated.gif
-          git commit -m "Auto-update animated README GIF" || echo "No changes to commit"
+          git commit -m "Auto-update SOC radar GIF" || echo "No changes"
           git push
