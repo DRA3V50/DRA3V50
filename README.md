@@ -67,9 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-<p align="center">
-  <img src="assets/blue-team-radar.svg" alt="Blue Team Radar" />
-</p>
+<img src="assets/blue-team-radar.svg" />
 
 
 
