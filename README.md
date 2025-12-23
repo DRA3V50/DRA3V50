@@ -65,9 +65,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-# Cyber & Intelligence Operations Board
+## 🛡️ Blue Team Capability Radar
 
-![Cyber & Intelligence Dashboard](assets/intel_dashboard.png)
+<p align="center">
+  <img src="assets/blue-team-radar.svg" alt="Blue Team Radar" />
+</p>
+
 
 
 
