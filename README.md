@@ -67,7 +67,38 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-![Blue Team Radar](assets/blue-team-radar.svg)
+# Blue Team Radar
+
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="#0d1117"/>
+
+<circle cx="200" cy="200" r="120" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="80" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="40" fill="none" stroke="#30363d"/>
+
+<g stroke="#30363d">
+<line x1="200" y1="200" x2="320.0" y2="200.0"/>
+<!-- ... axis lines ... -->
+</g>
+
+<style>
+.pulse { stroke-opacity: 0.6; animation: pulse 2s infinite alternate; }
+@keyframes pulse { from { stroke-opacity: 0.6; } to { stroke-opacity: 1; } }
+</style>
+
+<path d="M 320.00,200.00 A 120,120 0 0 1 200.00,80.00"
+      stroke="rgba(88,166,255,0.85)"
+      stroke-width="10"
+      fill="none"
+      stroke-linecap="round"
+      class="pulse"
+      style="animation-delay:0s"/>
+<!-- ... all other arcs ... -->
+
+<text x="350" y="200" fill="#c9d1d9" font-size="11" text-anchor="middle">SOC Operations</text>
+<!-- ... all other labels ... -->
+
+</svg>
 
 ---
 ### Git Stats:
