@@ -130,7 +130,7 @@
       fill="#c9d1d9"
       font-size="11"
       text-anchor="middle">
-  Anomaly Detection &amp; Metrics
+  Incident Response
 </text>
 
 <text x="350.0" y="200.0"
@@ -165,7 +165,7 @@
       fill="#c9d1d9"
       font-size="11"
       text-anchor="middle">
-  Incident Response
+  Anomaly Detection &amp; Metrics
 </text>
 
 <text x="93.93398282201785" y="93.93398282201788"
