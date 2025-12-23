@@ -66,9 +66,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 ### **🛡️ SOC | 🕵️‍♂️ IR | ⚙️ Automation | 📊 Data**
-![Radar](soc-radar.svg)
-
-
+![SOC Radar](soc-radar.svg)
 
 ---
 ### Git Stats:
