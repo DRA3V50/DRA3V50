@@ -67,12 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-<div>
-  <!-- Paste the entire SVG here -->
-  <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-    <!-- all your <circle>, <path>, <animate> tags here -->
-  </svg>
-</div>
+<object type="image/svg+xml" data="assets/blue-team-radar.svg" width="400" height="400"></object>
 
 ---
 ### Git Stats:
