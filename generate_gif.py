@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-import subprocess, math
+import subprocess, math, random
 
 # Radar settings
 SIZE = 520
@@ -9,7 +9,7 @@ BG = (5, 15, 30)          # Dark SOC blue
 RADAR = (0, 200, 255)     # Cyan sweep
 BLIP = (0, 255, 200)      # Activity blip color
 
-# Map domains to angles
+# Map domains to angles (degrees)
 DOMAINS = {
     "soc": 0,
     "ir": 60,
@@ -64,12 +64,18 @@ for sweep in range(0, 360, 5):
     sy = CENTER + RADIUS * math.sin(angle)
     d.line((CENTER, CENTER, sx, sy), fill=RADAR, width=2)
 
-    # Draw blips
+    # Draw blips with sector spread
     for domain, base_angle in DOMAINS.items():
         count = activity[domain]
         for i in range(count):
-            r = 40 + i * 12  # distance from center
-            a = math.radians(base_angle)
+            # distance from center + radial jitter
+            r_jitter = random.uniform(-5, 5)
+            r = 40 + i * 12 + r_jitter
+
+            # angle spread ±15° around domain
+            spread = random.uniform(-15, 15)
+            a = math.radians(base_angle + spread)
+
             x = CENTER + r * math.cos(a)
             y = CENTER + r * math.sin(a)
             d.ellipse((x-3, y-3, x+3, y+3), fill=BLIP)
