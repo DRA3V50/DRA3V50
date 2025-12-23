@@ -67,9 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### **🛡️ SOC | 🕵️‍♂️ IR | ⚙️ Automation | 📊 Data**
 
-<p align="center">
-  <img src="assets/blue-team-radar.svg" alt="Blue Team Radar" />
-</p>
+![SOC Radar](generated.gif)
 
 ---
 ### Git Stats:
