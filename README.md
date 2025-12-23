@@ -67,8 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### **🛡️ SOC | 🕵️‍♂️ IR | ⚙️ Automation | 📊 Data**
 
-<img src="dashboard.svg" alt="SOC Dashboard">
-
+![Ultimate SOC Dashboard](dashboard.svg)
 
 ---
 ### Git Stats:
