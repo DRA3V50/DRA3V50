@@ -12,6 +12,8 @@ values = data["values"]
 
 cx, cy = 200, 200
 radius = 120
+arc_width = 10
+num_axes = len(values)
 
 def escape(text):
     return (
@@ -39,40 +41,43 @@ svg = '''<?xml version="1.0" encoding="UTF-8"?>
 <g stroke="#30363d">
 '''
 
-points = []
-
-for i, value in enumerate(values):
-    angle = (2 * math.pi / len(values)) * i - math.pi / 2
-
-    # Axis line
+# Axis lines (unchanged)
+for i in range(num_axes):
+    angle = (2 * math.pi / num_axes) * i - math.pi / 2
     x = cx + radius * math.cos(angle)
     y = cy + radius * math.sin(angle)
     svg += f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" />\n'
 
-    # Radar polygon point
-    px = cx + (radius * value) * math.cos(angle)
-    py = cy + (radius * value) * math.sin(angle)
-    points.append(f"{px},{py}")
-
 svg += "</g>\n"
 
-svg += f'''
-<polygon points="{' '.join(points)}"
-         fill="rgba(88,166,255,0.35)"
-         stroke="#58a6ff"
-         stroke-width="2">
-  <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 200 200"
-      to="360 200 200"
-      dur="40s"
-      repeatCount="indefinite"/>
-</polygon>
+# Signal arcs (REPLACES polygon)
+for i, value in enumerate(values):
+    start_angle = (2 * math.pi / num_axes) * i - math.pi / 2
+    arc_angle = value * (2 * math.pi / num_axes)
+    end_angle = start_angle + arc_angle
+
+    x1 = cx + radius * math.cos(start_angle)
+    y1 = cy + radius * math.sin(start_angle)
+    x2 = cx + radius * math.cos(end_angle)
+    y2 = cy + radius * math.sin(end_angle)
+
+    svg += f'''
+<path d="M {x1:.2f},{y1:.2f}
+         A {radius},{radius} 0 0 1 {x2:.2f},{y2:.2f}"
+      stroke="rgba(88,166,255,0.85)"
+      stroke-width="{arc_width}"
+      fill="none"
+      stroke-linecap="round">
+  <animate attributeName="stroke-opacity"
+           values="0.6;1;0.6"
+           dur="6s"
+           repeatCount="indefinite"/>
+</path>
 '''
 
+# Labels (unchanged)
 for i, label in enumerate(labels):
-    angle = (2 * math.pi / len(labels)) * i - math.pi / 2
+    angle = (2 * math.pi / num_axes) * i - math.pi / 2
     lx = cx + 150 * math.cos(angle)
     ly = cy + 150 * math.sin(angle)
 
@@ -88,3 +93,4 @@ for i, label in enumerate(labels):
 svg += "</svg>"
 
 OUTPUT_FILE.write_text(svg, encoding="utf-8")
+
