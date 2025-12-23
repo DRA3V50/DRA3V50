@@ -1,4 +1,4 @@
-name: Update README SVG
+name: Update README PNG
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-svg:
+  build-png:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -18,15 +18,15 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: python -m pip install --upgrade pip
+        run: python -m pip install --upgrade pip Pillow
 
-      - name: Generate SVG Dashboard
-        run: python scripts/generate_svg_intel_dashboard.py
+      - name: Generate PNG Dashboard
+        run: python scripts/generate_png_intel_dashboard.py
 
-      - name: Commit updated SVG
+      - name: Commit updated PNG
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/intel_dashboard.svg
+          git add assets/intel_dashboard.png
           git commit -m "Auto-update Cyber & Intelligence Operations Board" || echo "No changes to commit"
           git push
