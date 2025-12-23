@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Verify git history
+        run: git log --oneline -5
+
       - name: Generate radar
         run: python scripts/generate_radar.py
 
@@ -28,5 +31,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions@github.com"
           git add assets/blue-team-radar.svg
-          git commit -m "Update Blue Team capability radar" || exit 0
+          git commit -m "Update Blue Team capability radar" || echo "No changes to commit"
           git push
