@@ -67,6 +67,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### **🛡️ SOC | 🕵️‍♂️ IR | ⚙️ Automation | 📊 Data**
 
+<p align="center">
+  <img src="assets/blue-team-radar.svg" alt="Blue Team Radar" />
+</p>
+
 ---
 ### Git Stats:
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DRA3V50)](https://github.com/DRA3V50/github-readme-stats)
