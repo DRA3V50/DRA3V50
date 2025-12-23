@@ -73,7 +73,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### Git Stats & Data:
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=dark&hide_rank=true&cache_seconds=86400)](https://github.com/DRA3V50/github-readme-stats)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=dark&cache_seconds=86400)
+<img width="325" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=dark&cache_seconds=86400" alt="Top Languages" />
 
 
 
