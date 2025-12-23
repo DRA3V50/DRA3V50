@@ -1,14 +1,15 @@
 from PIL import Image, ImageDraw
 import subprocess, math
 
+# Radar settings
 SIZE = 520
 CENTER = SIZE // 2
 RADIUS = 220
 BG = (5, 15, 30)          # Dark SOC blue
-RADAR = (0, 200, 255)     # Cyan
-BLIP = (0, 255, 200)
+RADAR = (0, 200, 255)     # Cyan sweep
+BLIP = (0, 255, 200)      # Activity blip color
 
-# Map directories → domains
+# Map domains to angles
 DOMAINS = {
     "soc": 0,
     "ir": 60,
@@ -18,17 +19,28 @@ DOMAINS = {
     "data": 300
 }
 
+# Keywords to detect commits related to each domain
+KEYWORDS = {
+    "soc": ["soc", "ticket", "monitor", "helpdesk"],
+    "ir": ["incident", "alert", "response", "investigation"],
+    "siem": ["splunk", "sentinel", "log", "siem", "rules"],
+    "soar": ["automation", "playbook", "workflow", "soar"],
+    "edr": ["crowdstrike", "defender", "edr", "endpoint"],
+    "data": ["data", "analytics", "report", "dashboard"]
+}
+
 def get_activity():
-    result = subprocess.check_output(
-        ["git", "log", "--name-only", "--pretty=format:"],
-        text=True
+    # Get commit messages and changed file paths
+    log = subprocess.check_output(
+        ["git", "log", "--name-only", "--pretty=format:%s"], text=True
     )
 
     activity = {k: 0 for k in DOMAINS}
 
-    for line in result.splitlines():
-        for domain in DOMAINS:
-            if line.lower().startswith(domain + "/"):
+    for line in log.splitlines():
+        line_lower = line.lower()
+        for domain, keywords in KEYWORDS.items():
+            if any(k in line_lower for k in keywords):
                 activity[domain] += 1
 
     return activity
@@ -40,23 +52,23 @@ for sweep in range(0, 360, 5):
     img = Image.new("RGB", (SIZE, SIZE), BG)
     d = ImageDraw.Draw(img)
 
-    # Radar circle
+    # Outer radar circle
     d.ellipse(
         (CENTER-RADIUS, CENTER-RADIUS, CENTER+RADIUS, CENTER+RADIUS),
         outline=RADAR, width=2
     )
 
-    # Sweep
+    # Sweep line
     angle = math.radians(sweep)
     sx = CENTER + RADIUS * math.cos(angle)
     sy = CENTER + RADIUS * math.sin(angle)
     d.line((CENTER, CENTER, sx, sy), fill=RADAR, width=2)
 
-    # Plot activity blips
+    # Draw blips
     for domain, base_angle in DOMAINS.items():
         count = activity[domain]
         for i in range(count):
-            r = 40 + i * 12
+            r = 40 + i * 12  # distance from center
             a = math.radians(base_angle)
             x = CENTER + r * math.cos(a)
             y = CENTER + r * math.sin(a)
@@ -64,6 +76,7 @@ for sweep in range(0, 360, 5):
 
     frames.append(img)
 
+# Save animated GIF
 frames[0].save(
     "generated.gif",
     save_all=True,
@@ -71,4 +84,3 @@ frames[0].save(
     duration=80,
     loop=0
 )
-
