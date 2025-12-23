@@ -22,7 +22,7 @@ LABELS = [
 ]
 
 with open("metrics.json") as f:
-    metrics = list(json.items(json.load(f)))
+    metrics = list(json.load(f).items())
 
 frames = []
 
