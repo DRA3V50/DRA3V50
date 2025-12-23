@@ -1,1 +1,36 @@
+name: Update README SVG Dashboard
 
+on:
+  # Run workflow every 6 hours; adjust as needed
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # allows manual run
+
+jobs:
+  generate-svg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Generate SVG Dashboard
+        run: python scripts/generate_svg_dashboard.py
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dashboard.svg
+          git commit -m "Auto-update SVG dashboard" || echo "No changes to commit"
+          git push
