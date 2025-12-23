@@ -27,6 +27,7 @@ jobs:
       - name: Generate SVG Dashboard
         run: python scripts/generate_svg_intel_dashboard.py
 
+
       - name: Commit updated SVG
         run: |
           git config user.name "github-actions[bot]"
