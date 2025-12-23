@@ -49,14 +49,12 @@ for idx, lane in enumerate(lanes):
     # Lane title
     svg_elements.append(f'<text x="{x + 40}" y="{BORDER/2 + 5}" font-size="14" fill="{lane["color"]}">{lane["name"]}</text>')
 
-    # Blips for activity
+    # Blips for activity (no <title> for GitHub-safe rendering)
     count = data.get(lane["name"], 0)
     for i in range(count):
         blip_x = x + LANE_WIDTH/2
         blip_y = BORDER + 30 + i * BLIP_SPACING
-        svg_elements.append(f'<circle cx="{blip_x}" cy="{blip_y}" r="15" fill="{lane["color"]}">')
-        svg_elements.append(f'<title>{lane["name"]} activity {i+1}</title>')  # hover title
-        svg_elements.append('</circle>')
+        svg_elements.append(f'<circle cx="{blip_x}" cy="{blip_y}" r="15" fill="{lane["color"]}" />')
 
 # --- Footer timestamp ---
 now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
