@@ -1,16 +1,70 @@
-<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-<style>
-polygon { fill: rgba(0,180,255,0.25); stroke: #00b4ff; stroke-width: 2; animation: pulse 6s infinite alternate; }
-text { fill: #cfefff; font-size: 12px; text-anchor: middle; }
-circle { stroke: #1e2a38; fill: none; }
-@keyframes pulse { from { fill-opacity: 0.2; } to { fill-opacity: 0.4; } }
-</style>
-<circle cx="200" cy="200" r="140" />
-<polygon points="200.0,107.6 237.58550252424465,178.3 236.37306695894642,221.0 200.0,340.0 163.62693304105358,221.0 163.62693304105358,179.00000000000003" />
-<text x="200.0" y="38.0">SOC Ops</text>
-<text x="340.29611541307906" y="119.0">Incident Response</text>
-<text x="340.29611541307906" y="281.0">Threat Detection</text>
-<text x="200.0" y="362.0">Automation</text>
-<text x="59.703884586920964" y="281.00000000000006">Data & Analytics</text>
-<text x="59.70388458692088" y="119.0000000000001">Cloud Security</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400"
+     height="400"
+     viewBox="0 0 400 400"
+     role="img"
+     aria-label="Blue Team Capability Radar">
+
+<rect width="100%" height="100%" fill="#0d1117"/>
+
+<circle cx="200" cy="200" r="120" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="80" fill="none" stroke="#30363d"/>
+<circle cx="200" cy="200" r="40" fill="none" stroke="#30363d"/>
+
+<g stroke="#30363d">
+<line x1="200" y1="200" x2="200.0" y2="80.0" />
+<line x1="200" y1="200" x2="314.12678195541844" y2="162.91796067500633" />
+<line x1="200" y1="200" x2="270.5342302750968" y2="297.08203932499373" />
+<line x1="200" y1="200" x2="129.46576972490323" y2="297.08203932499373" />
+<line x1="200" y1="200" x2="85.87321804458156" y2="162.91796067500633" />
+</g>
+
+<polygon points="200.0,92.0 297.00776466210567,168.48026657375536 252.90067270632258,272.8115294937453 143.5726157799226,277.665631459995 120.1112526312071,174.04257247250442"
+         fill="rgba(88,166,255,0.35)"
+         stroke="#58a6ff"
+         stroke-width="2">
+  <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 200 200"
+      to="360 200 200"
+      dur="40s"
+      repeatCount="indefinite"/>
+</polygon>
+
+<text x="200.0" y="50.0"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  SOC Operations
+</text>
+
+<text x="342.658477444273" y="153.6474508437579"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  Incident Response
+</text>
+
+<text x="288.167787843871" y="321.3525491562421"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  Threat Intelligence
+</text>
+
+<text x="111.83221215612905" y="321.3525491562421"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  SIEM &amp; Detection
+</text>
+
+<text x="57.341522555726954" y="153.6474508437579"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  Automation
+</text>
 </svg>
