@@ -4,7 +4,7 @@ import os
 
 # Paths
 DATA_FILE = "scripts/data.json"  # JSON data source
-OUTPUT_SVG = "intel_dashboard.svg"
+OUTPUT_SVG = "assets/intel_dashboard.svg"
 
 # Lane definitions
 lanes = [
