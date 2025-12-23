@@ -1,8 +1,0 @@
-{
-  "SOC": { "count": 6, "severity": "high" },
-  "IR": { "count": 3, "severity": "critical" },
-  "SIEM": { "count": 5, "severity": "high" },
-  "SOAR": { "count": 4, "severity": "medium" },
-  "EDR": { "count": 3, "severity": "medium" },
-  "DATA": { "count": 4, "severity": "low" }
-}
