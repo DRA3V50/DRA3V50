@@ -12,13 +12,13 @@ os.makedirs(os.path.dirname(OUTPUT_PNG), exist_ok=True)
 
 # --- Lane definitions ---
 lanes = [
-    {"name": "SOC", "color": (0, 255, 255)},            # Cyan
-    {"name": "IR", "color": (255, 165, 0)},            # Orange
-    {"name": "SIEM", "color": (30, 144, 255)},         # Dodger Blue
-    {"name": "SOAR", "color": (153, 50, 204)},         # Dark Orchid
-    {"name": "EDR", "color": (50, 205, 50)},           # Lime Green
-    {"name": "Data Automation", "color": (255, 105, 180)}, # Hot Pink
-    {"name": "Data Analysis & Intelligence", "color": (255, 255, 0)}, # Yellow
+    {"name": "SOC", "color": (0, 255, 255)},                 # Cyan
+    {"name": "IR", "color": (255, 165, 0)},                 # Orange
+    {"name": "SIEM", "color": (30, 144, 255)},              # Dodger Blue
+    {"name": "SOAR", "color": (153, 50, 204)},              # Dark Orchid
+    {"name": "EDR", "color": (50, 205, 50)},                # Lime Green
+    {"name": "Data Automation", "color": (255, 105, 180)},  # Hot Pink
+    {"name": "Data Analysis & Intelligence", "color": (255, 255, 0)}  # Yellow
 ]
 
 # Image size
@@ -62,11 +62,13 @@ for idx, lane in enumerate(lanes):
         blip_y = BORDER + i * BLIP_SPACING
         draw.ellipse([blip_x, blip_y, blip_x + 30, blip_y + 30], fill=lane["color"])
 
-# Timestamp
+# --- Timestamp ---
 now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-w, h = draw.textsize(f"Last update: {now}", font=font)
+bbox = draw.textbbox((0,0), f"Last update: {now}", font=font)
+w = bbox[2] - bbox[0]
+h = bbox[3] - bbox[1]
 draw.text(((IMG_WIDTH - w)//2, IMG_HEIGHT - h - 10), f"Last update: {now}", fill=(180,180,180), font=font)
 
-# Save PNG
+# --- Save PNG ---
 img.save(OUTPUT_PNG)
 print(f"Generated {OUTPUT_PNG}")
