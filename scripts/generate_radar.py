@@ -10,11 +10,11 @@ DAYS_LOOKBACK = 30
 OUTPUT_FILE = "assets/blue-team-radar.svg"
 
 AXES = {
-    "SOC Operations": ["soc", "investigation", "incident", ".md"],
+    "SOC Ops": ["soc", "investigation", "incident"],
     "Incident Response": ["response", "playbook", "ir"],
-    "Threat Detection": ["detection", "siem", "alert"],
+    "Threat Detection": ["siem", "alert", "detection"],
     "Automation": [".py", ".ps1", ".sql"],
-    "Data & Analytics": ["sql", "powerbi", "report"],
+    "Data & Analytics": ["sql", "report", "powerbi"],
     "Cloud Security": ["azure", "aws", "cloud"]
 }
 # ----------------------------------------
@@ -33,9 +33,9 @@ def get_commits():
 def score_axes(files):
     scores = {k: 0 for k in AXES}
 
-    # Baseline so radar ALWAYS renders
+    # Baseline so radar always renders
     if not files:
-        return {k: 20 for k in AXES}
+        return {k: 30 for k in AXES}
 
     for f in files:
         for axis, keywords in AXES.items():
@@ -44,9 +44,8 @@ def score_axes(files):
 
     max_score = max(scores.values()) or 1
 
-    # Normalize + enforce minimum visibility
     return {
-        k: max(20, int((v / max_score) * 100))
+        k: max(30, int((v / max_score) * 100))
         for k, v in scores.items()
     }
 
@@ -65,5 +64,36 @@ def generate_svg(scores):
         y = cy + radius * math.sin(angle)
         points.append(f"{x},{y}")
 
-    svg = f"""<svg width="400" height="400" viewBox="0 0 400 400"
-xmlns="http://www.w3.org/2000/svg">
+    svg = ""
+    svg += '<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">\n'
+    svg += "<style>\n"
+    svg += "polygon { fill: rgba(0,180,255,0.25); stroke: #00b4ff; stroke-width: 2; animation: pulse 6s infinite alternate; }\n"
+    svg += "text { fill: #cfefff; font-size: 12px; text-anchor: middle; }\n"
+    svg += "circle { stroke: #1e2a38; fill: none; }\n"
+    svg += "@keyframes pulse { from { fill-opacity: 0.2; } to { fill-opacity: 0.4; } }\n"
+    svg += "</style>\n"
+
+    svg += f'<circle cx="{cx}" cy="{cy}" r="{r}" />\n'
+    svg += f'<polygon points="{" ".join(points)}" />\n'
+
+    for i, label in enumerate(labels):
+        angle = (2 * math.pi / count) * i - math.pi / 2
+        x = cx + (r + 22) * math.cos(angle)
+        y = cy + (r + 22) * math.sin(angle)
+        svg += f'<text x="{x}" y="{y}">{label}</text>\n'
+
+    svg += "</svg>"
+    return svg
+
+if __name__ == "__main__":
+    os.makedirs("assets", exist_ok=True)
+
+    commits = get_commits()
+    scores = score_axes(commits)
+    svg = generate_svg(scores)
+
+    with open(OUTPUT_FILE, "w") as f:
+        f.write(svg)
+
+    print("SVG written to", OUTPUT_FILE)
+
