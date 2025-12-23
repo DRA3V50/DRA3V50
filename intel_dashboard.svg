@@ -1,0 +1,148 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="#0a0a23"/>
+<rect x="0" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="71.0" y="25.0" text-anchor="middle" font-size="18" fill="#00ffff">🛡️ SOC</text>
+
+        <circle cx="71.0" cy="100" r="15" fill="#00ffff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="71.0" cy="150" r="15" fill="#00ffff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="71.0" cy="200" r="15" fill="#00ffff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="71.0" cy="250" r="15" fill="#00ffff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="71.0" cy="300" r="15" fill="#00ffff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="142" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="213.0" y="25.0" text-anchor="middle" font-size="18" fill="#ffa500">🕵️‍♂️ IR</text>
+
+        <circle cx="213.0" cy="100" r="15" fill="#ffa500">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="213.0" cy="150" r="15" fill="#ffa500">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="284" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="355.0" y="25.0" text-anchor="middle" font-size="18" fill="#1e90ff">📊 SIEM</text>
+
+        <circle cx="355.0" cy="100" r="15" fill="#1e90ff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="355.0" cy="150" r="15" fill="#1e90ff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="355.0" cy="200" r="15" fill="#1e90ff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="355.0" cy="250" r="15" fill="#1e90ff">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="426" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="497.0" y="25.0" text-anchor="middle" font-size="18" fill="#9932cc">⚙️ SOAR</text>
+
+        <circle cx="497.0" cy="100" r="15" fill="#9932cc">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="497.0" cy="150" r="15" fill="#9932cc">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="497.0" cy="200" r="15" fill="#9932cc">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="568" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="639.0" y="25.0" text-anchor="middle" font-size="18" fill="#32cd32">💻 EDR</text>
+
+        <circle cx="639.0" cy="100" r="15" fill="#32cd32">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="639.0" cy="150" r="15" fill="#32cd32">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="710" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="781.0" y="25.0" text-anchor="middle" font-size="18" fill="#ff69b4">🤖 Data Automation</text>
+
+        <circle cx="781.0" cy="100" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="781.0" cy="150" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="781.0" cy="200" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="781.0" cy="250" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="781.0" cy="300" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="781.0" cy="350" r="15" fill="#ff69b4">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<rect x="852" y="0" width="142" height="600" fill="#101040" opacity="0.8"/>
+<text x="923.0" y="25.0" text-anchor="middle" font-size="18" fill="#ffff00">📈 Data Analysis & Intelligence</text>
+
+        <circle cx="923.0" cy="100" r="15" fill="#ffff00">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="923.0" cy="150" r="15" fill="#ffff00">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="923.0" cy="200" r="15" fill="#ffff00">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+
+        <circle cx="923.0" cy="250" r="15" fill="#ffff00">
+            <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+<text x="500.0" y="580" text-anchor="middle" font-size="14" fill="#aaa">Last update: 2025-12-23 05:09 UTC</text>
+</svg>
