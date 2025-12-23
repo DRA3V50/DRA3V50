@@ -1,28 +1,30 @@
 import json
 from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
 import os
 
 # --- Paths ---
 DATA_FILE = "scripts/data.json"
-OUTPUT_SVG = "assets/intel_dashboard.svg"
+OUTPUT_PNG = "assets/intel_dashboard.png"
 
 # Ensure assets folder exists
-os.makedirs(os.path.dirname(OUTPUT_SVG), exist_ok=True)
+os.makedirs(os.path.dirname(OUTPUT_PNG), exist_ok=True)
 
 # --- Lane definitions ---
 lanes = [
-    {"name": "SOC", "color": "#00ffff"},
-    {"name": "IR", "color": "#ffa500"},
-    {"name": "SIEM", "color": "#1e90ff"},
-    {"name": "SOAR", "color": "#9932cc"},
-    {"name": "EDR", "color": "#32cd32"},
-    {"name": "Data Automation", "color": "#ff69b4"},
-    {"name": "Data Analysis & Intelligence", "color": "#ffff00"},
+    {"name": "SOC", "color": (0, 255, 255)},            # Cyan
+    {"name": "IR", "color": (255, 165, 0)},            # Orange
+    {"name": "SIEM", "color": (30, 144, 255)},         # Dodger Blue
+    {"name": "SOAR", "color": (153, 50, 204)},         # Dark Orchid
+    {"name": "EDR", "color": (50, 205, 50)},           # Lime Green
+    {"name": "Data Automation", "color": (255, 105, 180)}, # Hot Pink
+    {"name": "Data Analysis & Intelligence", "color": (255, 255, 0)}, # Yellow
 ]
 
-SVG_WIDTH = 1000
-SVG_HEIGHT = 600
-LANE_WIDTH = SVG_WIDTH // len(lanes)
+# Image size
+IMG_WIDTH = 1000
+IMG_HEIGHT = 600
+LANE_WIDTH = IMG_WIDTH // len(lanes)
 BORDER = 50
 BLIP_SPACING = 50
 
@@ -31,39 +33,40 @@ if os.path.exists(DATA_FILE):
     with open(DATA_FILE, "r") as f:
         data = json.load(f)
 else:
-    # default counts if JSON missing
     data = {lane["name"]: 3 for lane in lanes}
 
-# --- Start SVG ---
-svg_elements = []
-svg_elements.append(f'<svg width="{SVG_WIDTH}" height="{SVG_HEIGHT}" xmlns="http://www.w3.org/2000/svg">')
-svg_elements.append(f'<rect width="100%" height="100%" fill="#0a0a23"/>')  # dark background
+# --- Create image ---
+img = Image.new("RGB", (IMG_WIDTH, IMG_HEIGHT), "#0a0a23")
+draw = ImageDraw.Draw(img)
+
+# Font
+try:
+    font = ImageFont.truetype("arial.ttf", 16)
+except:
+    font = ImageFont.load_default()
 
 # --- Draw lanes and blips ---
 for idx, lane in enumerate(lanes):
-    x = idx * LANE_WIDTH
+    x0 = idx * LANE_WIDTH
     # Lane background
-    svg_elements.append(f'<rect x="{x}" y="0" width="{LANE_WIDTH}" height="{SVG_HEIGHT}" fill="#101040" opacity="0.8"/>')
-    # Lane icon as small circle
-    svg_elements.append(f'<circle cx="{x + 20}" cy="{BORDER/2}" r="8" fill="{lane["color"]}" />')
+    draw.rectangle([x0, 0, x0 + LANE_WIDTH, IMG_HEIGHT], fill=(16,16,64))
+    # Lane icon circle
+    draw.ellipse([x0 + 10, 10, x0 + 30, 30], fill=lane["color"])
     # Lane title
-    svg_elements.append(f'<text x="{x + 40}" y="{BORDER/2 + 5}" font-size="14" fill="{lane["color"]}">{lane["name"]}</text>')
-
-    # Blips for activity (no <title> for GitHub-safe rendering)
+    draw.text((x0 + 40, 10), lane["name"], fill=lane["color"], font=font)
+    
+    # Blips
     count = data.get(lane["name"], 0)
     for i in range(count):
-        blip_x = x + LANE_WIDTH/2
-        blip_y = BORDER + 30 + i * BLIP_SPACING
-        svg_elements.append(f'<circle cx="{blip_x}" cy="{blip_y}" r="15" fill="{lane["color"]}" />')
+        blip_x = x0 + LANE_WIDTH // 2 - 15
+        blip_y = BORDER + i * BLIP_SPACING
+        draw.ellipse([blip_x, blip_y, blip_x + 30, blip_y + 30], fill=lane["color"])
 
-# --- Footer timestamp ---
+# Timestamp
 now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-svg_elements.append(f'<text x="{SVG_WIDTH/2}" y="{SVG_HEIGHT - 20}" text-anchor="middle" font-size="14" fill="#aaa">Last update: {now}</text>')
+w, h = draw.textsize(f"Last update: {now}", font=font)
+draw.text(((IMG_WIDTH - w)//2, IMG_HEIGHT - h - 10), f"Last update: {now}", fill=(180,180,180), font=font)
 
-svg_elements.append('</svg>')
-
-# --- Write SVG ---
-with open(OUTPUT_SVG, "w") as f:
-    f.write("\n".join(svg_elements))
-
-print(f"Generated {OUTPUT_SVG}")
+# Save PNG
+img.save(OUTPUT_PNG)
+print(f"Generated {OUTPUT_PNG}")
