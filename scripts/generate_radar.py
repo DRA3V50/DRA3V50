@@ -1,4 +1,5 @@
 import json
+import math
 from pathlib import Path
 
 DATA_FILE = Path("scripts/data.json")
@@ -38,15 +39,17 @@ svg = '''<?xml version="1.0" encoding="UTF-8"?>
 <g stroke="#30363d">
 '''
 
-import math
 points = []
 
 for i, value in enumerate(values):
     angle = (2 * math.pi / len(values)) * i - math.pi / 2
+
+    # Axis line
     x = cx + radius * math.cos(angle)
     y = cy + radius * math.sin(angle)
     svg += f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" />\n'
 
+    # Radar polygon point
     px = cx + (radius * value) * math.cos(angle)
     py = cy + (radius * value) * math.sin(angle)
     points.append(f"{px},{py}")
@@ -70,5 +73,18 @@ svg += f'''
 
 for i, label in enumerate(labels):
     angle = (2 * math.pi / len(labels)) * i - math.pi / 2
-    lx = cx + 150 * math.cos(angle)*
+    lx = cx + 150 * math.cos(angle)
+    ly = cy + 150 * math.sin(angle)
 
+    svg += f'''
+<text x="{lx}" y="{ly}"
+      fill="#c9d1d9"
+      font-size="11"
+      text-anchor="middle">
+  {escape(label)}
+</text>
+'''
+
+svg += "</svg>"
+
+OUTPUT_FILE.write_text(svg, encoding="utf-8")
