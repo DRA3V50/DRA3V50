@@ -74,12 +74,14 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <!-- GitHub Stats Card with icon -->
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=dark&icon_color=ffffff)](https://github.com/DRA3V50)
 
-<!-- Top Languages Card -->
+<!-- GitHub Stats Card with icon and dark theme -->
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=dark)](https://github.com/DRA3V50/github-readme-stats)
+
 <img 
   width="325" 
   align="center" 
   src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&hide=HTML&langs_count=6&layout=compact&theme=dark&border_radius=10" 
-  alt="Top Languages" 
+  alt="top langs" 
 />
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
