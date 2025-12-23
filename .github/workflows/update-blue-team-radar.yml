@@ -1,0 +1,35 @@
+name: Update Blue Team Radar
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # Runs daily at 06:00 UTC
+  workflow_dispatch:      # Allows manual run
+
+jobs:
+  generate-radar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Generate radar SVG
+        run: |
+          python assets/scripts/generate_radar.py
+
+      - name: Commit updated radar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/blue-team-radar.svg
+          git commit -m "Auto-update blue team radar" || echo "No changes to commit"
+          git push
