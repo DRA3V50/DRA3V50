@@ -16,7 +16,7 @@
     <line x1="285" y1="115" x2="115" y2="285"/>
   </g>
 
-  <!-- VALID polygon with real numeric points -->
+  <!-- VALID polygon -->
   <polygon
     points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120"
     fill="rgba(88,166,255,0.28)"
@@ -30,6 +30,7 @@
       to="360 200 200"
       dur="30s"
       repeatCount="indefinite"/>
+
   </polygon>
 
 </svg>
