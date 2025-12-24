@@ -6,6 +6,7 @@
      role="img"
      aria-label="Blue Team Capability Radar">
 
+  <!-- Background -->
   <rect width="100%" height="100%" fill="#0d1117"/>
 
   <!-- Radar rings -->
@@ -33,12 +34,18 @@
     <text x="90" y="95">Risk Identification</text>
   </g>
 
-  <!-- Focus Polygon (ROTATES + MORPHS) -->
+  <!-- Center heartbeat -->
+  <circle cx="200" cy="200" r="6" fill="rgba(88,166,255,0.6)">
+    <animate attributeName="r" values="6;18;6" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Focus Polygon (ROTATES + MORPHS + COLOR PULSE) -->
   <polygon
+    points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120"
     fill="rgba(88,166,255,0.28)"
     stroke="rgba(88,166,255,0.95)"
-    stroke-width="2"
-    points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120">
+    stroke-width="2">
 
     <!-- Morphing focus states -->
     <animate
@@ -52,6 +59,31 @@
         200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120
       "/>
 
+    <!-- Adaptive fill intensity -->
+    <animate
+      attributeName="fill"
+      dur="12s"
+      repeatCount="indefinite"
+      values="
+        rgba(88,166,255,0.18);
+        rgba(88,166,255,0.35);
+        rgba(56,189,248,0.45);
+        rgba(88,166,255,0.28)
+      "/>
+
+    <!-- Stroke energy pulse -->
+    <animate
+      attributeName="stroke-opacity"
+      dur="6s"
+      repeatCount="indefinite"
+      values="0.6;1;0.6"/>
+
+    <animate
+      attributeName="stroke-width"
+      dur="6s"
+      repeatCount="indefinite"
+      values="2;2.6;2"/>
+
     <!-- Slow rotation -->
     <animateTransform
       attributeName="transform"
@@ -63,3 +95,4 @@
   </polygon>
 
 </svg>
+
