@@ -67,7 +67,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-![Blue Team Capability Radar](assets/blue-team-radar.svg)
+![GitHub Stats](https://github-readme-stats-4jhn34few-dra3v50s-projects.vercel.app/api?username=DRA3V50&show_icons=true&theme=dark)
+
+![Top Languages](https://github-readme-stats-4jhn34few-dra3v50s-projects.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=dark)
 
 ---
 ### Git Stats & Data:
