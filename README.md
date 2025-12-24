@@ -67,10 +67,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-![GitHub Stats](https://github-readme-stats-gamma-brown-ug7b2m9ur0.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats-gamma-brown-ug7b2m9ur0.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=DRA3V50&theme=tokyonight&hide_border=true)
-![Trophies](https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight&no-frame=true&row=1&column=7)
+<img src="./assets/github-stats.svg" width="450">
+<img src="./assets/top-langs.svg" width="450">
+<img src="./assets/streak.svg" width="450">
+<img src="./assets/trophies.svg" width="450">
 
 
 ---
