@@ -70,6 +70,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 <img src="./assets/github-stats.svg" width="450">
+<img src="./assets/top-langs.svg" width="450">
+<img src="./assets/streak.svg" width="450">
 
 ---
 
