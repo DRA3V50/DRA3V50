@@ -69,7 +69,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<img src="./metrics.svg" width="100%">
+<img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/metrics.svg" width="100%">
 
 ---
 
