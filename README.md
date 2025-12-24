@@ -69,7 +69,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<img src="./assets/github-stats.svg" width="100%">
+<img src="./assets/github-stats.svg" width="450">
 
 ---
 
