@@ -23,29 +23,42 @@
 
   <!-- Labels (STATIC) -->
   <g fill="#c9d1d9" font-size="11" text-anchor="middle">
-    <text x="200" y="50">Endpoint Detection &amp; Telemetry</text>
+    <text x="200" y="50">SOC Operations</text>
     <text x="310" y="95">Incident Response</text>
     <text x="350" y="205">SIEM Engineering</text>
-    <text x="310" y="315">SOC Operations</text>
+    <text x="310" y="315">Endpoint Detection &amp; Telemetry</text>
     <text x="200" y="360">OSINT &amp; Log Analysis</text>
     <text x="90" y="315">SOAR &amp; Automation</text>
     <text x="45" y="205">Anomaly Detection</text>
     <text x="90" y="95">Risk Identification</text>
   </g>
 
-  <!-- Focus Polygon (ROTATES) -->
+  <!-- Focus Polygon (ROTATES + MORPHS) -->
   <polygon
-    points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120"
     fill="rgba(88,166,255,0.28)"
     stroke="rgba(88,166,255,0.95)"
-    stroke-width="2">
+    stroke-width="2"
+    points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120">
 
+    <!-- Morphing focus states -->
+    <animate
+      attributeName="points"
+      dur="18s"
+      repeatCount="indefinite"
+      values="
+        200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120;
+        200,110 260,130 330,200 250,300 200,290 140,260 100,200 140,140;
+        200,80 310,110 300,200 290,310 200,330 110,290 80,200 110,110;
+        200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120
+      "/>
+
+    <!-- Slow rotation -->
     <animateTransform
       attributeName="transform"
       type="rotate"
       from="0 200 200"
       to="360 200 200"
-      dur="25s"
+      dur="30s"
       repeatCount="indefinite"/>
   </polygon>
 
