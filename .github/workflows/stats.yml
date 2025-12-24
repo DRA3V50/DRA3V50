@@ -1,0 +1,43 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # updates every 12 hours
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # --- GitHub Stats Card ---
+      - name: Generate GitHub Stats SVG
+        run: |
+          curl -o assets/github-stats.svg "https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true"
+
+      # --- Top Languages Card ---
+      - name: Generate Top Languages SVG
+        run: |
+          curl -o assets/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true"
+
+      # --- Streak Stats ---
+      - name: Generate Streak Stats SVG
+        run: |
+          curl -o assets/streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=DRA3V50&theme=tokyonight&hide_border=true"
+
+      # --- Trophies ---
+      - name: Generate Trophies SVG
+        run: |
+          curl -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight&no-frame=true"
+
+      # --- Commit the updated SVGs ---
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add assets/*.svg
+          git commit -m "Update stats SVGs" || echo "No changes to commit"
+          git push
