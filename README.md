@@ -72,7 +72,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <img src="./assets/streak.svg" width="450">
 <img src="./assets/trophies.svg" width="450">
 
-
 ---
 
 
