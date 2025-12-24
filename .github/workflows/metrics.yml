@@ -30,15 +30,5 @@ jobs:
           plugin_trophies: yes
           plugin_trophies_theme: onedark
 
-      - name: Save metrics.svg
-        run: |
-          mkdir -p assets
-          mv metrics.svg assets/metrics.svg
-
-      - name: Commit and push
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add assets/metrics.svg
-          git commit -m "Update metrics.svg" || echo "No changes"
-          git push
+          output_action: commit
+          output_path: assets/metrics.svg
