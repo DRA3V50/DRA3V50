@@ -6,18 +6,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Copy radar SVG
-        run: |
-          cp assets/radar.svg assets/radar.svg
-
-      - name: Commit updated SVG
+      - name: Commit radar.svg if changed
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
