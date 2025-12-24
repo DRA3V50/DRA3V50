@@ -22,7 +22,7 @@
     <line x1="285" y1="115" x2="115" y2="285"/>
   </g>
 
-  <!-- Labels (STATIC) -->
+  <!-- Labels -->
   <g fill="#c9d1d9" font-size="11" text-anchor="middle">
     <text x="200" y="50">SOC Operations</text>
     <text x="310" y="95">Incident Response</text>
@@ -34,55 +34,55 @@
     <text x="90" y="95">Risk Identification</text>
   </g>
 
-  <!-- Center heartbeat -->
+  <!-- Center pulse -->
   <circle cx="200" cy="200" r="6" fill="rgba(88,166,255,0.6)">
     <animate attributeName="r" values="6;18;6" dur="5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;0.15;0.6" dur="5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Focus Polygon (ROTATES + MORPHS + COLOR PULSE) -->
+  <!-- Directional Focus Polygon -->
   <polygon
-    points="200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120"
     fill="rgba(88,166,255,0.28)"
     stroke="rgba(88,166,255,0.95)"
-    stroke-width="2">
+    stroke-width="2"
+    points="200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125">
 
-    <!-- Morphing focus states -->
+    <!-- Directional morphing (biased toward labels, constrained) -->
     <animate
       attributeName="points"
-      dur="18s"
+      dur="22s"
       repeatCount="indefinite"
       values="
-        200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120;
-        200,110 260,130 330,200 250,300 200,290 140,260 100,200 140,140;
-        200,80 310,110 300,200 290,310 200,330 110,290 80,200 110,110;
-        200,90 290,120 310,200 270,290 200,310 120,270 90,200 120,120
+        200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125;
+        200,90 285,120 305,200 250,265 200,285 150,260 110,200 135,135;
+        200,110 260,130 315,200 270,290 200,310 135,270 95,200 120,140;
+        200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125
       "/>
 
-    <!-- Adaptive fill intensity -->
+    <!-- Fill breathing -->
     <animate
       attributeName="fill"
-      dur="12s"
+      dur="14s"
       repeatCount="indefinite"
       values="
         rgba(88,166,255,0.18);
-        rgba(88,166,255,0.35);
+        rgba(88,166,255,0.38);
         rgba(56,189,248,0.45);
         rgba(88,166,255,0.28)
       "/>
 
-    <!-- Stroke energy pulse -->
+    <!-- Stroke energy -->
     <animate
       attributeName="stroke-opacity"
       dur="6s"
-      repeatCount="indefinite"
-      values="0.6;1;0.6"/>
+      values="0.6;1;0.6"
+      repeatCount="indefinite"/>
 
     <animate
       attributeName="stroke-width"
       dur="6s"
-      repeatCount="indefinite"
-      values="2;2.6;2"/>
+      values="2;2.6;2"
+      repeatCount="indefinite"/>
 
     <!-- Slow rotation -->
     <animateTransform
@@ -90,9 +90,8 @@
       type="rotate"
       from="0 200 200"
       to="360 200 200"
-      dur="30s"
+      dur="36s"
       repeatCount="indefinite"/>
   </polygon>
 
 </svg>
-
