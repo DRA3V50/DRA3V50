@@ -2,8 +2,8 @@
   "SOC Operations":            { "repo": "soc-ops" },
   "Incident Response":         { "repo": "incident-response" },
   "SIEM Engineering":          { "repo": "siem-engineering" },
-  "Endpoint Detection":        { "repo": "edr-detections" },
   "OSINT & Log Analysis":      { "repo": "osint-analysis" },
+  "Endpoint Detection":        { "repo": "edr-detections" },
   "SOAR & Automation":         { "repo": "soar-automation" },
   "Anomaly Detection":         { "repo": "anomaly-detection" },
   "Risk Identification":       { "repo": "risk-modeling" }
