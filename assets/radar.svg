@@ -63,6 +63,14 @@
     stroke="rgba(88,166,255,0.95)"
     stroke-width="2"
     points="200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125">
+<!-- Previous state (ghost / memory) -->
+  <polygon
+    points="200,105 260,135 285,200 255,260 200,285 145,260 115,200 140,135"
+    fill="none"
+    stroke="rgba(88,166,255,0.25)"
+    stroke-width="1.5"
+   />
+
 
     <!-- Directional morphing -->
     <animate attributeName="points" dur="22s" repeatCount="indefinite"
