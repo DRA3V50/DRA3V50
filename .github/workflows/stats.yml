@@ -1,0 +1,46 @@
+name: Local GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Clone stats generator
+        run: |
+          rm -rf gh-stats
+          git clone https://github.com/anuraghazra/github-readme-stats gh-stats
+
+      - name: Install dependencies
+        run: |
+          cd gh-stats
+          npm install
+
+      - name: Build stats locally
+        run: |
+          cd gh-stats
+          npm run build
+
+      - name: Generate stats SVG
+        run: |
+          node gh-stats/api/index.js \
+            username=DRA3V50 \
+            show_icons=true \
+            hide_border=true \
+            theme=tokyonight \
+            > assets/github-stats.svg
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add assets/github-stats.svg
+          git commit -m "Update stats" || echo "No changes"
+          git push
