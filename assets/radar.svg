@@ -58,35 +58,48 @@
   </circle>
 
   <!-- Focus Polygon -->
-  <polygon
-    fill="url(#focusGlow)"
-    stroke="rgba(88,166,255,0.95)"
-    stroke-width="2"
-    points="200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125">
-<!-- Previous state (ghost / memory) -->
-  <polygon
-    points="200,105 260,135 285,200 255,260 200,285 145,260 115,200 140,135"
-    fill="none"
-    stroke="rgba(88,166,255,0.25)"
-    stroke-width="1.5"
-   />
+  <!-- Previous state (ghost / memory) -->
+<polygon
+  points="200,105 260,135 285,200 255,260 200,285 145,260 115,200 140,135"
+  fill="none"
+  stroke="rgba(88,166,255,0.25)"
+  stroke-width="1.5"
+/>
 
+<!-- Current focus polygon -->
+<polygon
+  fill="url(#focusGlow)"
+  stroke="rgba(88,166,255,0.95)"
+  stroke-width="2"
+  points="200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125">
 
-    <!-- Directional morphing -->
-    <animate attributeName="points" dur="22s" repeatCount="indefinite"
-      values="
-        200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125;
-        200,90 285,120 305,200 250,265 200,285 150,260 110,200 135,135;
-        200,110 260,130 315,200 270,290 200,310 135,270 95,200 120,140;
-        200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125
-      "/>
+  <!-- Directional morphing -->
+  <animate
+    attributeName="points"
+    dur="22s"
+    repeatCount="indefinite"
+    values="
+      200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125;
+      200,90 285,120 305,200 250,265 200,285 150,260 110,200 135,135;
+      200,110 260,130 315,200 270,290 200,310 135,270 95,200 120,140;
+      200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125
+    "/>
 
-    <!-- Stroke energy -->
-    <animate attributeName="stroke-opacity" dur="6s" values="0.6;1;0.6" repeatCount="indefinite"/>
+  <!-- Stroke energy -->
+  <animate
+    attributeName="stroke-opacity"
+    dur="6s"
+    values="0.6;1;0.6"
+    repeatCount="indefinite"/>
 
-    <!-- Rotation -->
-    <animateTransform attributeName="transform" type="rotate"
-      from="0 200 200" to="360 200 200" dur="36s" repeatCount="indefinite"/>
-  </polygon>
+  <!-- Rotation -->
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 200 200"
+    to="360 200 200"
+    dur="36s"
+    repeatCount="indefinite"/>
+</polygon>
 
 </svg>
