@@ -47,7 +47,7 @@
     <text x="310" y="315">SOC Operations</text>
     <text x="200" y="360">OSINT &amp; Log Analysis</text>
     <text x="90" y="315">SOAR &amp; Automation</text>
-    <text x="39" y="205">Anomaly Detection</text>
+    <text x="41" y="205">Anomaly Detection</text>
     <text x="90" y="95">Risk Identification</text>
   </g>
 
