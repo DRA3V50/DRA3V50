@@ -69,10 +69,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<![GitHub Stats](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/github-stats.svg)
-![Top Languages](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/top-langs.svg)
-![Streak Stats](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/streak.svg)
-![Trophies](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/trophies.svg)
+<img src="./assets/github-stats.png" width="450">
+<img src="./assets/top-langs.png" width="450">
+<img src="./assets/streak.png" width="450">
+<img src="./assets/trophies.png" width="450">
 
 ---
 
