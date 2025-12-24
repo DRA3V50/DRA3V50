@@ -1,0 +1,35 @@
+name: Generate GitHub Stats SVGs
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install SVG converter
+        run: sudo apt-get install librsvg2-bin
+
+      # GitHub Stats
+      - name: Download GitHub Stats SVG
+        run: |
+          curl -f -o assets/github-stats.svg "https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true"
+
+      # Top Languages
+      - name: Download Top Languages SVG
+        run: |
+          curl -f -o assets/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true"
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add assets/github-stats.svg assets/top-langs.svg
+          git commit -m "Update GitHub stats SVGs" || echo "No changes"
+          git push
