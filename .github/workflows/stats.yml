@@ -1,4 +1,4 @@
-name: Generate GitHub Stats
+name: Generate GitHub Stats PNGs
 
 on:
   schedule:
@@ -10,34 +10,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install SVG converter
+        run: sudo apt-get install librsvg2-bin
+
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # --- GitHub Stats ---
-      - name: GitHub Stats
+      # --- GitHub Stats SVG ---
+      - name: Download GitHub Stats SVG
         run: |
-          curl -f -o assets/github-stats.svg "https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true" || echo "Stats failed"
+          curl -f -o assets/github-stats.svg "https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true"
 
-      # --- Top Languages ---
-      - name: Top Languages
+      # --- Convert to PNG ---
+      - name: Convert GitHub Stats to PNG
+        run: rsvg-convert -o assets/github-stats.png assets/github-stats.svg
+
+      # --- Repeat for other cards ---
+      - name: Download Top Languages SVG
         run: |
-          curl -f -o assets/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true" || echo "Langs failed"
+          curl -f -o assets/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true"
+      - name: Convert Top Languages to PNG
+        run: rsvg-convert -o assets/top-langs.png assets/top-langs.svg
 
-      # --- Streak Stats ---
-      - name: Streak Stats
+      - name: Download Streak SVG
         run: |
-          curl -f -o assets/streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=DRA3V50&theme=tokyonight&hide_border=true" || echo "Streak failed"
+          curl -f -o assets/streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=DRA3V50&theme=tokyonight&hide_border=true"
+      - name: Convert Streak to PNG
+        run: rsvg-convert -o assets/streak.png assets/streak.svg
 
-      # --- Trophies ---
-      - name: Trophies
+      - name: Download Trophies SVG
         run: |
-          curl -f -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight&no-frame=true" || echo "Trophies failed"
+          curl -f -o assets/trophies.svg "https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight&no-frame=true"
+      - name: Convert Trophies to PNG
+        run: rsvg-convert -o assets/trophies.png assets/trophies.svg
 
-      # --- Commit SVGs ---
+      # --- Commit PNGs ---
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add assets/*.svg
-          git commit -m "Update stats SVGs" || echo "No changes"
+          git add assets/*.png
+          git commit -m "Update stats PNGs" || echo "No changes"
           git push
