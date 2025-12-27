@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260">
-<rect width="100%" height="100%" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260" role="img" aria-label="MITRE ATT&CK Coverage">
+<rect x="0" y="0" width="100%" height="100%" fill="#0d1117"/>
 
     <text x="10" y="51" fill="#c9d1d9" font-size="11">Execution</text>
 
