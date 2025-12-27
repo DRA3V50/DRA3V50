@@ -29,11 +29,9 @@ jobs:
       - name: Render MITRE PNG
         run: python scripts/render_mitre_png.py
 
-      - name: Verify generated files
+      - name: Verify PNG exists
         run: |
-          echo "Contents of assets/:"
           ls -lah assets
-          test -f assets/mitre.svg
           test -f assets/mitre.png
 
       - name: Commit and push updates
