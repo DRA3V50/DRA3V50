@@ -1,4 +1,4 @@
-name: Update Threat Matrix SVG
+name: Update Threat Matrix GIF
 
 on:
   push:
@@ -10,21 +10,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Build Threat Matrix SVG
-        run: python scripts/build_threat_matrix.py
+      - name: Install dependencies
+        run: pip install pillow cairosvg imageio
+
+      - name: Build Threat Matrix GIF
+        run: python scripts/build_threat_matrix_gif.py
 
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/threat_matrix.svg
-          git commit -m "Update Cyber Threat Matrix SVG" || echo "No changes"
+          git add assets/threat_matrix.gif
+          git commit -m "Update Threat Matrix GIF" || echo "No changes"
           git push
