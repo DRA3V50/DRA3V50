@@ -1,35 +1,32 @@
-name: Generate MITRE Dashboard
+name: Update MITRE Dashboard
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"  # run every hour
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11
 
-      - name: Install dependencies
-        run: pip install svgwrite
+    - name: Install deps
+      run: pip install svgwrite
 
-      - name: Generate MITRE dashboard
-        run: python3 scripts/generate_mitre_dashboard.py
+    - name: Generate dashboard
+      run: python3 scripts/generate_mitre_dashboard.py
 
-      - name: Commit updated SVG
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "mitre_dashboard.svg"
-          author_name: "mitre-bot"
-          author_email: "mitre-bot@users.noreply.github.com"
-          message: "Update MITRE dashboard"
-          push: true
-
+    - name: Commit update
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add mitre_dashboard.svg
+        git commit -m "Update MITRE dashboard" || exit 0
+        git push
