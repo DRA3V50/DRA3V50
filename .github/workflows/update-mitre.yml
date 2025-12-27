@@ -26,19 +26,16 @@ jobs:
       - name: Build MITRE SVG
         run: python scripts/build_mitre_svg.py
 
-      - name: Render MITRE PNG
-        run: python scripts/render_mitre_png.py
-
-      - name: Verify PNG exists
+      - name: Verify SVG exists
         run: |
           ls -lah assets
-          test -f assets/mitre.png
+          test -f assets/mitre.svg
 
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/mitre.svg assets/mitre.png
-          git commit -m "Update MITRE coverage visuals" || echo "No changes"
+          git add assets/mitre.svg
+          git commit -m "Update MITRE coverage SVG" || echo "No changes"
           git push
 
