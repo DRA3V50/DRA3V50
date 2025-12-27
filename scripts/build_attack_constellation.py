@@ -3,9 +3,10 @@ from PIL import Image, ImageDraw, ImageFont
 import imageio
 import random
 
+# Ensure assets folder exists
 Path("assets").mkdir(exist_ok=True)
 
-# Skills / tools
+# Skills / tools nodes
 nodes = [
     "Splunk", "Python", "SOAR", "Azure Sentinel", "CrowdStrike",
     "Nessus", "PowerShell", "Threat Intel", "Windows", "Linux"
@@ -13,6 +14,7 @@ nodes = [
 
 # Node positions (randomly within canvas)
 width, height = 500, 400
+node_radius = 20
 node_positions = {node: (random.randint(50, width-50), random.randint(50, height-50)) for node in nodes}
 
 # Connections (simplified workflow)
@@ -25,7 +27,8 @@ edges = [
 # Animation settings
 frames = []
 num_frames = 20
-node_radius = 20
+
+# Font
 font = ImageFont.load_default()
 
 for f in range(num_frames):
@@ -36,7 +39,7 @@ for f in range(num_frames):
     for n1, n2 in edges:
         x1, y1 = node_positions[n1]
         x2, y2 = node_positions[n2]
-        # Optional: animate edge brightness
+        # Animate edge brightness
         intensity = 100 + (f*10 % 155)
         color = (intensity, intensity, intensity)
         draw.line([x1, y1, x2, y2], fill=color, width=2)
@@ -48,13 +51,24 @@ for f in range(num_frames):
         r = int(node_radius * pulse)
         color = (0, 120 + f*5 % 135, 255)
         draw.ellipse([x-r, y-r, x+r, y+r], fill=color, outline=(255,255,255))
-        w, h = draw.textsize(node, font=font)
+
+        # Fixed text size calculation
+        bbox = draw.textbbox((0,0), node, font=font)
+        w = bbox[2] - bbox[0]
+        h = bbox[3] - bbox[1]
         draw.text((x-w/2, y-h/2), node, fill="white", font=font)
 
     frames.append(img)
 
 # Save GIF
 gif_path = "assets/attack_constellation.gif"
-frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=200, loop=0, optimize=True)
+frames[0].save(
+    gif_path,
+    save_all=True,
+    append_images=frames[1:],
+    duration=200,
+    loop=0,
+    optimize=True
+)
 
 print(f"Attack Constellation GIF generated at {gif_path}")
