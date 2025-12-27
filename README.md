@@ -65,11 +65,13 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-## 🛡️ Blue Team Capability Radar |---------------------------------| # 🛡️ Incident Lifecycle
+## 🛡️ Blue Team Capability Radar |---------------------------------| 🛡️ Cyber Attack Surface Constellation
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) 
 
-![Incident Flow](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/incident_flow.svg)
+
+![Attack Constellation](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/attack_constellation.gif)
+
 
 
 
