@@ -11,8 +11,10 @@ with open("mitre-coverage.json") as f:
     data = json.load(f)
 
 svg = [
-    f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="260">',
-    '<rect width="100%" height="100%" fill="#0d1117"/>'
+    f'<svg xmlns="http://www.w3.org/2000/svg" '
+    f'width="{WIDTH}" height="260" viewBox="0 0 {WIDTH} 260" '
+    f'role="img" aria-label="MITRE ATT&CK Coverage">',
+    '<rect x="0" y="0" width="100%" height="100%" fill="#0d1117"/>'
 ]
 
 y = START_Y
