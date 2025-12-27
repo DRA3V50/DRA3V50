@@ -11,27 +11,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
+      # 3. Install dependencies (optional, only if needed)
       - name: Install dependencies
         run: |
           pip install cairosvg
 
+      # 4. Build animated MITRE SVG
       - name: Build MITRE SVG
         run: python scripts/build_mitre_svg.py
 
+      # 5. Verify SVG exists
       - name: Verify SVG exists
         run: |
           ls -lah assets
           test -f assets/mitre.svg
 
-      - name: Commit assets
+      # 6. Commit and push updated SVG
+      - name: Commit and push assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
