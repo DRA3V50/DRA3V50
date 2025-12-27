@@ -1,10 +1,11 @@
 name: Update Blue Team Radar
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    - cron: "0 */6 * * *"
 
 jobs:
   build:
