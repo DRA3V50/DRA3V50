@@ -1,27 +1,25 @@
-name: Update MITRE Dashboard
+name: Radar
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # every 30 minutes
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
-  build:
+  radar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - name: Install dependencies
-        run: pip install --upgrade pip
-      - name: Generate MITRE Dashboard SVG
-        run: python3 generate_mitre_dashboard.py
-      - name: Commit and push SVG
+      - uses: actions/checkout@v4
+
+      - name: Generate radar
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add assets/mitre_dashboard.svg
-          git commit -m "Update MITRE Dashboard SVG" || echo "No changes to commit"
+          python scripts/fetch_commits.py
+          python scripts/build_svg.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "focus-bot"
+          git config user.email "bot@radar"
+          git add assets/radar.svg
+          git commit -m "Update radar focus" || exit 0
           git push
