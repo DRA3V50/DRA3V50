@@ -70,9 +70,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) 
 ![Threat Matrix](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/threat_matrix.svg)
 
-
-    
-
 ---
 
 <img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/github-stats.svg" width="450">
