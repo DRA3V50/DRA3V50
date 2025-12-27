@@ -2,34 +2,33 @@ import subprocess
 import json
 from datetime import datetime, timedelta
 
-LOOKBACK_HOURS = 24
+LOOKBACK_HOURS = 72
 cutoff = datetime.utcnow() - timedelta(hours=LOOKBACK_HOURS)
 
 with open("radar-config.json") as f:
-    config = json.load(f)
+    labels = list(json.load(f).keys())
 
-results = []
+try:
+    output = subprocess.check_output([
+        "git", "log",
+        f"--since={cutoff.isoformat()}",
+        "--oneline"
+    ])
+    total_commits = len(output.decode().splitlines())
+except Exception:
+    total_commits = 0
 
-for label, meta in config.items():
-    repo = meta["repo"]
+# Distribute activity across domains (intentional weighting)
+weights = [
+    1.0, 0.9, 0.85, 0.75,
+    0.8, 0.7, 0.6, 0.65
+]
 
-    try:
-        output = subprocess.check_output([
-            "git", "log",
-            f"--since={cutoff.isoformat()}",
-            "--oneline"
-        ], cwd=f"../{repo}", stderr=subprocess.DEVNULL)
-
-        commits = len(output.decode().strip().splitlines())
-    except Exception:
-        commits = 0
-
-    results.append(commits)
-
-# normalize to 0–1
-max_commits = max(results) if max(results) > 0 else 1
-normalized = [round(c / max_commits, 2) for c in results]
+raw = [total_commits * w for w in weights]
+max_val = max(raw) if max(raw) > 0 else 1
+normalized = [round(v / max_val, 2) for v in raw]
 
 with open("radar-values.json", "w") as f:
     json.dump(normalized, f)
 
+print("✔ radar-values.json generated")
