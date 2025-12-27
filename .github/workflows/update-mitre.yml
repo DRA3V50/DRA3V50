@@ -4,14 +4,15 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 2 * * *"   # daily at 2am UTC
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -19,7 +20,8 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install cairosvg
+        run: |
+          pip install cairosvg
 
       - name: Build MITRE SVG
         run: python scripts/build_mitre_svg.py
@@ -27,10 +29,17 @@ jobs:
       - name: Render MITRE PNG
         run: python scripts/render_mitre_png.py
 
-      - name: Commit updated artifacts
+      - name: Verify generated files
+        run: |
+          echo "Contents of assets/:"
+          ls -lah assets
+          test -f assets/mitre.svg
+          test -f assets/mitre.png
+
+      - name: Commit and push updates
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add assets/mitre.svg assets/mitre.png
-          git commit -m "Update MITRE coverage visualization" || echo "No changes"
+          git commit -m "Auto-update MITRE coverage visuals" || echo "No changes to commit"
           git push
