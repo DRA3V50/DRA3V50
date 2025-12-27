@@ -13,11 +13,11 @@ title = dwg.text(
     font_size="36px",
     font_weight="bold"
 )
-# Glow filter
+
+# Corrected glow filter
 filter_glow = dwg.defs.add(dwg.filter(id="glow"))
 filter_glow.feGaussianBlur(in_="SourceGraphic", stdDeviation=4, result="blur")
-filter_glow.feMerge().feMergeNode(in_="blur")
-filter_glow.feMerge().feMergeNode(in_="SourceGraphic")
+filter_glow.feMerge(layernames=["blur", "SourceGraphic"])
 title['filter'] = "url(#glow)"
 dwg.add(title)
 
@@ -76,5 +76,6 @@ for i, e in enumerate(events):
     dwg.add(text)
     text.add(dwg.animate(attributeName="fill", values="white;#00FFFF;white", dur=f"{2.2 + i*0.3}s", repeatCount="indefinite"))
 
+# Save the SVG
 dwg.save()
 
