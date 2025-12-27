@@ -1,4 +1,4 @@
-name: Update Attack Constellation GIF
+name: Update MITRE Heatmap GIF
 
 on:
   push:
@@ -14,17 +14,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
       - name: Install dependencies
         run: pip install pillow imageio
-
-      - name: Build Attack Constellation GIF
-        run: python scripts/build_attack_constellation.py
-
+      - name: Build MITRE Heatmap GIF
+        run: python scripts/build_mitre_heatmap.py
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/attack_constellation.gif
-          git commit -m "Update Attack Constellation GIF" || echo "No changes"
+          git add assets/mitre_heatmap.gif
+          git commit -m "Update MITRE Heatmap GIF" || echo "No changes"
           git push
