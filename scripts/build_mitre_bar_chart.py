@@ -10,9 +10,10 @@ tactics = ["Recon", "Initial Access", "Execution", "Persistence",
            "Discovery", "Lateral Movement", "Exfiltration", "Impact"]
 coverage = [0.8, 0.6, 0.7, 0.5, 0.6, 0.9, 0.4, 0.7, 0.5, 0.6, 0.3]  # 0.0 to 1.0
 
-width, height = 600, 300
-bar_height = 20
-bar_spacing = 10
+# Adjusted layout
+width, height = 700, 500  # taller canvas
+bar_height = 30            # thicker bars
+bar_spacing = 15           # more spacing between bars
 frames = []
 num_frames = 30
 
@@ -24,10 +25,10 @@ for f in range(num_frames):
     draw = ImageDraw.Draw(img)
 
     for i, tactic in enumerate(tactics):
-        x0 = 150
-        y0 = i*(bar_height + bar_spacing) + 20
-        x1 = x0 + int(coverage[i]*400*(f/num_frames))  # animate fill
+        y0 = i*(bar_height + bar_spacing) + 40
         y1 = y0 + bar_height
+        x0 = 200
+        x1 = x0 + int(coverage[i]*400*(f/num_frames))  # animate fill
 
         # Bar background
         draw.rectangle([x0, y0, x0 + 400, y1], fill=(50,50,50))
@@ -35,11 +36,11 @@ for f in range(num_frames):
         draw.rectangle([x0, y0, x1, y1], fill=(0, 120, 255))
 
         # Tactic label
-        draw.text((10, y0 + 2), tactic, fill="white", font=font)
+        draw.text((10, y0 + bar_height//4), tactic, fill="white", font=font)
 
         # Percentage label
         perc = int(coverage[i]*100*(f/num_frames))
-        draw.text((x0 + 410, y0 + 2), f"{perc}%", fill="white", font=font)
+        draw.text((x0 + 410, y0 + bar_height//4), f"{perc}%", fill="white", font=font)
 
     frames.append(img)
 
@@ -49,7 +50,7 @@ frames[0].save(
     gif_path,
     save_all=True,
     append_images=frames[1:],
-    duration=150,
+    duration=200,
     loop=0,
     optimize=True
 )
