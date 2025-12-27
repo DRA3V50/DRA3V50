@@ -1,0 +1,108 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+<style>
+.text { font: bold 12px sans-serif; fill: #222; }
+.stage { font: bold 14px sans-serif; fill: #000; }
+</style>
+<circle cx="300" cy="300" r="50" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="50" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="314.1592653589793" stroke-dashoffset="314.1592653589793">
+    <animate attributeName="stroke-dashoffset" from="314.1592653589793" to="31.415926535897924" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="50" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="314.1592653589793" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="245" class="text" text-anchor="middle">SOC Ops (90%)</text>
+<circle cx="300" cy="300" r="100" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="100" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="628.3185307179587" stroke-dashoffset="628.3185307179587">
+    <animate attributeName="stroke-dashoffset" from="628.3185307179587" to="94.24777960769381" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="100" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="628.3185307179587" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="195" class="text" text-anchor="middle">Incident Response (85%)</text>
+<circle cx="300" cy="300" r="150" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="150" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="942.4777960769379" stroke-dashoffset="942.4777960769379">
+    <animate attributeName="stroke-dashoffset" from="942.4777960769379" to="188.49555921538754" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="150" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="942.4777960769379" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="145" class="text" text-anchor="middle">SIEM (80%)</text>
+<circle cx="300" cy="300" r="200" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="200" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="1256.6370614359173" stroke-dashoffset="1256.6370614359173">
+    <animate attributeName="stroke-dashoffset" from="1256.6370614359173" to="376.99111843077526" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="200" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="1256.6370614359173" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="95" class="text" text-anchor="middle">EDR (70%)</text>
+<circle cx="300" cy="300" r="250" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="250" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="1570.7963267948965" stroke-dashoffset="1570.7963267948965">
+    <animate attributeName="stroke-dashoffset" from="1570.7963267948965" to="392.6990816987241" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="250" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="1570.7963267948965" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="45" class="text" text-anchor="middle">Threat Intel (75%)</text>
+<circle cx="300" cy="300" r="300" fill="none" stroke="#ccc" stroke-width="10"/>
+
+<circle cx="300" cy="300" r="300" fill="none" stroke="#1e90ff" stroke-width="10"
+        stroke-dasharray="1884.9555921538758" stroke-dashoffset="1884.9555921538758">
+    <animate attributeName="stroke-dashoffset" from="1884.9555921538758" to="659.7344572538565" dur="1.5s" fill="freeze"/>
+</circle>
+
+<circle cx="300" cy="300" r="300" fill="none" stroke="#1e90ff" stroke-width="10" stroke-dasharray="1884.9555921538758" stroke-dashoffset="0" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="-5" class="text" text-anchor="middle">SOAR (65%)</text>
+<text x="300.0" y="-50.0" class="stage" text-anchor="middle">Alert</text>
+<text x="650.0" y="300.0" class="stage" text-anchor="middle">Triage</text>
+<text x="300.0" y="650.0" class="stage" text-anchor="middle">Investigation</text>
+<text x="-50.0" y="300.00000000000006" class="stage" text-anchor="middle">Resolution</text>
+
+<circle r="6" fill="#ff4500">
+  <animateMotion dur="4s" repeatCount="indefinite">
+    <mpath>
+      <path d="M 300.0 -50.0 L 650.0 300.0"/>
+    </mpath>
+  </animateMotion>
+</circle>
+
+<circle r="6" fill="#ff4500">
+  <animateMotion dur="4s" repeatCount="indefinite">
+    <mpath>
+      <path d="M 650.0 300.0 L 300.0 650.0"/>
+    </mpath>
+  </animateMotion>
+</circle>
+
+<circle r="6" fill="#ff4500">
+  <animateMotion dur="4s" repeatCount="indefinite">
+    <mpath>
+      <path d="M 300.0 650.0 L -50.0 300.00000000000006"/>
+    </mpath>
+  </animateMotion>
+</circle>
+
+<circle r="5" fill="#32cd32">
+  <animateMotion dur="6s" repeatCount="indefinite">
+    <mpath>
+      <path d="M 300 -90 A 390 390 0 1 1 299.99 -90"/>
+    </mpath>
+  </animateMotion>
+</circle>
+</svg>
