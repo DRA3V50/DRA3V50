@@ -1,4 +1,4 @@
-name: Update MITRE Heatmap GIF
+name: Update MITRE Bar Chart GIF
 
 on:
   push:
@@ -16,12 +16,12 @@ jobs:
           python-version: "3.x"
       - name: Install dependencies
         run: pip install pillow imageio
-      - name: Build MITRE Heatmap GIF
-        run: python scripts/build_mitre_heatmap.py
+      - name: Build MITRE Bar Chart GIF
+        run: python scripts/build_mitre_bar_chart.py
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/mitre_heatmap.gif
-          git commit -m "Update MITRE Heatmap GIF" || echo "No changes"
+          git add assets/mitre_bar_chart.gif
+          git commit -m "Update MITRE Bar Chart GIF" || echo "No changes"
           git push
