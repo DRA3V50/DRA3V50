@@ -67,11 +67,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ Blue Team Capability Radar
 
-![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)                
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/mitre.svg?v=1" width="420" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg?v=1" width="400" />
+  <img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/mitre.svg?v=1" width="400" />
 </p>
-                                 
+
+![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)                
 
 ---
 
