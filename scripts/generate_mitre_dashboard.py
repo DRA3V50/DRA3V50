@@ -1,19 +1,15 @@
 import svgwrite
 
-dwg = svgwrite.Drawing('mitre_dashboard.svg', size=("800px", "500px"))
+dwg = svgwrite.Drawing('mitre_dashboard.svg', size=("900px", "550px"))
 
-dwg.add(dwg.rect(insert=(0, 0), size=("800px", "500px"),
-                 fill="black"))
+dwg.add(dwg.rect((0, 0), ("900px", "550px"), fill="#040404"))
 
-dwg.add(dwg.text("MITRE ATT&CK DASHBOARD",
-                 insert=(40, 80),
-                 fill="white",
-                 font_size="32px"))
-
-dwg.add(dwg.text("Example Technique Coverage",
-                 insert=(40, 140),
-                 fill="white",
-                 font_size="20px"))
+dwg.add(dwg.text(
+    "MITRE ATT&CK DASHBOARD",
+    insert=("40px", "80px"),
+    fill="#18FF00",
+    font_size="34px"
+))
 
 techniques = [
     "TA0001 Initial Access",
@@ -23,12 +19,10 @@ techniques = [
     "TA0005 Defense Evasion"
 ]
 
-y = 200
+y = 150
 for t in techniques:
-    dwg.add(dwg.text(t, insert=(60, y), fill="white", font_size="18px"))
-    y += 40
+    dwg.add(dwg.text(t, insert=("60px", f"{y}px"),
+                     fill="white", font_size="20px"))
+    y += 50
 
 dwg.save()
-
-print("MITRE dashboard generated!")
-
