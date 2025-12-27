@@ -5,3 +5,5 @@ cairosvg.svg2png(
     write_to="assets/mitre.png",
     output_width=1200
 )
+
+print("MITRE PNG rendered successfully")
