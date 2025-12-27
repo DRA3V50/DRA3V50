@@ -1,0 +1,33 @@
+<style>
+#mitre-dashboard {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 6px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.mitre-cell {
+  padding: 10px;
+  background: rgba(20, 30, 20, 0.8);
+  border: 1px solid rgba(0,255,120,0.2);
+  color: #d9ffe8;
+  font-size: 12px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background 0.5s, box-shadow 0.5s;
+}
+
+.mitre-cell.active {
+  background: rgba(0,255,120,0.35);
+  box-shadow: 0 0 12px rgba(0,255,120,0.8);
+}
+
+.mitre-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #7bffd1;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+</style>
