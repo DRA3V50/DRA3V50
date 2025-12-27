@@ -1,22 +1,38 @@
 from datetime import datetime
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-     width="800" height="200" viewBox="0 0 800 200">
+     width="300" height="300" viewBox="0 0 300 300">
 
   <rect width="100%" height="100%" fill="#0b0f14"/>
 
-  <text x="20" y="40"
-        fill="#00ffcc"
-        font-family="monospace"
-        font-size="20">
-    Intelligence Activity Radar
-  </text>
+  <!-- Radar circle -->
+  <circle cx="150" cy="150" r="120"
+          stroke="#00ffcc"
+          stroke-width="2"
+          fill="none"/>
 
-  <text x="20" y="90"
+  <!-- Sweep line -->
+  <line x1="150" y1="150" x2="150" y2="30"
+        stroke="#00ffcc"
+        stroke-width="2">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 150 150"
+      to="360 150 150"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </line>
+
+  <!-- Center dot -->
+  <circle cx="150" cy="150" r="4" fill="#00ffcc"/>
+
+  <!-- Labels -->
+  <text x="20" y="280"
         fill="#e0e0e0"
         font-family="monospace"
-        font-size="14">
-    Last Updated: {datetime.utcnow().isoformat()}Z
+        font-size="10">
+    Last Update: {datetime.utcnow().isoformat()}Z
   </text>
 
 </svg>
