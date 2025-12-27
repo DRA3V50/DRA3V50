@@ -1,4 +1,4 @@
-name: Update SOC Dashboard SVG
+name: Update Threat Matrix SVG
 
 on:
   push:
@@ -18,13 +18,13 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Build SOC Dashboard SVG
-        run: python scripts/build_soc_dashboard.py
+      - name: Build Threat Matrix SVG
+        run: python scripts/build_threat_matrix.py
 
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/soc_dashboard.svg
-          git commit -m "Update SOC Dashboard SVG" || echo "No changes"
+          git add assets/threat_matrix.svg
+          git commit -m "Update Cyber Threat Matrix SVG" || echo "No changes"
           git push
