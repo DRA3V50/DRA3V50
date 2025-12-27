@@ -1,0 +1,36 @@
+name: Update Blue Team Radar
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build radar SVG
+        run: python scripts/build_svg.py
+
+      - name: Verify output
+        run: |
+          ls -lah assets
+          test -f assets/radar.svg
+
+      - name: Commit radar update
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/radar.svg
+          git commit -m "Update Blue Team radar" || echo "No changes"
+          git push
