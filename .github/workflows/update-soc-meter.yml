@@ -1,4 +1,4 @@
-name: Update Alert Flow SVG
+name: Update SOC Activity Meter SVG
 
 on:
   push:
@@ -14,12 +14,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Build Alert Flow SVG
-        run: python scripts/build_alert_flow_svg.py
+      - name: Build SOC Activity Meter SVG
+        run: python scripts/build_soc_meter_svg.py
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/alert_flow.svg
-          git commit -m "Update Alert Flow SVG" || echo "No changes"
+          git add assets/soc_activity_meter.svg
+          git commit -m "Update SOC Activity Meter SVG" || echo "No changes"
           git push
