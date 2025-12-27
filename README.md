@@ -65,8 +65,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-🛡️ MITRE ATT&CK Coverage
-## ![MITRE Dashboard](mitre_dashboard.svg)
+## 🛡️ MITRE ATT&CK Coverage
+ ![Blue Team Dashboard](https://raw.githubusercontent.com/<USERNAME>/<REPO>/main/mitre_dashboard.svg)
+
 
 ## 🛡️ Blue Team Capability Radar
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) 
