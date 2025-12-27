@@ -1,22 +1,27 @@
-name: Update Radar SVG
+name: Update MITRE Dashboard
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "*/30 * * * *"  # every 30 minutes
   workflow_dispatch:
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Commit radar.svg if changed
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: pip install --upgrade pip
+      - name: Generate MITRE Dashboard SVG
+        run: python3 generate_mitre_dashboard.py
+      - name: Commit and push SVG
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add assets/radar.svg
-          git commit -m "Update radar SVG" || echo "No changes"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/mitre_dashboard.svg
+          git commit -m "Update MITRE Dashboard SVG" || echo "No changes to commit"
           git push
