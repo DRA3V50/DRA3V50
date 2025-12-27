@@ -65,10 +65,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-## 🛡️ Blue Team Capability Radar |---------------------------------| # 🛡️ Cyber Threat Matrix
+## 🛡️ Blue Team Capability Radar |---------------------------------| # 🛡️ Incident Lifecycle
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) 
-![Threat Matrix](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/threat_matrix.gif)
+
+![Incident Flow](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/incident_flow.svg)
+
 
 
 ---
