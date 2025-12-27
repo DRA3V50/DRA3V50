@@ -1,33 +1,28 @@
-name: Update MITRE Dashboard
+name: Animated Radar
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # runs every 30 minutes
+    - cron: "*/15 * * * *"   # every 15 minutes
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
       - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
-        run: pip install --upgrade pip
+      - run: pip install pillow
 
-      - name: Generate MITRE Dashboard SVG
-        run: python3 scripts/generate_mitre_dashboard.py
+      - run: python3 scripts/generate_radar.py
 
-      - name: Commit and push SVG
-        run: |
+      - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/intelligence_radar.svg
-          git commit -m "Update MITRE Dashboard SVG" || echo "No changes"
+          git add assets/radar.gif
+          git commit -m "Update radar animation" || echo "No changes"
           git push
+
