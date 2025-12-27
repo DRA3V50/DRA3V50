@@ -1,7 +1,0 @@
-- name: Commit SVG if changed
-  run: |
-    git config user.name "github-actions"
-    git config user.email "actions@github.com"
-    git add assets/intelligence_radar.svg
-    git diff --cached --quiet || git commit -m "Auto-update intelligence radar"
-    git push
