@@ -1,4 +1,4 @@
-name: Update Incident Lifecycle SVG
+name: Update Attack Constellation GIF
 
 on:
   push:
@@ -15,13 +15,16 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Build Incident Flow SVG
-        run: python scripts/build_incident_flow_svg.py
+      - name: Install dependencies
+        run: pip install pillow imageio
+
+      - name: Build Attack Constellation GIF
+        run: python scripts/build_attack_constellation.py
 
       - name: Commit assets
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/incident_flow.svg
-          git commit -m "Update Incident Flow SVG" || echo "No changes"
+          git add assets/attack_constellation.gif
+          git commit -m "Update Attack Constellation GIF" || echo "No changes"
           git push
