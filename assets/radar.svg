@@ -18,24 +18,24 @@
   <!-- Background -->
   <rect width="100%" height="100%" fill="#0d1117"/>
 
-  <!-- Radar rings -->
+  <!-- Radar rings (outer radius = 120) -->
   <circle cx="200" cy="200" r="120" fill="none" stroke="#30363d"/>
   <circle cx="200" cy="200" r="80" fill="none" stroke="#30363d"/>
   <circle cx="200" cy="200" r="40" fill="none" stroke="#30363d"/>
 
-  <!-- Axes (with priority pulse) -->
+  <!-- Axes with phased pulse -->
   <g stroke="#30363d">
     <line x1="200" y1="80" x2="200" y2="320">
-      <animate attributeName="stroke-opacity" dur="8s" values="0.4;1;0.4" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" dur="8s" values="0.35;1;0.35" repeatCount="indefinite"/>
     </line>
     <line x1="80" y1="200" x2="320" y2="200">
-      <animate attributeName="stroke-opacity" dur="8s" begin="2s" values="0.4;1;0.4" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" dur="8s" begin="2s" values="0.35;1;0.35" repeatCount="indefinite"/>
     </line>
     <line x1="115" y1="115" x2="285" y2="285">
-      <animate attributeName="stroke-opacity" dur="8s" begin="4s" values="0.4;1;0.4" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" dur="8s" begin="4s" values="0.35;1;0.35" repeatCount="indefinite"/>
     </line>
     <line x1="285" y1="115" x2="115" y2="285">
-      <animate attributeName="stroke-opacity" dur="8s" begin="6s" values="0.4;1;0.4" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" dur="8s" begin="6s" values="0.35;1;0.35" repeatCount="indefinite"/>
     </line>
   </g>
 
@@ -57,49 +57,65 @@
     <animate attributeName="opacity" values="0.6;0.15;0.6" dur="5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Focus Polygon -->
-  <!-- Previous state (ghost / memory) -->
-<polygon
-  points="200,105 260,135 285,200 255,260 200,285 145,260 115,200 140,135"
-  fill="none"
-  stroke="rgba(88,166,255,0.25)"
-  stroke-width="1.5"
-/>
+  <!-- Memory polygon (previous state) -->
+  <polygon
+    points="
+      200,95
+      255,120
+      285,200
+      255,280
+      200,305
+      145,280
+      115,200
+      145,120"
+    fill="none"
+    stroke="rgba(88,166,255,0.22)"
+    stroke-width="1.5"
+  />
 
-<!-- Current focus polygon -->
-<polygon
-  fill="url(#focusGlow)"
-  stroke="rgba(88,166,255,0.95)"
-  stroke-width="2"
-  points="200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125">
+  <!-- Active focus polygon (constrained to radar) -->
+  <polygon
+    fill="url(#focusGlow)"
+    stroke="rgba(88,166,255,0.95)"
+    stroke-width="2"
+    points="
+      200,95
+      260,120
+      295,200
+      260,280
+      200,305
+      140,280
+      105,200
+      140,120">
 
-  <!-- Directional morphing -->
-  <animate
-    attributeName="points"
-    dur="22s"
-    repeatCount="indefinite"
-    values="
-      200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125;
-      200,90 285,120 305,200 250,265 200,285 150,260 110,200 135,135;
-      200,110 260,130 315,200 270,290 200,310 135,270 95,200 120,140;
-      200,100 275,125 300,200 260,275 200,300 140,275 100,200 125,125
-    "/>
+    <!-- Directional emphasis (never leaves outer ring) -->
+    <animate
+      attributeName="points"
+      dur="22s"
+      repeatCount="indefinite"
+      values="
+        200,95 260,120 295,200 260,280 200,305 140,280 105,200 140,120;
+        200,105 250,135 285,200 250,265 200,285 150,260 115,200 150,135;
+        200,90 265,115 300,200 255,285 200,310 145,285 100,200 135,115;
+        200,95 260,120 295,200 260,280 200,305 140,280 105,200 140,120
+      "/>
 
-  <!-- Stroke energy -->
-  <animate
-    attributeName="stroke-opacity"
-    dur="6s"
-    values="0.6;1;0.6"
-    repeatCount="indefinite"/>
+    <!-- Energy pulse -->
+    <animate
+      attributeName="stroke-opacity"
+      dur="6s"
+      values="0.6;1;0.6"
+      repeatCount="indefinite"/>
 
-  <!-- Rotation -->
-  <animateTransform
-    attributeName="transform"
-    type="rotate"
-    from="0 200 200"
-    to="360 200 200"
-    dur="36s"
-    repeatCount="indefinite"/>
-</polygon>
+    <!-- Slow analytical rotation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 200 200"
+      to="360 200 200"
+      dur="40s"
+      repeatCount="indefinite"/>
+  </polygon>
 
 </svg>
+
