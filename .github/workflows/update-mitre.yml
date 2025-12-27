@@ -27,7 +27,7 @@ jobs:
         run: python scripts/build_mitre_svg.py
 
       - name: Render MITRE PNG
-      - run: python scripts/render_mitre_png.py
+        run: python scripts/render_mitre_png.py
 
       - name: Verify PNG exists
         run: |
