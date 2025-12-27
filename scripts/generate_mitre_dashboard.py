@@ -1,95 +1,73 @@
 import svgwrite
+import json
 
-# Example MITRE ATT&CK coverage data (replace with real coverage)
-coverage = {
+# Example JSON file with MITRE coverage percentages
+# Replace with your actual coverage data or update JSON file regularly
+coverage_data = {
     "Initial Access": 80,
     "Execution": 65,
     "Persistence": 90,
     "Privilege Escalation": 70,
-    "Defense Evasion": 50,
-    "Credential Access": 60
+    "Defense Evasion": 50
 }
 
-# Blue team skills
-skills = [
-    "SIEM Monitoring & Analysis",
-    "EDR / Endpoint Threat Hunting",
-    "Log Analysis & Correlation",
-    "Incident Response",
-    "Cloud Security Monitoring"
-]
+# Compact Blue Team skills and certifications
+skills = ["SIEM Monitoring", "EDR / Threat Hunting", "Log Analysis", "Incident Response"]
+certs = ["Certified SOC Analyst", "CrowdStrike & Splunk", "Pen Testing Foundations"]
 
-# Certifications / Achievements
-certs = [
-    "Certified SOC Analyst",
-    "CrowdStrike & Splunk Experience",
-    "Penetration Testing Foundations"
-]
-
-dwg = svgwrite.Drawing('mitre_dashboard.svg', size=("1000px", "600px"))
+dwg = svgwrite.Drawing('mitre_dashboard.svg', size=("700px", "400px"))
 
 # Background
-dwg.add(dwg.rect((0, 0), ("1000px", "600px"), fill="#0a0f14"))
+dwg.add(dwg.rect((0, 0), ("700px", "400px"), fill="#0a0f14"))
 
-# Header: name & role
-dwg.add(dwg.text(
-    "Dany Arabo - Cybersecurity / Blue Team Analyst",
-    insert=("40px", "50px"),
-    fill="#00d8ff",
-    font_size="28px",
-    font_weight="bold"
-))
+# Name & Role (compact header)
+dwg.add(dwg.text("Dany Arabo - Blue Team Analyst",
+                 insert=(20, 40), fill="#00d8ff", font_size="22px", font_weight="bold"))
 
 # Glow filter for animation
 filter_glow = dwg.defs.add(dwg.filter(id="glow"))
 filter_glow.feGaussianBlur(in_="SourceGraphic", stdDeviation=2, result="blur")
 filter_glow.feMerge(layernames=["blur", "SourceGraphic"])
 
-# MITRE ATT&CK Coverage Section
-dwg.add(dwg.text("MITRE ATT&CK Coverage:", insert=("40px", 100), fill="#00d8ff", font_size="22px"))
+# MITRE ATT&CK Coverage (compact bars)
+dwg.add(dwg.text("MITRE ATT&CK Coverage:", insert=(20, 70), fill="#00d8ff", font_size="16px"))
 
-x_start = 60
-y_start = 130
-bar_width = 200
-bar_height = 20
-bar_spacing = 40
+x_bar_start = 20
+y_bar_start = 90
+bar_width = 250
+bar_height = 15
+bar_spacing = 30
 
-for i, (tactic, percent) in enumerate(coverage.items()):
-    # Label
-    dwg.add(dwg.text(tactic, insert=(x_start, y_start + i*bar_spacing), fill="#a0e0ff", font_size="18px"))
+for i, (tactic, percent) in enumerate(coverage_data.items()):
+    # Tactic label
+    dwg.add(dwg.text(tactic, insert=(x_bar_start, y_bar_start + i*bar_spacing + 12),
+                     fill="#a0e0ff", font_size="14px"))
     
     # Background bar
-    dwg.add(dwg.rect(
-        insert=(x_start + 200, y_start + i*bar_spacing - 15),
-        size=(bar_width, bar_height),
-        fill="#1a2a3a",
-        rx=5, ry=5
-    ))
+    dwg.add(dwg.rect(insert=(x_bar_start + 120, y_bar_start + i*bar_spacing),
+                     size=(bar_width, bar_height), fill="#1a2a3a", rx=3, ry=3))
     
-    # Coverage bar with animation (glow effect)
-    bar = dwg.rect(
-        insert=(x_start + 200, y_start + i*bar_spacing - 15),
-        size=(bar_width * percent / 100, bar_height),
-        fill="#00d8ff",
-        rx=5, ry=5
-    )
+    # Coverage bar with subtle pulse animation
+    bar = dwg.rect(insert=(x_bar_start + 120, y_bar_start + i*bar_spacing),
+                   size=(bar_width * percent / 100, bar_height), fill="#00d8ff", rx=3, ry=3)
     dwg.add(bar)
-    bar.add(dwg.animate(attributeName="fill", values="#00d8ff;#80f0ff;#00d8ff", dur=f"{1.5 + i*0.2}s", repeatCount="indefinite"))
+    bar.add(dwg.animate(attributeName="fill", values="#00d8ff;#80f0ff;#00d8ff",
+                        dur=f"{1.5 + i*0.2}s", repeatCount="indefinite"))
 
-# Core Blue Team Skills Section
-dwg.add(dwg.text("Core Blue Team Skills:", insert=("40px", 370), fill="#00d8ff", font_size="22px"))
-y_skills = 410
-for i, s in enumerate(skills):
-    text = dwg.text(s, insert=("60px", y_skills + i*30), fill="#a0e0ff", font_size="18px")
+# Skills (compact right column)
+dwg.add(dwg.text("Skills:", insert=(400, 70), fill="#00d8ff", font_size="16px"))
+for i, skill in enumerate(skills):
+    text = dwg.text(skill, insert=(420, 90 + i*20), fill="#a0e0ff", font_size="14px")
     dwg.add(text)
-    text.add(dwg.animate(attributeName="fill", values="#a0e0ff;#00d8ff;#a0e0ff", dur=f"{1.5 + i*0.2}s", repeatCount="indefinite"))
+    text.add(dwg.animate(attributeName="fill", values="#a0e0ff;#00d8ff;#a0e0ff",
+                         dur=f"{1.6 + i*0.2}s", repeatCount="indefinite"))
 
-# Certifications / Achievements Section
-dwg.add(dwg.text("Certifications / Achievements:", insert=("500px", 370), fill="#00d8ff", font_size="22px"))
-y_cert = 410
-for i, c in enumerate(certs):
-    text = dwg.text(c, insert=("520px", y_cert + i*30), fill="#a0e0ff", font_size="18px")
+# Certifications (below skills)
+dwg.add(dwg.text("Certifications:", insert=(400, 170), fill="#00d8ff", font_size="16px"))
+for i, cert in enumerate(certs):
+    text = dwg.text(cert, insert=(420, 190 + i*20), fill="#a0e0ff", font_size="14px")
     dwg.add(text)
-    text.add(dwg.animate(attributeName="fill", values="#a0e0ff;#00d8ff;#a0e0ff", dur=f"{1.7 + i*0.2}s", repeatCount="indefinite"))
+    text.add(dwg.animate(attributeName="fill", values="#a0e0ff;#00d8ff;#a0e0ff",
+                         dur=f"{1.7 + i*0.2}s", repeatCount="indefinite"))
 
 dwg.save()
