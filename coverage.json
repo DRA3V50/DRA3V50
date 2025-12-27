@@ -1,0 +1,11 @@
+{
+  "Initial Access": 80,
+  "Execution": 65,
+  "Persistence": 90,
+  "Privilege Escalation": 70,
+  "Defense Evasion": 50,
+  "Credential Access": 60,
+  "Discovery": 40,
+  "Lateral Movement": 55,
+  "Collection": 75
+}
