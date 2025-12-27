@@ -1,9 +1,12 @@
-name: Update MITRE Dashboard
+name: Generate MITRE Dashboard
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/generate_mitre_dashboard.py"
+      - ".github/workflows/mitre_dashboard.yml"
+      - "requirements.txt"
 
 jobs:
   build:
@@ -14,18 +17,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: '3.10'
 
-      - name: Run MITRE Dashboard Generator
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate dashboard
         run: python3 scripts/generate_mitre_dashboard.py
 
-      - name: Commit SVG
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add mitre_dashboard.svg
-          git commit -m "Update MITRE Dashboard" || echo "No changes"
-          git push
-
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mitre-dashboard
+          path: mitre_dashboard.svg
