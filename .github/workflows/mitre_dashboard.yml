@@ -16,12 +16,12 @@ jobs:
           python-version: "3.11"
 
       - name: Generate Threat Ticker
-        run: python3 generate_threat_ticker.py
+        run: python3 scripts/generate_threat_ticker.py
 
       - name: Commit SVG
         uses: EndBug/add-and-commit@v9
         with:
-          add: "threat_ticker.svg"
+          add: "assets/threat_ticker.svg"
           author_name: "mitre-bot"
           author_email: "mitre-bot@users.noreply.github.com"
           message: "Update threat ticker"
