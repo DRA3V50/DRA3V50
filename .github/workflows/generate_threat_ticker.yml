@@ -1,0 +1,28 @@
+name: Generate Threat Ticker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Threat Ticker
+        run: python3 generate_threat_ticker.py
+
+      - name: Commit SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "threat_ticker.svg"
+          author_name: "mitre-bot"
+          author_email: "mitre-bot@users.noreply.github.com"
+          message: "Update threat ticker"
+          push: true
