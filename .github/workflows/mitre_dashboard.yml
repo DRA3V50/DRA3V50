@@ -15,6 +15,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Generate Threat Ticker
         run: python3 scripts/generate_threat_ticker.py
 
