@@ -1,4 +1,5 @@
 import svgwrite
+from pathlib import Path
 
 WIDTH = 420
 HEIGHT = 60
@@ -11,7 +12,14 @@ items = [
     "Authentication Risk Spike",
 ]
 
-dwg = svgwrite.Drawing("threat_ticker.svg", size=(f"{WIDTH}px", f"{HEIGHT}px"))
+# Ensure assets directory exists
+output_path = Path("assets/threat_ticker.svg")
+output_path.parent.mkdir(parents=True, exist_ok=True)
+
+dwg = svgwrite.Drawing(
+    filename=str(output_path),
+    size=(f"{WIDTH}px", f"{HEIGHT}px")
+)
 
 dwg.add(dwg.rect((0, 0), (WIDTH, HEIGHT), fill=BG))
 
@@ -37,6 +45,6 @@ for item in items:
     x += 220
 
 dwg.add(group)
-
 dwg.save()
 
+print("SVG written to assets/threat_ticker.svg")
