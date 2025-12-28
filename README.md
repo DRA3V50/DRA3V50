@@ -67,7 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ MITRE ATT&CK Coverage Blue Team Capability Radar
 
-![Network Flow](https://raw.githubusercontent.com/<OWNER>/<REPO>/main/assets/network_flow.svg)
+![Network Flow](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/network_flow.svg)
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)
 
