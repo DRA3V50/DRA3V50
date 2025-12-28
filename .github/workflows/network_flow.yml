@@ -1,4 +1,4 @@
-name: Generate Threat Ticker
+name: Generate Network Flow
 
 on:
   workflow_dispatch:
@@ -20,14 +20,14 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate Threat Ticker
-        run: python3 scripts/generate_threat_ticker.py
+      - name: Generate Network Flow
+        run: python3 scripts/generate_network_flow.py
 
       - name: Commit SVG
         uses: EndBug/add-and-commit@v9
         with:
-          add: "assets/threat_ticker.svg"
+          add: "assets/network_flow.svg"
           author_name: "mitre-bot"
           author_email: "mitre-bot@users.noreply.github.com"
-          message: "Update threat ticker"
+          message: "Update network flow"
           push: true
