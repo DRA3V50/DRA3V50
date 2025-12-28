@@ -30,7 +30,7 @@ for angle in range(0, 360, 45):
     y = CENTER[1] + RADAR_RADIUS * sin(rad)
     dwg.add(dwg.line(start=CENTER, end=(x, y), stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
-# Rotating sweep (a pie slice with gradient)
+# Rotating sweep (pie slice with gradient)
 sweep_gradient = dwg.linearGradient(id="sweepGradient", gradientTransform="rotate(45)")
 sweep_gradient.add_stop_color(offset='0%', color="#2f6fed")
 sweep_gradient.add_stop_color(offset='100%', color="#2f6fed", opacity=0)
@@ -42,17 +42,17 @@ sweep = dwg.path(
     opacity=0.25,
 )
 dwg.add(sweep)
-sweep.add(
-    dwg.animateTransform(
-        attributeName="transform",
-        attributeType="XML",
-        type="rotate",
-        from_="0 200 200",
-        to="360 200 200",
-        dur="6s",
-        repeatCount="indefinite"
-    )
+
+# Correctly attach animation to the sweep
+sweep_anim = dwg.animateTransform(
+    attributeName="transform",
+    type="rotate",
+    from_="0 200 200",
+    to="360 200 200",
+    dur="6s",
+    repeatCount="indefinite"
 )
+sweep.add(sweep_anim)
 
 # Pulsing threat blips
 for i in range(10):
@@ -65,6 +65,7 @@ for i in range(10):
     circle = dwg.circle(center=(x, y), r=6, fill="#5cb3ff", opacity=0.6)
     dwg.add(circle)
     
+    # Animate radius
     anim = dwg.animate(
         attributeName="r",
         values="6;10;6",
@@ -74,6 +75,7 @@ for i in range(10):
     )
     circle.add(anim)
 
+    # Animate opacity
     opacity_anim = dwg.animate(
         attributeName="opacity",
         values="0.6;1;0.6",
