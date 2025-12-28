@@ -7,9 +7,11 @@ WIDTH, HEIGHT = 400, 400
 CENTER = (WIDTH // 2, HEIGHT // 2)
 RADAR_RADIUS = 180
 
+# Ensure assets folder exists
 output = Path("assets/cyber_radar.svg")
 output.parent.mkdir(parents=True, exist_ok=True)
 
+# Create SVG drawing
 dwg = svgwrite.Drawing(
     filename=str(output),
     size=(f"{WIDTH}px", f"{HEIGHT}px"),
@@ -19,7 +21,7 @@ dwg = svgwrite.Drawing(
 # Background
 dwg.add(dwg.rect(insert=(0, 0), size=(WIDTH, HEIGHT), fill="#0a0f1a"))
 
-# Radar circles
+# Radar concentric circles
 for r in range(40, RADAR_RADIUS + 1, 40):
     dwg.add(dwg.circle(center=CENTER, r=r, fill="none", stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
@@ -30,23 +32,24 @@ for angle in range(0, 360, 45):
     y = CENTER[1] + RADAR_RADIUS * sin(rad)
     dwg.add(dwg.line(start=CENTER, end=(x, y), stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
-# Rotating sweep (pie slice with gradient)
+# Rotating sweep with gradient
 sweep_gradient = dwg.linearGradient(id="sweepGradient", gradientTransform="rotate(45)")
 sweep_gradient.add_stop_color(offset='0%', color="#2f6fed")
 sweep_gradient.add_stop_color(offset='100%', color="#2f6fed", opacity=0)
 dwg.defs.add(sweep_gradient)
 
 sweep = dwg.path(
-    d=f"M{CENTER[0]},{CENTER[1]} L{CENTER[0]+RADAR_RADIUS},{CENTER[1]} A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER[0]+int(RADAR_RADIUS*0.7)},{CENTER[1]-int(RADAR_RADIUS*0.7)} Z",
+    d=f"M{CENTER[0]},{CENTER[1]} L{CENTER[0]+RADAR_RADIUS},{CENTER[1]} "
+      f"A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER[0]+int(RADAR_RADIUS*0.7)},{CENTER[1]-int(RADAR_RADIUS*0.7)} Z",
     fill="url(#sweepGradient)",
     opacity=0.25,
 )
 dwg.add(sweep)
 
-# Correctly attach animation to the sweep
+# Correct animateTransform usage for latest svgwrite
 sweep_anim = dwg.animateTransform(
+    "rotate",                 # required first positional argument
     attributeName="transform",
-    type="rotate",
     from_="0 200 200",
     to="360 200 200",
     dur="6s",
@@ -66,14 +69,14 @@ for i in range(10):
     dwg.add(circle)
     
     # Animate radius
-    anim = dwg.animate(
+    radius_anim = dwg.animate(
         attributeName="r",
         values="6;10;6",
         dur=f"{random.uniform(2,4):.2f}s",
         repeatCount="indefinite",
         begin=f"{random.uniform(0,4):.2f}s"
     )
-    circle.add(anim)
+    circle.add(radius_anim)
 
     # Animate opacity
     opacity_anim = dwg.animate(
