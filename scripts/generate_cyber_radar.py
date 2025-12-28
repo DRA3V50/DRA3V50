@@ -41,12 +41,16 @@ sweep = dwg.path(
 )
 dwg.add(sweep)
 
-# Add animateTransform manually using RawElement
-sweep_animation = svgwrite.base.RawElement(
-    f'<animateTransform attributeName="transform" type="rotate" from="0 {CENTER[0]} {CENTER[1]}" '
-    f'to="360 {CENTER[0]} {CENTER[1]}" dur="6s" repeatCount="indefinite"/>'
-)
-sweep.add(sweep_animation)
+# Add animateTransform via element() (works in all svgwrite versions)
+animate = dwg.element('animateTransform', {
+    'attributeName': 'transform',
+    'type': 'rotate',
+    'from': f'0 {CENTER[0]} {CENTER[1]}',
+    'to': f'360 {CENTER[0]} {CENTER[1]}',
+    'dur': '6s',
+    'repeatCount': 'indefinite'
+})
+sweep.add(animate)
 
 # Pulsing threat blips
 for i in range(10):
@@ -60,16 +64,24 @@ for i in range(10):
     dwg.add(circle)
     
     # Animate radius
-    circle.add(svgwrite.base.RawElement(
-        f'<animate attributeName="r" values="6;10;6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" '
-        f'begin="{random.uniform(0,4):.2f}s"/>'
-    ))
+    r_anim = dwg.element('animate', {
+        'attributeName':'r',
+        'values':'6;10;6',
+        'dur':f'{random.uniform(2,4):.2f}s',
+        'repeatCount':'indefinite',
+        'begin':f'{random.uniform(0,4):.2f}s'
+    })
+    circle.add(r_anim)
     
     # Animate opacity
-    circle.add(svgwrite.base.RawElement(
-        f'<animate attributeName="opacity" values="0.6;1;0.6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" '
-        f'begin="{random.uniform(0,4):.2f}s"/>'
-    ))
+    o_anim = dwg.element('animate', {
+        'attributeName':'opacity',
+        'values':'0.6;1;0.6',
+        'dur':f'{random.uniform(2,4):.2f}s',
+        'repeatCount':'indefinite',
+        'begin':f'{random.uniform(0,4):.2f}s'
+    })
+    circle.add(o_anim)
 
 dwg.save()
 print("Generated assets/cyber_radar.svg successfully!")
