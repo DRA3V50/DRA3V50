@@ -2,7 +2,9 @@ import svgwrite
 import random
 from math import cos, sin, radians
 from pathlib import Path
+from svgwrite.animate import AnimateTransform, Animate
 
+# Constants
 WIDTH, HEIGHT = 400, 400
 CENTER = (WIDTH // 2, HEIGHT // 2)
 RADAR_RADIUS = 180
@@ -15,7 +17,7 @@ output.parent.mkdir(parents=True, exist_ok=True)
 dwg = svgwrite.Drawing(
     filename=str(output),
     size=(f"{WIDTH}px", f"{HEIGHT}px"),
-    viewBox=f"0 0 {WIDTH} {HEIGHT}",
+    viewBox=f"0 0 {WIDTH} {HEIGHT}"
 )
 
 # Background
@@ -32,7 +34,7 @@ for angle in range(0, 360, 45):
     y = CENTER[1] + RADAR_RADIUS * sin(rad)
     dwg.add(dwg.line(start=CENTER, end=(x, y), stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
-# Rotating sweep with gradient
+# Sweep gradient
 sweep_gradient = dwg.linearGradient(id="sweepGradient", gradientTransform="rotate(45)")
 sweep_gradient.add_stop_color(offset='0%', color="#2f6fed")
 sweep_gradient.add_stop_color(offset='100%', color="#2f6fed", opacity=0)
@@ -43,20 +45,20 @@ sweep = dwg.path(
     d=f"M{CENTER[0]},{CENTER[1]} L{CENTER[0]+RADAR_RADIUS},{CENTER[1]} "
       f"A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER[0]+int(RADAR_RADIUS*0.7)},{CENTER[1]-int(RADAR_RADIUS*0.7)} Z",
     fill="url(#sweepGradient)",
-    opacity=0.25,
+    opacity=0.25
 )
 dwg.add(sweep)
 
-# Animate sweep rotation (fix for latest svgwrite)
-sweep.add(
-    sweep.animateTransform(
-        type="rotate",
-        from_="0 200 200",
-        to="360 200 200",
-        dur="6s",
-        repeatCount="indefinite"
-    )
+# Animate sweep rotation correctly
+sweep_anim = AnimateTransform(
+    transform="rotate",        # first positional argument
+    attributeName="transform",
+    from_="0 200 200",
+    to="360 200 200",
+    dur="6s",
+    repeatCount="indefinite"
 )
+sweep.add(sweep_anim)
 
 # Pulsing threat blips
 for i in range(10):
@@ -68,29 +70,27 @@ for i in range(10):
 
     circle = dwg.circle(center=(x, y), r=6, fill="#5cb3ff", opacity=0.6)
     dwg.add(circle)
-    
+
     # Animate radius
-    circle.add(
-        dwg.animate(
-            attributeName="r",
-            values="6;10;6",
-            dur=f"{random.uniform(2,4):.2f}s",
-            repeatCount="indefinite",
-            begin=f"{random.uniform(0,4):.2f}s"
-        )
+    radius_anim = Animate(
+        attributeName="r",
+        values="6;10;6",
+        dur=f"{random.uniform(2,4):.2f}s",
+        repeatCount="indefinite",
+        begin=f"{random.uniform(0,4):.2f}s"
     )
+    circle.add(radius_anim)
 
     # Animate opacity
-    circle.add(
-        dwg.animate(
-            attributeName="opacity",
-            values="0.6;1;0.6",
-            dur=f"{random.uniform(2,4):.2f}s",
-            repeatCount="indefinite",
-            begin=f"{random.uniform(0,4):.2f}s"
-        )
+    opacity_anim = Animate(
+        attributeName="opacity",
+        values="0.6;1;0.6",
+        dur=f"{random.uniform(2,4):.2f}s",
+        repeatCount="indefinite",
+        begin=f"{random.uniform(0,4):.2f}s"
     )
+    circle.add(opacity_anim)
 
 # Save SVG
 dwg.save()
-print("Generated assets/cyber_radar.svg")
+print("Generated assets/cyber_radar.svg successfully!")
