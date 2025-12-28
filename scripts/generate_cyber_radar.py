@@ -2,7 +2,6 @@ import svgwrite
 import random
 from math import cos, sin, radians
 from pathlib import Path
-from svgwrite.animate import AnimateTransform, Animate
 
 # Constants
 WIDTH, HEIGHT = 400, 400
@@ -23,7 +22,7 @@ dwg = svgwrite.Drawing(
 # Background
 dwg.add(dwg.rect(insert=(0, 0), size=(WIDTH, HEIGHT), fill="#0a0f1a"))
 
-# Radar concentric circles
+# Radar circles
 for r in range(40, RADAR_RADIUS + 1, 40):
     dwg.add(dwg.circle(center=CENTER, r=r, fill="none", stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
@@ -49,16 +48,10 @@ sweep = dwg.path(
 )
 dwg.add(sweep)
 
-# Animate sweep rotation correctly
-sweep_anim = AnimateTransform(
-    transform="rotate",        # first positional argument
-    attributeName="transform",
-    from_="0 200 200",
-    to="360 200 200",
-    dur="6s",
-    repeatCount="indefinite"
-)
-sweep.add(sweep_anim)
+# Animate sweep rotation using raw SVG (works on all svgwrite versions)
+sweep.add(dwg.raw(
+    f'<animateTransform attributeName="transform" type="rotate" from="0 {CENTER[0]} {CENTER[1]}" to="360 {CENTER[0]} {CENTER[1]}" dur="6s" repeatCount="indefinite"/>'
+))
 
 # Pulsing threat blips
 for i in range(10):
@@ -72,25 +65,15 @@ for i in range(10):
     dwg.add(circle)
 
     # Animate radius
-    radius_anim = Animate(
-        attributeName="r",
-        values="6;10;6",
-        dur=f"{random.uniform(2,4):.2f}s",
-        repeatCount="indefinite",
-        begin=f"{random.uniform(0,4):.2f}s"
-    )
-    circle.add(radius_anim)
-
+    circle.add(dwg.raw(
+        f'<animate attributeName="r" values="6;10;6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" begin="{random.uniform(0,4):.2f}s"/>'
+    ))
     # Animate opacity
-    opacity_anim = Animate(
-        attributeName="opacity",
-        values="0.6;1;0.6",
-        dur=f"{random.uniform(2,4):.2f}s",
-        repeatCount="indefinite",
-        begin=f"{random.uniform(0,4):.2f}s"
-    )
-    circle.add(opacity_anim)
+    circle.add(dwg.raw(
+        f'<animate attributeName="opacity" values="0.6;1;0.6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" begin="{random.uniform(0,4):.2f}s"/>'
+    ))
 
 # Save SVG
 dwg.save()
 print("Generated assets/cyber_radar.svg successfully!")
+
