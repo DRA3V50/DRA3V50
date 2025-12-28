@@ -3,27 +3,20 @@ import random
 from math import cos, sin, radians
 from pathlib import Path
 
-# Constants
 WIDTH, HEIGHT = 400, 400
 CENTER = (WIDTH // 2, HEIGHT // 2)
 RADAR_RADIUS = 180
 
-# Ensure assets folder exists
 output = Path("assets/cyber_radar.svg")
 output.parent.mkdir(parents=True, exist_ok=True)
 
-# Create SVG drawing
-dwg = svgwrite.Drawing(
-    filename=str(output),
-    size=(f"{WIDTH}px", f"{HEIGHT}px"),
-    viewBox=f"0 0 {WIDTH} {HEIGHT}"
-)
+dwg = svgwrite.Drawing(str(output), size=(f"{WIDTH}px", f"{HEIGHT}px"), viewBox=f"0 0 {WIDTH} {HEIGHT}")
 
 # Background
-dwg.add(dwg.rect(insert=(0, 0), size=(WIDTH, HEIGHT), fill="#0a0f1a"))
+dwg.add(dwg.rect(insert=(0,0), size=(WIDTH, HEIGHT), fill="#0a0f1a"))
 
 # Radar circles
-for r in range(40, RADAR_RADIUS + 1, 40):
+for r in range(40, RADAR_RADIUS+1, 40):
     dwg.add(dwg.circle(center=CENTER, r=r, fill="none", stroke="#2f6fed", stroke_width=1, opacity=0.3))
 
 # Radar lines
@@ -48,32 +41,36 @@ sweep = dwg.path(
 )
 dwg.add(sweep)
 
-# Animate sweep rotation using raw SVG (works on all svgwrite versions)
-sweep.add(dwg.raw(
-    f'<animateTransform attributeName="transform" type="rotate" from="0 {CENTER[0]} {CENTER[1]}" to="360 {CENTER[0]} {CENTER[1]}" dur="6s" repeatCount="indefinite"/>'
-))
+# Add animateTransform manually using RawElement
+sweep_animation = svgwrite.base.RawElement(
+    f'<animateTransform attributeName="transform" type="rotate" from="0 {CENTER[0]} {CENTER[1]}" '
+    f'to="360 {CENTER[0]} {CENTER[1]}" dur="6s" repeatCount="indefinite"/>'
+)
+sweep.add(sweep_animation)
 
 # Pulsing threat blips
 for i in range(10):
-    angle = random.uniform(0, 360)
-    distance = random.uniform(20, RADAR_RADIUS)
+    angle = random.uniform(0,360)
+    distance = random.uniform(20,RADAR_RADIUS)
     rad = radians(angle)
-    x = CENTER[0] + distance * cos(rad)
-    y = CENTER[1] + distance * sin(rad)
-
-    circle = dwg.circle(center=(x, y), r=6, fill="#5cb3ff", opacity=0.6)
+    x = CENTER[0] + distance*cos(rad)
+    y = CENTER[1] + distance*sin(rad)
+    
+    circle = dwg.circle(center=(x,y), r=6, fill="#5cb3ff", opacity=0.6)
     dwg.add(circle)
-
+    
     # Animate radius
-    circle.add(dwg.raw(
-        f'<animate attributeName="r" values="6;10;6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" begin="{random.uniform(0,4):.2f}s"/>'
+    circle.add(svgwrite.base.RawElement(
+        f'<animate attributeName="r" values="6;10;6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" '
+        f'begin="{random.uniform(0,4):.2f}s"/>'
     ))
+    
     # Animate opacity
-    circle.add(dwg.raw(
-        f'<animate attributeName="opacity" values="0.6;1;0.6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" begin="{random.uniform(0,4):.2f}s"/>'
+    circle.add(svgwrite.base.RawElement(
+        f'<animate attributeName="opacity" values="0.6;1;0.6" dur="{random.uniform(2,4):.2f}s" repeatCount="indefinite" '
+        f'begin="{random.uniform(0,4):.2f}s"/>'
     ))
 
-# Save SVG
 dwg.save()
 print("Generated assets/cyber_radar.svg successfully!")
 
