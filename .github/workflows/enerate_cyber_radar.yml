@@ -1,13 +1,14 @@
-name: Generate Network Flow
+name: Generate Cyber Radar
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"   # every 6 hours
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,14 +21,15 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate Network Flow
-        run: python3 scripts/generate_network_flow.py
+      - name: Generate Cyber Radar
+        run: python3 scripts/generate_cyber_radar.py
 
-      - name: Commit SVG
+      - name: Commit generated SVG
         uses: EndBug/add-and-commit@v9
         with:
-          add: "assets/network_flow.svg"
+          add: "assets/cyber_radar.svg"
           author_name: "mitre-bot"
           author_email: "mitre-bot@users.noreply.github.com"
-          message: "Update network flow"
+          message: "Update cyber radar"
           push: true
+          branch: main  # make sure this matches your default branch
