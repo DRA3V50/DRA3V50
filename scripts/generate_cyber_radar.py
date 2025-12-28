@@ -33,7 +33,7 @@ for angle in range(0, 360, 45):
 # Rotating sweep (a pie slice with gradient)
 sweep_gradient = dwg.linearGradient(id="sweepGradient", gradientTransform="rotate(45)")
 sweep_gradient.add_stop_color(offset='0%', color="#2f6fed")
-sweep_gradient.add_stop_color(offset='100%', color="transparent")
+sweep_gradient.add_stop_color(offset='100%', color="#2f6fed", opacity=0)
 dwg.defs.add(sweep_gradient)
 
 sweep = dwg.path(
