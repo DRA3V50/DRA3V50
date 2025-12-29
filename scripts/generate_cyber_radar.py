@@ -3,7 +3,7 @@ from math import cos, sin, radians
 from pathlib import Path
 
 # Output
-WIDTH, HEIGHT = 500, 500
+WIDTH, HEIGHT = 520, 520
 CENTER_X, CENTER_Y = WIDTH // 2, HEIGHT // 2
 RADAR_RADIUS = 220
 output = Path("assets/cyber_radar_live.svg")
@@ -19,7 +19,7 @@ data_points = [
     ("Defense Evasion", "Defense Evasion", 270, 140, 4),
 ]
 
-# Color mapping
+# Color mapping for MITRE tactics
 tactic_colors = {
     "Initial Access": "#ff5c5c",
     "Credential Access": "#ffb14c",
@@ -41,50 +41,74 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGH
     </radialGradient>
   </defs>
 
+  <!-- Background -->
   <rect width="{WIDTH}" height="{HEIGHT}" fill="#0a0f1a"/>
+  <text x="20" y="30" font-family="Consolas, monospace" font-size="20" fill="#5cb3ff" font-weight="700">
+    SOC Live Cyber Radar
+  </text>
 '''
 
-# Rings
+# Draw concentric rings
 for r in range(40, RADAR_RADIUS + 1, 40):
     svg += f'<circle cx="{CENTER_X}" cy="{CENTER_Y}" r="{r}" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>\n'
 
-# Spokes
+# Draw spokes every 30 degrees
 for angle in range(0, 360, 30):
     rad = radians(angle)
     x = CENTER_X + RADAR_RADIUS * cos(rad)
     y = CENTER_Y + RADAR_RADIUS * sin(rad)
     svg += f'<line x1="{CENTER_X}" y1="{CENTER_Y}" x2="{x}" y2="{y}" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>\n'
 
-# Sweep sector
+# Sweep sector (animated)
 svg += f'''
-<path d="M{CENTER_X},{CENTER_Y} L{CENTER_X + RADAR_RADIUS}, {CENTER_Y} 
-         A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER_X + int(RADAR_RADIUS*0.7)}, {CENTER_Y - int(RADAR_RADIUS*0.7)} Z"
-      fill="url(#sweepGrad)" filter="url(#glow)"/>
+<path d="M{CENTER_X},{CENTER_Y} L{CENTER_X + RADAR_RADIUS},{CENTER_Y} 
+         A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER_X + int(RADAR_RADIUS*0.7)},{CENTER_Y - int(RADAR_RADIUS*0.7)} Z"
+      fill="url(#sweepGrad)" filter="url(#glow)">
+  <animateTransform attributeName="transform" type="rotate" from="0 {CENTER_X} {CENTER_Y}" to="360 {CENTER_X} {CENTER_Y}" dur="8s" repeatCount="indefinite"/>
+</path>
 '''
 
-# Draw threat points
+# Draw threat points with glow and pulsing
 for label, tactic, angle_deg, dist, score in data_points:
-    rad = radians(angle_deg + random.uniform(-3, 3))  # small random jitter
+    rad = radians(angle_deg + random.uniform(-3, 3))  # jitter
     x = CENTER_X + dist * cos(rad)
     y = CENTER_Y + dist * sin(rad)
-    base_r = 4 + score  # bigger for higher threat
+    base_r = 4 + score
     opacity = min(0.4 + 0.06*score, 1.0)
     fill_color = tactic_colors.get(tactic, "#5cb3ff")
+    dur = round(random.uniform(2.5, 4.5), 2)
+    begin = round(random.uniform(0, 4), 2)
 
-    # Glow background
-    svg += f'<circle cx="{x}" cy="{y}" r="{base_r + 4}" fill="{fill_color}" opacity="{opacity/2}"/>\n'
+    # Glow behind dot
+    svg += f'''
+  <circle cx="{x}" cy="{y}" r="{base_r + 4}" fill="{fill_color}" opacity="{opacity/2}">
+    <animate attributeName="opacity" values="{opacity/2};{opacity};{opacity/2}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+  </circle>'''
 
-    # Main dot
-    svg += f'<circle cx="{x}" cy="{y}" r="{base_r}" fill="{fill_color}" filter="url(#glow)" opacity="{opacity}"/>\n'
+    # Main pulsing dot
+    svg += f'''
+  <circle cx="{x}" cy="{y}" r="{base_r}" fill="{fill_color}" filter="url(#glow)" opacity="{opacity}">
+    <animate attributeName="r" values="{base_r};{base_r+4};{base_r}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <title>{label} ({tactic})</title>
+  </circle>'''
 
     # Label
-    svg += f'<text x="{x + 12}" y="{y + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>\n'
+    svg += f'<text x="{x+12}" y="{y+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>\n'
+
+# MITRE legend
+legend_x, legend_y = 20, HEIGHT - 140
+svg += f'<text x="{legend_x}" y="{legend_y-10}" font-family="Consolas, monospace" font-size="14" fill="#5cb3ff" font-weight="700">MITRE ATT&CK Legend</text>\n'
+for i, (tactic, color) in enumerate(tactic_colors.items()):
+    y_pos = legend_y + i*20
+    svg += f'<rect x="{legend_x}" y="{y_pos-12}" width="12" height="12" fill="{color}"/>\n'
+    svg += f'<text x="{legend_x + 18}" y="{y_pos}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{tactic}</text>\n'
 
 # End SVG
 svg += '</svg>'
 
-# Save file
+# Save
 with open(output, "w") as f:
     f.write(svg)
 
-print(f"Live-style Cyber Radar SVG saved to {output}")
+print(f"Live Cyber Radar SVG saved to {output}")
