@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#5cb3ff" flood-opacity="0.7"/>
+    </filter>
+    <radialGradient id="sweepGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2f6fed" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2f6fed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="520" fill="#0a0f1a"/>
+  <text x="20" y="30" font-family="Consolas, monospace" font-size="20" fill="#5cb3ff" font-weight="700">
+    SOC Live Cyber Radar
+  </text>
+<circle cx="260" cy="260" r="40" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+<circle cx="260" cy="260" r="80" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+<circle cx="260" cy="260" r="120" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+<circle cx="260" cy="260" r="160" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+<circle cx="260" cy="260" r="200" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+<line x1="260" y1="260" x2="480.0" y2="260.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="450.52558883257655" y2="370.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="370.0" y2="450.5255888325765" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="260.0" y2="480.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="150.00000000000006" y2="450.52558883257655" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="69.47441116742348" y2="370.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="40.0" y2="260.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="69.47441116742351" y2="149.99999999999997" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="149.9999999999999" y2="69.47441116742357" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="259.99999999999994" y2="40.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="370.0" y2="69.47441116742351" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+<line x1="260" y1="260" x2="450.52558883257643" y2="149.9999999999999" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+
+<path d="M260,260 L480,260 
+         A220,220 0 0,1 414,106 Z"
+      fill="url(#sweepGrad)" filter="url(#glow)">
+  <animateTransform attributeName="transform" type="rotate" from="0 260 260" to="360 260 260" dur="8s" repeatCount="indefinite"/>
+</path>
+
+  <circle cx="429.1446717414635" cy="321.56362579862036" r="11" fill="#ff5c5c" filter="url(#glow)" opacity="0.8200000000000001">
+    <animate attributeName="cx" values="429.1446717414635;429.5627912714368;429.1446717414635" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
+    <animate attributeName="cy" values="321.56362579862036;321.98174532859366;321.56362579862036" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
+    <animate attributeName="r" values="11;14;11" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
+    <animate attributeName="opacity" values="0.8200000000000001;1;0.8200000000000001" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
+    <title>Phishing (Initial Access)</title>
+  </circle>
+  <text x="441.1446717414635" y="326.56362579862036" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Phishing</text>
+
+  <circle cx="314.72322293210703" cy="410.3508193257453" r="9" fill="#ffb14c" filter="url(#glow)" opacity="0.7">
+    <animate attributeName="cx" values="314.72322293210703;309.04682487179383;314.72322293210703" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
+    <animate attributeName="cy" values="410.3508193257453;404.6744212654321;410.3508193257453" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
+    <animate attributeName="r" values="9;12;9" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
+    <title>Brute Force (Credential Access)</title>
+  </circle>
+  <text x="326.72322293210703" y="415.3508193257453" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Brute Force</text>
+
+  <circle cx="160.00000000000006" cy="433.20508075688775" r="12" fill="#5cb3ff" filter="url(#glow)" opacity="0.88">
+    <animate attributeName="cx" values="160.00000000000006;160.056000704839;160.00000000000006" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="cy" values="433.20508075688775;433.2610814617267;433.20508075688775" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="r" values="12;15;12" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
+    <title>Lateral Movement (Lateral Movement)</title>
+  </circle>
+  <text x="172.00000000000006" y="438.20508075688775" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
+
+  <circle cx="100.25225446639556" cy="201.85657563463633" r="10" fill="#ff4dff" filter="url(#glow)" opacity="0.76">
+    <animate attributeName="cx" values="100.25225446639556;105.22709746098266;100.25225446639556" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
+    <animate attributeName="cy" values="201.85657563463633;206.83141862922344;201.85657563463633" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
+    <animate attributeName="r" values="10;13;10" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
+    <animate attributeName="opacity" values="0.76;1;0.76" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
+    <title>Exfiltration (Exfiltration)</title>
+  </circle>
+  <text x="112.25225446639556" y="206.85657563463633" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
+
+  <circle cx="355.0" cy="95.45517328095667" r="13" fill="#2fffd3" filter="url(#glow)" opacity="0.9400000000000001">
+    <animate attributeName="cx" values="355.0;351.54516450368976;355.0" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
+    <animate attributeName="cy" values="95.45517328095667;92.00033778464643;95.45517328095667" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
+    <animate attributeName="r" values="13;16;13" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
+    <animate attributeName="opacity" values="0.9400000000000001;1;0.9400000000000001" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
+    <title>Command & Control (Command & Control)</title>
+  </circle>
+  <text x="367.0" y="100.45517328095667" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Command & Control</text>
+
+  <circle cx="260.0" cy="120.0" r="8" fill="#ffd700" filter="url(#glow)" opacity="0.64">
+    <animate attributeName="cx" values="260.0;266.48044715122546;260.0" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
+    <animate attributeName="cy" values="120.0;126.48044715122546;120.0" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
+    <animate attributeName="r" values="8;11;8" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
+    <animate attributeName="opacity" values="0.64;1;0.64" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
+    <title>Defense Evasion (Defense Evasion)</title>
+  </circle>
+  <text x="272.0" y="125.0" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
+<text x="20" y="370" font-family="Consolas, monospace" font-size="14" fill="#5cb3ff" font-weight="700">MITRE ATT&CK Legend</text>
+<rect x="20" y="368" width="12" height="12" fill="#ff5c5c"/>
+<text x="38" y="380" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Initial Access</text>
+<rect x="20" y="388" width="12" height="12" fill="#ffb14c"/>
+<text x="38" y="400" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Credential Access</text>
+<rect x="20" y="408" width="12" height="12" fill="#5cb3ff"/>
+<text x="38" y="420" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
+<rect x="20" y="428" width="12" height="12" fill="#ff4dff"/>
+<text x="38" y="440" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
+<rect x="20" y="448" width="12" height="12" fill="#2fffd3"/>
+<text x="38" y="460" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Command & Control</text>
+<rect x="20" y="468" width="12" height="12" fill="#ffd700"/>
+<text x="38" y="480" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
+</svg>
