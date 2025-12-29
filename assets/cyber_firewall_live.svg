@@ -1,0 +1,72 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+  <rect width="600" height="600" fill="#0a0f1a"/>
+  
+  <!-- Central Firewall -->
+  <circle cx="300" cy="300" r="50" fill="#ff4e4e">
+    <animate attributeName="r" values="50;60;50" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="270" y="305" font-family="Consolas, monospace" font-size="14" fill="#ffffff">FIREWALL</text>
+  
+  
+<line x1="207" y1="0" x2="300" y2="300" stroke="#f4dffd" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.88s" repeatCount="indefinite" begin="1.49s"/>
+  <animate attributeName="x1" values="207;300;207" dur="2.88s" repeatCount="indefinite" begin="1.49s"/>
+  <animate attributeName="y1" values="0;300;0" dur="2.88s" repeatCount="indefinite" begin="1.49s"/>
+</line>
+
+<line x1="194" y1="600" x2="300" y2="300" stroke="#4bcb91" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.52s" repeatCount="indefinite" begin="0.89s"/>
+  <animate attributeName="x1" values="194;300;194" dur="2.52s" repeatCount="indefinite" begin="0.89s"/>
+  <animate attributeName="y1" values="600;300;600" dur="2.52s" repeatCount="indefinite" begin="0.89s"/>
+</line>
+
+<line x1="328" y1="0" x2="300" y2="300" stroke="#ddd353" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.29s" repeatCount="indefinite" begin="1.31s"/>
+  <animate attributeName="x1" values="328;300;328" dur="2.29s" repeatCount="indefinite" begin="1.31s"/>
+  <animate attributeName="y1" values="0;300;0" dur="2.29s" repeatCount="indefinite" begin="1.31s"/>
+</line>
+
+<line x1="285" y1="0" x2="300" y2="300" stroke="#c29499" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="3.94s" repeatCount="indefinite" begin="0.11s"/>
+  <animate attributeName="x1" values="285;300;285" dur="3.94s" repeatCount="indefinite" begin="0.11s"/>
+  <animate attributeName="y1" values="0;300;0" dur="3.94s" repeatCount="indefinite" begin="0.11s"/>
+</line>
+
+<line x1="288" y1="600" x2="300" y2="300" stroke="#cdbabe" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.07s" repeatCount="indefinite" begin="1.61s"/>
+  <animate attributeName="x1" values="288;300;288" dur="2.07s" repeatCount="indefinite" begin="1.61s"/>
+  <animate attributeName="y1" values="600;300;600" dur="2.07s" repeatCount="indefinite" begin="1.61s"/>
+</line>
+
+<line x1="462" y1="600" x2="300" y2="300" stroke="#345d33" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.76s" repeatCount="indefinite" begin="0.61s"/>
+  <animate attributeName="x1" values="462;300;462" dur="2.76s" repeatCount="indefinite" begin="0.61s"/>
+  <animate attributeName="y1" values="600;300;600" dur="2.76s" repeatCount="indefinite" begin="0.61s"/>
+</line>
+
+<line x1="144" y1="0" x2="300" y2="300" stroke="#da6080" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.33s" repeatCount="indefinite" begin="1.06s"/>
+  <animate attributeName="x1" values="144;300;144" dur="2.33s" repeatCount="indefinite" begin="1.06s"/>
+  <animate attributeName="y1" values="0;300;0" dur="2.33s" repeatCount="indefinite" begin="1.06s"/>
+</line>
+
+<line x1="527" y1="0" x2="300" y2="300" stroke="#8d4b63" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.95s" repeatCount="indefinite" begin="1.97s"/>
+  <animate attributeName="x1" values="527;300;527" dur="2.95s" repeatCount="indefinite" begin="1.97s"/>
+  <animate attributeName="y1" values="0;300;0" dur="2.95s" repeatCount="indefinite" begin="1.97s"/>
+</line>
+
+<line x1="236" y1="0" x2="300" y2="300" stroke="#5de49f" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.92s" repeatCount="indefinite" begin="1.43s"/>
+  <animate attributeName="x1" values="236;300;236" dur="2.92s" repeatCount="indefinite" begin="1.43s"/>
+  <animate attributeName="y1" values="0;300;0" dur="2.92s" repeatCount="indefinite" begin="1.43s"/>
+</line>
+
+<line x1="270" y1="600" x2="300" y2="300" stroke="#92d667" stroke-width="2" opacity="0.5">
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="3.36s" repeatCount="indefinite" begin="0.47s"/>
+  <animate attributeName="x1" values="270;300;270" dur="3.36s" repeatCount="indefinite" begin="0.47s"/>
+  <animate attributeName="y1" values="600;300;600" dur="3.36s" repeatCount="indefinite" begin="0.47s"/>
+</line>
+
+</svg>
