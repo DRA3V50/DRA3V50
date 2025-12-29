@@ -1,0 +1,34 @@
+# .github/workflows/generate_holo_radar.yml
+name: Generate Holo Radar
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # every 30 minutes
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install --upgrade pip
+
+      - name: Generate Holo Radar SVG
+        run: python scripts/generate_holo_radar.py
+
+      - name: Commit and push
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add assets/cyber_radar_holo.svg
+          git commit -m "Update Holo Radar SVG" || echo "No changes"
+          git push
