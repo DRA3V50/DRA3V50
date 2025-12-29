@@ -14,10 +14,10 @@
 
   <text x="20" y="32" class="title">Live Security Anomaly Dashboard</text>
 
-  <text x="20" y="70" class="metric critical">Critical Alerts: 34</text>
-  <text x="20" y="100" class="metric high">Abnormal Severity: 80</text>
-  <text x="20" y="130" class="metric medium">Medium Severity: 64</text>
+  <text x="20" y="70" class="metric critical">Critical Alerts: 25</text>
+  <text x="20" y="100" class="metric high">High Severity: 30</text>
+  <text x="20" y="130" class="metric medium">Medium Severity: 112</text>
 
-  <text x="380" y="70" class="metric ok">Investigated: 157</text>
-  <text x="380" y="130" font-size="12">Updated: 2025-12-29 23:49 UTC</text>
+  <text x="380" y="70" class="metric ok">Investigated: 184</text>
+  <text x="380" y="130" font-size="12">Updated: 2025-12-29 23:56 UTC</text>
 </svg>
