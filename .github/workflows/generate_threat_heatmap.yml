@@ -1,40 +1,32 @@
 name: Generate Cyber Heatmap
 
 on:
-  push:
-    paths:
-      - 'scripts/generate_threat_heatmap.py'
-  workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'  # every 15 minutes
+  workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          persist-credentials: true  # allow commit
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: 3.11
 
       - name: Install dependencies
-        run: pip install -r requirements.txt || echo "No requirements.txt, skipping"
+        run: pip install --upgrade pip
 
-      - name: Ensure assets folder exists
-        run: mkdir -p assets
-
-      - name: Generate Cyber Heatmap
+      - name: Generate Heatmap
         run: python scripts/generate_threat_heatmap.py
 
-      - name: Commit and push SVG
+      - name: Commit and Push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/cyber_heatmap_live.svg
-          git commit -m "Update cyber heatmap SVG [skip ci]" || echo "No changes to commit"
+          git commit -m "Update live cyber heatmap [skip ci]" || echo "No changes to commit"
           git push
