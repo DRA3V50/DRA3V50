@@ -1,49 +1,26 @@
-# scripts/generate_globe.py
 import json
-import plotly.graph_objects as go
 
-# Load node/coverage data
-with open("coverage.json") as f:
-    data = json.load(f)
+nodes = [
+    {"name": "HostA", "x": 300, "y": 100, "color": "#ff4e4e"},
+    {"name": "Server42", "x": 450, "y": 200, "color": "#4effff"}
+]
 
-lats, lons, labels, colors = [], [], [], []
-for node in data["nodes"]:
-    lats.append(node["lat"])
-    lons.append(node["lon"])
-    labels.append(node["name"])
-    colors.append(node.get("attack_stage_color", "#5cb3ff"))
+svg_content = f'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">'
+svg_content += '<rect width="600" height="400" fill="#0a0f1a"/>'
 
-fig = go.Figure(go.Scattergeo(
-    lat=lats,
-    lon=lons,
-    text=labels,
-    mode='markers+text',
-    marker=dict(size=8, color=colors, line=dict(width=1, color='white')),
-    textposition="top center"
-))
+for node in nodes:
+    svg_content += f'''
+    <circle cx="{node["x"]}" cy="{node["y"]}" r="6" fill="{node["color"]}">
+        <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="{node["x"]+10}" y="{node["y"]+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{node["name"]}</text>
+    '''
 
-fig.update_layout(
-    geo=dict(
-        showland=True, landcolor="#0a0f1a",
-        showcountries=True, countrycolor="#1e2a45",
-        showocean=True, oceancolor="#0f1726"
-    ),
-    paper_bgcolor="rgba(0,0,0,0)",
-    font=dict(color="#a0c8ff"),
-)
+svg_content += '</svg>'
 
-# Optional: Add FBI-eye marker at center
-fig.add_layout_image(
-    dict(
-        source="https://i.imgur.com/YOUR_EYE_ICON.png",
-        xref="paper", yref="paper",
-        x=0.5, y=0.5, sizex=0.1, sizey=0.1,
-        xanchor="center", yanchor="middle",
-        layer="above"
-    )
-)
+with open("assets/globe_live.svg", "w") as f:
+    f.write(svg_content)
 
-# Save interactive HTML
-fig.write_html("assets/globe_live.html")
-print("Globe generated successfully!")
+print("SVG generated successfully!")
 
