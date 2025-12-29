@@ -1,7 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
   <defs>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#5cb3ff" flood-opacity="0.7"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#5cb3ff" flood-opacity="0.8"/>
+    </filter>
+    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
     <radialGradient id="sweepGrad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#2f6fed" stop-opacity="0.35"/>
@@ -9,99 +18,130 @@
     </radialGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="520" height="520" fill="#0a0f1a"/>
-  <text x="20" y="30" font-family="Consolas, monospace" font-size="20" fill="#5cb3ff" font-weight="700">
-    SOC Live Cyber Radar
-  </text>
-<circle cx="260" cy="260" r="40" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
-<circle cx="260" cy="260" r="80" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
-<circle cx="260" cy="260" r="120" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
-<circle cx="260" cy="260" r="160" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
-<circle cx="260" cy="260" r="200" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
-<line x1="260" y1="260" x2="480.0" y2="260.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="450.52558883257655" y2="370.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="370.0" y2="450.5255888325765" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="260.0" y2="480.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="150.00000000000006" y2="450.52558883257655" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="69.47441116742348" y2="370.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="40.0" y2="260.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="69.47441116742351" y2="149.99999999999997" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="149.9999999999999" y2="69.47441116742357" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="259.99999999999994" y2="40.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="370.0" y2="69.47441116742351" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
-<line x1="260" y1="260" x2="450.52558883257643" y2="149.9999999999999" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <rect width="480" height="480" fill="#0a0f1a"/>
 
-<path d="M260,260 L480,260 
-         A220,220 0 0,1 414,106 Z"
-      fill="url(#sweepGrad)" filter="url(#glow)">
-  <animateTransform attributeName="transform" type="rotate" from="0 260 260" to="360 260 260" dur="8s" repeatCount="indefinite"/>
-</path>
+  <!-- Radar rings -->
+  <circle cx="240" cy="240" r="40" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="240" cy="240" r="80" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="240" cy="240" r="120" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="240" cy="240" r="160" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="240" cy="240" r="200" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <line x1="240" y1="240" x2="440.0" y2="240.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="413.20508075688775" y2="340.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="340.0" y2="413.2050807568877" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="240.0" y2="440.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="140.00000000000006" y2="413.20508075688775" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="66.79491924311225" y2="340.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="40.0" y2="240.00000000000003" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="66.79491924311228" y2="139.99999999999997" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="139.99999999999991" y2="66.79491924311233" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="239.99999999999997" y2="40.0" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="340.0" y2="66.79491924311228" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
+  <line x1="240" y1="240" x2="413.2050807568877" y2="139.99999999999991" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>
 
-  <circle cx="429.1446717414635" cy="321.56362579862036" r="11" fill="#ff5c5c" filter="url(#glow)" opacity="0.8200000000000001">
-    <animate attributeName="cx" values="429.1446717414635;427.63682755908053;429.1446717414635" dur="2.57s" repeatCount="indefinite" begin="3.83s"/>
-    <animate attributeName="cy" values="321.56362579862036;320.05578161623737;321.56362579862036" dur="2.57s" repeatCount="indefinite" begin="3.83s"/>
-    <animate attributeName="r" values="11;14;11" dur="2.57s" repeatCount="indefinite" begin="3.83s"/>
-    <animate attributeName="opacity" values="0.8200000000000001;1;0.8200000000000001" dur="2.57s" repeatCount="indefinite" begin="3.83s"/>
-    <title>Phishing (Initial Access)</title>
+  <path d="M240,240 L440,240 A200,200 0 0,1 380,100 Z"
+        fill="url(#sweepGrad)" filter="url(#glow)">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+        from="0 240 240" to="360 240 240" dur="8s" repeatCount="indefinite"/>
+  </path>
+
+  <circle cx="413.86664873203233" cy="286.5874281184537" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3.8s" repeatCount="indefinite" begin="1.92s"/>
   </circle>
-  <text x="441.1446717414635" y="326.56362579862036" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Phishing</text>
-
-  <circle cx="314.72322293210703" cy="410.3508193257453" r="9" fill="#ffb14c" filter="url(#glow)" opacity="0.7">
-    <animate attributeName="cx" values="314.72322293210703;314.9503061090931;314.72322293210703" dur="3.46s" repeatCount="indefinite" begin="2.4s"/>
-    <animate attributeName="cy" values="410.3508193257453;410.5779025027314;410.3508193257453" dur="3.46s" repeatCount="indefinite" begin="2.4s"/>
-    <animate attributeName="r" values="9;12;9" dur="3.46s" repeatCount="indefinite" begin="2.4s"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.46s" repeatCount="indefinite" begin="2.4s"/>
-    <title>Brute Force (Credential Access)</title>
+  <circle cx="413.86664873203233" cy="286.5874281184537" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="3.8s" repeatCount="indefinite" begin="1.92s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3.8s" repeatCount="indefinite" begin="1.92s"/>
+    <title>HostA</title>
   </circle>
-  <text x="326.72322293210703" y="415.3508193257453" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Brute Force</text>
-
-  <circle cx="160.00000000000006" cy="433.20508075688775" r="12" fill="#5cb3ff" filter="url(#glow)" opacity="0.88">
-    <animate attributeName="cx" values="160.00000000000006;166.99009378007045;160.00000000000006" dur="3.02s" repeatCount="indefinite" begin="3.35s"/>
-    <animate attributeName="cy" values="433.20508075688775;440.1951745369581;433.20508075688775" dur="3.02s" repeatCount="indefinite" begin="3.35s"/>
-    <animate attributeName="r" values="12;15;12" dur="3.02s" repeatCount="indefinite" begin="3.35s"/>
-    <animate attributeName="opacity" values="0.88;1;0.88" dur="3.02s" repeatCount="indefinite" begin="3.35s"/>
-    <title>Lateral Movement (Lateral Movement)</title>
+  <text x="425.86664873203233" y="291.5874281184537" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">HostA</text>
+  <circle cx="273.6464758633277" cy="365.57035741757886" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3.98s" repeatCount="indefinite" begin="2.49s"/>
   </circle>
-  <text x="172.00000000000006" y="438.20508075688775" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
-
-  <circle cx="100.25225446639556" cy="201.85657563463633" r="10" fill="#ff4dff" filter="url(#glow)" opacity="0.76">
-    <animate attributeName="cx" values="100.25225446639556;93.97362003657987;100.25225446639556" dur="4.15s" repeatCount="indefinite" begin="1.44s"/>
-    <animate attributeName="cy" values="201.85657563463633;195.57794120482063;201.85657563463633" dur="4.15s" repeatCount="indefinite" begin="1.44s"/>
-    <animate attributeName="r" values="10;13;10" dur="4.15s" repeatCount="indefinite" begin="1.44s"/>
-    <animate attributeName="opacity" values="0.76;1;0.76" dur="4.15s" repeatCount="indefinite" begin="1.44s"/>
-    <title>Exfiltration (Exfiltration)</title>
+  <circle cx="273.6464758633277" cy="365.57035741757886" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="3.98s" repeatCount="indefinite" begin="2.49s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3.98s" repeatCount="indefinite" begin="2.49s"/>
+    <title>Server42</title>
   </circle>
-  <text x="112.25225446639556" y="206.85657563463633" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
-
-  <circle cx="355.0" cy="95.45517328095667" r="13" fill="#2fffd3" filter="url(#glow)" opacity="0.9400000000000001">
-    <animate attributeName="cx" values="355.0;362.4765403509286;355.0" dur="4.28s" repeatCount="indefinite" begin="1.81s"/>
-    <animate attributeName="cy" values="95.45517328095667;102.93171363188526;95.45517328095667" dur="4.28s" repeatCount="indefinite" begin="1.81s"/>
-    <animate attributeName="r" values="13;16;13" dur="4.28s" repeatCount="indefinite" begin="1.81s"/>
-    <animate attributeName="opacity" values="0.9400000000000001;1;0.9400000000000001" dur="4.28s" repeatCount="indefinite" begin="1.81s"/>
-    <title>Command & Control (Command & Control)</title>
+  <text x="285.6464758633277" y="370.57035741757886" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Server42</text>
+  <circle cx="137.1539824501537" cy="362.5671108990365" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3.98s" repeatCount="indefinite" begin="2.21s"/>
   </circle>
-  <text x="367.0" y="100.45517328095667" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Command & Control</text>
-
-  <circle cx="260.0" cy="120.0" r="8" fill="#ffd700" filter="url(#glow)" opacity="0.64">
-    <animate attributeName="cx" values="260.0;269.97637902490584;260.0" dur="4.45s" repeatCount="indefinite" begin="1.98s"/>
-    <animate attributeName="cy" values="120.0;129.97637902490584;120.0" dur="4.45s" repeatCount="indefinite" begin="1.98s"/>
-    <animate attributeName="r" values="8;11;8" dur="4.45s" repeatCount="indefinite" begin="1.98s"/>
-    <animate attributeName="opacity" values="0.64;1;0.64" dur="4.45s" repeatCount="indefinite" begin="1.98s"/>
-    <title>Defense Evasion (Defense Evasion)</title>
+  <circle cx="137.1539824501537" cy="362.5671108990365" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="3.98s" repeatCount="indefinite" begin="2.21s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3.98s" repeatCount="indefinite" begin="2.21s"/>
+    <title>Workstation12</title>
   </circle>
-  <text x="272.0" y="125.0" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
-<text x="20" y="370" font-family="Consolas, monospace" font-size="14" fill="#5cb3ff" font-weight="700">MITRE ATT&CK Legend</text>
-<rect x="20" y="368" width="12" height="12" fill="#ff5c5c"/>
-<text x="38" y="380" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Initial Access</text>
-<rect x="20" y="388" width="12" height="12" fill="#ffb14c"/>
-<text x="38" y="400" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Credential Access</text>
-<rect x="20" y="408" width="12" height="12" fill="#5cb3ff"/>
-<text x="38" y="420" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
-<rect x="20" y="428" width="12" height="12" fill="#ff4dff"/>
-<text x="38" y="440" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
-<rect x="20" y="448" width="12" height="12" fill="#2fffd3"/>
-<text x="38" y="460" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Command & Control</text>
-<rect x="20" y="468" width="12" height="12" fill="#ffd700"/>
-<text x="38" y="480" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
-</svg>
+  <text x="149.1539824501537" y="367.5671108990365" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Workstation12</text>
+  <circle cx="61.45840205067739" cy="175.01617276812294" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3.06s" repeatCount="indefinite" begin="2.25s"/>
+  </circle>
+  <circle cx="61.45840205067739" cy="175.01617276812294" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="3.06s" repeatCount="indefinite" begin="2.25s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3.06s" repeatCount="indefinite" begin="2.25s"/>
+    <title>Router1</title>
+  </circle>
+  <text x="73.45840205067739" y="180.01617276812294" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Router1</text>
+  <circle cx="226.92663858785127" cy="90.57079528623817" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.2s" repeatCount="indefinite" begin="2.51s"/>
+  </circle>
+  <circle cx="226.92663858785127" cy="90.57079528623817" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="4.2s" repeatCount="indefinite" begin="2.51s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4.2s" repeatCount="indefinite" begin="2.51s"/>
+    <title>DBServer</title>
+  </circle>
+  <text x="238.92663858785127" y="95.57079528623817" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">DBServer</text>
+  <circle cx="370.2275553302262" cy="130.7261063532883" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.38s" repeatCount="indefinite" begin="1.11s"/>
+  </circle>
+  <circle cx="370.2275553302262" cy="130.7261063532883" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="4.38s" repeatCount="indefinite" begin="1.11s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4.38s" repeatCount="indefinite" begin="1.11s"/>
+    <title>Firewall</title>
+  </circle>
+  <text x="382.2275553302262" y="135.7261063532883" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Firewall</text>
+  <circle cx="379.46725773284436" cy="227.79819601532785" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.26s" repeatCount="indefinite" begin="2.02s"/>
+  </circle>
+  <circle cx="379.46725773284436" cy="227.79819601532785" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="4.26s" repeatCount="indefinite" begin="2.02s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4.26s" repeatCount="indefinite" begin="2.02s"/>
+    <title>HostB</title>
+  </circle>
+  <text x="391.46725773284436" y="232.79819601532785" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">HostB</text>
+  <circle cx="362.1296458404425" cy="385.5484441926058" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.4s" repeatCount="indefinite" begin="0.13s"/>
+  </circle>
+  <circle cx="362.1296458404425" cy="385.5484441926058" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="4.4s" repeatCount="indefinite" begin="0.13s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4.4s" repeatCount="indefinite" begin="0.13s"/>
+    <title>SensorX</title>
+  </circle>
+  <text x="374.1296458404425" y="390.5484441926058" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">SensorX</text>
+  <circle cx="207.64761936218488" cy="360.74072828613356" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.38s" repeatCount="indefinite" begin="1.45s"/>
+  </circle>
+  <circle cx="207.64761936218488" cy="360.74072828613356" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="4.38s" repeatCount="indefinite" begin="1.45s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4.38s" repeatCount="indefinite" begin="1.45s"/>
+    <title>Node9</title>
+  </circle>
+  <text x="219.64761936218488" y="365.74072828613356" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Node9</text>
+  <circle cx="110.49468924807309" cy="228.66975344280448" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="2.69s" repeatCount="indefinite" begin="0.13s"/>
+  </circle>
+  <circle cx="110.49468924807309" cy="228.66975344280448" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="2.69s" repeatCount="indefinite" begin="0.13s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.69s" repeatCount="indefinite" begin="0.13s"/>
+    <title>Proxy</title>
+  </circle>
+  <text x="122.49468924807309" y="233.66975344280448" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">Proxy</text></svg>
