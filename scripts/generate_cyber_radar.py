@@ -68,33 +68,33 @@ svg += f'''
 </path>
 '''
 
-# Draw threat points with glow and pulsing
+# Draw threat points with dynamic movement
 for label, tactic, angle_deg, dist, score in data_points:
-    rad = radians(angle_deg + random.uniform(-3, 3))  # jitter
-    x = CENTER_X + dist * cos(rad)
-    y = CENTER_Y + dist * sin(rad)
+    base_angle = angle_deg
+    base_dist = dist
+    rad = radians(base_angle)
+    x = CENTER_X + base_dist * cos(rad)
+    y = CENTER_Y + base_dist * sin(rad)
     base_r = 4 + score
     opacity = min(0.4 + 0.06*score, 1.0)
     fill_color = tactic_colors.get(tactic, "#5cb3ff")
     dur = round(random.uniform(2.5, 4.5), 2)
     begin = round(random.uniform(0, 4), 2)
 
-    # Glow behind dot
-    svg += f'''
-  <circle cx="{x}" cy="{y}" r="{base_r + 4}" fill="{fill_color}" opacity="{opacity/2}">
-    <animate attributeName="opacity" values="{opacity/2};{opacity};{opacity/2}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
-  </circle>'''
+    # Animate slight circular drift
+    drift_angle = random.uniform(-10, 10)
+    drift_dist = random.uniform(-10, 10)
 
-    # Main pulsing dot
     svg += f'''
   <circle cx="{x}" cy="{y}" r="{base_r}" fill="{fill_color}" filter="url(#glow)" opacity="{opacity}">
-    <animate attributeName="r" values="{base_r};{base_r+4};{base_r}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <animate attributeName="cx" values="{x};{x + drift_dist};{x}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <animate attributeName="cy" values="{y};{y + drift_dist};{y}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <animate attributeName="r" values="{base_r};{base_r + 3};{base_r}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
     <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
     <title>{label} ({tactic})</title>
-  </circle>'''
-
-    # Label
-    svg += f'<text x="{x+12}" y="{y+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>\n'
+  </circle>
+  <text x="{x+12}" y="{y+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>
+'''
 
 # MITRE legend
 legend_x, legend_y = 20, HEIGHT - 140
@@ -111,4 +111,5 @@ svg += '</svg>'
 with open(output, "w") as f:
     f.write(svg)
 
-print(f"Live Cyber Radar SVG saved to {output}")
+print(f"Live Dynamic Cyber Radar SVG saved to {output}")
+
