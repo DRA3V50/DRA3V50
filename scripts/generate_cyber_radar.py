@@ -43,25 +43,33 @@ for angle in range(0, 360, 30):
     y = CENTER_Y + RADAR_RADIUS * sin(rad)
     svg += f'  <line x1="{CENTER_X}" y1="{CENTER_Y}" x2="{x}" y2="{y}" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>\n'
 
-# Draw data points with labels
+# Central title
+svg += f'''  <text x="{CENTER_X}" y="28" font-family="Consolas, monospace" font-weight="800" font-size="22" fill="#5cb3ff" text-anchor="middle" letter-spacing="1">CYBER RADAR</text>
+  <text x="{CENTER_X}" y="50" font-family="Consolas, monospace" font-weight="500" font-size="14" fill="#a0c8ff" text-anchor="middle">Active Hosts & Alerts</text>
+'''
+
+# Draw data points with badge-style labels
 for label, angle_deg, dist in data_points:
     rad = radians(angle_deg)
     x = CENTER_X + dist * cos(rad)
     y = CENTER_Y + dist * sin(rad)
 
-    # Main dot
+    # Dot
     svg += f'  <circle cx="{x}" cy="{y}" r="6" fill="#5cb3ff" opacity="0.9"/>\n'
 
-    # Label
-    svg += f'  <text x="{x + 12}" y="{y + 5}" font-family="Consolas, monospace" font-weight="600" font-size="14" fill="#a0c8ff">{label}</text>\n'
+    # Badge background
+    rect_width = max(len(label) * 8, 30)
+    svg += f'  <rect x="{x+10}" y="{y-8}" width="{rect_width}" height="16" fill="#1e3a72" rx="3" ry="3"/>\n'
 
-# Optional: central title
-svg += f'''  <text x="{CENTER_X}" y="30" font-family="Consolas, monospace" font-weight="700" font-size="18" fill="#9ec7ff" text-anchor="middle">Cyber Radar</text>
+    # Label text
+    svg += f'  <text x="{x + 12}" y="{y + 5}" font-family="Consolas, monospace" font-weight="600" font-size="12" fill="#a0c8ff">{label}</text>\n'
+
+# Optional legend
+svg += f'''  <text x="10" y="{HEIGHT-20}" font-family="Consolas, monospace" font-size="12" fill="#5cb3ff">● Host / Server</text>
 </svg>'''
 
 # Write to file
 with open(output, "w") as f:
     f.write(svg)
 
-print(f"Static Cyber Radar SVG saved to {output}")
-
+print(f"Advanced Cyber Radar SVG saved to {output}")
