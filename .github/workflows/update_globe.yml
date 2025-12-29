@@ -1,12 +1,12 @@
-name: Update Live Globe
+name: Update Live SVG
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # Every 30 minutes
-  workflow_dispatch:        # Also allow manual run
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
 
 jobs:
-  build:
+  update_svg:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,14 +14,12 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
-      - name: Install requirements
-        run: pip install -r requirements.txt plotly
-      - name: Generate Globe
-        run: python scripts/generate_globe.py
-      - name: Commit & Push Updated Globe
+      - name: Generate SVG
+        run: python scripts/generate_svg.py
+      - name: Commit & Push
         run: |
           git config user.name "mitre-bot"
           git config user.email "mitre-bot@example.com"
-          git add assets/globe_live.html
-          git commit -m "Update live globe"
+          git add assets/globe_live.svg
+          git commit -m "Update live SVG"
           git push
