@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+<rect width="600" height="400" fill="#0a0f1a"/>
+
+    <circle cx="100" cy="80" r="7.16" fill="#4effff" opacity="0.645">
+        <animate attributeName="r" values="7.16;11.16;7.16" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.645;1;0.645" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="110" y="85" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">HostA</text>
+    
+    <circle cx="250" cy="180" r="9.72" fill="#4effff" opacity="0.9650000000000001">
+        <animate attributeName="r" values="9.72;13.72;9.72" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9650000000000001;1;0.9650000000000001" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="260" y="185" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Server42</text>
+    
+    <circle cx="400" cy="120" r="9.120000000000001" fill="#4effff" opacity="0.89">
+        <animate attributeName="r" values="9.120000000000001;13.120000000000001;9.120000000000001" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.89;1;0.89" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="410" y="125" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Workstation12</text>
+    
+    <circle cx="150" cy="300" r="8.08" fill="#4effff" opacity="0.76">
+        <animate attributeName="r" values="8.08;12.08;8.08" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.76;1;0.76" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="160" y="305" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Firewall</text>
+    
+    <circle cx="350" cy="250" r="8.08" fill="#4effff" opacity="0.76">
+        <animate attributeName="r" values="8.08;12.08;8.08" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.76;1;0.76" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="360" y="255" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">DBServer</text>
+    </svg>
