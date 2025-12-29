@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
 <rect width="600" height="300" fill="#0a0f1a"/>
-<rect x="10" y="202" width="50" height="48" fill="#4effff" rx="4"/>
+<rect x="10" y="124" width="50" height="126" fill="#f5a623" rx="4"/>
 <text x="10" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Initial Access</text>
-<rect x="70" y="124" width="50" height="126" fill="#f5a623" rx="4"/>
+<rect x="70" y="100" width="50" height="150" fill="#ff4e4e" rx="4"/>
 <text x="70" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Execution</text>
-<rect x="130" y="228" width="50" height="22" fill="#4effff" rx="4"/>
+<rect x="130" y="54" width="50" height="196" fill="#ff4e4e" rx="4"/>
 <text x="130" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Persistence</text>
-<rect x="190" y="142" width="50" height="108" fill="#f5a623" rx="4"/>
+<rect x="190" y="58" width="50" height="192" fill="#ff4e4e" rx="4"/>
 <text x="190" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Privilege Escalation</text>
-<rect x="250" y="54" width="50" height="196" fill="#ff4e4e" rx="4"/>
+<rect x="250" y="160" width="50" height="90" fill="#f5a623" rx="4"/>
 <text x="250" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Defense Evasion</text>
-<rect x="310" y="204" width="50" height="46" fill="#4effff" rx="4"/>
+<rect x="310" y="178" width="50" height="72" fill="#4effff" rx="4"/>
 <text x="310" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Credential Access</text>
-<rect x="370" y="168" width="50" height="82" fill="#f5a623" rx="4"/>
+<rect x="370" y="158" width="50" height="92" fill="#f5a623" rx="4"/>
 <text x="370" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Discovery</text>
-<rect x="430" y="100" width="50" height="150" fill="#ff4e4e" rx="4"/>
+<rect x="430" y="50" width="50" height="200" fill="#ff4e4e" rx="4"/>
 <text x="430" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Lateral Movement</text>
-<rect x="490" y="222" width="50" height="28" fill="#4effff" rx="4"/>
+<rect x="490" y="104" width="50" height="146" fill="#ff4e4e" rx="4"/>
 <text x="490" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Exfiltration</text>
-<rect x="550" y="184" width="50" height="66" fill="#4effff" rx="4"/>
+<rect x="550" y="206" width="50" height="44" fill="#4effff" rx="4"/>
 <text x="550" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Impact</text>
 </svg>
