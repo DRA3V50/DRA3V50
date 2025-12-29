@@ -3,18 +3,15 @@ name: Generate Cyber Radar
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    - cron: "*/30 * * * *"  # every 30 minutes
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -26,10 +23,7 @@ jobs:
       - name: Generate Cyber Radar
         run: python3 scripts/generate_cyber_radar.py
 
-      - name: List assets folder (debug)
-        run: ls -l assets/
-
-      - name: Commit generated SVG
+      - name: Commit updated SVG
         uses: EndBug/add-and-commit@v9
         with:
           add: "assets/cyber_radar_static.svg"
@@ -38,3 +32,4 @@ jobs:
           message: "Update cyber radar"
           push: true
           branch: main
+
