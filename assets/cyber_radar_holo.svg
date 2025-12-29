@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#0a0f1a"/>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#4effff" flood-opacity="0.8"/>
+    </filter>
+    <radialGradient id="sweepGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2f6fed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2f6fed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="300" r="50" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="300" r="100" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="300" r="150" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="300" r="200" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>
+  <path d="M300,300 L500,300" fill="url(#sweepGrad)" filter="url(#glow)">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 300 300" to="360 300 300" dur="10s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="500.0" cy="300.0" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="4.69s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4.69s" repeatCount="indefinite"/>
+    <title>Workstation1</title>
+  </circle>
+  <text x="508.0" y="304.0" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Workstation1</text>
+  <circle cx="400.0" cy="473.2050807568877" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.4s" repeatCount="indefinite"/>
+    <title>Server1</title>
+  </circle>
+  <text x="408.0" y="477.2050807568877" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Server1</text>
+  <circle cx="200.00000000000006" cy="473.20508075688775" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="2.93s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.93s" repeatCount="indefinite"/>
+    <title>DBServer</title>
+  </circle>
+  <text x="208.00000000000006" y="477.20508075688775" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">DBServer</text>
+  <circle cx="100.0" cy="300.0" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="4.42s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4.42s" repeatCount="indefinite"/>
+    <title>Firewall</title>
+  </circle>
+  <text x="108.0" y="304.0" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Firewall</text>
+  <circle cx="199.99999999999991" cy="126.79491924311233" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="3.75s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.75s" repeatCount="indefinite"/>
+    <title>Router</title>
+  </circle>
+  <text x="207.99999999999991" y="130.79491924311233" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Router</text>
+  <circle cx="400.0" cy="126.79491924311228" r="6" fill="#4effff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;12;6" dur="4.92s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4.92s" repeatCount="indefinite"/>
+    <title>SensorX</title>
+  </circle>
+  <text x="408.0" y="130.79491924311228" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">SensorX</text>
+</svg>
