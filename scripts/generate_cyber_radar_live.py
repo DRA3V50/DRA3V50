@@ -2,38 +2,44 @@ import random
 from math import cos, sin, radians
 from pathlib import Path
 
-# Output
-WIDTH, HEIGHT = 520, 520
+# --- Config ---
+WIDTH, HEIGHT = 480, 480
 CENTER_X, CENTER_Y = WIDTH // 2, HEIGHT // 2
-RADAR_RADIUS = 220
-output = Path("assets/cyber_radar_live.svg")
-output.parent.mkdir(parents=True, exist_ok=True)
+RADAR_RADIUS = 200
 
-# MITRE-style data: (technique, tactic, base angle, distance, threat score 1-10)
+# Output paths
+output_live = Path("assets/cyber_radar_live.svg")
+output_static = Path("assets/cyber_radar_static.svg")
+output_live.parent.mkdir(parents=True, exist_ok=True)
+
+# Example data points: (label, angle in degrees, distance from center)
 data_points = [
-    ("Phishing", "Initial Access", 20, 180, 7),
-    ("Brute Force", "Credential Access", 70, 160, 5),
-    ("Lateral Movement", "Lateral Movement", 120, 200, 8),
-    ("Exfiltration", "Exfiltration", 200, 170, 6),
-    ("Command & Control", "Command & Control", 300, 190, 9),
-    ("Defense Evasion", "Defense Evasion", 270, 140, 4),
+    ("HostA", 15, 180),
+    ("Server42", 75, 130),
+    ("Workstation12", 130, 160),
+    ("Router1", 200, 190),
+    ("DBServer", 265, 150),
+    ("Firewall", 320, 170),
+    ("HostB", 355, 140),
+    ("SensorX", 50, 190),
+    ("Node9", 105, 125),
+    ("Proxy", 185, 130),
 ]
 
-# Color mapping for MITRE tactics
-tactic_colors = {
-    "Initial Access": "#ff5c5c",
-    "Credential Access": "#ffb14c",
-    "Lateral Movement": "#5cb3ff",
-    "Exfiltration": "#ff4dff",
-    "Command & Control": "#2fffd3",
-    "Defense Evasion": "#ffd700",
-}
-
-# Start SVG
+# --- SVG header ---
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#5cb3ff" flood-opacity="0.7"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#5cb3ff" flood-opacity="0.8"/>
+    </filter>
+    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
     <radialGradient id="sweepGrad" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#2f6fed" stop-opacity="0.35"/>
@@ -41,75 +47,68 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGH
     </radialGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="{WIDTH}" height="{HEIGHT}" fill="#0a0f1a"/>
-  <text x="20" y="30" font-family="Consolas, monospace" font-size="20" fill="#5cb3ff" font-weight="700">
-    SOC Live Cyber Radar
-  </text>
+
+  <!-- Radar rings -->
 '''
-
-# Draw concentric rings
+# Concentric rings
 for r in range(40, RADAR_RADIUS + 1, 40):
-    svg += f'<circle cx="{CENTER_X}" cy="{CENTER_Y}" r="{r}" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>\n'
+    svg += f'  <circle cx="{CENTER_X}" cy="{CENTER_Y}" r="{r}" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.3"/>\n'
 
-# Draw spokes every 30 degrees
+# Spokes every 30 degrees
 for angle in range(0, 360, 30):
     rad = radians(angle)
     x = CENTER_X + RADAR_RADIUS * cos(rad)
     y = CENTER_Y + RADAR_RADIUS * sin(rad)
-    svg += f'<line x1="{CENTER_X}" y1="{CENTER_Y}" x2="{x}" y2="{y}" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>\n'
+    svg += f'  <line x1="{CENTER_X}" y1="{CENTER_Y}" x2="{x}" y2="{y}" stroke="#2f6fed" stroke-width="1" opacity="0.15"/>\n'
 
-# Sweep sector (animated)
+# Sweep beam
 svg += f'''
-<path d="M{CENTER_X},{CENTER_Y} L{CENTER_X + RADAR_RADIUS},{CENTER_Y} 
-         A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER_X + int(RADAR_RADIUS*0.7)},{CENTER_Y - int(RADAR_RADIUS*0.7)} Z"
-      fill="url(#sweepGrad)" filter="url(#glow)">
-  <animateTransform attributeName="transform" type="rotate" from="0 {CENTER_X} {CENTER_Y}" to="360 {CENTER_X} {CENTER_Y}" dur="8s" repeatCount="indefinite"/>
-</path>
+  <path d="M{CENTER_X},{CENTER_Y} L{CENTER_X + RADAR_RADIUS},{CENTER_Y} A{RADAR_RADIUS},{RADAR_RADIUS} 0 0,1 {CENTER_X + int(RADAR_RADIUS*0.7)},{CENTER_Y - int(RADAR_RADIUS*0.7)} Z"
+        fill="url(#sweepGrad)" filter="url(#glow)">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+        from="0 {CENTER_X} {CENTER_Y}" to="360 {CENTER_X} {CENTER_Y}" dur="8s" repeatCount="indefinite"/>
+  </path>
 '''
 
-# Draw threat points with dynamic movement
-for label, tactic, angle_deg, dist, score in data_points:
-    base_angle = angle_deg
-    base_dist = dist
-    rad = radians(base_angle)
-    x = CENTER_X + base_dist * cos(rad)
-    y = CENTER_Y + base_dist * sin(rad)
-    base_r = 4 + score
-    opacity = min(0.4 + 0.06*score, 1.0)
-    fill_color = tactic_colors.get(tactic, "#5cb3ff")
+# Data points
+for label, angle_deg, dist in data_points:
+    rad = radians(angle_deg)
+    x = CENTER_X + dist * cos(rad)
+    y = CENTER_Y + dist * sin(rad)
     dur = round(random.uniform(2.5, 4.5), 2)
     begin = round(random.uniform(0, 4), 2)
 
-    # Animate slight circular drift
-    drift_angle = random.uniform(-10, 10)
-    drift_dist = random.uniform(-10, 10)
-
+    # Glow background
     svg += f'''
-  <circle cx="{x}" cy="{y}" r="{base_r}" fill="{fill_color}" filter="url(#glow)" opacity="{opacity}">
-    <animate attributeName="cx" values="{x};{x + drift_dist};{x}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
-    <animate attributeName="cy" values="{y};{y + drift_dist};{y}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
-    <animate attributeName="r" values="{base_r};{base_r + 3};{base_r}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
-    <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
-    <title>{label} ({tactic})</title>
-  </circle>
-  <text x="{x+12}" y="{y+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>
-'''
+  <circle cx="{x}" cy="{y}" r="10" fill="#5cb3ff" opacity="0.15" filter="url(#blurGlow)">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+  </circle>'''
 
-# MITRE legend
-legend_x, legend_y = 20, HEIGHT - 140
-svg += f'<text x="{legend_x}" y="{legend_y-10}" font-family="Consolas, monospace" font-size="14" fill="#5cb3ff" font-weight="700">MITRE ATT&CK Legend</text>\n'
-for i, (tactic, color) in enumerate(tactic_colors.items()):
-    y_pos = legend_y + i*20
-    svg += f'<rect x="{legend_x}" y="{y_pos-12}" width="12" height="12" fill="{color}"/>\n'
-    svg += f'<text x="{legend_x + 18}" y="{y_pos}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{tactic}</text>\n'
+    # Main dot
+    svg += f'''
+  <circle cx="{x}" cy="{y}" r="6" fill="#5cb3ff" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="r" values="6;10;6" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="{dur}s" repeatCount="indefinite" begin="{begin}s"/>
+    <title>{label}</title>
+  </circle>'''
 
-# End SVG
+    # Label
+    svg += f'''
+  <text x="{x + 12}" y="{y + 5}" font-family="Consolas, monospace" font-weight="600"
+        font-size="14" fill="#a0c8ff" style="text-shadow: 0 0 3px #1e3a72;" pointer-events="none">{label}</text>'''
+
 svg += '</svg>'
 
-# Save
-with open(output, "w") as f:
+# --- Write live animated SVG ---
+with open(output_live, "w") as f:
     f.write(svg)
 
-print(f"Live Dynamic Cyber Radar SVG saved to {output}")
+# --- Write static SVG for README ---
+svg_static = svg.replace('<animate', '<!-- <animate').replace('</animate>', '</animate> -->')
+with open(output_static, "w") as f:
+    f.write(svg_static)
+
+print(f"Live SVG saved to {output_live}")
+print(f"Static SVG saved to {output_static}")
 
