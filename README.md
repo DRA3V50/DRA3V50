@@ -67,7 +67,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## 🛡️ MITRE ATT&CK Coverage Blue Team Capability Radar
 
-![Cyber Radar](assets/cyber_radar_with_labels.svg)
+![Advanced Cyber Radar](assets/cyber_radar_advanced.svg)
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)
 
