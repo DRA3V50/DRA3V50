@@ -1,51 +1,43 @@
-import os
 import random
+import os
 
-# Make sure assets folder exists
-os.makedirs("assets", exist_ok=True)
+# Output file path
+output_path = os.path.join("assets", "cyber_heatmap_live.svg")
 
-# Hosts/data points for your heatmap
+# Hosts with mock positions
 hosts = [
-    {"name": "HostA", "x": 100, "y": 50},
-    {"name": "Server42", "x": 200, "y": 120},
-    {"name": "Workstation12", "x": 300, "y": 200},
-    {"name": "Router1", "x": 400, "y": 80},
-    {"name": "DBServer", "x": 500, "y": 150},
+    {"name": "HostA", "x": 100, "y": 80},
+    {"name": "Server42", "x": 250, "y": 180},
+    {"name": "Workstation12", "x": 400, "y": 120},
+    {"name": "Firewall", "x": 150, "y": 300},
+    {"name": "DBServer", "x": 350, "y": 250},
 ]
 
-# Generate random "activity" for each host
+# Assign random activity
 for host in hosts:
-    # assign intensity 0-100
-    host["activity"] = random.randint(0, 100)
+    host["activity"] = random.randint(0, 100)  # intensity 0-100
 
-# Create SVG content
-svg_header = """<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
-  <rect width="600" height="400" fill="#0a0f1a"/>"""
-
-svg_footer = "</svg>"
-
-host_circles = ""
+# Create SVG
+svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+<rect width="600" height="400" fill="#0a0f1a"/>
+'''
 
 for host in hosts:
-    intensity = host["activity"]
-    radius = 6 + intensity * 0.05  # scale radius by activity
-    opacity = 0.5 + (intensity / 200)  # scale opacity 0.5-1
-    color = "#ff4e4e" if intensity > 70 else "#4effff"
-    
-    host_circles += f"""
-  <circle cx="{host['x']}" cy="{host['y']}" r="{radius}" fill="{color}">
-    <animate attributeName="r" values="{radius};{radius+4};{radius}" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <text x="{host['x'] + 10}" y="{host['y'] + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{host['name']}</text>"""
+    intensity = host["activity"] / 100
+    radius = 6 + 4 * intensity
+    opacity = 0.5 + 0.5 * intensity
+    svg_content += f'''
+    <circle cx="{host["x"]}" cy="{host["y"]}" r="{radius}" fill="#4effff" opacity="{opacity}">
+        <animate attributeName="r" values="{radius};{radius+4};{radius}" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="{host["x"] + 10}" y="{host["y"] + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{host["name"]}</text>
+    '''
 
-# Combine everything
-svg_content = svg_header + host_circles + svg_footer
+svg_content += "</svg>"
 
-# Write SVG to file
-output_path = "assets/cyber_heatmap_live.svg"
+# Write to file
 with open(output_path, "w") as f:
     f.write(svg_content)
 
-print(f"SVG heatmap generated: {output_path}")
-
+print(f"Cyber heatmap generated: {output_path}")
