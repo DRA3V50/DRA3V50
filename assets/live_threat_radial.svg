@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="150">
 <rect width="200" height="150" fill="#0a0f1a"/>
 <text x="10" y="15" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Threat Radial</text>
-<path d="M 100,150 L 100.0,90.0 A 60,60 0 0 1 146.23079456654736,188.24543938492138 Z" fill="#ff4e4e">
+<path d="M 100,150 L 100.0,90.0 A 60,60 0 0 1 157.06339097770922,168.54101966249684 Z" fill="#ff4e4e">
 <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
 </path>
-<path d="M 100,150 L 142.7215627594598,192.12918317970974 A 60,60 0 0 1 57.2784372405402,107.87081682029026 Z" fill="#ffb74e">
+<path d="M 100,150 L 155.23029120714642,173.44386770935643 A 60,60 0 0 1 40.674617137179645,141.02787939337745 Z" fill="#ffb74e">
 <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
 </path>
-<path d="M 100,150 L 61.112805936212155,104.30770154779579 A 60,60 0 1 1 138.88719406378786,195.6922984522042 Z" fill="#4effff">
+<path d="M 100,150 L 41.68233996528722,135.89147321384462 A 60,60 0 0 1 102.93098618773682,90.07163175951396 Z" fill="#4effff">
 <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
 </path>
 </svg>
