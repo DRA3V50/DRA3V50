@@ -14,7 +14,7 @@ ASSETS_DIR.mkdir(exist_ok=True)
 # Generate live-ish data
 data = {
     "critical": random.randint(10, 40),
-    "high": random.randint(30, 80),
+    "abnormal": random.randint(30, 80),
     "medium": random.randint(60, 120),
     "investigated": random.randint(100, 200),
     "updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
