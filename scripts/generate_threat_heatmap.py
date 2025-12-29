@@ -1,57 +1,70 @@
-import json
 import random
 from datetime import datetime
 
-# Load coverage / host data
-try:
-    with open("radar-config.json") as f:
-        hosts = json.load(f)
-except FileNotFoundError:
-    # sample data if config missing
-    hosts = [
-        {"name": "HostA", "x": 100, "y": 80, "tactic": "Initial Access"},
-        {"name": "Server42", "x": 300, "y": 150, "tactic": "Execution"},
-        {"name": "DBServer", "x": 500, "y": 220, "tactic": "Persistence"},
-        {"name": "Firewall", "x": 400, "y": 300, "tactic": "Defense Evasion"},
-    ]
+# Hosts with their MITRE ATT&CK stage
+hosts = [
+    {"name": "HostA", "stage": "Initial Access"},
+    {"name": "Server42", "stage": "Execution"},
+    {"name": "Workstation12", "stage": "Persistence"},
+    {"name": "Firewall", "stage": "Defense Evasion"},
+    {"name": "DBServer", "stage": "Privilege Escalation"}
+]
 
-# Generate dynamic activity levels
+# Generate random activity for each host
 for host in hosts:
-    host["activity"] = random.randint(0, 100)  # intensity 0-100
+    host["activity"] = random.randint(10, 100)  # intensity 10-100
 
-# SVG header
+# Start SVG
 svg_header = f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
-  <rect width="600" height="400" fill="#0a0f1a"/>
-  <defs>
-    <radialGradient id="pulseGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff4e4e" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#ff4e4e" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <text x="10" y="20" fill="#a0c8ff" font-family="Consolas, monospace" font-size="14">
-    Last Updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")} UTC
-  </text>
+<rect width="600" height="400" fill="#0a0f1a"/>
+<defs>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+<feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4effff" flood-opacity="0.8"/>
+</filter>
+</defs>
 '''
 
-# Generate hosts as animated circles
-host_svgs = ""
-for h in hosts:
-    radius = 6 + h["activity"] / 20  # pulsing radius based on activity
-    pulse_duration = 2 + h["activity"] / 50
-    color = "#4effff" if h["activity"] < 50 else "#ff4e4e"
-    host_svgs += f'''
-  <circle cx="{h['x']}" cy="{h['y']}" r="{radius}" fill="{color}">
-    <animate attributeName="r" values="{radius};{radius+4};{radius}" dur="{pulse_duration}s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="{pulse_duration}s" repeatCount="indefinite"/>
-    <title>{h['name']} ({h['tactic']})</title>
-  </circle>
-  <text x="{h['x']+10}" y="{h['y']+5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{h['name']}</text>
+# Animated circles per host
+svg_circles = ""
+for i, host in enumerate(hosts):
+    x = 100 + i * 90
+    y = 200
+    r = 6
+    max_r = 6 + host["activity"] // 10  # bigger radius for higher activity
+    dur = round(2 + random.random() * 2, 2)  # random pulse duration
+    opacity = round(0.3 + host["activity"] / 150, 2)
+    svg_circles += f'''
+    <circle cx="{x}" cy="{y}" r="{r}" fill="#4effff" filter="url(#glow)" opacity="{opacity}">
+        <animate attributeName="r" values="{r};{max_r};{r}" dur="{dur}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="{dur}s" repeatCount="indefinite"/>
+        <title>{host['name']} - {host['stage']}</title>
+    </circle>
+    <text x="{x + 10}" y="{y + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{host['name']}</text>
+    '''
+
+# Optional "FBI eye" in corner
+svg_eye = '''
+<circle cx="550" cy="50" r="20" fill="none" stroke="#4effff" stroke-width="2">
+    <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="550" cy="50" r="8" fill="#4effff">
+    <animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/>
+</circle>
 '''
 
-# Close SVG
-svg_footer = "</svg>"
+# Footer with timestamp
+svg_footer = f'''
+<text x="10" y="390" font-family="Consolas, monospace" font-size="10" fill="#5cb3ff">
+Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")} UTC
+</text>
+</svg>
+'''
 
-# Write to assets
-with open("assets/threat_heatmap_live.svg", "w") as f:
-    f.write(svg_header + host_svgs + svg_footer)
+# Write SVG file
+svg_content = svg_header + svg_circles + svg_eye + svg_footer
+
+with open("../assets/cyber_heatmap_live.svg", "w") as f:
+    f.write(svg_content)
+
+print("SVG threat heatmap generated successfully!")
 
