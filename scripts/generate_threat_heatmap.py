@@ -54,3 +54,4 @@ svg_footer = "</svg>"
 # Write to assets
 with open("assets/threat_heatmap_live.svg", "w") as f:
     f.write(svg_header + host_svgs + svg_footer)
+
