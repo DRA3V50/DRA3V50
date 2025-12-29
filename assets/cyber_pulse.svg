@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0a0f1a"/>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4effff" flood-opacity="0.8"/>
+    </filter>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6fed"/>
+      <stop offset="100%" stop-color="#5cb3ff"/>
+    </linearGradient>
+  </defs>
+<line x1="0" y1="50" x2="600" y2="50" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="100" x2="600" y2="100" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="150" x2="600" y2="150" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="200" x2="600" y2="200" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="250" x2="600" y2="250" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="300" x2="600" y2="300" stroke="#1e2a45" stroke-width="1"/>
+<line x1="0" y1="350" x2="600" y2="350" stroke="#1e2a45" stroke-width="1"/>
+
+  <path d="M0,50" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="5.99s" repeatCount="indefinite"
+      values="
+        M0,50 
+        L50,23 L100,58 L150,25 L200,62 L250,85 L300,41 L350,39 L400,47 L450,24 L500,70 L550,40 L600,76;
+        M0,50 
+        L50,75 L100,76 L150,65 L200,16 L250,28 L300,23 L350,51 L400,53 L450,21 L500,47 L550,62 L600,38;
+      "
+      begin="0.36s"/>
+  </path>
+  <text x="10" y="45" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Initial Access</text>
+
+  <path d="M0,80" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="4.98s" repeatCount="indefinite"
+      values="
+        M0,80 
+        L50,84 L100,72 L150,85 L200,77 L250,87 L300,63 L350,63 L400,87 L450,109 L500,72 L550,83 L600,71;
+        M0,80 
+        L50,93 L100,98 L150,90 L200,94 L250,73 L300,79 L350,70 L400,58 L450,76 L500,78 L550,94 L600,69;
+      "
+      begin="0.71s"/>
+  </path>
+  <text x="10" y="75" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Execution</text>
+
+  <path d="M0,110" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="6.03s" repeatCount="indefinite"
+      values="
+        M0,110 
+        L50,135 L100,131 L150,91 L200,124 L250,112 L300,102 L350,103 L400,94 L450,128 L500,119 L550,89 L600,104;
+        M0,110 
+        L50,112 L100,121 L150,97 L200,132 L250,135 L300,112 L350,128 L400,97 L450,106 L500,91 L550,86 L600,92;
+      "
+      begin="1.67s"/>
+  </path>
+  <text x="10" y="105" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Persistence</text>
+
+  <path d="M0,140" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="4.82s" repeatCount="indefinite"
+      values="
+        M0,140 
+        L50,138 L100,124 L150,140 L200,122 L250,159 L300,159 L350,138 L400,163 L450,150 L500,115 L550,113 L600,155;
+        M0,140 
+        L50,113 L100,166 L150,123 L200,128 L250,160 L300,163 L350,155 L400,127 L450,150 L500,162 L550,168 L600,164;
+      "
+      begin="1.01s"/>
+  </path>
+  <text x="10" y="135" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Privilege Escalation</text>
+
+  <path d="M0,170" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="6.03s" repeatCount="indefinite"
+      values="
+        M0,170 
+        L50,165 L100,181 L150,170 L200,194 L250,156 L300,144 L350,184 L400,162 L450,171 L500,158 L550,183 L600,179;
+        M0,170 
+        L50,143 L100,142 L150,147 L200,170 L250,197 L300,143 L350,188 L400,171 L450,158 L500,154 L550,145 L600,170;
+      "
+      begin="2.54s"/>
+  </path>
+  <text x="10" y="165" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
+
+  <path d="M0,200" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="4.66s" repeatCount="indefinite"
+      values="
+        M0,200 
+        L50,203 L100,195 L150,171 L200,176 L250,207 L300,192 L350,183 L400,173 L450,177 L500,174 L550,204 L600,173;
+        M0,200 
+        L50,198 L100,196 L150,189 L200,223 L250,180 L300,184 L350,200 L400,196 L450,181 L500,189 L550,171 L600,215;
+      "
+      begin="0.77s"/>
+  </path>
+  <text x="10" y="195" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Credential Access</text>
+
+  <path d="M0,230" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="5.19s" repeatCount="indefinite"
+      values="
+        M0,230 
+        L50,224 L100,233 L150,208 L200,234 L250,227 L300,224 L350,241 L400,252 L450,210 L500,238 L550,217 L600,210;
+        M0,230 
+        L50,227 L100,218 L150,212 L200,215 L250,227 L300,237 L350,250 L400,221 L450,209 L500,242 L550,241 L600,241;
+      "
+      begin="0.69s"/>
+  </path>
+  <text x="10" y="225" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Discovery</text>
+
+  <path d="M0,260" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="5.66s" repeatCount="indefinite"
+      values="
+        M0,260 
+        L50,233 L100,239 L150,265 L200,284 L250,266 L300,261 L350,263 L400,231 L450,255 L500,243 L550,282 L600,237;
+        M0,260 
+        L50,253 L100,262 L150,272 L200,238 L250,240 L300,251 L350,276 L400,261 L450,245 L500,245 L550,267 L600,257;
+      "
+      begin="2.22s"/>
+  </path>
+  <text x="10" y="255" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
+
+  <path d="M0,290" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="4.7s" repeatCount="indefinite"
+      values="
+        M0,290 
+        L50,273 L100,263 L150,258 L200,269 L250,259 L300,273 L350,271 L400,303 L450,282 L500,287 L550,256 L600,321;
+        M0,290 
+        L50,313 L100,297 L150,298 L200,323 L250,274 L300,277 L350,316 L400,270 L450,265 L500,274 L550,263 L600,301;
+      "
+      begin="0.04s"/>
+  </path>
+  <text x="10" y="285" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
+
+  <path d="M0,320" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="d"
+      dur="5.27s" repeatCount="indefinite"
+      values="
+        M0,320 
+        L50,297 L100,336 L150,323 L200,331 L250,355 L300,288 L350,289 L400,353 L450,341 L500,334 L550,342 L600,283;
+        M0,320 
+        L50,317 L100,281 L150,350 L200,329 L250,353 L300,323 L350,292 L400,285 L450,319 L500,347 L550,327 L600,304;
+      "
+      begin="2.08s"/>
+  </path>
+  <text x="10" y="315" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Impact</text>
+</svg>
