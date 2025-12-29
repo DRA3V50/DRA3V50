@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150">
+<rect width="200" height="150" fill="#0a0f1a"/>
+<text x="10" y="15" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Threat Radial</text>
+<path d="M 100,150 L 100.0,90.0 A 60,60 0 0 1 154.28962314796115,175.54675749390435 Z" fill="#ff4e4e">
+<animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M 100,150 L 151.85648811722228,180.1811967978141 A 60,60 0 0 1 40.307157470272706,156.06337783097678 Z" fill="#ffb74e">
+<animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M 100,150 L 40.005848559441745,150.83773082034872 A 60,60 0 0 1 137.59622868186761,103.23972210411154 Z" fill="#4effff">
+<animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+</path>
+</svg>
