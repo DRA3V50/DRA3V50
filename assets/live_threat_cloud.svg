@@ -1,153 +1,143 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="150">
 <rect width="250" height="150" fill="#0a0f1a"/>
-<circle id="p0" cx="39" cy="103" r="4" fill="#ff4e4e">
+<circle id="p0" cx="66" cy="25" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="39;45;39" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="103;96;103" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="66;58;66" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="25;27;25" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p1" cx="137" cy="21" r="4" fill="#ff4e4e">
+<circle id="p1" cx="50" cy="38" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="137;145;137" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="21;17;21" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="50;43;50" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="38;29;38" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p2" cx="188" cy="46" r="4" fill="#ff4e4e">
+<circle id="p2" cx="89" cy="120" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="188;182;188" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="46;39;46" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="89;82;89" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="120;112;120" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p3" cx="42" cy="108" r="4" fill="#ff4e4e">
+<circle id="p3" cx="96" cy="63" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="42;51;42" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="108;99;108" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="96;87;96" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="63;71;63" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p4" cx="148" cy="44" r="4" fill="#ff4e4e">
+<circle id="p4" cx="99" cy="62" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="148;142;148" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="44;52;44" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="99;90;99" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="62;58;62" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p5" cx="137" cy="102" r="4" fill="#ff4e4e">
+<circle id="p5" cx="50" cy="37" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="137;139;137" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="102;112;102" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="50;43;50" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="37;32;37" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p6" cx="75" cy="51" r="4" fill="#ff4e4e">
+<circle id="p6" cx="120" cy="31" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="75;81;75" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="51;61;51" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="120;111;120" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="31;29;31" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p7" cx="32" cy="35" r="4" fill="#ff4e4e">
+<circle id="p7" cx="141" cy="101" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="32;38;32" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="35;27;35" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="141;149;141" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="101;103;101" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p8" cx="165" cy="46" r="4" fill="#ff4e4e">
+<circle id="p8" cx="99" cy="89" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="165;166;165" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="46;49;46" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="99;100;99" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="89;92;89" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p9" cx="115" cy="110" r="4" fill="#ff4e4e">
+<circle id="p9" cx="64" cy="65" r="4" fill="#ff4e4e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="115;125;115" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="110;108;110" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="64;64;64" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="65;73;65" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p10" cx="195" cy="25" r="4" fill="#ff4e4e">
+<circle id="p10" cx="44" cy="22" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="195;194;195" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="25;30;25" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="44;44;44" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="22;23;22" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p11" cx="175" cy="49" r="4" fill="#ffb74e">
+<circle id="p11" cx="39" cy="85" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="175;170;175" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="49;46;49" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="39;49;39" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="85;75;85" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p12" cx="65" cy="48" r="4" fill="#ffb74e">
+<circle id="p12" cx="178" cy="29" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="65;68;65" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="48;51;48" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="178;188;178" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="29;38;29" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p13" cx="167" cy="67" r="4" fill="#ffb74e">
+<circle id="p13" cx="199" cy="48" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="167;169;167" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="67;57;67" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="199;193;199" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="48;49;48" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p14" cx="187" cy="97" r="4" fill="#ffb74e">
+<circle id="p14" cx="167" cy="98" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="187;192;187" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="97;96;97" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="167;159;167" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="98;98;98" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p15" cx="216" cy="75" r="4" fill="#ffb74e">
+<circle id="p15" cx="146" cy="113" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="216;220;216" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="75;77;75" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="146;146;146" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="113;114;113" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p16" cx="160" cy="79" r="4" fill="#ffb74e">
+<circle id="p16" cx="174" cy="74" r="4" fill="#ffb74e">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="160;167;160" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="79;76;79" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="174;164;174" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="74;68;74" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p17" cx="127" cy="37" r="4" fill="#ffb74e">
+<circle id="p17" cx="54" cy="30" r="4" fill="#4effff">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="127;120;127" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="37;28;37" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="54;63;54" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="30;25;30" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p18" cx="152" cy="107" r="4" fill="#ffb74e">
+<circle id="p18" cx="156" cy="24" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="156;159;156" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="24;29;24" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p19" cx="153" cy="124" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="153;147;153" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="124;128;124" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p20" cx="203" cy="54" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="203;211;203" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="54;50;54" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p21" cx="206" cy="43" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="206;198;206" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="43;43;43" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p22" cx="130" cy="40" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="130;137;130" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="40;37;40" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p23" cx="42" cy="130" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="42;45;42" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="130;123;130" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p24" cx="201" cy="67" r="4" fill="#4effff">
+<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="201;195;201" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="67;63;67" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle id="p25" cx="152" cy="116" r="4" fill="#4effff">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
 <animate attributeName="cx" values="152;161;152" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="107;116;107" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="116;120;116" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p19" cx="227" cy="88" r="4" fill="#ffb74e">
+<circle id="p26" cx="194" cy="31" r="4" fill="#4effff">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="227;230;227" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="88;86;88" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="194;198;194" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="31;41;31" dur="3s" repeatCount="indefinite"/>
 </circle>
-<circle id="p20" cx="177" cy="47" r="4" fill="#ffb74e">
+<circle id="p27" cx="102" cy="31" r="4" fill="#4effff">
 <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="177;169;177" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="47;53;47" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p21" cx="183" cy="28" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="183;183;183" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="28;29;28" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p22" cx="96" cy="61" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="96;97;96" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="61;63;61" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p23" cx="117" cy="107" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="117;110;117" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="107;101;107" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p24" cx="224" cy="28" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="224;225;224" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="28;29;28" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p25" cx="141" cy="40" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="141;151;141" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="40;42;40" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p26" cx="107" cy="97" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="107;115;107" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="97;105;97" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p27" cx="93" cy="47" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="93;100;93" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="47;50;47" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p28" cx="22" cy="52" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="22;19;22" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="52;45;52" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle id="p29" cx="188" cy="97" r="4" fill="#4effff">
-<animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="cx" values="188;178;188" dur="3s" repeatCount="indefinite"/>
-<animate attributeName="cy" values="97;96;97" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cx" values="102;103;102" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="31;28;31" dur="3s" repeatCount="indefinite"/>
 </circle>
 </svg>
