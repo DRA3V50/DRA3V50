@@ -39,55 +39,55 @@
 </path>
 
   <circle cx="429.1446717414635" cy="321.56362579862036" r="11" fill="#ff5c5c" filter="url(#glow)" opacity="0.8200000000000001">
-    <animate attributeName="cx" values="429.1446717414635;429.5627912714368;429.1446717414635" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
-    <animate attributeName="cy" values="321.56362579862036;321.98174532859366;321.56362579862036" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
-    <animate attributeName="r" values="11;14;11" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
-    <animate attributeName="opacity" values="0.8200000000000001;1;0.8200000000000001" dur="2.83s" repeatCount="indefinite" begin="1.14s"/>
+    <animate attributeName="cx" values="429.1446717414635;438.7333955153184;429.1446717414635" dur="2.93s" repeatCount="indefinite" begin="3.22s"/>
+    <animate attributeName="cy" values="321.56362579862036;331.15234957247526;321.56362579862036" dur="2.93s" repeatCount="indefinite" begin="3.22s"/>
+    <animate attributeName="r" values="11;14;11" dur="2.93s" repeatCount="indefinite" begin="3.22s"/>
+    <animate attributeName="opacity" values="0.8200000000000001;1;0.8200000000000001" dur="2.93s" repeatCount="indefinite" begin="3.22s"/>
     <title>Phishing (Initial Access)</title>
   </circle>
   <text x="441.1446717414635" y="326.56362579862036" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Phishing</text>
 
   <circle cx="314.72322293210703" cy="410.3508193257453" r="9" fill="#ffb14c" filter="url(#glow)" opacity="0.7">
-    <animate attributeName="cx" values="314.72322293210703;309.04682487179383;314.72322293210703" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
-    <animate attributeName="cy" values="410.3508193257453;404.6744212654321;410.3508193257453" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
-    <animate attributeName="r" values="9;12;9" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.07s" repeatCount="indefinite" begin="2.64s"/>
+    <animate attributeName="cx" values="314.72322293210703;312.8916276388967;314.72322293210703" dur="2.76s" repeatCount="indefinite" begin="3.26s"/>
+    <animate attributeName="cy" values="410.3508193257453;408.51922403253496;410.3508193257453" dur="2.76s" repeatCount="indefinite" begin="3.26s"/>
+    <animate attributeName="r" values="9;12;9" dur="2.76s" repeatCount="indefinite" begin="3.26s"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.76s" repeatCount="indefinite" begin="3.26s"/>
     <title>Brute Force (Credential Access)</title>
   </circle>
   <text x="326.72322293210703" y="415.3508193257453" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Brute Force</text>
 
   <circle cx="160.00000000000006" cy="433.20508075688775" r="12" fill="#5cb3ff" filter="url(#glow)" opacity="0.88">
-    <animate attributeName="cx" values="160.00000000000006;160.056000704839;160.00000000000006" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
-    <animate attributeName="cy" values="433.20508075688775;433.2610814617267;433.20508075688775" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
-    <animate attributeName="r" values="12;15;12" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
-    <animate attributeName="opacity" values="0.88;1;0.88" dur="3.29s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="cx" values="160.00000000000006;156.45174350120746;160.00000000000006" dur="4.27s" repeatCount="indefinite" begin="3.36s"/>
+    <animate attributeName="cy" values="433.20508075688775;429.6568242580951;433.20508075688775" dur="4.27s" repeatCount="indefinite" begin="3.36s"/>
+    <animate attributeName="r" values="12;15;12" dur="4.27s" repeatCount="indefinite" begin="3.36s"/>
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="4.27s" repeatCount="indefinite" begin="3.36s"/>
     <title>Lateral Movement (Lateral Movement)</title>
   </circle>
   <text x="172.00000000000006" y="438.20508075688775" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Lateral Movement</text>
 
   <circle cx="100.25225446639556" cy="201.85657563463633" r="10" fill="#ff4dff" filter="url(#glow)" opacity="0.76">
-    <animate attributeName="cx" values="100.25225446639556;105.22709746098266;100.25225446639556" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
-    <animate attributeName="cy" values="201.85657563463633;206.83141862922344;201.85657563463633" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
-    <animate attributeName="r" values="10;13;10" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
-    <animate attributeName="opacity" values="0.76;1;0.76" dur="3.28s" repeatCount="indefinite" begin="2.0s"/>
+    <animate attributeName="cx" values="100.25225446639556;96.44080052009586;100.25225446639556" dur="2.51s" repeatCount="indefinite" begin="3.27s"/>
+    <animate attributeName="cy" values="201.85657563463633;198.04512168833665;201.85657563463633" dur="2.51s" repeatCount="indefinite" begin="3.27s"/>
+    <animate attributeName="r" values="10;13;10" dur="2.51s" repeatCount="indefinite" begin="3.27s"/>
+    <animate attributeName="opacity" values="0.76;1;0.76" dur="2.51s" repeatCount="indefinite" begin="3.27s"/>
     <title>Exfiltration (Exfiltration)</title>
   </circle>
   <text x="112.25225446639556" y="206.85657563463633" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Exfiltration</text>
 
   <circle cx="355.0" cy="95.45517328095667" r="13" fill="#2fffd3" filter="url(#glow)" opacity="0.9400000000000001">
-    <animate attributeName="cx" values="355.0;351.54516450368976;355.0" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
-    <animate attributeName="cy" values="95.45517328095667;92.00033778464643;95.45517328095667" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
-    <animate attributeName="r" values="13;16;13" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
-    <animate attributeName="opacity" values="0.9400000000000001;1;0.9400000000000001" dur="3.69s" repeatCount="indefinite" begin="1.41s"/>
+    <animate attributeName="cx" values="355.0;357.4174858350414;355.0" dur="3.06s" repeatCount="indefinite" begin="2.96s"/>
+    <animate attributeName="cy" values="95.45517328095667;97.87265911599809;95.45517328095667" dur="3.06s" repeatCount="indefinite" begin="2.96s"/>
+    <animate attributeName="r" values="13;16;13" dur="3.06s" repeatCount="indefinite" begin="2.96s"/>
+    <animate attributeName="opacity" values="0.9400000000000001;1;0.9400000000000001" dur="3.06s" repeatCount="indefinite" begin="2.96s"/>
     <title>Command & Control (Command & Control)</title>
   </circle>
   <text x="367.0" y="100.45517328095667" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Command & Control</text>
 
   <circle cx="260.0" cy="120.0" r="8" fill="#ffd700" filter="url(#glow)" opacity="0.64">
-    <animate attributeName="cx" values="260.0;266.48044715122546;260.0" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
-    <animate attributeName="cy" values="120.0;126.48044715122546;120.0" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
-    <animate attributeName="r" values="8;11;8" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
-    <animate attributeName="opacity" values="0.64;1;0.64" dur="3.18s" repeatCount="indefinite" begin="2.21s"/>
+    <animate attributeName="cx" values="260.0;268.0835065852894;260.0" dur="4.35s" repeatCount="indefinite" begin="1.73s"/>
+    <animate attributeName="cy" values="120.0;128.0835065852894;120.0" dur="4.35s" repeatCount="indefinite" begin="1.73s"/>
+    <animate attributeName="r" values="8;11;8" dur="4.35s" repeatCount="indefinite" begin="1.73s"/>
+    <animate attributeName="opacity" values="0.64;1;0.64" dur="4.35s" repeatCount="indefinite" begin="1.73s"/>
     <title>Defense Evasion (Defense Evasion)</title>
   </circle>
   <text x="272.0" y="125.0" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Defense Evasion</text>
