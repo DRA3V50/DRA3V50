@@ -1,0 +1,37 @@
+name: Generate Cyber Pulse
+
+on:
+  workflow_dispatch:    # allows manual runs
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt || echo "No dependencies needed"
+
+      - name: Generate Cyber Pulse SVG
+        run: python3 scripts/generate_cyber_pulse.py
+
+      - name: Commit generated SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "assets/cyber_pulse.svg"
+          author_name: "mitre-bot"
+          author_email: "mitre-bot@users.noreply.github.com"
+          message: "Update cyber pulse"
+          push: true
+          branch: main
