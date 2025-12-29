@@ -68,7 +68,11 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ## 🛡️Blue Team Capability Radar || 🔴 Live Security Anomaly Telemetry
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)
-<img src="dashboard/live_dashboard.svg" width="260" />
+<p align="center">
+  <img src="dashboard/live_dashboard.svg" width="220" />
+  <img src="anim1.svg" width="220" />
+  <img src="anim2.svg" width="220" />
+</p>
 
 ---
 
