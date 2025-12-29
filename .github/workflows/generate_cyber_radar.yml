@@ -1,12 +1,12 @@
-      - name: Generate Cyber Radar
-        run: python3 scripts/generate_cyber_radar.py
+- name: Generate Cyber Radar
+  run: python3 scripts/generate_cyber_radar.py
 
-      - name: Commit generated SVG
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "assets/cyber_radar_static.svg"  # <-- updated filename
-          author_name: "mitre-bot"
-          author_email: "mitre-bot@users.noreply.github.com"
-          message: "Update cyber radar"
-          push: true
-          branch: main
+- name: Commit generated SVG
+  uses: EndBug/add-and-commit@v9
+  with:
+    add: "assets/cyber_radar_static.svg"  # <-- must match Python output
+    author_name: "mitre-bot"
+    author_email: "mitre-bot@users.noreply.github.com"
+    message: "Update cyber radar"
+    push: true
+    branch: main
