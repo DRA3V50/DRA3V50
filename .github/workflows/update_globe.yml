@@ -1,0 +1,27 @@
+name: Update Live Globe
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # Every 30 minutes
+  workflow_dispatch:        # Also allow manual run
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - name: Install requirements
+        run: pip install -r requirements.txt plotly
+      - name: Generate Globe
+        run: python scripts/generate_globe.py
+      - name: Commit & Push Updated Globe
+        run: |
+          git config user.name "mitre-bot"
+          git config user.email "mitre-bot@example.com"
+          git add assets/globe_live.html
+          git commit -m "Update live globe"
+          git push
