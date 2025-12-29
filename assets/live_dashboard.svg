@@ -1,0 +1,23 @@
+
+<svg width="700" height="180" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Arial, sans-serif; fill: #e5e7eb; }
+    .title { font-size: 22px; font-weight: bold; }
+    .metric { font-size: 18px; }
+    .critical { fill: #ef4444; }
+    .high { fill: #f97316; }
+    .medium { fill: #facc15; }
+    .ok { fill: #22c55e; }
+  </style>
+
+  <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
+
+  <text x="20" y="32" class="title">Live Security Anomaly Dashboard</text>
+
+  <text x="20" y="70" class="metric critical">Critical Alerts: 34</text>
+  <text x="20" y="100" class="metric high">High Severity: 80</text>
+  <text x="20" y="130" class="metric medium">Medium Severity: 64</text>
+
+  <text x="380" y="70" class="metric ok">Investigated: 157</text>
+  <text x="380" y="130" font-size="12">Updated: 2025-12-29 23:49 UTC</text>
+</svg>
