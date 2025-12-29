@@ -1,4 +1,4 @@
-name: Generate Cyber Radar
+name: Generate Cyber Radar Live
 
 on:
   workflow_dispatch:
@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,16 +21,15 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate Cyber Radar
-        run: python3 scripts/generate_cyber_radar.py
+      - name: Generate Cyber Radar Live
+        run: python3 scripts/generate_cyber_radar_live.py
 
-      - name: Commit updated SVG
+      - name: Commit generated SVG
         uses: EndBug/add-and-commit@v9
         with:
-          add: "assets/cyber_radar_static.svg"
+          add: "assets/cyber_radar_live.svg"
           author_name: "mitre-bot"
           author_email: "mitre-bot@users.noreply.github.com"
-          message: "Update cyber radar"
+          message: "Update cyber radar live"
           push: true
           branch: main
-
