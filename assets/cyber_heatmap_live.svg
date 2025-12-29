@@ -1,33 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
-<rect width="600" height="400" fill="#0a0f1a"/>
-
-    <circle cx="100" cy="80" r="7.16" fill="#4effff" opacity="0.645">
-        <animate attributeName="r" values="7.16;11.16;7.16" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.645;1;0.645" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="110" y="85" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">HostA</text>
-    
-    <circle cx="250" cy="180" r="9.72" fill="#4effff" opacity="0.9650000000000001">
-        <animate attributeName="r" values="9.72;13.72;9.72" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.9650000000000001;1;0.9650000000000001" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="260" y="185" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Server42</text>
-    
-    <circle cx="400" cy="120" r="9.120000000000001" fill="#4effff" opacity="0.89">
-        <animate attributeName="r" values="9.120000000000001;13.120000000000001;9.120000000000001" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.89;1;0.89" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="410" y="125" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Workstation12</text>
-    
-    <circle cx="150" cy="300" r="8.08" fill="#4effff" opacity="0.76">
-        <animate attributeName="r" values="8.08;12.08;8.08" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.76;1;0.76" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="160" y="305" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">Firewall</text>
-    
-    <circle cx="350" cy="250" r="8.08" fill="#4effff" opacity="0.76">
-        <animate attributeName="r" values="8.08;12.08;8.08" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.76;1;0.76" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="360" y="255" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">DBServer</text>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+<rect width="600" height="300" fill="#0a0f1a"/>
+<rect x="10" y="202" width="50" height="48" fill="#4effff" rx="4"/>
+<text x="10" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Initial Access</text>
+<rect x="70" y="124" width="50" height="126" fill="#f5a623" rx="4"/>
+<text x="70" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Execution</text>
+<rect x="130" y="228" width="50" height="22" fill="#4effff" rx="4"/>
+<text x="130" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Persistence</text>
+<rect x="190" y="142" width="50" height="108" fill="#f5a623" rx="4"/>
+<text x="190" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Privilege Escalation</text>
+<rect x="250" y="54" width="50" height="196" fill="#ff4e4e" rx="4"/>
+<text x="250" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Defense Evasion</text>
+<rect x="310" y="204" width="50" height="46" fill="#4effff" rx="4"/>
+<text x="310" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Credential Access</text>
+<rect x="370" y="168" width="50" height="82" fill="#f5a623" rx="4"/>
+<text x="370" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Discovery</text>
+<rect x="430" y="100" width="50" height="150" fill="#ff4e4e" rx="4"/>
+<text x="430" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Lateral Movement</text>
+<rect x="490" y="222" width="50" height="28" fill="#4effff" rx="4"/>
+<text x="490" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Exfiltration</text>
+<rect x="550" y="184" width="50" height="66" fill="#4effff" rx="4"/>
+<text x="550" y="265" font-size="10" fill="#a0c8ff" font-family="monospace">Impact</text>
+</svg>
