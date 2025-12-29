@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 import random
 
-with open("dashboard/data.json", "r") as f:
+with open("data.json", "r") as f:
     data = json.load(f)
 
 # Simulate live SOC changes
