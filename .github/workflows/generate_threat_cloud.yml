@@ -25,14 +25,14 @@ jobs:
       - name: Generate Live Threat Cloud SVG
         run: python scripts/generate_threat_cloud.py
 
-      - name: Commit and push SVG
+      - name: Force commit & push SVG
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
           git add assets/live_threat_cloud.svg
           git commit -m "Update live threat cloud SVG" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push origin main
+          # Force push to overwrite remote file
+          git push origin main --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
