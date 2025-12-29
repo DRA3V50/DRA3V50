@@ -28,7 +28,7 @@
     
 <text x="20" y="210" font-family="Consolas, monospace" font-size="16" fill="#a0c8ff">Live Security Dashboard</text>
 
-<text x="40" y="235" font-family="Consolas, monospace" font-size="12" fill="#ff4e4e">SIEM Alerts: 20 New</text>
-<text x="40" y="255" font-family="Consolas, monospace" font-size="12" fill="#ffb74e">EDR Events: 9 New</text>
-<text x="40" y="275" font-family="Consolas, monospace" font-size="12" fill="#4effff">SOAR Actions: 10 Active</text>
+<text x="40" y="235" font-family="Consolas, monospace" font-size="12" fill="#ff4e4e">SIEM Alerts: 18 New</text>
+<text x="40" y="255" font-family="Consolas, monospace" font-size="12" fill="#ffb74e">EDR Events: 19 New</text>
+<text x="40" y="275" font-family="Consolas, monospace" font-size="12" fill="#4effff">SOAR Actions: 4 Active</text>
 </svg>
