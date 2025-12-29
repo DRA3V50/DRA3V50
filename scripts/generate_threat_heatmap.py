@@ -1,70 +1,51 @@
+import os
 import random
-from datetime import datetime
 
-# Hosts with their MITRE ATT&CK stage
+# Make sure assets folder exists
+os.makedirs("assets", exist_ok=True)
+
+# Hosts/data points for your heatmap
 hosts = [
-    {"name": "HostA", "stage": "Initial Access"},
-    {"name": "Server42", "stage": "Execution"},
-    {"name": "Workstation12", "stage": "Persistence"},
-    {"name": "Firewall", "stage": "Defense Evasion"},
-    {"name": "DBServer", "stage": "Privilege Escalation"}
+    {"name": "HostA", "x": 100, "y": 50},
+    {"name": "Server42", "x": 200, "y": 120},
+    {"name": "Workstation12", "x": 300, "y": 200},
+    {"name": "Router1", "x": 400, "y": 80},
+    {"name": "DBServer", "x": 500, "y": 150},
 ]
 
-# Generate random activity for each host
+# Generate random "activity" for each host
 for host in hosts:
-    host["activity"] = random.randint(10, 100)  # intensity 10-100
+    # assign intensity 0-100
+    host["activity"] = random.randint(0, 100)
 
-# Start SVG
-svg_header = f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
-<rect width="600" height="400" fill="#0a0f1a"/>
-<defs>
-<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-<feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4effff" flood-opacity="0.8"/>
-</filter>
-</defs>
-'''
+# Create SVG content
+svg_header = """<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+  <rect width="600" height="400" fill="#0a0f1a"/>"""
 
-# Animated circles per host
-svg_circles = ""
-for i, host in enumerate(hosts):
-    x = 100 + i * 90
-    y = 200
-    r = 6
-    max_r = 6 + host["activity"] // 10  # bigger radius for higher activity
-    dur = round(2 + random.random() * 2, 2)  # random pulse duration
-    opacity = round(0.3 + host["activity"] / 150, 2)
-    svg_circles += f'''
-    <circle cx="{x}" cy="{y}" r="{r}" fill="#4effff" filter="url(#glow)" opacity="{opacity}">
-        <animate attributeName="r" values="{r};{max_r};{r}" dur="{dur}s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="{dur}s" repeatCount="indefinite"/>
-        <title>{host['name']} - {host['stage']}</title>
-    </circle>
-    <text x="{x + 10}" y="{y + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{host['name']}</text>
-    '''
+svg_footer = "</svg>"
 
-# Optional "FBI eye" in corner
-svg_eye = '''
-<circle cx="550" cy="50" r="20" fill="none" stroke="#4effff" stroke-width="2">
-    <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle cx="550" cy="50" r="8" fill="#4effff">
-    <animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/>
-</circle>
-'''
+host_circles = ""
 
-# Footer with timestamp
-svg_footer = f'''
-<text x="10" y="390" font-family="Consolas, monospace" font-size="10" fill="#5cb3ff">
-Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")} UTC
-</text>
-</svg>
-'''
+for host in hosts:
+    intensity = host["activity"]
+    radius = 6 + intensity * 0.05  # scale radius by activity
+    opacity = 0.5 + (intensity / 200)  # scale opacity 0.5-1
+    color = "#ff4e4e" if intensity > 70 else "#4effff"
+    
+    host_circles += f"""
+  <circle cx="{host['x']}" cy="{host['y']}" r="{radius}" fill="{color}">
+    <animate attributeName="r" values="{radius};{radius+4};{radius}" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="{opacity};1;{opacity}" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="{host['x'] + 10}" y="{host['y'] + 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{host['name']}</text>"""
 
-# Write SVG file
-svg_content = svg_header + svg_circles + svg_eye + svg_footer
+# Combine everything
+svg_content = svg_header + host_circles + svg_footer
 
-with open("../assets/cyber_heatmap_live.svg", "w") as f:
+# Write SVG to file
+output_path = "assets/cyber_heatmap_live.svg"
+with open(output_path, "w") as f:
     f.write(svg_content)
 
-print("SVG threat heatmap generated successfully!")
+print(f"SVG heatmap generated: {output_path}")
 
