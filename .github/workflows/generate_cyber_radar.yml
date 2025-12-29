@@ -1,4 +1,4 @@
-name: Generate Cyber Radar Live
+name: Generate Cyber Radar
 
 on:
   workflow_dispatch:
