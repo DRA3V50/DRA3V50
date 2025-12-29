@@ -1,70 +1,74 @@
 import random
-from pathlib import Path
+from datetime import datetime
 
-WIDTH, HEIGHT = 600, 400
-CENTER_X, CENTER_Y = WIDTH // 2, HEIGHT // 2
+# SVG output file
+output_file = "assets/cyber_radar_live.svg"
 
-output = Path("assets/cyber_pulse.svg")
-output.parent.mkdir(parents=True, exist_ok=True)
-
-# Example MITRE-aligned / analyst-relevant lines (label, amplitude, speed)
-data_lines = [
-    ("Initial Access", 40, 6),
-    ("Execution", 30, 5.5),
-    ("Persistence", 25, 7),
-    ("Privilege Escalation", 35, 6.5),
-    ("Defense Evasion", 28, 5),
-    ("Credential Access", 32, 6.2),
-    ("Discovery", 22, 4.8),
-    ("Lateral Movement", 30, 5.7),
-    ("Exfiltration", 38, 6.8),
-    ("Impact", 40, 7.2),
+# MITRE ATT&CK tactics (cyber kill chain style)
+tactics = [
+    "Initial Access", "Execution", "Persistence", "Privilege Escalation",
+    "Defense Evasion", "Credential Access", "Discovery", "Lateral Movement",
+    "Exfiltration", "Impact"
 ]
 
-# SVG header
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
-  <rect width="{WIDTH}" height="{HEIGHT}" fill="#0a0f1a"/>
-  <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4effff" flood-opacity="0.8"/>
-    </filter>
-    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2f6fed"/>
-      <stop offset="100%" stop-color="#5cb3ff"/>
-    </linearGradient>
-  </defs>
-'''
+# SVG settings
+width = 600
+height = 400
+line_spacing = 30
 
-# Draw baseline grid lines
-for y in range(50, HEIGHT, 50):
-    svg += f'<line x1="0" y1="{y}" x2="{WIDTH}" y2="{y}" stroke="#1e2a45" stroke-width="1"/>\n'
+# Generate random values to simulate live activity
+def generate_points(y):
+    points = []
+    for x in range(0, width+1, 50):
+        dy = random.randint(-10, 10)
+        points.append((x, y + dy))
+    return points
 
-# Draw animated waveform lines
-for i, (label, amplitude, speed) in enumerate(data_lines):
-    y_base = 50 + i * 30  # vertical spacing
-    dur = round(random.uniform(4.5, 6.5), 2)
-    begin = round(random.uniform(0, 3), 2)
+# Convert points to SVG path string
+def points_to_path(points):
+    return "M" + " L".join(f"{x},{y}" for x, y in points)
 
-    # Draw the animated line using path and animateTransform for simple pulse
-    svg += f'''
-  <path d="M0,{y_base}" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">
-    <animate attributeName="d"
-      dur="{dur}s" repeatCount="indefinite"
-      values="
-        M0,{y_base} 
-        {' '.join(f'L{j},{y_base + random.randint(-amplitude, amplitude)}' for j in range(50, WIDTH+50, 50))};
-        M0,{y_base} 
-        {' '.join(f'L{j},{y_base + random.randint(-amplitude, amplitude)}' for j in range(50, WIDTH+50, 50))};
-      "
-      begin="{begin}s"/>
-  </path>
-  <text x="10" y="{y_base - 5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{label}</text>
-'''
+# Start building SVG
+svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">\n'
+svg += f'  <rect width="{width}" height="{height}" fill="#0a0f1a"/>\n'
+svg += '  <defs>\n'
+svg += '    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">\n'
+svg += '      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4effff" flood-opacity="0.8"/>\n'
+svg += '    </filter>\n'
+svg += '    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">\n'
+svg += '      <stop offset="0%" stop-color="#2f6fed"/>\n'
+svg += '      <stop offset="100%" stop-color="#5cb3ff"/>\n'
+svg += '    </linearGradient>\n'
+svg += '  </defs>\n'
 
+# Horizontal reference lines
+for i in range(len(tactics)):
+    y = 50 + i * line_spacing
+    svg += f'<line x1="0" y1="{y}" x2="{width}" y2="{y}" stroke="#1e2a45" stroke-width="1"/>\n'
+
+# Animated paths for each tactic
+for i, tactic in enumerate(tactics):
+    y_base = 50 + i * line_spacing
+    points1 = generate_points(y_base)
+    points2 = generate_points(y_base)
+    path_values = f"{points_to_path(points1)}; {points_to_path(points2)}"
+    svg += f'<path d="{points_to_path(points1)}" fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)">\n'
+    svg += f'  <animate attributeName="d" values="{path_values}" dur="{4+random.random()*3:.2f}s" repeatCount="indefinite"/>\n'
+    svg += '</path>\n'
+    svg += f'<text x="10" y="{y_base-5}" font-family="Consolas, monospace" font-size="12" fill="#a0c8ff">{tactic}</text>\n'
+
+# Optional subtle “eye” monitoring circle
+svg += f'<circle cx="{width-50}" cy="{height//2}" r="20" fill="none" stroke="#5cb3ff" stroke-width="2">\n'
+svg += f'  <animate attributeName="r" values="18;22;18" dur="3s" repeatCount="indefinite"/>\n'
+svg += '</circle>\n'
+
+# Footer timestamp
+svg += f'<text x="10" y="{height-10}" font-family="Consolas, monospace" font-size="10" fill="#888">{datetime.utcnow().isoformat()} UTC</text>\n'
 svg += '</svg>'
 
-with open(output, "w") as f:
+# Write to file
+with open(output_file, "w") as f:
     f.write(svg)
 
-print(f"Cyber Pulse SVG saved to {output}")
+print(f"Generated {output_file}")
 
