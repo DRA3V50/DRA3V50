@@ -6,19 +6,6 @@
      role="img"
      aria-label="Live Threat Intelligence Dashboard">
 
-  <defs>
-    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ef4444"/>
-      <stop offset="50%" stop-color="#ffae5c"/>
-      <stop offset="100%" stop-color="#ef4444"/>
-    </linearGradient>
-    <linearGradient id="abnormalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f97316"/>
-      <stop offset="50%" stop-color="#ffd56b"/>
-      <stop offset="100%" stop-color="#f97316"/>
-    </linearGradient>
-  </defs>
-
   <!-- Background -->
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
 
@@ -27,28 +14,28 @@
     Threat Intelligence Dashboard
   </text>
 
-  <!-- Critical -->
-  <text x="20" y="60" font-family="Arial" font-size="18" fill="url(#glowGradient)">
+  <!-- Critical Alerts (blood red) -->
+  <text x="20" y="60" font-family="Arial" font-size="18" fill="#8B0000">
     Critical Alerts: <tspan id="critical">20</tspan>
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
     <animate attributeName="font-size" values="18;22;18" dur="1.5s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Abnormal -->
-  <text x="20" y="90" font-family="Arial" font-size="18" fill="url(#abnormalGradient)">
+  <!-- Abnormal Alerts (sun red/gold) -->
+  <text x="20" y="90" font-family="Arial" font-size="18" fill="#FFA500">
     Abnormal Alerts: <tspan id="abnormal">45</tspan>
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
     <animate attributeName="font-size" values="18;22;18" dur="2s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Medium -->
-  <text x="20" y="120" font-family="Arial" font-size="18" fill="#facc15">
+  <!-- Medium Severity (light yellow) -->
+  <text x="20" y="120" font-family="Arial" font-size="18" fill="#FFFF66">
     Medium Severity: <tspan id="medium">70</tspan>
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Investigated -->
-  <text x="20" y="150" font-family="Arial" font-size="18" fill="#22c55e">
+  <!-- Investigated (blue/cyan) -->
+  <text x="20" y="150" font-family="Arial" font-size="18" fill="#00CED1">
     Investigated: <tspan id="investigated">120</tspan>
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
   </text>
@@ -59,7 +46,7 @@
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Center pulse -->
+  <!-- Center pulse for visual emphasis -->
   <circle cx="280" cy="60" r="10" fill="#38bdf8">
     <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite"/>
