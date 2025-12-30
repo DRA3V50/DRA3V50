@@ -2,7 +2,7 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Every hour
+    - cron: "0 * * * *"  # Runs every hour
   workflow_dispatch:
 
 jobs:
@@ -13,14 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: List repo root files (debug)
+        run: ls -la
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Initialize or Update SOC data & generate dashboard
-        run: |
-          python generate_dashboard.py
+      - name: Run generate_dashboard.py
+        run: python generate_dashboard.py
 
       - name: Update cache buster in README.md
         run: |
@@ -34,4 +36,3 @@ jobs:
           git add dashboard.svg data.json README.md
           git commit -m "🔄 Update SOC dashboard and cache buster" || exit 0
           git push
-
