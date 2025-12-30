@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,21 +15,72 @@
   }
   .dashboard {
     width: 320px;
+    background-color: #0f172a;
+    border-radius: 12px;
+    padding: 16px;
   }
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .metric {
+    font-size: 18px;
+    margin: 6px 0;
+    transition: color 0.5s;
+  }
+  .critical { color: #ef4444; }
+  .abnormal { color: #f97316; }
+  .medium { color: #facc15; }
+  .investigated { color: #22c55e; }
+  .updated { font-size: 12px; color: #94a3b8; margin-top: 8px; }
 </style>
 </head>
 <body>
+
 <div class="dashboard">
-  <object id="dashboard-svg" type="image/svg+xml" data="live_dashboard.svg" width="100%" height="auto"></object>
+  <div class="title">Threat Intelligence Dashboard</div>
+  <div id="critical" class="metric critical">Critical Alerts: 0</div>
+  <div id="abnormal" class="metric abnormal">Abnormal Alerts: 0</div>
+  <div id="medium" class="metric medium">Medium Severity: 0</div>
+  <div id="investigated" class="metric investigated">Investigated: 0</div>
+  <div id="updated" class="updated">Updated: -</div>
 </div>
 
 <script>
-  // Reload the SVG every 5 seconds to simulate live updates
-  setInterval(() => {
-    const svgObject = document.getElementById('dashboard-svg');
-    const timestamp = new Date().getTime(); // cache buster
-    svgObject.data = "live_dashboard.svg?cb=" + timestamp;
-  }, 5000);
+async function fetchDataAndUpdate() {
+  try {
+    const response = await fetch('dashboard_data.json'); // point to JSON
+    const data = await response.json();
+
+    const elements = [
+      {id: 'critical', value: data.critical, color: '#ef4444'},
+      {id: 'abnormal', value: data.abnormal, color: '#f97316'},
+      {id: 'medium', value: data.medium, color: '#facc15'},
+      {id: 'investigated', value: data.investigated, color: '#22c55e'}
+    ];
+
+    elements.forEach(el => {
+      const dom = document.getElementById(el.id);
+      if(dom) {
+        dom.style.color = '#ffffff'; // flash white
+        setTimeout(() => dom.style.color = el.color, 250);
+        dom.textContent = `${dom.textContent.split(':')[0]}: ${el.value}`;
+      }
+    });
+
+    document.getElementById('updated').textContent = `Updated: ${data.updated}`;
+  } catch (error) {
+    console.error('Error fetching dashboard data:', error);
+  }
+}
+
+// Initial load
+fetchDataAndUpdate();
+
+// Refresh every 5 seconds
+setInterval(fetchDataAndUpdate, 5000);
 </script>
+
 </body>
 </html>
