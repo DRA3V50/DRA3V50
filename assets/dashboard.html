@@ -62,13 +62,11 @@ async function fetchDataAndUpdate() {
 
     elements.forEach(el => {
       const dom = document.getElementById(el.id);
-      if(dom) {
-        // Flash white briefly on change
-        if(dom.textContent.split(': ')[1] != el.value) {
-          dom.style.color = '#ffffff';
-          setTimeout(() => dom.style.color = el.color, 250);
-          dom.textContent = `${dom.textContent.split(':')[0]}: ${el.value}`;
-        }
+      if(dom && dom.textContent.split(': ')[1] != el.value) {
+        // Flash white briefly when number changes
+        dom.style.color = '#ffffff';
+        setTimeout(() => dom.style.color = el.color, 250);
+        dom.textContent = `${dom.textContent.split(':')[0]}: ${el.value}`;
       }
     });
 
