@@ -29,7 +29,7 @@ svg = f"""
 <svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {{ font-family: Arial, sans-serif; fill: #e5e7eb; }}
-    .title {{ font-size: 22px; font-weight: bold; }}
+    .title {{ font-size: 16px; font-weight: bold; }}
     .metric {{ font-size: 18px; }}
     .critical {{ fill: #ef4444; }}
     .high {{ fill: #f97316; }}
@@ -40,14 +40,14 @@ svg = f"""
 
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
 
-  <text x="20" y="32" class="title">Threat Intelligence Dashboard</text>
+  <text x="20" y="28" class="title">Threat Intelligence Dashboard</text>
 
-  <text x="20" y="70" class="metric critical">Critical Alerts: {data.get("critical",0)}</text>
-  <text x="20" y="100" class="metric high">Abnormal Alerts: {data.get("abnormal",0)}</text>
-  <text x="20" y="130" class="metric medium">Medium Severity: {data.get("medium",0)}</text>
+  <text x="20" y="60" class="metric critical">Critical Alerts: {data.get("critical",0)}</text>
+  <text x="20" y="90" class="metric high">Abnormal Alerts: {data.get("abnormal",0)}</text>
+  <text x="20" y="120" class="metric medium">Medium Severity: {data.get("medium",0)}</text>
 
-  <text x="20" y="160" class="metric ok">Investigated: {data.get("investigated",0)}</text>
-  <text x="20" y="175" class="small">Updated: {data.get("updated","")}</text>
+  <text x="20" y="150" class="metric ok">Investigated: {data.get("investigated",0)}</text>
+  <text x="20" y="165" class="small">Updated: {data.get("updated","")}</text>
 </svg>
 """
 
