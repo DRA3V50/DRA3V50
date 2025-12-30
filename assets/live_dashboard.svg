@@ -2,7 +2,7 @@
 <svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
   <style>
     text { font-family: Arial, sans-serif; fill: #e5e7eb; }
-    .title { font-size: 22px; font-weight: bold; }
+    .title { font-size: 16px; font-weight: bold; }
     .metric { font-size: 18px; }
     .critical { fill: #ef4444; }
     .high { fill: #f97316; }
@@ -13,12 +13,12 @@
 
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
 
-  <text x="20" y="32" class="title">Threat Intelligence Dashboard</text>
+  <text x="20" y="28" class="title">Threat Intelligence Dashboard</text>
 
-  <text x="20" y="70" class="metric critical">Critical Alerts: 37</text>
-  <text x="20" y="100" class="metric high">Abnormal Alerts: 64</text>
-  <text x="20" y="130" class="metric medium">Medium Severity: 80</text>
+  <text x="20" y="60" class="metric critical">Critical Alerts: 32</text>
+  <text x="20" y="90" class="metric high">Abnormal Alerts: 70</text>
+  <text x="20" y="120" class="metric medium">Medium Severity: 81</text>
 
-  <text x="20" y="160" class="metric ok">Investigated: 166</text>
-  <text x="20" y="175" class="small">Updated: 2025-12-30 00:27 UTC</text>
+  <text x="20" y="150" class="metric ok">Investigated: 108</text>
+  <text x="20" y="165" class="small">Updated: 2025-12-30 00:31 UTC</text>
 </svg>
