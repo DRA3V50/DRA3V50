@@ -2,61 +2,85 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Threat Intelligence Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Threat Intelligence Dashboard</title>
 <style>
-  body { background: #0f172a; color: #e5e7eb; font-family: Arial; display: flex; justify-content: center; padding: 20px; }
-  .dashboard { width: 360px; }
-  text { font-family: Arial, sans-serif; }
-  .metric { font-weight: bold; }
+  body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .dashboard {
+    width: 350px;
+  }
+  text {
+    font-family: Arial, sans-serif;
+  }
 </style>
 </head>
 <body>
 <div class="dashboard">
-  <svg id="dashboard-svg" width="360" height="360" viewBox="0 0 400 400">
-    <rect width="100%" height="100%" fill="#0f172a"/>
-    <text x="200" y="30" text-anchor="middle" fill="#e5e7eb" font-size="18" font-weight="bold">Threat Intelligence Dashboard</text>
+  <svg id="dashboard" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
+    <text x="20" y="28" font-size="16" font-weight="bold" fill="#e5e7eb">Threat Intelligence Dashboard</text>
 
-    <!-- Critical -->
-    <circle id="critical-glow" cx="80" cy="90" r="20" fill="rgba(239,68,68,0.6)"></circle>
-    <text id="critical-text" x="80" y="95" text-anchor="middle" fill="#ef4444" font-size="14">Critical: 0</text>
-
-    <!-- Abnormal -->
-    <circle id="abnormal-glow" cx="320" cy="90" r="20" fill="rgba(249,115,22,0.6)"></circle>
-    <text id="abnormal-text" x="320" y="95" text-anchor="middle" fill="#f97316" font-size="14">Abnormal: 0</text>
-
-    <!-- Medium -->
-    <circle id="medium-glow" cx="80" cy="310" r="20" fill="rgba(250,204,21,0.6)"></circle>
-    <text id="medium-text" x="80" y="315" text-anchor="middle" fill="#facc15" font-size="14">Medium: 0</text>
-
-    <!-- Investigated -->
-    <circle id="investigated-glow" cx="320" cy="310" r="20" fill="rgba(34,197,94,0.6)"></circle>
-    <text id="investigated-text" x="320" y="315" text-anchor="middle" fill="#22c55e" font-size="14">Investigated: 0</text>
-
-    <!-- Center pulse -->
-    <circle cx="200" cy="200" r="10" fill="rgba(88,166,255,0.5)">
-      <animate attributeName="r" values="10;18;10" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <text id="critical" x="20" y="60" font-size="18" fill="#8B0000">Critical Alerts: 0</text>
+    <text id="abnormal" x="20" y="90" font-size="18" fill="#FFA500">Abnormal Alerts: 0</text>
+    <text id="medium" x="20" y="120" font-size="18" fill="#FFFF66">Medium Severity: 0</text>
+    <text id="investigated" x="20" y="150" font-size="18" fill="#00CED1">Investigated: 0</text>
+    <text id="updated" x="20" y="175" font-size="12" fill="#94a3b8">Updated: -</text>
   </svg>
 </div>
 
 <script>
-async function updateDashboard() {
-  try {
-    const res = await fetch('/metrics');
-    const data = await res.json();
-
-    document.getElementById('critical-text').textContent = 'Critical: ' + data.critical;
-    document.getElementById('abnormal-text').textContent = 'Abnormal: ' + data.abnormal;
-    document.getElementById('medium-text').textContent = 'Medium: ' + data.medium;
-    document.getElementById('investigated-text').textContent = 'Investigated: ' + data.investigated;
-  } catch (err) {
-    console.error('Failed to fetch metrics', err);
-  }
+// Function to generate live data (simulated)
+function getLiveData() {
+  return {
+    critical: Math.floor(Math.random() * 40),
+    abnormal: Math.floor(Math.random() * 80),
+    medium: Math.floor(Math.random() * 120),
+    investigated: Math.floor(Math.random() * 200),
+    updated: new Date().toLocaleTimeString()
+  };
 }
 
-// Update every 5 seconds
-setInterval(updateDashboard, 5000);
+// Update the dashboard numbers and add glow animation
+function updateDashboard() {
+  const data = getLiveData();
+
+  const glow = (element, color) => {
+    element.setAttribute('fill', color);
+    element.animate(
+      [{ fill: color }, { fill: '#fff' }, { fill: color }],
+      { duration: 800, iterations: 1 }
+    );
+  };
+
+  const c = document.getElementById('critical');
+  const a = document.getElementById('abnormal');
+  const m = document.getElementById('medium');
+  const i = document.getElementById('investigated');
+  const u = document.getElementById('updated');
+
+  c.textContent = `Critical Alerts: ${data.critical}`;
+  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
+  m.textContent = `Medium Severity: ${data.medium}`;
+  i.textContent = `Investigated: ${data.investigated}`;
+  u.textContent = `Updated: ${data.updated}`;
+
+  glow(c, '#8B0000');       // Blood red
+  glow(a, '#FFA500');       // Sun red/gold
+  glow(m, '#FFFF66');       // Light yellow
+  glow(i, '#00CED1');       // Cyan/blue
+}
+
+// Update every 2 seconds
+setInterval(updateDashboard, 2000);
+
+// Initial update
 updateDashboard();
 </script>
 </body>
