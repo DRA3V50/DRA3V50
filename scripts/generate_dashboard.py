@@ -14,6 +14,7 @@ UPDATE_INTERVAL = 10  # seconds (only used if LIVE=True)
 ASSETS_DIR = Path("assets")
 DATA_FILE = ASSETS_DIR / "dashboard_data.json"
 SVG_FILE = ASSETS_DIR / "live_dashboard.svg"
+HTML_FILE = ASSETS_DIR / "dashboard.html"
 
 # Ensure assets folder exists
 ASSETS_DIR.mkdir(exist_ok=True)
@@ -25,7 +26,7 @@ def generate_data():
     """Generate random live-ish data."""
     return {
         "critical": random.randint(10, 40),
-        "abnormal": random.randint(30, 80),
+        "abnormal": random.randint(30, 80),  # Using 'abnormal' instead of 'high severity'
         "medium": random.randint(60, 120),
         "investigated": random.randint(100, 200),
         "updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -77,17 +78,60 @@ def build_svg(data):
     with open(SVG_FILE, "w") as f:
         f.write(svg)
 
+def build_html():
+    """Generate HTML page that reloads the SVG every 5 seconds."""
+    html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Threat Intelligence Dashboard</title>
+<style>
+  body {{
+    background-color: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }}
+  .dashboard {{
+    width: 320px;
+  }}
+</style>
+</head>
+<body>
+<div class="dashboard">
+  <object id="dashboard-svg" type="image/svg+xml" data="{SVG_FILE.name}" width="100%" height="auto"></object>
+</div>
+
+<script>
+  // Reload the SVG every 5 seconds to simulate live updates
+  setInterval(() => {{
+    const svgObject = document.getElementById('dashboard-svg');
+    const timestamp = new Date().getTime(); // cache buster
+    svgObject.data = "{SVG_FILE.name}?cb=" + timestamp;
+  }}, 5000);
+</script>
+</body>
+</html>
+"""
+    with open(HTML_FILE, "w") as f:
+        f.write(html_content)
+
 # ----------------------
 # MAIN LOOP
 # ----------------------
 def main():
     if LIVE:
-        print("Live dashboard running... press Ctrl+C to stop")
+        print("Live dashboard running locally... press Ctrl+C to stop")
         try:
             while True:
                 data = generate_data()
                 save_json(data)
                 build_svg(data)
+                build_html()
                 time.sleep(UPDATE_INTERVAL)
         except KeyboardInterrupt:
             print("\nStopped live dashboard.")
@@ -96,6 +140,7 @@ def main():
         data = generate_data()
         save_json(data)
         build_svg(data)
+        build_html()
         print("Dashboard updated successfully (single run)")
 
 if __name__ == "__main__":
