@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt || echo "No requirements"
 
       - name: Run dashboard generator
-        run: python scripts/generate_dashboard.py
+        run: python scripts/app.py
 
       - name: Commit updated JSON
         run: |
