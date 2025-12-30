@@ -2,7 +2,7 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Runs every hour
+    - cron: "0 * * * *"  # Every hour
   workflow_dispatch:
 
 jobs:
@@ -22,8 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run generate_dashboard.py
-        run: python scripts/generate_dashboard.py
-
+        run: python scripts/generate_dashboard.py   # change path if in root
 
       - name: Update cache buster in README.md
         run: |
