@@ -51,7 +51,7 @@ svg = f"""
       50% {{ fill-opacity: 1; }}
     }}
 
-    /* Flickering scanner emoji */
+    /* Flickering magnifying glass */
     .scanner {{
       animation: scannerFlicker 1.2s infinite alternate;
     }}
@@ -78,8 +78,8 @@ svg = f"""
     Last Update: {data["updated"]}
   </text>
 
-  <!-- Scanner emoji top-right -->
-  <text x="360" y="50" font-size="32" class="scanner">🛰️</text>
+  <!-- Magnifying glass emoji top-right -->
+  <text x="360" y="50" font-size="32" class="scanner">🔍</text>
 </svg>
 """
 
