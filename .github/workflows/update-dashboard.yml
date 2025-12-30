@@ -2,7 +2,7 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Every hour
+    - cron: "*/5 * * * *"  # Runs every 5 minutes
   workflow_dispatch:
 
 jobs:
@@ -13,16 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: List repo root files (debug)
-        run: ls -la
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Run generate_dashboard.py
-        run: python scripts/generate_dashboard.py   # change path if in root
+        run: python scripts/generate_dashboard.py  # adjust if your script is in root
 
       - name: Update cache buster in README.md
         run: |
