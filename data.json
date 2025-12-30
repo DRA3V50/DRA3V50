@@ -1,7 +1,7 @@
 {
-  "critical": 9,
-  "abnormal": 8,
+  "critical": 11,
+  "abnormal": 11,
   "medium": 0,
-  "investigated": 6,
-  "updated": "2025-12-30 03:54:10 UTC"
+  "investigated": 7,
+  "updated": "2025-12-30 03:54:35 UTC"
 }
