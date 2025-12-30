@@ -8,6 +8,7 @@ SVG_FILE = ASSETS_DIR / "live_dashboard.svg"
 
 ASSETS_DIR.mkdir(exist_ok=True)
 
+# Generate random data
 data = {
     "critical": random.randint(10, 40),
     "abnormal": random.randint(30, 80),
@@ -16,6 +17,7 @@ data = {
     "updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 }
 
+# Build SVG
 svg_content = f"""
 <svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -28,7 +30,6 @@ svg_content = f"""
     .ok {{ fill: #22c55e; }}
     .small {{ font-size: 12px; fill: #94a3b8; }}
   </style>
-
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
   <text x="20" y="28" class="title">Threat Intelligence Dashboard</text>
   <text x="20" y="60" class="metric critical">Critical Alerts: {data["critical"]}</text>
