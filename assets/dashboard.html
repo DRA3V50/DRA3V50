@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Live Dashboard</title>
+<title>Threat Intelligence Dashboard</title>
+<style>
+  body { background: #0f172a; color: #e5e7eb; font-family: Arial; display: flex; justify-content: center; padding: 20px; }
+  .dashboard { width: 360px; }
+  text { font-family: Arial, sans-serif; }
+  .metric { font-weight: bold; }
+</style>
 </head>
-<body style="background:#0f172a;color:#e5e7eb;font-family:Arial;">
-<div id="dashboard">
-  <object id="svg" type="image/svg+xml" data="live_dashboard.svg" width="320"></object>
+<body>
+<div class="dashboard">
+  <svg id="dashboard-svg" width="360" height="360" viewBox="0 0 400 400">
+    <rect width="100%" height="100%" fill="#0f172a"/>
+    <text x="200" y="30" text-anchor="middle" fill="#e5e7eb" font-size="18" font-weight="bold">Threat Intelligence Dashboard</text>
+
+    <!-- Critical -->
+    <circle id="critical-glow" cx="80" cy="90" r="20" fill="rgba(239,68,68,0.6)"></circle>
+    <text id="critical-text" x="80" y="95" text-anchor="middle" fill="#ef4444" font-size="14">Critical: 0</text>
+
+    <!-- Abnormal -->
+    <circle id="abnormal-glow" cx="320" cy="90" r="20" fill="rgba(249,115,22,0.6)"></circle>
+    <text id="abnormal-text" x="320" y="95" text-anchor="middle" fill="#f97316" font-size="14">Abnormal: 0</text>
+
+    <!-- Medium -->
+    <circle id="medium-glow" cx="80" cy="310" r="20" fill="rgba(250,204,21,0.6)"></circle>
+    <text id="medium-text" x="80" y="315" text-anchor="middle" fill="#facc15" font-size="14">Medium: 0</text>
+
+    <!-- Investigated -->
+    <circle id="investigated-glow" cx="320" cy="310" r="20" fill="rgba(34,197,94,0.6)"></circle>
+    <text id="investigated-text" x="320" y="315" text-anchor="middle" fill="#22c55e" font-size="14">Investigated: 0</text>
+
+    <!-- Center pulse -->
+    <circle cx="200" cy="200" r="10" fill="rgba(88,166,255,0.5)">
+      <animate attributeName="r" values="10;18;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
 </div>
+
 <script>
-setInterval(() => {
-  const obj = document.getElementById('svg');
-  obj.data = 'live_dashboard.svg?cb=' + new Date().getTime();
-}, 5000);
+async function updateDashboard() {
+  try {
+    const res = await fetch('/metrics');
+    const data = await res.json();
+
+    document.getElementById('critical-text').textContent = 'Critical: ' + data.critical;
+    document.getElementById('abnormal-text').textContent = 'Abnormal: ' + data.abnormal;
+    document.getElementById('medium-text').textContent = 'Medium: ' + data.medium;
+    document.getElementById('investigated-text').textContent = 'Investigated: ' + data.investigated;
+  } catch (err) {
+    console.error('Failed to fetch metrics', err);
+  }
+}
+
+// Update every 5 seconds
+setInterval(updateDashboard, 5000);
+updateDashboard();
 </script>
 </body>
 </html>
