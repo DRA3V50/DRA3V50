@@ -16,40 +16,36 @@
 
   <!-- Critical Alerts (blood red) -->
   <text x="20" y="60" font-family="Arial" font-size="18" fill="#8B0000">
-    Critical Alerts: <tspan id="critical">20</tspan>
+    Critical Alerts: 20
     <animate attributeName="fill-opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
     <animate attributeName="font-size" values="18;22;18" dur="1.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Abnormal Alerts (sun red/gold) -->
   <text x="20" y="90" font-family="Arial" font-size="18" fill="#FFA500">
-    Abnormal Alerts: <tspan id="abnormal">45</tspan>
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="font-size" values="18;22;18" dur="2s" repeatCount="indefinite"/>
+    Abnormal Alerts: 45
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="font-size" values="18;22;18" dur="1.8s" repeatCount="indefinite"/>
   </text>
 
   <!-- Medium Severity (light yellow) -->
   <text x="20" y="120" font-family="Arial" font-size="18" fill="#FFFF66">
-    Medium Severity: <tspan id="medium">70</tspan>
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+    Medium Severity: 70
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="font-size" values="18;22;18" dur="2s" repeatCount="indefinite"/>
   </text>
 
   <!-- Investigated (blue/cyan) -->
   <text x="20" y="150" font-family="Arial" font-size="18" fill="#00CED1">
-    Investigated: <tspan id="investigated">120</tspan>
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    Investigated: 120
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="font-size" values="18;22;18" dur="2.2s" repeatCount="indefinite"/>
   </text>
 
   <!-- Updated -->
   <text x="20" y="175" font-family="Arial" font-size="12" fill="#94a3b8">
-    Updated: <tspan id="updated">Live</tspan>
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    Updated: Live
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Center pulse for visual emphasis -->
-  <circle cx="280" cy="60" r="10" fill="#38bdf8">
-    <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite"/>
-  </circle>
 
 </svg>
