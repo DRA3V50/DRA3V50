@@ -14,7 +14,7 @@ ASSETS_DIR.mkdir(exist_ok=True)
 # Generate live-ish data
 data = {
     "critical": random.randint(10, 40),
-    "abnormal": random.randint(30, 80),
+    "abnormal": random.randint(30, 80),  # Using 'abnormal' instead of 'high severity'
     "medium": random.randint(60, 120),
     "investigated": random.randint(100, 200),
     "updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
@@ -35,21 +35,23 @@ svg = f"""
     .high {{ fill: #f97316; }}
     .medium {{ fill: #facc15; }}
     .ok {{ fill: #22c55e; }}
+    .small {{ font-size: 12px; fill: #94a3b8; }}
   </style>
 
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
 
   <text x="20" y="32" class="title">Threat Intelligence Dashboard</text>
 
-  <text x="20" y="70" class="metric critical">Critical Alerts: {data["critical"]}</text>
-  <text x="20" y="100" class="metric high">High Severity: {data["high severity"]}</text>
-  <text x="20" y="130" class="metric medium">Medium Severity: {data["medium"]}</text>
+  <text x="20" y="70" class="metric critical">Critical Alerts: {data.get("critical",0)}</text>
+  <text x="20" y="100" class="metric high">Abnormal Alerts: {data.get("abnormal",0)}</text>
+  <text x="20" y="130" class="metric medium">Medium Severity: {data.get("medium",0)}</text>
 
-  <text x="380" y="70" class="metric ok">Investigated: {data["investigated"]}</text>
-  <text x="380" y="130" font-size="12">Updated: {data["updated"]}</text>
+  <text x="20" y="160" class="metric ok">Investigated: {data.get("investigated",0)}</text>
+  <text x="20" y="175" class="small">Updated: {data.get("updated","")}</text>
 </svg>
 """
 
+# Save SVG
 with open(SVG_FILE, "w") as f:
     f.write(svg)
 
