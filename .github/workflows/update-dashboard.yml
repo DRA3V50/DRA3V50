@@ -2,7 +2,7 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # Every hour
   workflow_dispatch:
 
 jobs:
@@ -13,64 +13,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Debug repo tree (AUTHORITATIVE)
-        run: |
-          pwd
-          echo "==== FULL FILE TREE ===="
-          find . -type f
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Initialize or update SOC data
+      - name: Initialize or Update SOC data & generate dashboard
         run: |
-          python - <<EOF
-          import json, os, datetime, random
+          python generate_dashboard.py
 
-          data = {
-              "critical": 0,
-              "abnormal": 0,
-              "medium": 0,
-              "investigated": 0,
-              "updated": ""
-          }
-
-          if os.path.exists("data.json"):
-              with open("data.json") as f:
-                  data.update(json.load(f))
-
-          data["critical"] += random.randint(0, 3)
-          data["abnormal"] += random.randint(0, 5)
-          data["medium"] += random.randint(0, 2)
-          data["investigated"] += random.randint(0, 1)
-
-          data["updated"] = datetime.datetime.utcnow().strftime(
-              "%Y-%m-%d %H:%M:%S UTC"
-          )
-
-          with open("data.json", "w") as f:
-              json.dump(data, f, indent=2)
-          EOF
-
-      - name: Locate and run generate_dashboard.py
+      - name: Update cache buster in README.md
         run: |
-          SCRIPT_PATH=$(find . -name "generate_dashboard.py" | head -n 1)
+          TIMESTAMP=$(date +%s)
+          sed -i "s|\(dashboard.svg?cache=\)[0-9]*|\1$TIMESTAMP|" README.md
 
-          if [ -z "$SCRIPT_PATH" ]; then
-            echo "❌ ERROR: generate_dashboard.py NOT FOUND ANYWHERE IN REPO"
-            exit 1
-          fi
-
-          echo "✅ Found dashboard generator at: $SCRIPT_PATH"
-          python "$SCRIPT_PATH"
-
-      - name: Commit and push updates
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add dashboard.svg data.json
-          git commit -m "🔄 Update SOC dashboard" || exit 0
+          git add dashboard.svg data.json README.md
+          git commit -m "🔄 Update SOC dashboard and cache buster" || exit 0
           git push
 
