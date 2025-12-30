@@ -1,5 +1,5 @@
 
-<svg width="700" height="180" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
   <style>
     text { font-family: Arial, sans-serif; fill: #e5e7eb; }
     .title { font-size: 22px; font-weight: bold; }
@@ -8,16 +8,17 @@
     .high { fill: #f97316; }
     .medium { fill: #facc15; }
     .ok { fill: #22c55e; }
+    .small { font-size: 12px; fill: #94a3b8; }
   </style>
 
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
 
-  <text x="20" y="32" class="title">Live Security Anomaly Dashboard</text>
+  <text x="20" y="32" class="title">Threat Intelligence Dashboard</text>
 
-  <text x="20" y="70" class="metric critical">Critical Alerts: 23</text>
-  <text x="20" y="100" class="metric high">High Severity: 34</text>
-  <text x="20" y="130" class="metric medium">Medium Severity: 75</text>
+  <text x="20" y="70" class="metric critical">Critical Alerts: 37</text>
+  <text x="20" y="100" class="metric high">Abnormal Alerts: 64</text>
+  <text x="20" y="130" class="metric medium">Medium Severity: 80</text>
 
-  <text x="380" y="70" class="metric ok">Investigated: 155</text>
-  <text x="380" y="130" font-size="12">Updated: 2025-12-29 23:57 UTC</text>
+  <text x="20" y="160" class="metric ok">Investigated: 166</text>
+  <text x="20" y="175" class="small">Updated: 2025-12-30 00:27 UTC</text>
 </svg>
