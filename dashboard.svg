@@ -5,14 +5,14 @@
     .critical { fill: #ff1744; font-weight: bold; }
     .abnormal { fill: #ff9100; font-weight: bold; }
     .medium { fill: #ffea00; font-weight: bold; }
-    .investigated { fill: #00e676; font-weight: bold; }
+    .investigated { fill: #1e90ff; font-weight: bold; }
 
     .pulse {
-      animation: pulse 1.2s ease-in-out infinite;
+      animation: pulse 1s ease-in-out infinite;
     }
 
     @keyframes pulse {
-      0%, 100% { fill-opacity: 0.5; }
+      0%, 100% { fill-opacity: 0.3; }
       50% { fill-opacity: 1; }
     }
   </style>
@@ -21,12 +21,12 @@
 
   <!-- Title removed -->
 
-  <text x="30" y="90" class="label critical pulse">Critical: 3</text>
-  <text x="30" y="140" class="label abnormal pulse">Abnormal: 4</text>
-  <text x="30" y="190" class="label medium pulse">Medium: 2</text>
-  <text x="30" y="240" class="label investigated pulse">Investigated: 3</text>
+  <text x="30" y="90" class="label critical pulse">Critical: 6</text>
+  <text x="30" y="140" class="label abnormal pulse">Abnormal: 3</text>
+  <text x="30" y="190" class="label medium pulse">Medium: 1</text>
+  <text x="30" y="240" class="label investigated pulse">Investigated: 4</text>
 
   <text x="20" y="290" class="label" style="font-size: 12px; fill: #78909c;">
-    Last Update: 2025-12-30 03:42:18 UTC
+    Last Update: 2025-12-30 03:45:50 UTC
   </text>
 </svg>
