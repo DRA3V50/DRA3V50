@@ -13,11 +13,9 @@
     justify-content: center;
     padding: 20px;
   }
-  .dashboard {
-    width: 320px;
-  }
+  .dashboard { width: 320px; }
   .title { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
-  .metric { font-size: 18px; margin-bottom: 5px; }
+  .metric { font-size: 18px; margin-bottom: 5px; transition: color 0.5s; }
   .critical { color: #ef4444; }
   .abnormal { color: #f97316; }
   .medium { color: #facc15; }
@@ -35,39 +33,30 @@
   <div class="small" id="updated">Updated: -</div>
 </div>
 
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+        integrity="sha384-EG+vpoKp5KuZ2J9yYV+4mxI/2cOdv2Ak+TUGG0I3b1w2EJt3YfUqXgU7t9gMwl8z"
+        crossorigin="anonymous"></script>
 <script>
-async function updateDashboard() {
-  try {
-    const response = await fetch('assets/dashboard_data.json?cb=' + new Date().getTime());
-    const data = await response.json();
+  const socket = io();
 
-    document.getElementById('critical').textContent = "Critical Alerts: " + data.critical;
-    document.getElementById('abnormal').textContent = "Abnormal Alerts: " + data.abnormal;
-    document.getElementById('medium').textContent = "Medium Severity: " + data.medium;
-    document.getElementById('investigated').textContent = "Investigated: " + data.investigated;
-    document.getElementById('updated').textContent = "Updated: " + data.updated;
+  socket.on('connect', () => console.log('Connected to server'));
 
-    // Optional: flash numbers briefly
+  socket.on('update', data => {
     ['critical','abnormal','medium','investigated'].forEach(id => {
       const el = document.getElementById(id);
-      el.style.transition = "color 0.5s";
-      el.style.color = "#ffffff";
-      setTimeout(() => { 
+      const value = data[id];
+      el.textContent = el.textContent.split(':')[0] + ': ' + value;
+      // Flash effect
+      el.style.color = '#ffffff';
+      setTimeout(() => {
         if(id=='critical') el.style.color="#ef4444";
         if(id=='abnormal') el.style.color="#f97316";
         if(id=='medium') el.style.color="#facc15";
         if(id=='investigated') el.style.color="#22c55e";
       }, 500);
     });
-
-  } catch (err) {
-    console.error("Failed to fetch dashboard JSON:", err);
-  }
-}
-
-// Update every 5 seconds
-updateDashboard();
-setInterval(updateDashboard, 5000);
+    document.getElementById('updated').textContent = 'Updated: ' + new Date().toLocaleTimeString();
+  });
 </script>
 </body>
 </html>
