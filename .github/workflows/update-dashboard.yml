@@ -13,10 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Debug repo tree
+      - name: Debug repo tree (AUTHORITATIVE)
         run: |
           pwd
-          ls -la
+          echo "==== FULL FILE TREE ===="
+          find . -type f
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -53,13 +54,23 @@ jobs:
               json.dump(data, f, indent=2)
           EOF
 
-      - name: Generate SVG dashboard
-        run: python generate_dashboard.py
+      - name: Locate and run generate_dashboard.py
+        run: |
+          SCRIPT_PATH=$(find . -name "generate_dashboard.py" | head -n 1)
+
+          if [ -z "$SCRIPT_PATH" ]; then
+            echo "❌ ERROR: generate_dashboard.py NOT FOUND ANYWHERE IN REPO"
+            exit 1
+          fi
+
+          echo "✅ Found dashboard generator at: $SCRIPT_PATH"
+          python "$SCRIPT_PATH"
 
       - name: Commit and push updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add dashboard.svg data.json
-          git commit -m "Update SOC dashboard" || exit 0
+          git commit -m "🔄 Update SOC dashboard" || exit 0
           git push
+
