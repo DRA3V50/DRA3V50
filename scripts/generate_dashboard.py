@@ -36,14 +36,14 @@ svg = f"""
     .critical {{ fill: #ff1744; font-weight: bold; }}
     .abnormal {{ fill: #ff9100; font-weight: bold; }}
     .medium {{ fill: #ffea00; font-weight: bold; }}
-    .investigated {{ fill: #00e676; font-weight: bold; }}
+    .investigated {{ fill: #1e90ff; font-weight: bold; }}
 
     .pulse {{
-      animation: pulse 1.2s ease-in-out infinite;
+      animation: pulse 1s ease-in-out infinite;
     }}
 
     @keyframes pulse {{
-      0%, 100% {{ fill-opacity: 0.5; }}
+      0%, 100% {{ fill-opacity: 0.3; }}
       50% {{ fill-opacity: 1; }}
     }}
   </style>
@@ -65,3 +65,4 @@ svg = f"""
 
 with open("dashboard.svg", "w") as f:
     f.write(svg)
+
