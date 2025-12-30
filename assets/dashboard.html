@@ -36,39 +36,48 @@
 </div>
 
 <script>
-async function updateDashboard() {
+// Fetch data from JSON
+async function fetchData() {
   try {
-    const response = await fetch('dashboard_data.json');
-    const data = await response.json();
-
-    const glow = (element, color) => {
-      element.setAttribute('fill', color);
-      element.animate(
-        [{ fill: color }, { fill: '#fff' }, { fill: color }],
-        { duration: 800, iterations: 1 }
-      );
-    };
-
-    const c = document.getElementById('critical');
-    const a = document.getElementById('abnormal');
-    const m = document.getElementById('medium');
-    const i = document.getElementById('investigated');
-    const u = document.getElementById('updated');
-
-    c.textContent = `Critical Alerts: ${data.critical}`;
-    a.textContent = `Abnormal Alerts: ${data.abnormal}`;
-    m.textContent = `Medium Severity: ${data.medium}`;
-    i.textContent = `Investigated: ${data.investigated}`;
-    u.textContent = `Updated: ${data.updated}`;
-
-    glow(c, '#8B0000');   // Blood red
-    glow(a, '#FFA500');   // Sun red/gold
-    glow(m, '#FFFF66');   // Light yellow
-    glow(i, '#00CED1');   // Cyan/blue
-
+    const response = await fetch('dashboard_data.json?cb=' + new Date().getTime());
+    if (!response.ok) throw new Error("Network response was not ok");
+    return await response.json();
   } catch (err) {
-    console.error('Error fetching dashboard data:', err);
+    console.error(err);
+    return null;
   }
+}
+
+// Apply glow animation to SVG text
+function glowText(element, color) {
+  element.setAttribute('fill', color);
+  element.animate(
+    [{ fill: color }, { fill: '#fff' }, { fill: color }],
+    { duration: 800, iterations: 1 }
+  );
+}
+
+// Update dashboard
+async function updateDashboard() {
+  const data = await fetchData();
+  if (!data) return;
+
+  const c = document.getElementById('critical');
+  const a = document.getElementById('abnormal');
+  const m = document.getElementById('medium');
+  const i = document.getElementById('investigated');
+  const u = document.getElementById('updated');
+
+  c.textContent = `Critical Alerts: ${data.critical}`;
+  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
+  m.textContent = `Medium Severity: ${data.medium}`;
+  i.textContent = `Investigated: ${data.investigated}`;
+  u.textContent = `Updated: ${data.updated}`;
+
+  glowText(c, '#8B0000');   // Blood red
+  glowText(a, '#FFA500');   // Sun red/gold
+  glowText(m, '#FFFF66');   // Light yellow
+  glowText(i, '#00CED1');   // Cyan/blue
 }
 
 // Update every 2 seconds
@@ -79,3 +88,4 @@ updateDashboard();
 </script>
 </body>
 </html>
+
