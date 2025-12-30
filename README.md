@@ -68,8 +68,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ## 🛡️ Blue Team Capability Radar || 🔍 Threat Intelligence Dashboard
 
 ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg)
-| ![Threat Intel Radar](./radar.svg) | ![SOC Live Alert Dashboard](./dashboard.svg?cache=122925) |
-|:----------------------------------------:|:---------------------------------------------------------:|
+| ![Threat Intel Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) | ![SOC Live Alert Dashboard](./dashboard.svg?cache=122925) |
+|:--------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|
 
 
 
