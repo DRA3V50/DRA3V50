@@ -1,4 +1,4 @@
-naname: Update Dashboard
+name: Update Dashboard
 
 on:
   schedule:
