@@ -22,7 +22,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run generate_dashboard.py
-        run: python generate_dashboard.py
+        run: python scripts/generate_dashboard.py
+
 
       - name: Update cache buster in README.md
         run: |
