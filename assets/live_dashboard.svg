@@ -1,87 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Live Threat Intelligence Dashboard</title>
-<style>
-  body {
-    background: #0f172a;
-    color: #e5e7eb;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  .dashboard {
-    width: 350px;
-  }
-  text {
-    font-family: Arial, sans-serif;
-  }
-</style>
-</head>
-<body>
-<div class="dashboard">
-  <svg id="dashboard" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
-    <text x="20" y="28" font-size="16" font-weight="bold" fill="#e5e7eb">Threat Intelligence Dashboard</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400"
+     height="400"
+     viewBox="0 0 400 400"
+     role="img"
+     aria-label="Blue Team Capability Radar">
 
-    <text id="critical" x="20" y="60" font-size="18" fill="#8B0000">Critical Alerts: 0</text>
-    <text id="abnormal" x="20" y="90" font-size="18" fill="#FFA500">Abnormal Alerts: 0</text>
-    <text id="medium" x="20" y="120" font-size="18" fill="#FFFF66">Medium Severity: 0</text>
-    <text id="investigated" x="20" y="150" font-size="18" fill="#00CED1">Investigated: 0</text>
-    <text id="updated" x="20" y="175" font-size="12" fill="#94a3b8">Updated: -</text>
-  </svg>
-</div>
+  <defs>
+    <!-- Directional glow -->
+    <radialGradient id="focusGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(88,166,255,0.55)"/>
+      <stop offset="70%" stop-color="rgba(88,166,255,0.25)"/>
+      <stop offset="100%" stop-color="rgba(88,166,255,0.05)"/>
+    </radialGradient>
+  </defs>
 
-<script>
-// Function to generate live data (simulated)
-function getLiveData() {
-  return {
-    critical: Math.floor(Math.random() * 40),
-    abnormal: Math.floor(Math.random() * 80),
-    medium: Math.floor(Math.random() * 120),
-    investigated: Math.floor(Math.random() * 200),
-    updated: new Date().toLocaleTimeString()
-  };
-}
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d1117"/>
 
-// Update the dashboard numbers and add glow animation
-function updateDashboard() {
-  const data = getLiveData();
+  <!-- Radar rings (outer radius = 120) -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#30363d"/>
+  <circle cx="200" cy="200" r="80" fill="none" stroke="#30363d"/>
+  <circle cx="200" cy="200" r="40" fill="none" stroke="#30363d"/>
 
-  const glow = (element, color) => {
-    element.setAttribute('fill', color);
-    element.animate(
-      [{ fill: color }, { fill: '#fff' }, { fill: color }],
-      { duration: 800, iterations: 1 }
-    );
-  };
+  <!-- Axes with phased pulse -->
+  <g stroke="#30363d">
+    <line x1="200" y1="80" x2="200" y2="320">
+      <animate attributeName="stroke-opacity" dur="8s" values="0.35;1;0.35" repeatCount="indefinite"/>
+    </line>
+    <line x1="80" y1="200" x2="320" y2="200">
+      <animate attributeName="stroke-opacity" dur="8s" begin="2s" values="0.35;1;0.35" repeatCount="indefinite"/>
+    </line>
+    <line x1="115" y1="115" x2="285" y2="285">
+      <animate attributeName="stroke-opacity" dur="8s" begin="4s" values="0.35;1;0.35" repeatCount="indefinite"/>
+    </line>
+    <line x1="285" y1="115" x2="115" y2="285">
+      <animate attributeName="stroke-opacity" dur="8s" begin="6s" values="0.35;1;0.35" repeatCount="indefinite"/>
+    </line>
+  </g>
 
-  const c = document.getElementById('critical');
-  const a = document.getElementById('abnormal');
-  const m = document.getElementById('medium');
-  const i = document.getElementById('investigated');
-  const u = document.getElementById('updated');
+  <!-- Labels -->
+  <g fill="#c9d1d9" font-size="11" text-anchor="middle">
+    <text x="200" y="50">Endpoint Detection &amp; Telemetry</text>
+    <text x="310" y="95">Incident Response</text>
+    <text x="359" y="205">SIEM Engineering</text>
+    <text x="310" y="315">Anomaly Detection</text>
+    <text x="200" y="360">OSINT &amp; Log Analysis</text>
+    <text x="90" y="315">SOAR &amp; Automation</text>
+    <text x="45" y="205">SOC Operations</text>
+    <text x="90" y="95">Risk Identification</text>
+  </g>
 
-  c.textContent = `Critical Alerts: ${data.critical}`;
-  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
-  m.textContent = `Medium Severity: ${data.medium}`;
-  i.textContent = `Investigated: ${data.investigated}`;
-  u.textContent = `Updated: ${data.updated}`;
+  <!-- Center pulse -->
+  <circle cx="200" cy="200" r="6" fill="rgba(88,166,255,0.6)">
+    <animate attributeName="r" values="6;18;6" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
 
-  glow(c, '#8B0000');       // Blood red
-  glow(a, '#FFA500');       // Sun red/gold
-  glow(m, '#FFFF66');       // Light yellow
-  glow(i, '#00CED1');       // Cyan/blue
-}
+  <!-- Memory polygon (previous state) -->
+  <polygon
+    points="
+      200,95
+      255,120
+      285,200
+      255,280
+      200,305
+      145,280
+      115,200
+      145,120"
+    fill="none"
+    stroke="rgba(88,166,255,0.22)"
+    stroke-width="1.5"
+  />
 
-// Update every 2 seconds
-setInterval(updateDashboard, 2000);
+  <!-- Active focus polygon (constrained to radar) -->
+  <polygon
+    fill="url(#focusGlow)"
+    stroke="rgba(88,166,255,0.95)"
+    stroke-width="2"
+    points="
+      200,95
+      260,120
+      295,200
+      260,280
+      200,305
+      140,280
+      105,200
+      140,120">
 
-// Initial update
-updateDashboard();
-</script>
-</body>
-</html>
+    <!-- Directional emphasis (never leaves outer ring) -->
+    <animate
+      attributeName="points"
+      dur="22s"
+      repeatCount="indefinite"
+      values="
+        200,95 260,120 295,200 260,280 200,305 140,280 105,200 140,120;
+        200,105 250,135 285,200 250,265 200,285 150,260 115,200 150,135;
+        200,90 265,115 300,200 255,285 200,310 145,285 100,200 135,115;
+        200,95 260,120 295,200 260,280 200,305 140,280 105,200 140,120
+      "/>
+
+    <!-- Energy pulse -->
+    <animate
+      attributeName="stroke-opacity"
+      dur="6s"
+      values="0.6;1;0.6"
+      repeatCount="indefinite"/>
+
+    <!-- Slow analytical rotation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 200 200"
+      to="360 200 200"
+      dur="40s"
+      repeatCount="indefinite"/>
+  </polygon>
+
+</svg>
