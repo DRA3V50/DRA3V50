@@ -15,75 +15,59 @@
   }
   .dashboard {
     width: 320px;
-    background-color: #0f172a;
-    border-radius: 12px;
-    padding: 16px;
   }
-  .title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 12px;
-  }
-  .metric {
-    font-size: 18px;
-    margin: 6px 0;
-    transition: color 0.5s;
-  }
+  .title { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+  .metric { font-size: 18px; margin-bottom: 5px; }
   .critical { color: #ef4444; }
   .abnormal { color: #f97316; }
   .medium { color: #facc15; }
-  .investigated { color: #22c55e; }
-  .updated { font-size: 12px; color: #94a3b8; margin-top: 8px; }
+  .ok { color: #22c55e; }
+  .small { font-size: 12px; color: #94a3b8; }
 </style>
 </head>
 <body>
-
 <div class="dashboard">
   <div class="title">Threat Intelligence Dashboard</div>
-  <div id="critical" class="metric critical">Critical Alerts: 0</div>
-  <div id="abnormal" class="metric abnormal">Abnormal Alerts: 0</div>
-  <div id="medium" class="metric medium">Medium Severity: 0</div>
-  <div id="investigated" class="metric investigated">Investigated: 0</div>
-  <div id="updated" class="updated">Updated: -</div>
+  <div class="metric critical" id="critical">Critical Alerts: 0</div>
+  <div class="metric abnormal" id="abnormal">Abnormal Alerts: 0</div>
+  <div class="metric medium" id="medium">Medium Severity: 0</div>
+  <div class="metric ok" id="investigated">Investigated: 0</div>
+  <div class="small" id="updated">Updated: -</div>
 </div>
 
 <script>
-async function fetchDataAndUpdate() {
+async function updateDashboard() {
   try {
-    // Cache-buster to prevent browser caching
-    const timestamp = new Date().getTime();
-    const response = await fetch('assets/dashboard_data.json?cb=' + timestamp);
+    const response = await fetch('assets/dashboard_data.json?cb=' + new Date().getTime());
     const data = await response.json();
 
-    const elements = [
-      {id: 'critical', value: data.critical, color: '#ef4444'},
-      {id: 'abnormal', value: data.abnormal, color: '#f97316'},
-      {id: 'medium', value: data.medium, color: '#facc15'},
-      {id: 'investigated', value: data.investigated, color: '#22c55e'}
-    ];
+    document.getElementById('critical').textContent = "Critical Alerts: " + data.critical;
+    document.getElementById('abnormal').textContent = "Abnormal Alerts: " + data.abnormal;
+    document.getElementById('medium').textContent = "Medium Severity: " + data.medium;
+    document.getElementById('investigated').textContent = "Investigated: " + data.investigated;
+    document.getElementById('updated').textContent = "Updated: " + data.updated;
 
-    elements.forEach(el => {
-      const dom = document.getElementById(el.id);
-      if(dom && dom.textContent.split(': ')[1] != el.value) {
-        // Flash white briefly on change
-        dom.style.color = '#ffffff';
-        setTimeout(() => dom.style.color = el.color, 250);
-        dom.textContent = `${dom.textContent.split(':')[0]}: ${el.value}`;
-      }
+    // Optional: flash numbers briefly
+    ['critical','abnormal','medium','investigated'].forEach(id => {
+      const el = document.getElementById(id);
+      el.style.transition = "color 0.5s";
+      el.style.color = "#ffffff";
+      setTimeout(() => { 
+        if(id=='critical') el.style.color="#ef4444";
+        if(id=='abnormal') el.style.color="#f97316";
+        if(id=='medium') el.style.color="#facc15";
+        if(id=='investigated') el.style.color="#22c55e";
+      }, 500);
     });
 
-    document.getElementById('updated').textContent = `Updated: ${data.updated}`;
-  } catch (error) {
-    console.error('Error fetching dashboard data:', error);
+  } catch (err) {
+    console.error("Failed to fetch dashboard JSON:", err);
   }
 }
 
-// Initial load
-fetchDataAndUpdate();
-
-// Refresh every 5 seconds
-setInterval(fetchDataAndUpdate, 5000);
+// Update every 5 seconds
+updateDashboard();
+setInterval(updateDashboard, 5000);
 </script>
-
 </body>
 </html>
