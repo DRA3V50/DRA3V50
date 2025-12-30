@@ -2,38 +2,62 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"   # every hour
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Update timestamp
+      - name: Initialize or Update SOC data
         run: |
           python - <<EOF
-          import json, datetime
-          with open("data.json") as f:
-              data = json.load(f)
-          data["updated"] = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
-          with open("data.json","w") as f:
-              json.dump(data,f,indent=2)
+          import json, os, datetime, random
+
+          default_data = {
+              "critical": 0,
+              "abnormal": 0,
+              "medium": 0,
+              "investigated": 0,
+              "updated": ""
+          }
+
+          if os.path.exists("data.json"):
+              with open("data.json") as f:
+                  data = json.load(f)
+          else:
+              data = default_data
+
+          # --- SOC-style simulated changes ---
+          data["critical"] = max(0, data["critical"] + random.randint(-1, 3))
+          data["abnormal"] = max(0, data["abnormal"] + random.randint(-2, 5))
+          data["medium"] = max(0, data["medium"] + random.randint(-1, 2))
+          data["investigated"] = max(0, data["investigated"] + random.randint(0, 2))
+
+          data["updated"] = datetime.datetime.utcnow().strftime(
+              "%Y-%m-%d %H:%M:%S UTC"
+          )
+
+          with open("data.json", "w") as f:
+              json.dump(data, f, indent=2)
           EOF
 
-      - name: Generate SVG
+      - name: Generate SVG dashboard
         run: python generate_dashboard.py
 
-      - name: Commit changes
+      - name: Commit and push updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add dashboard.svg data.json
-          git commit -m "Update SOC dashboard" || exit 0
+          git commit -m "🔄 Update SOC dashboard" || exit 0
           git push
