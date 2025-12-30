@@ -51,16 +51,16 @@ svg = f"""
       50% {{ fill-opacity: 1; }}
     }}
 
-    /* Flickering 3D-style shield */
-    .shield {{
-      animation: shieldFlicker 1.2s infinite alternate;
+    /* Flickering scanner emoji */
+    .scanner {{
+      animation: scannerFlicker 1.2s infinite alternate;
     }}
-    @keyframes shieldFlicker {{
-      0% {{ fill: #00bfff; stroke: #1e90ff; }}
-      25% {{ fill: #1e90ff; stroke: #00bfff; }}
-      50% {{ fill: #87cefa; stroke: #00bfff; }}
-      75% {{ fill: #00bfff; stroke: #87cefa; }}
-      100% {{ fill: #1e90ff; stroke: #00bfff; }}
+    @keyframes scannerFlicker {{
+      0% {{ fill: #00bfff; opacity: 0.6; }}
+      25% {{ fill: #1e90ff; opacity: 1; }}
+      50% {{ fill: #87cefa; opacity: 0.8; }}
+      75% {{ fill: #00bfff; opacity: 1; }}
+      100% {{ fill: #1e90ff; opacity: 0.7; }}
     }}
   </style>
 
@@ -78,9 +78,8 @@ svg = f"""
     Last Update: {data["updated"]}
   </text>
 
-  <!-- 3D-style shield top-right -->
-  <polygon points="350,30 390,30 380,70 360,90 340,70" 
-           class="shield" stroke-width="2"/>
+  <!-- Scanner emoji top-right -->
+  <text x="360" y="50" font-size="32" class="scanner">🛰️</text>
 </svg>
 """
 
