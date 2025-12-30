@@ -15,10 +15,21 @@
 
   <text x="20" y="28" class="title">Threat Intelligence Dashboard</text>
 
-  <text x="20" y="60" class="metric critical">Critical Alerts: 32</text>
-  <text x="20" y="90" class="metric high">Abnormal Alerts: 70</text>
-  <text x="20" y="120" class="metric medium">Medium Severity: 81</text>
-
-  <text x="20" y="150" class="metric ok">Investigated: 108</text>
-  <text x="20" y="165" class="small">Updated: 2025-12-30 00:31 UTC</text>
+  <text x="20" y="60" class="metric critical">
+    Critical Alerts: 12
+    <animate attributeName="fill" values="#ef4444;#ff6666;#ef4444" dur="0.5s" begin="0s" repeatCount="1" />
+  </text>
+  <text x="20" y="90" class="metric high">
+    Abnormal Alerts: 47
+    <animate attributeName="fill" values="#f97316;#ffae5c;#f97316" dur="0.5s" begin="0s" repeatCount="1" />
+  </text>
+  <text x="20" y="120" class="metric medium">
+    Medium Severity: 99
+    <animate attributeName="fill" values="#facc15;#fff48f;#facc15" dur="0.5s" begin="0s" repeatCount="1" />
+  </text>
+  <text x="20" y="150" class="metric ok">
+    Investigated: 127
+    <animate attributeName="fill" values="#22c55e;#7fe77f;#22c55e" dur="0.5s" begin="0s" repeatCount="1" />
+  </text>
+  <text x="20" y="165" class="small">Updated: 2025-12-30 00:37:46 UTC</text>
 </svg>
