@@ -36,7 +36,7 @@
 </div>
 
 <script>
-// Function to generate live data (simulated)
+// Function to generate simulated live data
 function getLiveData() {
   return {
     critical: Math.floor(Math.random() * 40),
@@ -47,34 +47,30 @@ function getLiveData() {
   };
 }
 
-// Update the dashboard numbers and add glow animation
+// Update numbers and glow
 function updateDashboard() {
   const data = getLiveData();
 
-  const glow = (element, color) => {
-    element.setAttribute('fill', color);
-    element.animate(
-      [{ fill: color }, { fill: '#fff' }, { fill: color }],
-      { duration: 800, iterations: 1 }
+  const updateText = (id, value, color) => {
+    const el = document.getElementById(id);
+    el.textContent = `${value.label}: ${value.number}`;
+    // Glow animation using SVG fill transition
+    el.animate(
+      [
+        { fill: color },
+        { fill: '#fff' },
+        { fill: color }
+      ],
+      { duration: 700, iterations: 1 }
     );
   };
 
-  const c = document.getElementById('critical');
-  const a = document.getElementById('abnormal');
-  const m = document.getElementById('medium');
-  const i = document.getElementById('investigated');
-  const u = document.getElementById('updated');
+  updateText('critical', {label:'Critical Alerts', number:data.critical}, '#8B0000');
+  updateText('abnormal', {label:'Abnormal Alerts', number:data.abnormal}, '#FFA500');
+  updateText('medium', {label:'Medium Severity', number:data.medium}, '#FFFF66');
+  updateText('investigated', {label:'Investigated', number:data.investigated}, '#00CED1');
 
-  c.textContent = `Critical Alerts: ${data.critical}`;
-  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
-  m.textContent = `Medium Severity: ${data.medium}`;
-  i.textContent = `Investigated: ${data.investigated}`;
-  u.textContent = `Updated: ${data.updated}`;
-
-  glow(c, '#8B0000');       // Blood red
-  glow(a, '#FFA500');       // Sun red/gold
-  glow(m, '#FFFF66');       // Light yellow
-  glow(i, '#00CED1');       // Cyan/blue
+  document.getElementById('updated').textContent = `Updated: ${data.updated}`;
 }
 
 // Update every 2 seconds
