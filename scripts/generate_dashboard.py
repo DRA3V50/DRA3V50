@@ -1,4 +1,4 @@
-import json
+verimport json
 import random
 from datetime import datetime
 from pathlib import Path
@@ -42,7 +42,7 @@ svg = f"""
   <text x="20" y="32" class="title">Threat Intelligence Dashboard</text>
 
   <text x="20" y="70" class="metric critical">Critical Alerts: {data["critical"]}</text>
-  <text x="20" y="100" class="metric high">High Severity: {data["high"]}</text>
+  <text x="20" y="100" class="metric high">High Severity: {data["high severity"]}</text>
   <text x="20" y="130" class="metric medium">Medium Severity: {data["medium"]}</text>
 
   <text x="380" y="70" class="metric ok">Investigated: {data["investigated"]}</text>
