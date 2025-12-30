@@ -1,5 +1,8 @@
 import json
-from datetime import datetime
+import os
+
+if not os.path.exists("data.json"):
+    raise RuntimeError("data.json missing — workflow misconfigured")
 
 with open("data.json") as f:
     data = json.load(f)
@@ -33,23 +36,23 @@ svg = f"""
   <text x="20" y="30" class="title">🛡 SOC Live Alert Dashboard</text>
 
   <text x="30" y="70" class="label critical pulse">
-    Critical: {data['critical']}
+    Critical: {data["critical"]}
   </text>
 
   <text x="30" y="100" class="label abnormal">
-    Abnormal: {data['abnormal']}
+    Abnormal: {data["abnormal"]}
   </text>
 
   <text x="30" y="130" class="label medium">
-    Medium: {data['medium']}
+    Medium: {data["medium"]}
   </text>
 
   <text x="30" y="160" class="label investigated">
-    Investigated: {data['investigated']}
+    Investigated: {data["investigated"]}
   </text>
 
   <text x="20" y="200" class="footer">
-    Last Update: {data['updated']}
+    Last Update: {data["updated"]}
   </text>
 </svg>
 """
