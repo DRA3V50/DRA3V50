@@ -1,62 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Live Threat Intelligence Dashboard</title>
-<style>
-  body {
-    background-color: #0f172a;
-    color: #e5e7eb;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  .dashboard { width: 320px; }
-  .title { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
-  .metric { font-size: 18px; margin-bottom: 5px; transition: color 0.5s; }
-  .critical { color: #ef4444; }
-  .abnormal { color: #f97316; }
-  .medium { color: #facc15; }
-  .ok { color: #22c55e; }
-  .small { font-size: 12px; color: #94a3b8; }
-</style>
+<title>Live Dashboard</title>
 </head>
-<body>
-<div class="dashboard">
-  <div class="title">Threat Intelligence Dashboard</div>
-  <div class="metric critical" id="critical">Critical Alerts: 0</div>
-  <div class="metric abnormal" id="abnormal">Abnormal Alerts: 0</div>
-  <div class="metric medium" id="medium">Medium Severity: 0</div>
-  <div class="metric ok" id="investigated">Investigated: 0</div>
-  <div class="small" id="updated">Updated: -</div>
+<body style="background:#0f172a;color:#e5e7eb;font-family:Arial;">
+<div id="dashboard">
+  <object id="svg" type="image/svg+xml" data="live_dashboard.svg" width="320"></object>
 </div>
-
-<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
-        integrity="sha384-EG+vpoKp5KuZ2J9yYV+4mxI/2cOdv2Ak+TUGG0I3b1w2EJt3YfUqXgU7t9gMwl8z"
-        crossorigin="anonymous"></script>
 <script>
-  const socket = io();
-
-  socket.on('connect', () => console.log('Connected to server'));
-
-  socket.on('update', data => {
-    ['critical','abnormal','medium','investigated'].forEach(id => {
-      const el = document.getElementById(id);
-      const value = data[id];
-      el.textContent = el.textContent.split(':')[0] + ': ' + value;
-      // Flash effect
-      el.style.color = '#ffffff';
-      setTimeout(() => {
-        if(id=='critical') el.style.color="#ef4444";
-        if(id=='abnormal') el.style.color="#f97316";
-        if(id=='medium') el.style.color="#facc15";
-        if(id=='investigated') el.style.color="#22c55e";
-      }, 500);
-    });
-    document.getElementById('updated').textContent = 'Updated: ' + new Date().toLocaleTimeString();
-  });
+setInterval(() => {
+  const obj = document.getElementById('svg');
+  obj.data = 'live_dashboard.svg?cb=' + new Date().getTime();
+}, 5000);
 </script>
 </body>
 </html>
