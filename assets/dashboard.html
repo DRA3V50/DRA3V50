@@ -14,7 +14,7 @@
     padding: 20px;
   }
   .dashboard {
-    width: 400px;
+    width: 350px;
   }
   text {
     font-family: Arial, sans-serif;
@@ -23,91 +23,66 @@
 </head>
 <body>
 <div class="dashboard">
-  <svg id="dashboardSVG" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <!-- Glows -->
-      <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="rgba(139,0,0,0.8)"/>
-        <stop offset="70%" stop-color="rgba(139,0,0,0.3)"/>
-        <stop offset="100%" stop-color="rgba(139,0,0,0)"/>
-      </radialGradient>
-      <radialGradient id="glowGold" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="rgba(255,165,0,0.8)"/>
-        <stop offset="70%" stop-color="rgba(255,165,0,0.3)"/>
-        <stop offset="100%" stop-color="rgba(255,165,0,0)"/>
-      </radialGradient>
-      <radialGradient id="glowYellow" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="rgba(255,255,102,0.8)"/>
-        <stop offset="70%" stop-color="rgba(255,255,102,0.3)"/>
-        <stop offset="100%" stop-color="rgba(255,255,102,0)"/>
-      </radialGradient>
-      <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="rgba(0,206,209,0.8)"/>
-        <stop offset="70%" stop-color="rgba(0,206,209,0.3)"/>
-        <stop offset="100%" stop-color="rgba(0,206,209,0)"/>
-      </radialGradient>
-    </defs>
-
-    <!-- Background -->
+  <svg id="dashboard" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
     <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
+    <text x="20" y="28" font-size="16" font-weight="bold" fill="#e5e7eb">Threat Intelligence Dashboard</text>
 
-    <!-- Title -->
-    <text x="20" y="30" font-size="18" font-weight="bold" fill="#e5e7eb">Threat Intelligence Dashboard</text>
-
-    <!-- Metrics + Glowing circles -->
-    <text id="criticalText" x="20" y="60" font-size="18" fill="#8B0000">Critical: 0</text>
-    <circle id="criticalGlow" cx="150" cy="55" r="8" fill="url(#glowRed)">
-      <animate attributeName="r" values="6;14;6" dur="1.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-
-    <text id="abnormalText" x="20" y="90" font-size="18" fill="#FFA500">Abnormal: 0</text>
-    <circle id="abnormalGlow" cx="150" cy="85" r="8" fill="url(#glowGold)">
-      <animate attributeName="r" values="6;14;6" dur="1.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
-    </circle>
-
-    <text id="mediumText" x="20" y="120" font-size="18" fill="#FFFF66">Medium: 0</text>
-    <circle id="mediumGlow" cx="150" cy="115" r="8" fill="url(#glowYellow)">
-      <animate attributeName="r" values="6;14;6" dur="2.1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.1s" repeatCount="indefinite"/>
-    </circle>
-
-    <text id="investigatedText" x="20" y="150" font-size="18" fill="#00CED1">Investigated: 0</text>
-    <circle id="investigatedGlow" cx="150" cy="145" r="8" fill="url(#glowCyan)">
-      <animate attributeName="r" values="6;14;6" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Timestamp -->
-    <text id="updatedText" x="20" y="180" font-size="12" fill="#94a3b8">Updated: -</text>
+    <text id="critical" x="20" y="60" font-size="18" fill="#8B0000">Critical Alerts: 0</text>
+    <text id="abnormal" x="20" y="90" font-size="18" fill="#FFA500">Abnormal Alerts: 0</text>
+    <text id="medium" x="20" y="120" font-size="18" fill="#FFFF66">Medium Severity: 0</text>
+    <text id="investigated" x="20" y="150" font-size="18" fill="#00CED1">Investigated: 0</text>
+    <text id="updated" x="20" y="175" font-size="12" fill="#94a3b8">Updated: -</text>
   </svg>
 </div>
 
 <script>
-// Function to simulate live data
-function getLiveData() {
-  return {
-    critical: Math.floor(Math.random()*40),
-    abnormal: Math.floor(Math.random()*80),
-    medium: Math.floor(Math.random()*120),
-    investigated: Math.floor(Math.random()*200),
-    updated: new Date().toLocaleTimeString()
-  };
+// Function to fetch live data from JSON
+async function fetchLiveData() {
+  try {
+    const res = await fetch('dashboard_data.json?cb=' + Date.now());
+    return await res.json();
+  } catch(e) {
+    console.error('Error fetching JSON:', e);
+    return null;
+  }
 }
 
-// Update SVG numbers
-function updateDashboard() {
-  const data = getLiveData();
-  document.getElementById('criticalText').textContent = 'Critical: ' + data.critical;
-  document.getElementById('abnormalText').textContent = 'Abnormal: ' + data.abnormal;
-  document.getElementById('mediumText').textContent = 'Medium: ' + data.medium;
-  document.getElementById('investigatedText').textContent = 'Investigated: ' + data.investigated;
-  document.getElementById('updatedText').textContent = 'Updated: ' + data.updated;
+// Glow animation helper
+function glow(element, color) {
+  element.setAttribute('fill', color);
+  element.animate([{ fill: color }, { fill: '#fff' }, { fill: color }], {
+    duration: 800,
+    iterations: 1
+  });
 }
 
-// Update every second
-setInterval(updateDashboard, 1000);
+// Update dashboard
+async function updateDashboard() {
+  const data = await fetchLiveData();
+  if(!data) return;
+
+  const c = document.getElementById('critical');
+  const a = document.getElementById('abnormal');
+  const m = document.getElementById('medium');
+  const i = document.getElementById('investigated');
+  const u = document.getElementById('updated');
+
+  c.textContent = `Critical Alerts: ${data.critical}`;
+  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
+  m.textContent = `Medium Severity: ${data.medium}`;
+  i.textContent = `Investigated: ${data.investigated}`;
+  u.textContent = `Updated: ${data.updated}`;
+
+  glow(c, '#8B0000');       // Blood red
+  glow(a, '#FFA500');       // Sun red/gold
+  glow(m, '#FFFF66');       // Light yellow
+  glow(i, '#00CED1');       // Cyan/blue
+}
+
+// Update every 2 seconds
+setInterval(updateDashboard, 2000);
+
+// Initial update
 updateDashboard();
 </script>
 </body>
