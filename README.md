@@ -72,7 +72,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="./dashboard.svg" width="360">
 </p>
 <p align="center" style="display: flex; justify-content: center; gap: 40px; align-items: center;">
-  <img src="./radar.svg" alt="Threat Intel Radar" width="320" />
+  <img src="./radar.svg?cache=1" alt="Threat Intel Radar" width="320" />
   <img src="./dashboard.svg?cache=1" alt="SOC Live Alert Dashboard" width="320" />
 </p>
 
