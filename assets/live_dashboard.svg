@@ -1,51 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="350"
-     height="200"
-     viewBox="0 0 350 200"
-     role="img"
-     aria-label="Live Threat Intelligence Dashboard">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Threat Intelligence Dashboard</title>
+<style>
+  body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .dashboard {
+    width: 350px;
+  }
+  text {
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="dashboard">
+  <svg id="dashboard" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
+    <text x="20" y="28" font-size="16" font-weight="bold" fill="#e5e7eb">Threat Intelligence Dashboard</text>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
+    <text id="critical" x="20" y="60" font-size="18" fill="#8B0000">Critical Alerts: 0</text>
+    <text id="abnormal" x="20" y="90" font-size="18" fill="#FFA500">Abnormal Alerts: 0</text>
+    <text id="medium" x="20" y="120" font-size="18" fill="#FFFF66">Medium Severity: 0</text>
+    <text id="investigated" x="20" y="150" font-size="18" fill="#00CED1">Investigated: 0</text>
+    <text id="updated" x="20" y="175" font-size="12" fill="#94a3b8">Updated: -</text>
+  </svg>
+</div>
 
-  <!-- Title -->
-  <text x="20" y="28" font-family="Arial" font-size="16" font-weight="bold" fill="#e5e7eb">
-    Threat Intelligence Dashboard
-  </text>
+<script>
+// Function to generate live data (simulated)
+function getLiveData() {
+  return {
+    critical: Math.floor(Math.random() * 40),
+    abnormal: Math.floor(Math.random() * 80),
+    medium: Math.floor(Math.random() * 120),
+    investigated: Math.floor(Math.random() * 200),
+    updated: new Date().toLocaleTimeString()
+  };
+}
 
-  <!-- Critical Alerts (blood red) -->
-  <text x="20" y="60" font-family="Arial" font-size="18" fill="#8B0000">
-    Critical Alerts: 20
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
-    <animate attributeName="font-size" values="18;22;18" dur="1.5s" repeatCount="indefinite"/>
-  </text>
+// Update the dashboard numbers and add glow animation
+function updateDashboard() {
+  const data = getLiveData();
 
-  <!-- Abnormal Alerts (sun red/gold) -->
-  <text x="20" y="90" font-family="Arial" font-size="18" fill="#FFA500">
-    Abnormal Alerts: 45
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite"/>
-    <animate attributeName="font-size" values="18;22;18" dur="1.8s" repeatCount="indefinite"/>
-  </text>
+  const glow = (element, color) => {
+    element.setAttribute('fill', color);
+    element.animate(
+      [{ fill: color }, { fill: '#fff' }, { fill: color }],
+      { duration: 800, iterations: 1 }
+    );
+  };
 
-  <!-- Medium Severity (light yellow) -->
-  <text x="20" y="120" font-family="Arial" font-size="18" fill="#FFFF66">
-    Medium Severity: 70
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="font-size" values="18;22;18" dur="2s" repeatCount="indefinite"/>
-  </text>
+  const c = document.getElementById('critical');
+  const a = document.getElementById('abnormal');
+  const m = document.getElementById('medium');
+  const i = document.getElementById('investigated');
+  const u = document.getElementById('updated');
 
-  <!-- Investigated (blue/cyan) -->
-  <text x="20" y="150" font-family="Arial" font-size="18" fill="#00CED1">
-    Investigated: 120
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
-    <animate attributeName="font-size" values="18;22;18" dur="2.2s" repeatCount="indefinite"/>
-  </text>
+  c.textContent = `Critical Alerts: ${data.critical}`;
+  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
+  m.textContent = `Medium Severity: ${data.medium}`;
+  i.textContent = `Investigated: ${data.investigated}`;
+  u.textContent = `Updated: ${data.updated}`;
 
-  <!-- Updated -->
-  <text x="20" y="175" font-family="Arial" font-size="12" fill="#94a3b8">
-    Updated: Live
-    <animate attributeName="fill-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-  </text>
+  glow(c, '#8B0000');       // Blood red
+  glow(a, '#FFA500');       // Sun red/gold
+  glow(m, '#FFFF66');       // Light yellow
+  glow(i, '#00CED1');       // Cyan/blue
+}
 
-</svg>
+// Update every 2 seconds
+setInterval(updateDashboard, 2000);
+
+// Initial update
+updateDashboard();
+</script>
+</body>
+</html>
