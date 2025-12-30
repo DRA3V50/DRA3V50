@@ -50,7 +50,7 @@ svg = f"""
 
   <rect width="100%" height="100%" rx="15" fill="#0b1c2d"/>
 
-  <!-- Title removed as requested -->
+  <!-- Title removed -->
 
   <text x="30" y="90" class="label critical pulse">Critical: {data["critical"]}</text>
   <text x="30" y="140" class="label abnormal pulse">Abnormal: {data["abnormal"]}</text>
