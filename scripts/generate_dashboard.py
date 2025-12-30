@@ -4,6 +4,12 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+# ----------------------
+# CONFIG
+# ----------------------
+LIVE = False  # Set True for local live updates, False for GitHub Actions / CI
+UPDATE_INTERVAL = 10  # seconds (only used if LIVE=True)
+
 # Paths
 ASSETS_DIR = Path("assets")
 DATA_FILE = ASSETS_DIR / "dashboard_data.json"
@@ -12,7 +18,11 @@ SVG_FILE = ASSETS_DIR / "live_dashboard.svg"
 # Ensure assets folder exists
 ASSETS_DIR.mkdir(exist_ok=True)
 
+# ----------------------
+# FUNCTIONS
+# ----------------------
 def generate_data():
+    """Generate random live-ish data."""
     return {
         "critical": random.randint(10, 40),
         "abnormal": random.randint(30, 80),
@@ -22,11 +32,12 @@ def generate_data():
     }
 
 def save_json(data):
+    """Save data to JSON."""
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
 def build_svg(data):
-    # SVG with simple color pulse animation for metrics
+    """Generate SVG dashboard with subtle animations."""
     svg = f"""
 <svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -56,7 +67,6 @@ def build_svg(data):
     Medium Severity: {data.get("medium",0)}
     <animate attributeName="fill" values="#facc15;#fff48f;#facc15" dur="0.5s" begin="0s" repeatCount="1" />
   </text>
-
   <text x="20" y="150" class="metric ok">
     Investigated: {data.get("investigated",0)}
     <animate attributeName="fill" values="#22c55e;#7fe77f;#22c55e" dur="0.5s" begin="0s" repeatCount="1" />
@@ -67,14 +77,27 @@ def build_svg(data):
     with open(SVG_FILE, "w") as f:
         f.write(svg)
 
-print("Live dashboard running... press Ctrl+C to stop")
-
-# Loop to update every 10 seconds
-try:
-    while True:
+# ----------------------
+# MAIN LOOP
+# ----------------------
+def main():
+    if LIVE:
+        print("Live dashboard running... press Ctrl+C to stop")
+        try:
+            while True:
+                data = generate_data()
+                save_json(data)
+                build_svg(data)
+                time.sleep(UPDATE_INTERVAL)
+        except KeyboardInterrupt:
+            print("\nStopped live dashboard.")
+    else:
+        # Single run (for GitHub Actions / CI)
         data = generate_data()
         save_json(data)
         build_svg(data)
-        time.sleep(10)  # update interval in seconds
-except KeyboardInterrupt:
-    print("\nStopped live dashboard.")
+        print("Dashboard updated successfully (single run)")
+
+if __name__ == "__main__":
+    main()
+
