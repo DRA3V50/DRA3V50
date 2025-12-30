@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Threat Intelligence Dashboard</title>
+<style>
+  body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .dashboard {
+    width: 320px;
+  }
+</style>
+</head>
+<body>
+<div class="dashboard">
+  <object id="dashboard-svg" type="image/svg+xml" data="live_dashboard.svg" width="100%" height="auto"></object>
+</div>
+
+<script>
+  // Reload the SVG every 5 seconds to simulate live updates
+  setInterval(() => {
+    const svgObject = document.getElementById('dashboard-svg');
+    const timestamp = new Date().getTime(); // cache buster
+    svgObject.data = "live_dashboard.svg?cb=" + timestamp;
+  }, 5000);
+</script>
+</body>
+</html>
