@@ -50,7 +50,9 @@
 <script>
 async function fetchDataAndUpdate() {
   try {
-    const response = await fetch('assets/dashboard_data.json');
+    // Cache-buster to prevent browser caching
+    const timestamp = new Date().getTime();
+    const response = await fetch('assets/dashboard_data.json?cb=' + timestamp);
     const data = await response.json();
 
     const elements = [
@@ -63,7 +65,7 @@ async function fetchDataAndUpdate() {
     elements.forEach(el => {
       const dom = document.getElementById(el.id);
       if(dom && dom.textContent.split(': ')[1] != el.value) {
-        // Flash white briefly when number changes
+        // Flash white briefly on change
         dom.style.color = '#ffffff';
         setTimeout(() => dom.style.color = el.color, 250);
         dom.textContent = `${dom.textContent.split(':')[0]}: ${el.value}`;
