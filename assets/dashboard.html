@@ -36,47 +36,39 @@
 </div>
 
 <script>
-// Function to fetch live data from JSON
-async function fetchLiveData() {
-  try {
-    const res = await fetch('dashboard_data.json?cb=' + Date.now());
-    return await res.json();
-  } catch(e) {
-    console.error('Error fetching JSON:', e);
-    return null;
-  }
-}
-
-// Glow animation helper
-function glow(element, color) {
-  element.setAttribute('fill', color);
-  element.animate([{ fill: color }, { fill: '#fff' }, { fill: color }], {
-    duration: 800,
-    iterations: 1
-  });
-}
-
-// Update dashboard
 async function updateDashboard() {
-  const data = await fetchLiveData();
-  if(!data) return;
+  try {
+    const response = await fetch('dashboard_data.json');
+    const data = await response.json();
 
-  const c = document.getElementById('critical');
-  const a = document.getElementById('abnormal');
-  const m = document.getElementById('medium');
-  const i = document.getElementById('investigated');
-  const u = document.getElementById('updated');
+    const glow = (element, color) => {
+      element.setAttribute('fill', color);
+      element.animate(
+        [{ fill: color }, { fill: '#fff' }, { fill: color }],
+        { duration: 800, iterations: 1 }
+      );
+    };
 
-  c.textContent = `Critical Alerts: ${data.critical}`;
-  a.textContent = `Abnormal Alerts: ${data.abnormal}`;
-  m.textContent = `Medium Severity: ${data.medium}`;
-  i.textContent = `Investigated: ${data.investigated}`;
-  u.textContent = `Updated: ${data.updated}`;
+    const c = document.getElementById('critical');
+    const a = document.getElementById('abnormal');
+    const m = document.getElementById('medium');
+    const i = document.getElementById('investigated');
+    const u = document.getElementById('updated');
 
-  glow(c, '#8B0000');       // Blood red
-  glow(a, '#FFA500');       // Sun red/gold
-  glow(m, '#FFFF66');       // Light yellow
-  glow(i, '#00CED1');       // Cyan/blue
+    c.textContent = `Critical Alerts: ${data.critical}`;
+    a.textContent = `Abnormal Alerts: ${data.abnormal}`;
+    m.textContent = `Medium Severity: ${data.medium}`;
+    i.textContent = `Investigated: ${data.investigated}`;
+    u.textContent = `Updated: ${data.updated}`;
+
+    glow(c, '#8B0000');   // Blood red
+    glow(a, '#FFA500');   // Sun red/gold
+    glow(m, '#FFFF66');   // Light yellow
+    glow(i, '#00CED1');   // Cyan/blue
+
+  } catch (err) {
+    console.error('Error fetching dashboard data:', err);
+  }
 }
 
 // Update every 2 seconds
