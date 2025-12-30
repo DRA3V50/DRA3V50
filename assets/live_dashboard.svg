@@ -10,26 +10,11 @@
     .ok { fill: #22c55e; }
     .small { font-size: 12px; fill: #94a3b8; }
   </style>
-
   <rect width="100%" height="100%" rx="12" fill="#0f172a"/>
-
   <text x="20" y="28" class="title">Threat Intelligence Dashboard</text>
-
-  <text x="20" y="60" class="metric critical">
-    Critical Alerts: 15
-    <animate attributeName="fill" values="#ef4444;#ff6666;#ef4444" dur="0.5s" begin="0s" repeatCount="1" />
-  </text>
-  <text x="20" y="90" class="metric high">
-    Abnormal Alerts: 78
-    <animate attributeName="fill" values="#f97316;#ffae5c;#f97316" dur="0.5s" begin="0s" repeatCount="1" />
-  </text>
-  <text x="20" y="120" class="metric medium">
-    Medium Severity: 120
-    <animate attributeName="fill" values="#facc15;#fff48f;#facc15" dur="0.5s" begin="0s" repeatCount="1" />
-  </text>
-  <text x="20" y="150" class="metric ok">
-    Investigated: 163
-    <animate attributeName="fill" values="#22c55e;#7fe77f;#22c55e" dur="0.5s" begin="0s" repeatCount="1" />
-  </text>
-  <text x="20" y="165" class="small">Updated: 2025-12-30 00:51:25 UTC</text>
+  <text x="20" y="60" class="metric critical">Critical Alerts: 23</text>
+  <text x="20" y="90" class="metric high">Abnormal Alerts: 62</text>
+  <text x="20" y="120" class="metric medium">Medium Severity: 117</text>
+  <text x="20" y="150" class="metric ok">Investigated: 132</text>
+  <text x="20" y="165" class="small">Updated: 2025-12-30 02:00:09 UTC</text>
 </svg>
