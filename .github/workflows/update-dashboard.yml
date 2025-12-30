@@ -2,27 +2,34 @@ name: Update Dashboard
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # every 5 minutes
-  workflow_dispatch:
+    - cron: '*/5 * * * *' # every 5 minutes
+  workflow_dispatch:     # manual trigger
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flask
 
       - name: Run dashboard generator
         run: python scripts/app.py
 
-      - name: Commit updated SVG
+      - name: Commit updated JSON
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add assets/live_dashboard.svg
-          git commit -m "Update dashboard SVG [ci skip]" || echo "No changes"
+          git add assets/dashboard_data.json
+          git commit -m "Update dashboard JSON [ci skip]" || echo "No changes to commit"
           git push
