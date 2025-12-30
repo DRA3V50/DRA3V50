@@ -1,47 +1,22 @@
-from flask import Flask, render_template, send_from_directory
-from flask_socketio import SocketIO, emit
+import json
 import random
-import eventlet
-eventlet.monkey_patch()  # for socketio with Flask
+from datetime import datetime
+from pathlib import Path
 
-app = Flask(__name__)
-socketio = SocketIO(app)
+ASSETS_DIR = Path("assets")
+DATA_FILE = ASSETS_DIR / "dashboard_data.json"
 
-# Serve dashboard.html
-@app.route('/')
-def index():
-    return send_from_directory('assets', 'dashboard.html')
+ASSETS_DIR.mkdir(exist_ok=True)
 
-# Function to generate live data
-def generate_data():
-    return {
-        "critical": random.randint(10, 40),
-        "abnormal": random.randint(30, 80),
-        "medium": random.randint(60, 120),
-        "investigated": random.randint(100, 200),
-        "updated": socketio.server.manager.get_now().isoformat() if hasattr(socketio.server.manager, "get_now") else ""
-    }
+data = {
+    "critical": random.randint(10, 40),
+    "abnormal": random.randint(30, 80),
+    "medium": random.randint(60, 120),
+    "investigated": random.randint(100, 200),
+    "updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+}
 
-# Background task: emit updates every 5 seconds
-def send_updates():
-    while True:
-        data = {
-            "critical": random.randint(10, 40),
-            "abnormal": random.randint(30, 80),
-            "medium": random.randint(60, 120),
-            "investigated": random.randint(100, 200),
-            "updated": socketio.server.manager.get_now().isoformat() if hasattr(socketio.server.manager, "get_now") else ""
-        }
-        socketio.emit('update', data)
-        socketio.sleep(5)
+with open(DATA_FILE, "w") as f:
+    json.dump(data, f, indent=2)
 
-# Start background updates on server start
-@socketio.on('connect')
-def handle_connect():
-    print("Client connected!")
-
-# Start background thread
-socketio.start_background_task(target=send_updates)
-
-if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000)
+print("Dashboard JSON updated:", data)
