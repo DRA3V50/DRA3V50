@@ -28,11 +28,11 @@ data["updated"] = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 with open("data.json", "w") as f:
     json.dump(data, f, indent=2)
 
-# Generate the SVG dashboard with square shape and animations
+# Generate the SVG dashboard stretched to fill square
 svg = f"""
-<svg width="300" height="300" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .label {{ fill: #cfd8dc; font-size: 16px; font-family: monospace; }}
+    .label {{ fill: #cfd8dc; font-size: 20px; font-family: monospace; }}
     .critical {{ fill: #ff1744; font-weight: bold; }}
     .abnormal {{ fill: #ff9100; font-weight: bold; }}
     .medium {{ fill: #ffea00; font-weight: bold; }}
@@ -50,14 +50,12 @@ svg = f"""
 
   <rect width="100%" height="100%" rx="15" fill="#0b1c2d"/>
 
-  <!-- Title removed -->
+  <text x="40" y="110" class="label critical pulse">Critical: {data["critical"]}</text>
+  <text x="40" y="170" class="label abnormal pulse">Abnormal: {data["abnormal"]}</text>
+  <text x="40" y="230" class="label medium pulse">Medium: {data["medium"]}</text>
+  <text x="40" y="290" class="label investigated pulse">Investigated: {data["investigated"]}</text>
 
-  <text x="30" y="90" class="label critical pulse">Critical: {data["critical"]}</text>
-  <text x="30" y="140" class="label abnormal pulse">Abnormal: {data["abnormal"]}</text>
-  <text x="30" y="190" class="label medium pulse">Medium: {data["medium"]}</text>
-  <text x="30" y="240" class="label investigated pulse">Investigated: {data["investigated"]}</text>
-
-  <text x="20" y="290" class="label" style="font-size: 12px; fill: #78909c;">
+  <text x="40" y="360" class="label" style="font-size: 14px; fill: #78909c;">
     Last Update: {data["updated"]}
   </text>
 </svg>
@@ -65,4 +63,3 @@ svg = f"""
 
 with open("dashboard.svg", "w") as f:
     f.write(svg)
-
