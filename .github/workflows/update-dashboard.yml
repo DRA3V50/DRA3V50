@@ -2,7 +2,7 @@ name: Update SOC Dashboard
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # Runs every 2 minutes
+    - cron: "*/1 * * * *"  # Runs every 1 minute
   workflow_dispatch:
 
 jobs:
@@ -54,7 +54,7 @@ jobs:
           EOF
 
       - name: Generate SVG dashboard
-        run: python generate_dashboard.py
+        run: python scripts/generate_dashboard.py
 
       - name: Commit and push updates
         run: |
@@ -63,4 +63,5 @@ jobs:
           git add dashboard.svg data.json
           git commit -m "🔄 Update SOC dashboard" || exit 0
           git push
+
 
