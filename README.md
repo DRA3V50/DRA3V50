@@ -97,7 +97,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" />
 </p>
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight)
+[![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
+[![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
+[![GitHub forks](https://img.shields.io/github/forks/DRA3V50?style=social)](https://github.com/DRA3V50/network)
 
 ---
 
