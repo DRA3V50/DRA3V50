@@ -73,8 +73,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </a> [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.
 
 -<a href="https://github.com/DRA3V50/Ruby_Projects">
-  <img src="https://skillicons.dev/icons?i=ruby&theme=dark&size=48"/>
-</a> [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.
+    <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/64/Mimetypes-application-x-ruby-icon.png" width="64" height="64"/>
+  </a> [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.
 
 - [**HTML_Projects**](https://github.com/DRA3V50/HTML_Projects) — Simple, no-install HTML demos with CSS.
 
