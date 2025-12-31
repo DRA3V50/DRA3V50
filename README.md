@@ -74,13 +74,13 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ## **📈 My Stats**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&cache_seconds=1800)
+## 📊 My Stats
+
+![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&cache_seconds=1800)
-
-
+![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight)
 
 ---
 
