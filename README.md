@@ -103,14 +103,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 
-<p align="center">
-  <img src="./assets/highres-trophy.gif" width="150"/>
-</p>
-
-
-
-
-
 
 ---
 
