@@ -94,7 +94,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/?username=DRA3V50&theme=tokyonight" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" />
 </p>
 
 <p align="center">
