@@ -100,7 +100,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 
-![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_USERNAME&theme=tokyonight)
+![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=DRA3V50&theme=tokyonight)
 
 
 
@@ -111,6 +111,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
+
+
+
+
+
+
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
 
