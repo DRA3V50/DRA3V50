@@ -90,12 +90,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
 
 ---
 
