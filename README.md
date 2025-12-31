@@ -4,8 +4,7 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Profile%20Views-1.2K-blue" />
-  <img src="https://img.shields.io/badge/Public%20Repos-10-green" />
-  <img src="https://img.shields.io/badge/Followers-XX-orange" />
+  <img src="https://img.shields.io/badge/Public%20Repos-10-red" />
 </p>
 
 ---
