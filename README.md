@@ -79,7 +79,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=DRA3V50&theme=dracula" />
+  <img src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight" />
 </p>
 
 <p align="center">
