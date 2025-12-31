@@ -90,7 +90,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<h2 align="center">📈 My Stats</h2>
+<h2 align="center">📈 Git Activity & Languages</h2>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" width="400" height="180" alt="GitHub Stats" />
