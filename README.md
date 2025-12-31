@@ -77,8 +77,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   </a> [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.
 
 -<a href="https://github.com/DRA3V50/HTML_Projects">
-    <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Text-html-icon.png" width="48" height="48"/>
-    <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Text-css-icon.png" width="48" height="48"/>
+    <img src="https://skillicons.dev/icons?i=html&theme=dark&size=48"/>
+    <img src="https://skillicons.dev/icons?i=css&theme=dark&size=48"/>
   </a> [**HTML_Projects**](https://github.com/DRA3V50/HTML_Projects) — Simple, no-install HTML demos with CSS.
 
 ---
