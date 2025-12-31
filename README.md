@@ -100,7 +100,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 
-![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=DRA3V50&theme=tokyonight)
+![Pull Requests](https://img.shields.io/badge/PRs-XX-brightgreen)
+![Issues](https://img.shields.io/badge/Issues-XX-yellow)
 
 
 
