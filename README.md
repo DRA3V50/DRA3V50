@@ -95,7 +95,11 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight" />
+  <img
+    src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight"
+    alt="GitHub Streak"
+    height="180"
+  />
 </p>
 
 ---
