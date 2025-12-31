@@ -93,7 +93,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <h2 align="center">📈 My Stats</h2>
 
 <p align="center">
-  <!-- GitHub Stats Card -->
   <img src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" width="400" height="180" alt="GitHub Stats" style="vertical-align:middle;" />
 
   <!-- Top Languages Bar (most → least) -->
