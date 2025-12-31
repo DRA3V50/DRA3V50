@@ -1,0 +1,24 @@
+name: Generate GitHub Streak
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # updates daily
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@master
+        with:
+          user: DRA3V50
+          theme: tokyonight
+          file: streak.svg
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update GitHub streak"
