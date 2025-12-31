@@ -56,30 +56,23 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 🔑 Key Projects
 
--<a href="https://github.com/DRA3V50/SQL_Projects">
+- [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection.  
   <img src="https://th.bing.com/th/id/R.6d9948ed165996ce79f946632d6257ac?rik=27dmKMg7sJ6E9g&pid=ImgRaw" width="48" height="48"/>
-</a> [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection.
 
--<a href="https://github.com/DRA3V50/Python_Projects">
+- [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.  
   <img src="https://skillicons.dev/icons?i=python&theme=dark&size=48"/>
-</a> [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.
 
--<a href="https://github.com/DRA3V50/C-Sharp_Projects">
+- [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis.  
   <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="48" height="48"/>
-</a> [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis. 
 
--<a href="https://github.com/DRA3V50/Batch_Projects">
+- [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.  
   <img src="https://icons.iconarchive.com/icons/harwen/pleasant/128/MS-DOS-Batch-File-icon.png" width="48" height="48"/>
-</a> [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.
 
--<a href="https://github.com/DRA3V50/Ruby_Projects">
-    <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/64/Mimetypes-application-x-ruby-icon.png" width="64" height="64"/>
-  </a> [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.
+- [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.  
+  <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Mimetypes-application-x-ruby-icon.png" width="48" height="48"/>
 
--<a href="https://github.com/DRA3V50/HTML_Projects">
-    <img src="https://skillicons.dev/icons?i=html&theme=dark&size=48"/>
-    <img src="https://skillicons.dev/icons?i=css&theme=dark&size=48"/>
-  </a> [**HTML_Projects**](https://github.com/DRA3V50/HTML_Projects) — Simple, no-install HTML demos with CSS.
+- [**HTML_Projects**](https://github.com/DRA3V50/HTML_Projects) — Simple, no-install HTML demos with CSS.  
+  <img src="https://skillicons.dev/icons?i=html&theme=dark&size=48"/> <img src="https://skillicons.dev/icons?i=css&theme=dark&size=48"/>
 
 ---
 
