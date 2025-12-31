@@ -57,8 +57,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### 🔑 Key Projects
 
 -<a href="https://github.com/DRA3V50/SQL_Projects">
-  <img src="https://img.icons8.com/color/40/database.png"/>
-</a>[**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
+  <img src="https://skillicons.dev/icons?i=mysql&theme=dark&size=48"/>
+</a> [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
 - [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.
 - [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis. 
 - [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.  
