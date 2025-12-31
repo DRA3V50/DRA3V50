@@ -94,30 +94,13 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/?username=DRA3V50&theme=tokyonight" />
 </p>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DRA3V50&theme=tokyonight" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DRA3V50&theme=tokyonight" />
 </p>
-
-## 📊 My GitHub Stats
-
-## 📈 My GitHub Stats
-
-<p align="center">
-
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DRA3V50&theme=tokyonight" width="450" />
-
-  <br/><br/>
-
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" width="320" />
-  
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DRA3V50&theme=tokyonight" width="320" />
-  
-</p>
-
 
 ---
 
