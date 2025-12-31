@@ -54,7 +54,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-### 🧩 Security Automation
+### 🧩 Code & Security Labs
 
 - [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection.  
   <img src="https://th.bing.com/th/id/R.6d9948ed165996ce79f946632d6257ac?rik=27dmKMg7sJ6E9g&pid=ImgRaw" width="48" height="48"/>
