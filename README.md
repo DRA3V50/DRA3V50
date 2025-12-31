@@ -72,12 +72,10 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-## **s**
-
 <h2 align="center">📈 My Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=dracula" />
 </p>
 
 <p align="center">
