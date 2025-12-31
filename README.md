@@ -100,8 +100,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 
-![Pull Requests](https://img.shields.io/badge/PRs-XX-brightgreen)
-![Issues](https://img.shields.io/badge/Issues-XX-yellow)
+<p align="center">
+  <!-- Badges -->
+  <img src="https://img.shields.io/badge/Profile%20Views-1.2K-blue" />
+  <img src="https://img.shields.io/badge/Public%20Repos-10-green" />
+  <img src="https://img.shields.io/badge/Followers-XX-orange" />
+</p>
 
 
 
