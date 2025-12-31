@@ -94,13 +94,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" />
 </p>
 
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight"
-    alt="GitHub Streak"
-    height="180"
-  />
-</p>
+![GitHub Streak](https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight)
+
 
 ---
 
