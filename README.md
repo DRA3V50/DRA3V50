@@ -73,9 +73,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 ## **📈 My Stats**
 
-![Streak](https://streak-stats.demolab.com?user=DRA3V50&theme=github-dark)
+![GitHub Streak](https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight)
 
-<img src="https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/github-stats.svg" width="450">
 
 
 ---
