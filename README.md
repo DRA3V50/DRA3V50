@@ -90,8 +90,11 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 
+<div align="center">
+  🛡️ Blue Team SOC
+  <br>
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=dracula" />
-
+</div>
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 
