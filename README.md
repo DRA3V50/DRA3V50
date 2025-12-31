@@ -69,7 +69,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 </a> [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis. 
 
 -<a href="https://github.com/DRA3V50/Batch_Projects">
-  <img src="https://cdn.icon-icons.com/icons2/2699/PNG/48/dark_file_bat_icon_168742.png" width="48" height="48"/>
+  <img src="https://icons.iconarchive.com/icons/graphicloads/file-types/48/bat-file-dark-icon.png" width="48" height="48"/>
 </a> [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.
 
 - [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.  
