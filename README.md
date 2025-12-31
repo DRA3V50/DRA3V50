@@ -60,7 +60,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://th.bing.com/th/id/R.6d9948ed165996ce79f946632d6257ac?rik=27dmKMg7sJ6E9g&pid=ImgRaw" width="48" height="48"/>
 
 - [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.  
-  <img src="https://cdn-icons-png.flaticon.com/512/257/2570575.png" width="48" height="48"/>
+  <img src="https://skillicons.dev/icons?i=python&theme=dark&size=48"/>
 
 - [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis.  
   <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="48" height="48"/>
