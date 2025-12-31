@@ -92,10 +92,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 <h2 align="center">📈 My Stats</h2>
 
-<p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=dracula" />
 </p>
-<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" />
 </p>
 
