@@ -97,10 +97,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DRA3V50&theme=tokyonight" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DRA3V50&theme=tokyonight" />
-</p>
+![Trophy](https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight)
 
 ---
 
