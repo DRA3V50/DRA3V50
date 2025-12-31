@@ -25,7 +25,7 @@ data["abnormal"] = max(0, data["abnormal"] + random.randint(-2, 5))
 data["medium"] = max(0, data["medium"] + random.randint(-1, 2))
 data["investigated"] = max(0, data["investigated"] + random.randint(0, 2))
 
-data["updated"] = datetime.datetime.estnow().strftime("%Y-%m-%d %H:%M:%S EST")
+data["updated"] = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S EST")
 
 with open("data.json", "w") as f:
     json.dump(data, f, indent=2)
