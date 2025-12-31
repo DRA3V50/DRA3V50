@@ -56,7 +56,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 🔑 Key Projects
 
-- [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
+-<a href="https://github.com/DRA3V50/SQL_Projects"><img src="https://img.icons8.com/ios-filled/20/000000/database.png"/></a> [**SQL_Projects**](https://github.com/DRA3V50/SQL_Projects) — Advanced SQL Systems for Secure Reporting, Evidence Tracking, and Simulated Network Threat Detection. 
 - [**Python_Projects**](https://github.com/DRA3V50/Python_Projects) — Mini-games and security scripts to sharpen coding and cybersecurity skills.
 - [**C-Sharp_Projects**](https://github.com/DRA3V50/C-Sharp_Projects) — Custom-built C# reverse engineering tool that parses Windows PE files (`.exe`, `.dll`) to extract imported DLLs and function names, simulating Splunk-style detection and supporting red team forensic analysis. 
 - [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.  
@@ -90,11 +90,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 
-<div align="center">
-  🛡️ Blue Team SOC
-  <br>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DRA3V50&show_icons=true&theme=dracula" />
-</div>
+
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 
