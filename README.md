@@ -83,7 +83,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-## 🛡️ Blue Team Capability Radar   =-----||-----=  🔍 Threat Intelligence Dashboard
+### 🛡️ Blue Team Capability Radar   =-----||-----=  🔍 Threat Intelligence Dashboard
 
 | ![Blue Team Capability Radar](https://raw.githubusercontent.com/DRA3V50/DRA3V50/main/assets/radar.svg) | ![Threat Intelligence Dashboard](./dashboard.svg?cache=1767067408) |
 |:--------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|
@@ -91,25 +91,20 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ---
 
 <h2 align="center">📈 Git Activity & Languages</h2>
-
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" width="400" height="180" alt="GitHub Stats" />
-
   <!-- Top Languages Bar (most → least) -->
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
 </p>
-
-
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DRA3V50&theme=tokyonight" />
 </p>
 
-
-
-
-
 ---
 
+### 🌐 Cyber Defense Simulations 🕵️‍♂️
+
+![SOC_Log_Dashboard](./ICONS/security/SOC.gif)
 
 
 
