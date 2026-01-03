@@ -111,17 +111,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <p align="center">
   <img src="https://github.com/DRA3V50/ICONS/blob/main/security/SOC_LOG_TRIAGE.gif?raw=true"
        alt="SOC Log Dashboard"
-       height="500">
+       height="520">
 </p>
 
-<details>
-  <summary><b>Enlarge preview</b></summary>
-  <p align="center">
-    <img src="https://github.com/DRA3V50/ICONS/blob/main/security/SOC_LOG_TRIAGE.gif?raw=true"
-         alt="SOC Log Dashboard enlarged"
-         height="700">
-  </p>
-</details>
 
 
 
