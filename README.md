@@ -109,10 +109,14 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### 🌐 Cyber Defense Simulations 🕵️‍♂️
 
 <p align="center">
-  <img src="https://github.com/DRA3V50/ICONS/blob/main/security/SOC_LOG_TRIAGE.gif?raw=true"
-       alt="SOC Log Dashboard"
-       height="400">
+  <a href="https://github.com/DRA3V50/ICONS/blob/main/security/SOC_LOG_TRIAGE.gif?raw=true">
+    <img src="https://github.com/DRA3V50/ICONS/blob/main/security/SOC_LOG_TRIAGE.gif?raw=true"
+         alt="SOC Log Dashboard"
+         height="380">
+  </a>
 </p>
+<p align="center"><i>Click to enlarge</i></p>
+
 
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
