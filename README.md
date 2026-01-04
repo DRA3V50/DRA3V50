@@ -106,7 +106,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-### 🌐 Cyber Defense Simulations 🕵️‍♂️
+<h3 align="center">🌐 Cyber Defense Simulations 🕵️‍♂️</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" height="340">
