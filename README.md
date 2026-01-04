@@ -42,7 +42,7 @@
 
 --- 
 
-I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, AI security, machine learning models, and manufacturing technologies.
+I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, data security, machine learning models, and manufacturing technologies.
 
 ---
 
@@ -57,7 +57,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   
   ### **Pursuing:**
   <img alt="Static Badge" src="https://img.shields.io/badge/CCSP%20-5E99FF"><img alt="Static Badge" src="https://img.shields.io/badge/Cyber%20Defense%20-00CEC0"><img alt="Static Badge" src="https://img.shields.io/badge/SIS%20-2679FF"><img alt="Static Badge" src="https://img.shields.io/badge/Network%2B%20-FFD700">
-- **Mechanical Engineering:** Expert in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods like 3D printing and CNC machining. Deep understanding of thermodynamics, fluid mechanics, and automotive systems.
 
 ---
 
@@ -125,9 +124,14 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
     width="530"
   />
 </p>
+
 ---
 
+### 🎓 Additional Education & Expertise
 
+- **Mechanical Engineering:** Double major with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
+- Strong foundation in thermodynamics, fluid mechanics, and automotive systems.  
+- This engineering background enhances analytical thinking, problem-solving, and a structured approach to cybersecurity, data analysis, and threat detection.
 
 
 
