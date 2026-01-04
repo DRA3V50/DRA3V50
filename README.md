@@ -109,8 +109,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 ### 🌐 Cyber Defense Simulations 🕵️‍♂️
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/df72071d-85d0-49ae-a855-d50c85e87840" alt="SOC Threat Filter Demo">
+  <img src="https://github.com/user-attachments/assets/df72071d-85d0-49ae-a855-d50c85e87840" alt="SOC Threat Filter Demo" width="500">
 </p>
+
 
 
 
