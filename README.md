@@ -119,7 +119,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
     <td align="center">
       <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6" 
            alt="SOC Triage Simulation" 
-           height="460" style="max-width:480px; height:auto;">
+           height="480" style="max-width:480px; height:auto;">
     </td>
   </tr>
 </table>
