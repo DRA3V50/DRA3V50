@@ -108,12 +108,17 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ### 🌐 Cyber Defense Simulations 🕵️‍♂️
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" alt="SOC Threat Filter Demo" width="500">
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6" alt="SOC Triage Simulation" width="500">
-</p>
+<div align="center">
+  <div style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" alt="SOC Threat Filter Demo" width="400">
+    <p align="center">SOC Threat Filter</p>
+  </div>
+
+  <div style="display: inline-block;">
+    <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6" alt="SOC Triage Simulation" width="400">
+    <p align="center">SOC Triage Simulation</p>
+  </div>
+</div>
 
 ---
 
