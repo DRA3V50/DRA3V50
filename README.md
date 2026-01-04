@@ -127,13 +127,12 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-### 🎓 Additional Education & Expertise
+### 🎓 Mechanical Engineering & Analytical Expertise:
 
-- **Mechanical Engineering:** Double major with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
+***Mechanical Engineering:***
+- Currently pursuing a Bachelor’s in Mechanical Engineering with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
 - Strong foundation in thermodynamics, fluid mechanics, and automotive systems.  
-- This engineering background enhances analytical thinking, problem-solving, and a structured approach to cybersecurity, data analysis, and threat detection.
-
-
+- This engineering background complements my cybersecurity and data analysis expertise, enhancing analytical thinking, structured problem-solving, and a methodical approach to complex technical challenges.
 
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
