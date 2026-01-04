@@ -113,13 +113,13 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
     <td align="center">
       <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" 
            alt="SOC Threat Filter Demo" 
-           height="450" width="auto">
+           height="460" style="max-width:480px; height:auto;">
     </td>
     <td width="20"></td> <!-- spacer -->
     <td align="center">
       <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6" 
            alt="SOC Triage Simulation" 
-           height="450" width="auto">
+           height="460" style="max-width:480px; height:auto;">
     </td>
   </tr>
 </table>
