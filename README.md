@@ -111,7 +111,11 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" alt="SOC Threat Filter Demo" width="500">
 </p>
+<p align="center">
+  <img src="assets/soc_simulation.gif" alt="SOC Triage Simulation" width="500">
+</p>
 
+---
 
 
 
