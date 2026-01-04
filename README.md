@@ -122,7 +122,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6"
-    width="525"
+    width="575"
   />
 </p>
 ---
