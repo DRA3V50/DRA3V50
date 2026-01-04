@@ -106,19 +106,18 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-<h2 align="center">🌐 Cyber Defense Simulations 🕵️‍♂️</h2>
-
 <table align="center">
   <tr>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c" width="420" />
+    <td>
+      <img src="https://github.com/user-attachments/assets/4b2b9f91-9734-4adc-8ff1-22772b162f5c"
+           width="420" height="240" style="object-fit: contain;" />
     </td>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6" width="420" />
+    <td>
+      <img src="https://github.com/user-attachments/assets/85f49b46-a356-4a2c-ba57-cec1a636e2e6"
+           width="420" height="240" style="object-fit: contain;" />
     </td>
   </tr>
 </table>
-
 
 ---
 
