@@ -141,8 +141,10 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 
 
-![stats](https://raw.githubusercontent.com/anuraghazra/github-readme-stats/master/demo/demo.svg)
-
+<p align="center">
+  <img src="./stats.svg" width="400" />
+  <img src="./langs.svg" width="400" />
+</p>
 
 
 
