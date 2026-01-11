@@ -137,5 +137,5 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 <h2 align="center">📈 Git Activity & Languages</h2>
 
-<img src="https://img.shields.io/badge/Cybersecurity-SIEM%20%7C%20Cloud%20%7C%20Zero%20Trust-blue" />
+<img src="./assets/github-stats.svg" />
 
