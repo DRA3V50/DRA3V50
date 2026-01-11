@@ -139,13 +139,28 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 
 
+
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" width="400" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
+    width="400"
+    height="180"
+    alt="GitHub Stats"
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
+    width="400"
+    height="180"
+    alt="Top Languages"
+    style="vertical-align:middle;"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight" width="400" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&theme=tokyonight&hide_border=true&show_icons=true"
+    alt="Profile Details"
+  />
 </p>
-
-
 
