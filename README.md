@@ -97,8 +97,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <p align="center">
   <!-- Top Languages Bar (most → least) -->
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
-  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&hide_rank=true&theme=tokyonight&cache_seconds=86400" width="400" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight" width="400" />
+  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&hide_rank=true&theme=tokyonight&cache_seconds=86400" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight" />
 </p>
 
 ---
@@ -134,8 +134,4 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
-
-<h2 align="center">📈 Git Activity & Languages</h2>
-
-<img src="./assets/github-stats.svg" />
 
