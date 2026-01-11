@@ -137,13 +137,5 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 <h2 align="center">📈 Git Activity & Languages</h2>
 
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight"
-    width="400"
-  />
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DRA3V50&theme=tokyonight"
-    width="400"
-  />
-</p>
+<img src="https://img.shields.io/github/languages/top/DRA3V50?color=blue" />
+
