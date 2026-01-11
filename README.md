@@ -95,12 +95,20 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 <h2 align="center">📈 Git Activity & Languages</h2>
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DRA3V50&theme=tokyonight" width="400" height="180" alt="GitHub Stats" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
+    width="400"
+    height="180"
+    alt="GitHub Stats"
+  />
   <!-- Top Languages Bar (most → least) -->
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
 </p>
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DRA3V50&theme=tokyonight" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&theme=tokyonight&hide_border=true&show_icons=true"
+    alt="Profile Details"
+  />
 </p>
 
 ---
@@ -136,31 +144,4 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
-
-
-
-
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
-    width="400"
-    height="180"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
-    width="400"
-    height="180"
-    alt="Top Languages"
-    style="vertical-align:middle;"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=DRA3V50&theme=tokyonight&hide_border=true&show_icons=true"
-    alt="Profile Details"
-  />
-</p>
 
