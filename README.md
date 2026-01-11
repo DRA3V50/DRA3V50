@@ -1,3 +1,112 @@
+# DRA3V50
+
+[![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
+[![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
+
+---
+
+## Welcome
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?size=28&color=2E99FF&center=true&width=600&lines=Welcome+to+my+GitHub,+I%27m+Dany!+%F0%9F%91%8B;📊+Log+Analyst+%7C+Automating+Audits;🛡️+SOC+%7C+IR+%7C+SIEM+%7C+SOAR+%7C+EDR)
+
+[Profile Views](https://img.shields.io/badge/Profile%20Views-1.2K-blue)
+[Public Repos](https://img.shields.io/badge/Public%20Repos-10-red)
+
+---
+
+## Connect with Me
+
+[![Gmail](https://img.shields.io/badge/Gmail-555555?style=for-the-badge&logo=gmail&logoColor=D14836)](mailto:arabodanny002@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danyarabo/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-6A0DAD?style=for-the-badge&logo=github&logoColor=white)](https://dra3v50.github.io/Website/)
+
+---
+
+## Cybersecurity Tools
+
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="80" alt="CrowdStrike">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" width="80" alt="Microsoft Sentinel">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" width="80" alt="Splunk">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.png" width="80" alt="QRadar">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.png" width="80" alt="Wazuh">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" width="80" alt="TheHive">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" width="80" alt="Wireshark">
+<img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" width="80" alt="Nessus">
+
+---
+
+## Programming & Certifications
+
+**Languages:**  
+![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square) ![SQL](https://img.shields.io/badge/SQL-3A6DDC?style=flat-square) ![Batch](https://img.shields.io/badge/Batch-FFBE26?style=flat-square) ![Ruby](https://img.shields.io/badge/Ruby-D10304?style=flat-square) ![C#](https://img.shields.io/badge/C%23-0C6905?style=flat-square) ![HTML/CSS](https://img.shields.io/badge/HTML%2FCSS-F86535?style=flat-square)
+
+**Certifications:**  
+![SIEM Engineer](https://img.shields.io/badge/SIEM%20Engineer-1E90FF?style=flat-square) ![DoD Cyber Sentinel](https://img.shields.io/badge/DoD%20Cyber%20Sentinel-294E9B?style=flat-square) ![Zero Trust Security](https://img.shields.io/badge/Zero%20Trust%20Security-4069E1?style=flat-square)
+
+**Pursuing:**  
+![CCSP](https://img.shields.io/badge/CCSP-5E99FF?style=flat-square) ![Cyber Defense](https://img.shields.io/badge/Cyber%20Defense-00CEC0?style=flat-square)
+
+---
+
+## Git Activity & Languages
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight)
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight)
+
+---
+
+## Projects
+
+- [SQL_Projects](https://github.com/DRA3V50/SQL_Projects)  
+- [Python_Projects](https://github.com/DRA3V50/Python_Projects)  
+- [C-Sharp_Projects](https://github.com/DRA3V50/C-Sharp_Projects)  
+- [Batch_Projects](https://github.com/DRA3V50/Batch_Projects)  
+- [Ruby_Projects](https://github.com/DRA3V50/Ruby_Projects)  
+- [HTML_Projects](https://github.com/DRA3V50/HTML_Projects)
+
+---
+
+### Mechanical Engineering
+
+- Pursuing Bachelor’s in Mechanical Engineering  
+- CAD tools: AutoCAD, SolidWorks, CATIA  
+- MATLAB simulations, 3D printing, CNC machining  
+- Analytical thinking and structured problem-solving
+
+---
+
+Thanks for visiting!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
 <img align="left" src="https://visitor-badge.laobi.icu/badge?page_id=salesp07.salesp07" />
