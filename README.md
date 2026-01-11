@@ -109,6 +109,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
     src="https://github-readme-stats.vercel.app/api?username=DRA3V50&theme=tokyonight&hide_border=true&show_icons=true"
     alt="Profile Details"
   />
+  ![static](https://raw.githubusercontent.com/anuraghazra/github-readme-stats/master/demo/demo.svg)
+
 </p>
 
 ---
