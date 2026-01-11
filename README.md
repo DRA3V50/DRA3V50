@@ -139,8 +139,13 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 
 
-![local test](./stats.svg)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" width="400" />
+</p>
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&theme=tokyonight" width="400" />
+</p>
 
 
 
