@@ -141,7 +141,7 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 
 
-![stats](https://github-readme-stats.vercel.app/api?username=DRA3V50&v=1)
+![stats](https://github-readme-stats.vercel.app/api?username=dra3v50)
 
 
 
