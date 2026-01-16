@@ -56,7 +56,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img alt="Static Badge" src="https://img.shields.io/badge/SIEM%20Engineer%20-1E90FF"><img alt="Static Badge" src="https://img.shields.io/badge/DoD%20Cyber%20Sentinel%20-294E9B"><img alt="Static Badge" src="https://img.shields.io/badge/Zero%20Trust%20Security%20-4069E1"><img alt="Static Badge" src="https://img.shields.io/badge/Cloud%20%26%20OS%20Security%20-008080"><img alt="Static Badge" src="https://img.shields.io/badge/ISO%2027001%20-FF7C09">   <img alt="Static Badge" src="https://img.shields.io/badge/Ethical%20Hacking%20-FF0C50">
   
   ### **Pursuing:**
-  <img alt="Static Badge" src="https://img.shields.io/badge/CCSP%20-5E99FF"><img alt="Static Badge" src="https://img.shields.io/badge/Cyber%20Defense%20-00CEC0"><img alt="Static Badge" src="https://img.shields.io/badge/SIS%20-2679FF"><img alt="Static Badge" src="https://img.shields.io/badge/Network%2B%20-FFD700">
+  <img alt="Static Badge" src="https://img.shields.io/badge/CCSP%20-5E99FF"><img alt="Static Badge" src="https://img.shields.io/badge/IAM%20-00CEC0"><img alt="Static Badge" src="https://img.shields.io/badge/SIS%20-2679FF"><img alt="Static Badge" src="https://img.shields.io/badge/Network%2B%20-FFD700">
 
 ---
 
