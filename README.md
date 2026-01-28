@@ -75,7 +75,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://icons.iconarchive.com/icons/harwen/pleasant/128/MS-DOS-Batch-File-icon.png" width="48" height="48"/>
 
 - [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.  
-  <img src="<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/0ef10442-a117-4051-b3e6-63b8de5f579c" width="48" height="48"/>
+  <img src="<img alt="image" src="https://github.com/user-attachments/assets/0ef10442-a117-4051-b3e6-63b8de5f579c" width="48" height="48"/>
 
 - [**HTML_Projects**](https://github.com/DRA3V50/HTML_Projects) — Simple, no-install HTML demos with CSS.  
   <img src="https://skillicons.dev/icons?i=html&theme=dark&size=48"/> <img src="https://skillicons.dev/icons?i=css&theme=dark&size=48"/>
