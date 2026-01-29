@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Profile%20Views-1.2K-blue" />
-  <img src="https://img.shields.io/badge/Public%20Repos-10-red" />
+  <img src="https://img.shields.io/badge/Public%20Repos-14-red" />
 </p>
 
 ---
