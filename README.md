@@ -123,7 +123,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ---
 
-### 🎓 Mechanical Engineering & Analytical Expertise:
+### 🎓 Mechanical Engineering & Expertise:
 
 ***Mechanical Engineering:***
 - Currently pursuing a Bachelor’s in Mechanical Engineering with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
