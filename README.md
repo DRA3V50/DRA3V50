@@ -127,7 +127,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 
 ***Mechanical Engineering:***
 - Currently pursuing a Bachelor’s in Mechanical Engineering with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
-- Strong foundation in thermodynamics, fluid mechanics, and automotive systems.  
+- Strong foundation in 2D dimensional analysis, fluid mechanics, designing, and automotive systems.  
 - This engineering background complements my cybersecurity and data analysis expertise, enhancing analytical thinking, structured problem-solving, and a methodical approach to complex technical challenges.
 
 
