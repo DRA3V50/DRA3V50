@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" width="400" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" />
+</p>
+
+
+
+
+
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
 <img align="left" src="https://visitor-badge.laobi.icu/badge?page_id=salesp07.salesp07" />
