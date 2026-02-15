@@ -145,15 +145,15 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 <p align="center">
 
   <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=cobalt" />
   </a>
 
   <a href="https://github.com/DRA3V50/SOC-Simulation">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=prussian" />
   </a>
 
   <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=nord" />
   </a>
 
   <a href="https://github.com/DRA3V50/Network-Threat-Intelligence-Analysis">
