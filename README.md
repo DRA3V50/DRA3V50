@@ -1,10 +1,8 @@
+<h2 align="center">Cybersecurity Projects!</h2>
+<p align="center">
 <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
-
 <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=tokyonight" />
-
-
-
-
+</p>
 
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
