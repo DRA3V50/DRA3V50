@@ -1,4 +1,5 @@
-<img src="https://github-profile-achievements.vercel.app/api?username=DRA3V50&theme=tokyonight" />
+<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=REPO_NAME&theme=tokyonight" />
+
 
 
 
