@@ -12,14 +12,6 @@
 
 ---
 
-<h2 align="center">Cybersecurity Projects!</h2>
-<p align="center">
-<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
-<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=tokyonight" />
-</p>
-
----
-
 <div align="center">
   <h3>📫 Let’s Connect!</h3>
   <br>
@@ -146,4 +138,12 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 ## Frequently updating, will inform for any changes when necessary!
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
+
+---
+
+<h2 align="center">Cybersecurity Projects!</h2>
+<p align="center">
+<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
+<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=tokyonight" />
+</p>
 
