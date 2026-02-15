@@ -1,4 +1,3 @@
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
 
 
 
@@ -102,6 +101,9 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight" width="400" height="180" />
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
   <img src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight&hide_border=true" width="400" height="180" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
+
+
 
 </p>
 
