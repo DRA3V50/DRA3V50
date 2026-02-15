@@ -153,7 +153,7 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
   </a>
 
   <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=nightowl" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=blueberry" />
   </a>
 
   <a href="https://github.com/DRA3V50/Network-Threat-Intelligence-Analysis">
