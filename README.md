@@ -1,9 +1,3 @@
-<h2 align="center">Cybersecurity Projects!</h2>
-<p align="center">
-<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
-<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=tokyonight" />
-</p>
-
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
 <img align="left" src="https://visitor-badge.laobi.icu/badge?page_id=salesp07.salesp07" />
@@ -14,6 +8,14 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Profile%20Views-1.2K-blue" />
   <img src="https://img.shields.io/badge/Public%20Repos-14-red" />
+</p>
+
+---
+
+<h2 align="center">Cybersecurity Projects!</h2>
+<p align="center">
+<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=tokyonight" />
+<img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=tokyonight" /> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=tokyonight" />
 </p>
 
 ---
