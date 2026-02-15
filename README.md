@@ -141,7 +141,7 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 
 ---
 
-<h1 align="center">Cybersecurity Projects!</h2>
+<h1 align="center">Cybersecurity Projects!</h1>
 <p align="center">
    <a href="https://github.com/DRA3V50/Network-Threat-Intelligence-Analysis">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=algolia" />
@@ -156,4 +156,3 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=ocean_dark" />
   </a>
 </p>
-
