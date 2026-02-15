@@ -144,12 +144,12 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 <h2 align="center">Cybersecurity Projects!</h2>
 <p align="center">
 
-  <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=ocean_dark" />
+<a href="https://github.com/DRA3V50/SOC-Simulation">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=algolia" />
   </a>
 
-  <a href="https://github.com/DRA3V50/SOC-Simulation">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=algolia" />
+  <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=ocean_dark" />
   </a>
 
   <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
