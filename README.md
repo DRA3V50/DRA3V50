@@ -97,6 +97,8 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 <p align="center">
   <!-- Top Languages Bar (most → least) -->
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
+  <img src="https://github-profile-trophy.vercel.app/?username=DRA3V50&theme=tokyonight&no-frame=true&row=1&column=6" />
+
 </p>
 
 ---
