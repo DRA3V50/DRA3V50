@@ -91,7 +91,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="48" height="48"/>
 
 - [**Batch_Projects**](https://github.com/DRA3V50/Batch_Projects) — Batch automation scripts, including brute force password testers.  
-  <img src="https://icons.iconarchive.com/icons/harwen/pleasant/128/MS-DOS-Batch-File-icon.png" width="48" height="48"/>
+  <img src="https://www.flaticon.com/free-icon/batch_5360511?term=batch&page=2&position=35&origin=search&related_id=5360511" width="48" height="48"/>
 
 - [**Ruby_Projects**](https://github.com/DRA3V50/Ruby_Projects) — Ruby-based hacking simulations and phishing web apps for practical learning.  
   <img src="https://github.com/user-attachments/assets/0ef10442-a117-4051-b3e6-63b8de5f579c" width="48" height="48"/>
