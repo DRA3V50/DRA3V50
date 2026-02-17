@@ -1,3 +1,21 @@
+<h1 align="center">Cybersecurity Projects!</h1>
+<p align="center">
+   <a href="https://github.com/DRA3V50/Network-Threat-Intelligence-Analysis">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=ocean_dark" />
+  </a>
+   <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=ocean_dark" />
+  </a>
+   <a href="https://github.com/DRA3V50/SOC-Simulation">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=ocean_dark" />
+  </a>
+   <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=ocean_dark" />
+  </a>
+</p>
+
+---
+
 [![GitHub followers](https://img.shields.io/github/followers/DRA3V50?style=social)](https://github.com/DRA3V50)
 [![GitHub stars](https://img.shields.io/github/stars/DRA3V50?style=social)](https://github.com/DRA3V50?tab=stars)
 <img align="left" src="https://visitor-badge.laobi.icu/badge?page_id=salesp07.salesp07" />
