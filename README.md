@@ -10,9 +10,7 @@
    <a href="https://github.com/DRA3V50/SOC-Simulation">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=ocean_dark" />
   </a>
-    <a href="https://github.com/DRA3V50/CyberVector-Linux">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=CyberVector&theme=ocean_dark" />
-  </a>
+    
    <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=ocean_dark" />
   </a>
