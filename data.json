@@ -1,7 +1,7 @@
 {
-  "critical": 5381,
-  "abnormal": 8193,
-  "medium": 2805,
+  "critical": 5384,
+  "abnormal": 8198,
+  "medium": 2806,
   "investigated": 5428,
-  "updated": "2026-03-01 19:02:44 EST"
+  "updated": "2026-03-01 19:31:25 EST"
 }
