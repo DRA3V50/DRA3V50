@@ -125,7 +125,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
   <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight" width="400" height="180" alt="Top Languages" style="vertical-align:middle;" />
   <img src="https://streak-stats.demolab.com?user=DRA3V50&theme=tokyonight&hide_border=true" width="400" height="180" />
 
-
 </p>
 
 ---
