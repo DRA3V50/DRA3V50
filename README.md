@@ -158,7 +158,6 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - Strong foundation in 2D dimensional analysis, fluid mechanics, designing, and automotive systems.  
 - This engineering background complements my cybersecurity and data analysis expertise, enhancing analytical thinking, structured problem-solving, and a methodical approach to complex technical challenges.
 
-
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 ## Frequently updating, will inform for any changes when necessary!
 
