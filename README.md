@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%"/>
-</p>
-
 <h1 align="center">Cybersecurity Projects!</h1>
 <h3 align="center">( In Progress... )</h3>
 <p align="center">
