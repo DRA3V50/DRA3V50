@@ -1,4 +1,6 @@
-![logo]([https://media.giphy.com/media/l0HlBO7eyXzSZkJri](https://giphy.com/gifs/tqi-it-MBVRgrfOBPeH5zNWJU)/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%"/>
+</p>
 
 <h1 align="center">Cybersecurity Projects!</h1>
 <h3 align="center">( In Progress... )</h3>
