@@ -54,11 +54,7 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,100:0b3d91&height=160&section=footer&animation=fadeIn"/><p align="center">
-
-<img alt="Splunk" src="https://img.shields.io/badge/Splunk-0B3D91?style=for-the-badge&logo=splunk&logoColor=white">
-<img alt="CrowdStrike" src="https://img.shields.io/badge/CrowdStrike-8B0000?style=for-the-badge&logo=crowdstrike&logoColor=white">
-<img alt="Wireshark" src="https://img.shields.io/badge/Wireshark-0369A1?style=for-the-badge&logo=wireshark&logoColor=white">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0b1f3a,100:1f3b73&height=180&section=footer&animation=fadeIn"/>
 
 <img alt="Nmap" src="https://img.shields.io/badge/Nmap-111827?style=for-the-badge">
 <img alt="Nessus" src="https://img.shields.io/badge/Nessus-145A32?style=for-the-badge">
