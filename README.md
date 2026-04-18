@@ -62,25 +62,27 @@
 
 <p align="center">
 
-<!-- SIEM / Detection (blue enterprise tones) -->
-<img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
-<img src="https://img.shields.io/badge/QRadar-1F3B73?style=for-the-badge"/>
+<p align="center">
 
-<!-- EDR / Response (controlled red family) -->
+<!-- SIEM (BLUE = detection systems) -->
+<img src="https://img.shields.io/badge/Splunk-0B5ED7?style=for-the-badge&logo=splunk&logoColor=white"/>
+<img src="https://img.shields.io/badge/QRadar-1B2A4A?style=for-the-badge"/>
+
+<!-- EDR (RED = response / containment) -->
 <img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wazuh-7A0C0C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Wazuh-5A0B0B?style=for-the-badge"/>
 
-<!-- Network / Analysis (cyan + slate tones) -->
-<img src="https://img.shields.io/badge/Wireshark-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-2C3E50?style=for-the-badge"/>
+<!-- NETWORK (CYAN vs DARK SLATE = separation enforced) -->
+<img src="https://img.shields.io/badge/Wireshark-00B8D4?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nmap-263238?style=for-the-badge"/>
 
-<!-- Vulnerability (muted green = risk reduction) -->
-<img src="https://img.shields.io/badge/Nessus-2E7D32?style=for-the-badge"/>
+<!-- VULN (GREEN = unique identity, not close to Excel) -->
+<img src="https://img.shields.io/badge/Nessus-1B7F3A?style=for-the-badge"/>
 
-<!-- Analytics / Reporting (enterprise muted palette) -->
-<img src="https://img.shields.io/badge/Excel-1F6F43?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power%20BI-E1B000?style=for-the-badge&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/PowerPoint-B03A2E?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
+<!-- ANALYTICS (FORCED SEPARATION COLORS) -->
+<img src="https://img.shields.io/badge/Excel-0F9D58?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/PowerPoint-D24726?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
 </p>
 
