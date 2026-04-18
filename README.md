@@ -56,9 +56,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
-<h3 align="center">Cybersecurity Toolset</h3>
-
-<img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&lines=SOC+Operations+%7C+Threat+Detection+%7C+Incident+Response"/>
+<img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&lines=Cybersecurity+Toolset+%7C"/>
 
 <p align="center">
 
