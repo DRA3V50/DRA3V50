@@ -56,74 +56,54 @@
 
 <h2>  Cybersecurity Tools </h2>
 
-<!-- Animated containment frame (ONLY motion element) -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050b18,100:1b3a57&height=6"/>
+<!-- Animated containment boundary (ONLY motion) -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:0f172a&height=5"/>
 
 <p align="center">
-  <b>SECURITY TOOLING / OPERATIONAL STACK</b>
+  <sub>OPERATIONAL TOOLING INDEX // BLUE TEAM ENVIRONMENT</sub>
 </p>
 
 <p align="center">
-  <sub>Detection • Monitoring • Containment • Forensics • Vulnerability • Automation</sub>
+  <sub>Detection Layer • Endpoint Telemetry • Incident Response • Network Forensics • Vulnerability Control • Engineering Support</sub>
 </p>
 
 <p align="center">
 
-  <!-- SIEM -->
-  <img src="https://img.shields.io/badge/Splunk-Log_Analysis-0b0f19?style=for-the-badge&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-0a3d91?style=for-the-badge&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/IBM_QRadar-SIEM-1c2431?style=for-the-badge"/>
+<!-- SIEM CORE -->
+<img src="https://img.shields.io/badge/Splunk-SIEM_Analytics-0b0f19?style=for-the-badge&logo=splunk"/>
+<img src="https://img.shields.io/badge/Microsoft_Sentinel-Cloud_SIEM-0a3d91?style=for-the-badge&logo=microsoft"/>
+<img src="https://img.shields.io/badge/IBM_QRadar-Security_Intelligence-1c2431?style=for-the-badge"/>
 
-  <!-- EDR / XDR -->
-  <img src="https://img.shields.io/badge/CrowdStrike-EDR-7a1212?style=for-the-badge&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/Wazuh-XDR-3b0a0a?style=for-the-badge"/>
+<!-- EDR / XDR -->
+<img src="https://img.shields.io/badge/CrowdStrike-Endpoint_Detection-7a1212?style=for-the-badge&logo=crowdstrike"/>
+<img src="https://img.shields.io/badge/Wazuh-Extended_Detection-3b0a0a?style=for-the-badge"/>
 
-  <!-- IR -->
-  <img src="https://img.shields.io/badge/TheHive-Incident_Response-8a6d1a?style=for-the-badge"/>
+<!-- INCIDENT RESPONSE -->
+<img src="https://img.shields.io/badge/TheHive-Incident_Orchestration-8a6d1a?style=for-the-badge"/>
 
-  <!-- Network -->
-  <img src="https://img.shields.io/badge/Wireshark-Packet_Analysis-063a5b?style=for-the-badge&logo=wireshark"/>
+<!-- NETWORK -->
+<img src="https://img.shields.io/badge/Wireshark-Packet_Forensics-063a5b?style=for-the-badge&logo=wireshark"/>
+<img src="https://img.shields.io/badge/Nmap-Network_Recon-0b0f19?style=for-the-badge"/>
 
-  <!-- Vulnerability -->
-  <img src="https://img.shields.io/badge/Nessus-Vulnerability_Assessment-145a32?style=for-the-badge"/>
+<!-- VULNERABILITY -->
+<img src="https://img.shields.io/badge/Nessus-Vulnerability_Assessment-145a32?style=for-the-badge"/>
 
-  <!-- Engineering / Automation -->
-  <img src="https://img.shields.io/badge/Python-Automation-111827?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/SQL-Data_Query-0f172a?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-111111?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/C%23-Development-1f2937?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/HTML/CSS-Interface_Layer-0b3d91?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Ruby-Scripting-3a0a0a?style=for-the-badge"/>
+<!-- ENGINEERING / AUTOMATION -->
+<img src="https://img.shields.io/badge/Python-Automation_Layer-111827?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SQL-Data_Correlation-0f172a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-111111?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/C%23-Internal_Tools-1f2937?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HTML/CSS-Interface_Layer-0b3d91?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Ruby-Scripting_Core-3a0a0a?style=for-the-badge"/>
 
-  <!-- Network / Tools -->
-  <img src="https://img.shields.io/badge/Nmap-Network_Discovery-0b0f19?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Excel-Data_Analysis-111827?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/PowerBI-Visualization-0b2c4a?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Excel/Office-Reporting-0f172a?style=for-the-badge"/>
+<!-- ANALYTICS -->
+<img src="https://img.shields.io/badge/Excel-Log_Review-111827?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PowerBI-Visualization_Layer-0b2c4a?style=for-the-badge"/>
 
 </p>
 
-<!-- Closing containment frame -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1b3a57,100:050b18&height=6"/>
-
----
-
-### AUXILIARY SYSTEMS
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Excel-Data_Analysis-111827?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/PowerBI-Visualization-0b2c4a?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Python-Automation-1f2937?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/SQL-Query_Analysis-0f172a?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-111111?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Nmap-Network_Discovery-0b3d91?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Cybersecurity_Stack-Operational-050b18?style=for-the-badge"/>
-</p>
-
----
-
-<!-- Closing Containment Frame -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:102a43,100:050b18&height=6"/>
+<!-- Closing containment boundary -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:020617&height=5"/>
 
 --- 
 
