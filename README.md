@@ -79,11 +79,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
 </p>
 
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer&text=SECURITY%20TELEMETRY%20ACTIVE&fontSize=22&fontColor=ffffff&animation=fadeIn"/>
-</p>
 
 --- 
 
