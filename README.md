@@ -54,7 +54,6 @@
 
 ---
 
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <h3 align="center">Cybersecurity Toolset</h3>
@@ -74,6 +73,10 @@
 <img src="https://img.shields.io/badge/Power%20BI-FFD700?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/PowerPoint-CC4125?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
 </p>
 
 ---
