@@ -54,8 +54,7 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:050b18&height=140&section=footer"/>
-<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,100:0b3d91&height=160&section=footer&animation=fadeIn"/><p align="center">
 
 <img alt="Splunk" src="https://img.shields.io/badge/Splunk-0B3D91?style=for-the-badge&logo=splunk&logoColor=white">
 <img alt="CrowdStrike" src="https://img.shields.io/badge/CrowdStrike-8B0000?style=for-the-badge&logo=crowdstrike&logoColor=white">
