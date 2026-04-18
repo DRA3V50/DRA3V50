@@ -56,54 +56,38 @@
 
 <h2>  Cybersecurity Tools </h2>
 
-<!-- Animated containment boundary (ONLY motion) -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:0f172a&height=5"/>
-
-<p align="center">
-  <sub>OPERATIONAL TOOLING INDEX // BLUE TEAM ENVIRONMENT</sub>
-</p>
-
-<p align="center">
-  <sub>Detection Layer • Endpoint Telemetry • Incident Response • Network Forensics • Vulnerability Control • Engineering Support</sub>
-</p>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1f3b73&height=6"/>
 
 <p align="center">
 
-<!-- SIEM CORE -->
-<img src="https://img.shields.io/badge/Splunk-SIEM_Analytics-0b0f19?style=for-the-badge&logo=splunk"/>
-<img src="https://img.shields.io/badge/Microsoft_Sentinel-Cloud_SIEM-0a3d91?style=for-the-badge&logo=microsoft"/>
-<img src="https://img.shields.io/badge/IBM_QRadar-Security_Intelligence-1c2431?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Splunk-SIEM-black?style=for-the-badge&logo=splunk"/>
+<img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-blue?style=for-the-badge&logo=microsoft"/>
+<img src="https://img.shields.io/badge/IBM_QRadar-SIEM-darkgreen?style=for-the-badge"/>
 
-<!-- EDR / XDR -->
-<img src="https://img.shields.io/badge/CrowdStrike-Endpoint_Detection-7a1212?style=for-the-badge&logo=crowdstrike"/>
-<img src="https://img.shields.io/badge/Wazuh-Extended_Detection-3b0a0a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CrowdStrike-EDR-red?style=for-the-badge&logo=crowdstrike"/>
+<img src="https://img.shields.io/badge/Wazuh-XDR-darkred?style=for-the-badge"/>
 
-<!-- INCIDENT RESPONSE -->
-<img src="https://img.shields.io/badge/TheHive-Incident_Orchestration-8a6d1a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/TheHive-IR-yellow?style=for-the-badge"/>
 
-<!-- NETWORK -->
-<img src="https://img.shields.io/badge/Wireshark-Packet_Forensics-063a5b?style=for-the-badge&logo=wireshark"/>
-<img src="https://img.shields.io/badge/Nmap-Network_Recon-0b0f19?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Wireshark-Network-blue?style=for-the-badge&logo=wireshark"/>
+<img src="https://img.shields.io/badge/Nmap-Recon-black?style=for-the-badge"/>
 
-<!-- VULNERABILITY -->
-<img src="https://img.shields.io/badge/Nessus-Vulnerability_Assessment-145a32?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Nessus-Vulnerability-green?style=for-the-badge"/>
 
-<!-- ENGINEERING / AUTOMATION -->
-<img src="https://img.shields.io/badge/Python-Automation_Layer-111827?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SQL-Data_Correlation-0f172a?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-111111?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/C%23-Internal_Tools-1f2937?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/HTML/CSS-Interface_Layer-0b3d91?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Ruby-Scripting_Core-3a0a0a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Python-Automation-grey?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SQL-Data_Query-lightgrey?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/C%23-Tools-darkblue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HTML/CSS-Web_Layer-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Ruby-Scripting-darkred?style=for-the-badge"/>
 
-<!-- ANALYTICS -->
-<img src="https://img.shields.io/badge/Excel-Log_Review-111827?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/PowerBI-Visualization_Layer-0b2c4a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Excel-Analysis-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PowerBI-Visualization-blue?style=for-the-badge"/>
 
 </p>
 
-<!-- Closing containment boundary -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:020617&height=5"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1f3b73,100:0f172a&height=6"/>
+
 
 --- 
 
