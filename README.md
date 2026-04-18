@@ -55,25 +55,33 @@
 ---
 
 
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset"/></h1>
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset"/>
 </p>
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=range"/>
-<img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wireshark-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-2F4F4F?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Nessus-2E8B57?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/QRadar-274472?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Wazuh-8B0000?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Excel-228B22?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power%20BI-FFD700?style=for-the-badge&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/PowerPoint-CC4125?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
+<!-- SIEM / Detection (blue tone family) -->
+<img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
+<img src="https://img.shields.io/badge/QRadar-1F3B73?style=for-the-badge"/>
+
+<!-- EDR / Response (controlled red, not neon) -->
+<img src="https://img.shields.io/badge/CrowdStrike-8B1E1E?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
+<img src="https://img.shields.io/badge/Wazuh-5A0F0F?style=for-the-badge"/>
+
+<!-- Network / Analysis (cyan / neutral dark) -->
+<img src="https://img.shields.io/badge/Wireshark-0AA6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nmap-2C3E50?style=for-the-badge"/>
+
+<!-- Vulnerability (muted green) -->
+<img src="https://img.shields.io/badge/Nessus-2E7D32?style=for-the-badge"/>
+
+<!-- Analytics (muted enterprise tones) -->
+<img src="https://img.shields.io/badge/Excel-1F6F43?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power%20BI-E0B800?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/PowerPoint-B03A2E?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
 </p>
 
