@@ -54,35 +54,25 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050b18,100:0f172a&height=110&section=header"/>
+<img alt="Splunk" src="https://img.shields.io/badge/Splunk-0B3D91?style=for-the-badge&logo=splunk&logoColor=white">
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&lines=Security+Operations+Toolset;Detection+%7C+Response+%7C+Analysis"/>
+<img alt="CrowdStrike" src="https://img.shields.io/badge/CrowdStrike-8B0000?style=for-the-badge&logo=crowdstrike&logoColor=white">
 
-<p align="center">
+<img alt="Wireshark" src="https://img.shields.io/badge/Wireshark-0369A1?style=for-the-badge&logo=wireshark&logoColor=white">
 
-<!-- BLUE: Detection / SIEM -->
-<img src="https://img.shields.io/badge/Splunk-SIEM-0b3d91?style=for-the-badge&logo=splunk"/>
-<img src="https://img.shields.io/badge/QRadar-SIEM-1f2a44?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Wireshark-Network_Analysis-0369a1?style=for-the-badge&logo=wireshark"/>
+<img alt="Nmap" src="https://img.shields.io/badge/Nmap-111827?style=for-the-badge">
 
-<!-- RED: Threat / Endpoint -->
-<img src="https://img.shields.io/badge/CrowdStrike-EDR-8b0000?style=for-the-badge&logo=crowdstrike"/>
-<img src="https://img.shields.io/badge/Wazuh-XDR-4a0a0a?style=for-the-badge"/>
+<img alt="Nessus" src="https://img.shields.io/badge/Nessus-145A32?style=for-the-badge">
 
-<!-- GREEN: Vulnerability -->
-<img src="https://img.shields.io/badge/Nessus-Vulnerability-145a32?style=for-the-badge"/>
+<img alt="QRadar" src="https://img.shields.io/badge/QRadar-1F2A44?style=for-the-badge">
 
-<!-- NEUTRAL: Recon / Utility -->
-<img src="https://img.shields.io/badge/Nmap-Recon-111827?style=for-the-badge"/>
+<img alt="Wazuh" src="https://img.shields.io/badge/Wazuh-4A0A0A?style=for-the-badge">
 
-<!-- ANALYTICS -->
-<img src="https://img.shields.io/badge/Power_BI-Visualization-f2c811?style=for-the-badge&logo=powerbi"/>
-<img src="https://img.shields.io/badge/Excel-Data_Analysis-1d6f42?style=for-the-badge&logo=microsoft-excel"/>
-<img src="https://img.shields.io/badge/PowerPoint-Reporting-b7472a?style=for-the-badge&logo=microsoft-powerpoint"/>
+<img alt="Excel" src="https://img.shields.io/badge/Excel-1D6F42?style=for-the-badge&logo=microsoft-excel&logoColor=white">
 
-</p>
+<img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:050b18&height=110&section=footer"/>
+<img alt="PowerPoint" src="https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white">
 
 --- 
 
