@@ -64,16 +64,31 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e3a8a&height=2"/>
 
 <!-- Tools -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:2563eb&height=3"/>
+
+<p align="center"><b>Security Stack</b></p>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Splunk-Log%20Analysis-111827?style=flat-square&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Sentinel-SIEM-1e40af?style=flat-square&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/QRadar-Detection-1e3a8a?style=flat-square"/>
-  <img src="https://img.shields.io/badge/CrowdStrike-EDR-991b1b?style=flat-square&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/Wazuh-XDR-7f1d1d?style=flat-square"/>
-  <img src="https://img.shields.io/badge/TheHive-IR-facc15?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Wireshark-Network-0369a1?style=flat-square&logo=wireshark"/>
-  <img src="https://img.shields.io/badge/Nessus-Vulnerability-065f46?style=flat-square"/>
+  <!-- SIEM -->
+  <img src="https://img.shields.io/badge/SIEM-Splunk-111827?style=flat-square&logo=splunk"/>
+  <img src="https://img.shields.io/badge/SIEM-Sentinel-1e40af?style=flat-square&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/SIEM-QRadar-1e3a8a?style=flat-square"/>
 </p>
+
+<p align="center">
+  <!-- EDR/XDR -->
+  <img src="https://img.shields.io/badge/EDR-CrowdStrike-991b1b?style=flat-square&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/XDR-Wazuh-7f1d1d?style=flat-square"/>
+</p>
+
+<p align="center">
+  <!-- IR + Network -->
+  <img src="https://img.shields.io/badge/IR-TheHive-facc15?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Network-Wireshark-0369a1?style=flat-square&logo=wireshark"/>
+  <img src="https://img.shields.io/badge/Vuln-Nessus-065f46?style=flat-square"/>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2563eb,100:0f172a&height=3"/>
 
 --- 
 
