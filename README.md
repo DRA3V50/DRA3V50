@@ -54,8 +54,7 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0b1f3a,100:1f3b73&height=180&section=footer&animation=fadeIn"/>
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0b1f3a,100:1f3b73&height=200&section=footer&text=SECURE%20TELEMETRY%20LAYER%20ACTIVE&fontSize=22&fontColor=00E5FF&animation=fadeIn"/>
 <img alt="Nmap" src="https://img.shields.io/badge/Nmap-111827?style=for-the-badge">
 <img alt="Nessus" src="https://img.shields.io/badge/Nessus-145A32?style=for-the-badge">
 
