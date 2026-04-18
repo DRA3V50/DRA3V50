@@ -54,26 +54,7 @@
 
 ---
 
-<img alt="Splunk" src="https://img.shields.io/badge/Splunk-0B3D91?style=for-the-badge&logo=splunk&logoColor=white">
-
-<img alt="CrowdStrike" src="https://img.shields.io/badge/CrowdStrike-8B0000?style=for-the-badge&logo=crowdstrike&logoColor=white">
-
-<img alt="Wireshark" src="https://img.shields.io/badge/Wireshark-0369A1?style=for-the-badge&logo=wireshark&logoColor=white">
-
-<img alt="Nmap" src="https://img.shields.io/badge/Nmap-111827?style=for-the-badge">
-
-<img alt="Nessus" src="https://img.shields.io/badge/Nessus-145A32?style=for-the-badge">
-
-<img alt="QRadar" src="https://img.shields.io/badge/QRadar-1F2A44?style=for-the-badge">
-
-<img alt="Wazuh" src="https://img.shields.io/badge/Wazuh-4A0A0A?style=for-the-badge">
-
-<img alt="Excel" src="https://img.shields.io/badge/Excel-1D6F42?style=for-the-badge&logo=microsoft-excel&logoColor=white">
-
-<img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-
-<img alt="PowerPoint" src="https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white">
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050b18,100:0f172a&height=140&section=header"/>
 --- 
 
 I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, data security, machine learning models, and manufacturing technologies.
