@@ -59,6 +59,10 @@
 
 <p align="center">
 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset"/>
+</p>
+
 <img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
 <img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
 <img src="https://img.shields.io/badge/Wireshark-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
@@ -71,12 +75,6 @@
 <img src="https://img.shields.io/badge/PowerPoint-CC4125?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
 </p>
-
-<!-- ✔ TYPOGRAPHY INSIDE FOOTER (your requested line) -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset+%7C"/>
-</p>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
 
 
