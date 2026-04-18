@@ -88,10 +88,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
 
---- 
-
-I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, data security, machine learning models, and manufacturing technologies.
-
 ---
 
 ###  ⚙️ What I Build & Secure 🚨
@@ -179,6 +175,7 @@ I’m passionate about bridging the worlds of cybersecurity and mechanical engin
 - Currently pursuing a Bachelor’s in Mechanical Engineering with hands-on expertise in CAD tools (AutoCAD, SolidWorks, CATIA), MATLAB simulations, and modern manufacturing methods including 3D printing and CNC machining.  
 - Strong foundation in 2D dimensional analysis, fluid mechanics, designing, and automotive systems.  
 - This engineering background complements my cybersecurity and data analysis expertise, enhancing analytical thinking, structured problem-solving, and a methodical approach to complex technical challenges.
+- I’m passionate about bridging the worlds of cybersecurity and mechanical engineering. With a double major in both fields, I focus on building secure, scalable systems while leveraging my hands-on experience with cloud platforms, scripting, IT, data security, machine learning models, and manufacturing technologies.
 
 Thanks for visiting! Feel free to explore my projects or reach out, I’m always excited to connect with fellow tech enthusiasts and professionals.
 ## Frequently updating, will inform for any changes when necessary!
