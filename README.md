@@ -54,8 +54,7 @@
 
 ---
 
-<h2 align="center">Cybersecurity Tools</h2>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffcc,100:0f2027&height=120&section=header&text=Cyber%20Stack&fontColor=ffffff"/>
+<h2<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffcc,100:0f2027&height=120&section=header&text=Cyber%20Stack&fontColor=ffffff"/></h2>
 
 --- 
 
