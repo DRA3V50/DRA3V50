@@ -54,7 +54,6 @@
 
 ---
 
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <p align="center">
@@ -63,24 +62,24 @@
 
 <p align="center">
 
-<!-- SIEM / Detection (blue tone family) -->
+<!-- SIEM / Detection (blue enterprise tones) -->
 <img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
 <img src="https://img.shields.io/badge/QRadar-1F3B73?style=for-the-badge"/>
 
-<!-- EDR / Response (controlled red, not neon) -->
-<img src="https://img.shields.io/badge/CrowdStrike-8B1E1E?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wazuh-5A0F0F?style=for-the-badge"/>
+<!-- EDR / Response (controlled red family) -->
+<img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
+<img src="https://img.shields.io/badge/Wazuh-7A0C0C?style=for-the-badge"/>
 
-<!-- Network / Analysis (cyan / neutral dark) -->
-<img src="https://img.shields.io/badge/Wireshark-0AA6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<!-- Network / Analysis (cyan + slate tones) -->
+<img src="https://img.shields.io/badge/Wireshark-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
 <img src="https://img.shields.io/badge/Nmap-2C3E50?style=for-the-badge"/>
 
-<!-- Vulnerability (muted green) -->
+<!-- Vulnerability (muted green = risk reduction) -->
 <img src="https://img.shields.io/badge/Nessus-2E7D32?style=for-the-badge"/>
 
-<!-- Analytics (muted enterprise tones) -->
+<!-- Analytics / Reporting (enterprise muted palette) -->
 <img src="https://img.shields.io/badge/Excel-1F6F43?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power%20BI-E0B800?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/Power%20BI-E1B000?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/PowerPoint-B03A2E?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
 </p>
