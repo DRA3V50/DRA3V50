@@ -59,7 +59,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <p align="center">
-  <h1 align="center"><b>Cybersecurity Toolset</b></h1>
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset"/></h1>
 </p>
 
 <p align="center">
