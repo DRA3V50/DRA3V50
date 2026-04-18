@@ -55,44 +55,49 @@
 ---
 
 <h2>  Cybersecurity Tools </h2>
-<!-- Animated Header -->
+<!-- Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2200&pause=800&color=00FFA6&center=true&vCenter=true&width=700&lines=Cybersecurity+Arsenal;SIEM+%7C+EDR+%7C+XDR;Threat+Detection+%7C+Incident+Response;Network+%7C+Vulnerability+Analysis" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=23&duration=2200&pause=800&color=00BFFF&center=true&vCenter=true&width=750&lines=DEFENSIVE+SYSTEMS+ONLINE;Threat+Detection+%7C+Containment+%7C+Response;SIEM+%7C+EDR+%7C+XDR+%7C+Network+Analysis" />
 </p>
 
-<!-- Wave Divider -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffcc,100:0f2027&height=100&section=header"/>
+<!-- Top Divider -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,100:00bfff&height=90&section=header"/>
 
 <!-- SIEM -->
-<h3 align="center">🧠 SIEM Platforms</h3>
+<h3 align="center">🧠 Detection Systems (SIEM)</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/IBM_QRadar-052FAD?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Splunk-Detection-black?style=for-the-badge&logo=splunk"/>
+  <img src="https://img.shields.io/badge/Sentinel-Monitoring-0078D4?style=for-the-badge&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/QRadar-Correlation-052FAD?style=for-the-badge"/>
 </p>
 
-<!-- EDR / XDR -->
-<h3 align="center">🛡️ EDR / XDR</h3>
+<!-- EDR/XDR -->
+<h3 align="center">🛡️ Endpoint Defense (EDR/XDR)</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/CrowdStrike-ED1C24?style=for-the-badge&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/Wazuh-800020?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CrowdStrike-Containment-ED1C24?style=for-the-badge&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/Wazuh-Telemetry-800020?style=for-the-badge"/>
 </p>
 
-<!-- Incident Response -->
+<!-- IR -->
 <h3 align="center">🚨 Incident Response</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/TheHive-F2C94C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/TheHive-Case%20Management-F2C94C?style=for-the-badge"/>
 </p>
 
-<!-- Network + Vuln -->
-<h3 align="center">🌐 Network & Vulnerability</h3>
+<!-- Network -->
+<h3 align="center">🌐 Network Analysis</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark"/>
-  <img src="https://img.shields.io/badge/Nessus-00C176?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Wireshark-Packet%20Inspection-1679A7?style=for-the-badge&logo=wireshark"/>
+</p>
+
+<!-- Vulnerability -->
+<h3 align="center">🧬 Vulnerability Management</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/Nessus-Assessment-00C176?style=for-the-badge"/>
 </p>
 
 <!-- Bottom Divider -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:00ffcc&height=100&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00bfff,100:0a192f&height=90&section=footer"/>
 
 --- 
 
