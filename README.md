@@ -55,12 +55,7 @@
 ---
 
 <h2 align="center">Cybersecurity Tools</h2>
-<p align="center">
-  <img src="https://img.shields.io/badge/Splunk-111111?style=flat-square&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Sentinel-0078D4?style=flat-square&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/Wazuh-800020?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark"/>
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffcc,100:0f2027&height=120&section=header&text=Cyber%20Stack&fontColor=ffffff"/>
 
 --- 
 
