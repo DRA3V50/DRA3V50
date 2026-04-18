@@ -54,6 +54,7 @@
 
 ---
 
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <h3 align="center">Cybersecurity Toolset</h3>
@@ -62,30 +63,24 @@
 
 <p align="center">
 
-<!-- SIEM / Visibility (BLUE = detection layer) -->
-<img src="https://img.shields.io/badge/Splunk-SIEM-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
-<img src="https://img.shields.io/badge/QRadar-SIEM-274472?style=for-the-badge"/>
-
-<!-- EDR / Response (RED = containment / threat action) -->
-<img src="https://img.shields.io/badge/CrowdStrike-EDR-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wazuh-XDR-8B0000?style=for-the-badge"/>
-
-<!-- Network / Analysis (CYAN = traffic visibility) -->
-<img src="https://img.shields.io/badge/Wireshark-Network_Analysis-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-Recon-2F4F4F?style=for-the-badge"/>
-
-<!-- Vulnerability (GREEN = risk reduction) -->
-<img src="https://img.shields.io/badge/Nessus-Vulnerability-2E8B57?style=for-the-badge"/>
-
-<!-- Reporting / Analytics -->
-<img src="https://img.shields.io/badge/Excel-Data_Analysis-228B22?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power%20BI-Visualization-FFD700?style=for-the-badge&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/PowerPoint-Reporting-CC4125?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
+<img src="https://img.shields.io/badge/Splunk-1E90FF?style=for-the-badge&logo=splunk&logoColor=white"/>
+<img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
+<img src="https://img.shields.io/badge/Wireshark-00A6D6?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nmap-2F4F4F?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Nessus-2E8B57?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/QRadar-274472?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Wazuh-8B0000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Excel-228B22?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power%20BI-FFD700?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/PowerPoint-CC4125?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
 
 </p>
 
-<!-- ✔ IMPROVED FOOTER: lighter + visible + WITH TEXT -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer&text=SECURITY%20TELEMETRY%20ACTIVE&fontSize=22&fontColor=ffffff&animation=fadeIn"/>
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer&text=SECURITY%20TELEMETRY%20ACTIVE&fontSize=22&fontColor=ffffff&animation=fadeIn"/>
+</p>
 
 --- 
 
