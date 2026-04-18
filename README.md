@@ -54,9 +54,8 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&lines=Cybersecurity+Toolset+%7C"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:061a2b,100:0b3d91&height=140&section=header"/>
 
 <p align="center">
 
@@ -73,9 +72,12 @@
 
 </p>
 
+<!-- ✔ TYPOGRAPHY INSIDE FOOTER (your requested line) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&center=true&vCenter=true&width=600&lines=Cybersecurity+Toolset+%7C"/>
 </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
 
 
 --- 
