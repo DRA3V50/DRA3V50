@@ -55,59 +55,56 @@
 ---
 
 <h2>  Cybersecurity Tools </h2>
-<!-- Containment Frame (ONLY animation element) -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050b18,100:102a43&height=6"/>
+
+<!-- Animated containment frame (ONLY motion element) -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:050b18,100:1b3a57&height=6"/>
 
 <p align="center">
-  <b>SECURITY OPERATIONS DOSSIER</b>
+  <b>SECURITY TOOLING / OPERATIONAL STACK</b>
 </p>
 
 <p align="center">
-  <sub>Monitoring • Detection • Response • Forensics • Validation</sub>
+  <sub>Detection • Monitoring • Containment • Forensics • Vulnerability • Automation</sub>
 </p>
-
----
-
-### CLASS I — SECURITY INFORMATION & EVENT MANAGEMENT (SIEM)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Splunk-Log_Correlation-0b0f19?style=for-the-badge&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Microsoft_Sentinel-Cloud_SIEM-0a3d91?style=for-the-badge&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/IBM_QRadar-Security_Intelligence-1c2431?style=for-the-badge"/>
+
+  <!-- SIEM -->
+  <img src="https://img.shields.io/badge/Splunk-Log_Analysis-0b0f19?style=for-the-badge&logo=splunk"/>
+  <img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-0a3d91?style=for-the-badge&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/IBM_QRadar-SIEM-1c2431?style=for-the-badge"/>
+
+  <!-- EDR / XDR -->
+  <img src="https://img.shields.io/badge/CrowdStrike-EDR-7a1212?style=for-the-badge&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/Wazuh-XDR-3b0a0a?style=for-the-badge"/>
+
+  <!-- IR -->
+  <img src="https://img.shields.io/badge/TheHive-Incident_Response-8a6d1a?style=for-the-badge"/>
+
+  <!-- Network -->
+  <img src="https://img.shields.io/badge/Wireshark-Packet_Analysis-063a5b?style=for-the-badge&logo=wireshark"/>
+
+  <!-- Vulnerability -->
+  <img src="https://img.shields.io/badge/Nessus-Vulnerability_Assessment-145a32?style=for-the-badge"/>
+
+  <!-- Engineering / Automation -->
+  <img src="https://img.shields.io/badge/Python-Automation-111827?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/SQL-Data_Query-0f172a?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-111111?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/C%23-Development-1f2937?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/HTML/CSS-Interface_Layer-0b3d91?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Ruby-Scripting-3a0a0a?style=for-the-badge"/>
+
+  <!-- Network / Tools -->
+  <img src="https://img.shields.io/badge/Nmap-Network_Discovery-0b0f19?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Excel-Data_Analysis-111827?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PowerBI-Visualization-0b2c4a?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Excel/Office-Reporting-0f172a?style=for-the-badge"/>
+
 </p>
 
----
-
-### CLASS II — ENDPOINT DETECTION & RESPONSE (EDR / XDR)
-
-<p align="center">
-  <img src="https://img.shields.io/badge/CrowdStrike-Falcon_EDR-7a1212?style=for-the-badge&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/Wazuh-Telemetry_Core-3b0a0a?style=for-the-badge"/>
-</p>
-
----
-
-### CLASS III — INCIDENT RESPONSE SYSTEMS
-
-<p align="center">
-  <img src="https://img.shields.io/badge/TheHive-Case_Management-8a6d1a?style=for-the-badge"/>
-</p>
-
----
-
-### CLASS IV — NETWORK FORENSICS
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Wireshark-Packet_Inspection-063a5b?style=for-the-badge&logo=wireshark"/>
-</p>
-
----
-
-### CLASS V — VULNERABILITY ASSESSMENT
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Nessus-Security_Assessment-145a32?style=for-the-badge"/>
-</p>
+<!-- Closing containment frame -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1b3a57,100:050b18&height=6"/>
 
 ---
 
