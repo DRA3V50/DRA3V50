@@ -55,56 +55,59 @@
 ---
 
 <h2>  Cybersecurity Tools </h2>
-<!-- Top animated border -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a192f,100:1e3a8a&height=4"/>
+<!-- Subtle animated frame (not a header, just containment border) -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0f1c,100:1f3b73&height=5"/>
 
 <p align="center">
-  <b>Security Operations Stack</b>
+  <b>SECURITY TOOLING / OPERATIONAL REGISTRY</b>
 </p>
 
 <p align="center">
-  <sub>Detection • Correlation • Containment • Response</sub>
+  <sub>Detection • Telemetry • Containment • Investigation • Validation</sub>
 </p>
 
-<br/>
+---
 
+### DETECTION LAYER (SIEM)
 <p align="center">
-  
-  <!-- Detection -->
-  <b>Detection & Monitoring</b><br/>
-  <img src="https://img.shields.io/badge/Splunk-Log_Analysis-111827?style=flat-square&logo=splunk"/>
-  <img src="https://img.shields.io/badge/Sentinel-SIEM-1e40af?style=flat-square&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/QRadar-Correlation-1e3a8a?style=flat-square"/>
-
-  <br/><br/>
-
-  <!-- Endpoint -->
-  <b>Endpoint Telemetry</b><br/>
-  <img src="https://img.shields.io/badge/CrowdStrike-EDR-991b1b?style=flat-square&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/Wazuh-XDR-7f1d1d?style=flat-square"/>
-
-  <br/><br/>
-
-  <!-- IR -->
-  <b>Incident Response</b><br/>
-  <img src="https://img.shields.io/badge/TheHive-Case_Management-facc15?style=flat-square"/>
-
-  <br/><br/>
-
-  <!-- Network -->
-  <b>Network Analysis</b><br/>
-  <img src="https://img.shields.io/badge/Wireshark-Packet_Inspection-0369a1?style=flat-square&logo=wireshark"/>
-
-  <br/><br/>
-
-  <!-- Vulnerability -->
-  <b>Vulnerability Management</b><br/>
-  <img src="https://img.shields.io/badge/Nessus-Assessment-065f46?style=flat-square"/>
-
+  <img src="https://img.shields.io/badge/Splunk-Log_Correlation-111827?style=for-the-badge&logo=splunk"/>
+  <img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-0b3d91?style=for-the-badge&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/IBM_QRadar-Security_Intelligence-1f2a44?style=for-the-badge"/>
 </p>
 
-<!-- Bottom animated border -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3a8a,100:0a192f&height=4"/>
+---
+
+### ENDPOINT SURVEILLANCE (EDR / XDR)
+<p align="center">
+  <img src="https://img.shields.io/badge/CrowdStrike-Falcon_EDR-8b1e1e?style=for-the-badge&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/Wazuh-Telemetry_Engine-5a0f0f?style=for-the-badge"/>
+</p>
+
+---
+
+### INCIDENT RESPONSE / CASE WORKFLOW
+<p align="center">
+  <img src="https://img.shields.io/badge/TheHive-Incident_Case_System-d4af37?style=for-the-badge"/>
+</p>
+
+---
+
+### NETWORK FORENSICS
+<p align="center">
+  <img src="https://img.shields.io/badge/Wireshark-Packet_Analysis-0a4f7a?style=for-the-badge&logo=wireshark"/>
+</p>
+
+---
+
+### VULNERABILITY ASSESSMENT
+<p align="center">
+  <img src="https://img.shields.io/badge/Nessus-Security_Assessment-0f6b3e?style=for-the-badge"/>
+</p>
+
+---
+
+<!-- Closing containment frame -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1f3b73,100:0a0f1c&height=5"/>
 
 --- 
 
