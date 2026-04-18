@@ -55,40 +55,56 @@
 ---
 
 <h2>  Cybersecurity Tools </h2>
-<!-- Subtle Typing Header -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2500&pause=1200&color=4FC3F7&center=true&vCenter=true&width=600&lines=Security+Operations;Threat+Detection+%7C+Incident+Response;SIEM+%7C+EDR+%7C+Network+Analysis" />
-</p>
-
-<!-- Minimal Divider -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e3a8a&height=2"/>
-
-<!-- Tools -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:2563eb&height=3"/>
-
-<p align="center"><b>Security Stack</b></p>
+<!-- Top animated border -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a192f,100:1e3a8a&height=4"/>
 
 <p align="center">
-  <!-- SIEM -->
-  <img src="https://img.shields.io/badge/SIEM-Splunk-111827?style=flat-square&logo=splunk"/>
-  <img src="https://img.shields.io/badge/SIEM-Sentinel-1e40af?style=flat-square&logo=microsoft"/>
-  <img src="https://img.shields.io/badge/SIEM-QRadar-1e3a8a?style=flat-square"/>
+  <b>Security Operations Stack</b>
 </p>
 
 <p align="center">
-  <!-- EDR/XDR -->
-  <img src="https://img.shields.io/badge/EDR-CrowdStrike-991b1b?style=flat-square&logo=crowdstrike"/>
-  <img src="https://img.shields.io/badge/XDR-Wazuh-7f1d1d?style=flat-square"/>
+  <sub>Detection • Correlation • Containment • Response</sub>
 </p>
+
+<br/>
 
 <p align="center">
-  <!-- IR + Network -->
-  <img src="https://img.shields.io/badge/IR-TheHive-facc15?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Network-Wireshark-0369a1?style=flat-square&logo=wireshark"/>
-  <img src="https://img.shields.io/badge/Vuln-Nessus-065f46?style=flat-square"/>
+  
+  <!-- Detection -->
+  <b>Detection & Monitoring</b><br/>
+  <img src="https://img.shields.io/badge/Splunk-Log_Analysis-111827?style=flat-square&logo=splunk"/>
+  <img src="https://img.shields.io/badge/Sentinel-SIEM-1e40af?style=flat-square&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/QRadar-Correlation-1e3a8a?style=flat-square"/>
+
+  <br/><br/>
+
+  <!-- Endpoint -->
+  <b>Endpoint Telemetry</b><br/>
+  <img src="https://img.shields.io/badge/CrowdStrike-EDR-991b1b?style=flat-square&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/Wazuh-XDR-7f1d1d?style=flat-square"/>
+
+  <br/><br/>
+
+  <!-- IR -->
+  <b>Incident Response</b><br/>
+  <img src="https://img.shields.io/badge/TheHive-Case_Management-facc15?style=flat-square"/>
+
+  <br/><br/>
+
+  <!-- Network -->
+  <b>Network Analysis</b><br/>
+  <img src="https://img.shields.io/badge/Wireshark-Packet_Inspection-0369a1?style=flat-square&logo=wireshark"/>
+
+  <br/><br/>
+
+  <!-- Vulnerability -->
+  <b>Vulnerability Management</b><br/>
+  <img src="https://img.shields.io/badge/Nessus-Assessment-065f46?style=flat-square"/>
+
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2563eb,100:0f172a&height=3"/>
+<!-- Bottom animated border -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e3a8a,100:0a192f&height=4"/>
 
 --- 
 
