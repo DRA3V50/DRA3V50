@@ -54,36 +54,74 @@
 
 ---
 
-<h2>  Cybersecurity Tools </h2>
-
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00ffcc,100:0f172a&height=120&section=header"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00FFAA&lines=Security+Tooling+Stack;SOC+Operations+%7C+Threat+Detection+%7C+Analysis"/>
+<img src="https://readme-typing-svg.herokuapp.com?color=00FFAA&lines=Security+Operations+Toolset;SOC+Analysis+%7C+Threat+Detection+%7C+Forensics"/>
+
+---
+
+### SIEM / DETECTION
 
 <p align="center">
-
-<!-- Each tool is INDIVIDUAL + icon + animated-style badge -->
-
-<img src="https://img.shields.io/badge/Splunk-FF6F00?style=for-the-badge&logo=splunk&logoColor=white"/>
-<img src="https://img.shields.io/badge/CrowdStrike-ED1C24?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Nessus-00C176?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/QRadar-1F2A44?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Wazuh-8B0000?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
-
+<img src="https://img.shields.io/badge/Splunk-SIEM-000000?style=for-the-badge&logo=splunk"/>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:00ffcc&height=120&section=footer"/>
+<p align="center">
+<img src="https://img.shields.io/badge/QRadar-SIEM-1f2a44?style=for-the-badge"/>
+</p>
 
+---
+
+### EDR / XDR
+
+<p align="center">
+<img src="https://img.shields.io/badge/CrowdStrike-EDR-ED1C24?style=for-the-badge&logo=crowdstrike"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Wazuh-XDR-8B0000?style=for-the-badge"/>
+</p>
+
+---
+
+### NETWORK ANALYSIS
+
+<p align="center">
+<img src="https://img.shields.io/badge/Wireshark-Packet_Analysis-1679A7?style=for-the-badge&logo=wireshark"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Nmap-Network_Recon-00457C?style=for-the-badge"/>
+</p>
+
+---
+
+### VULNERABILITY
+
+<p align="center">
+<img src="https://img.shields.io/badge/Nessus-Vulnerability-00C176?style=for-the-badge"/>
+</p>
+
+---
+
+### ANALYTICS / REPORTING
+
+<p align="center">
+<img src="https://img.shields.io/badge/Excel-Data_Analysis-217346?style=for-the-badge&logo=microsoft-excel"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/PowerBI-Visualization-F2C811?style=for-the-badge&logo=powerbi"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/PowerPoint-Reporting-B7472A?style=for-the-badge&logo=microsoft-powerpoint"/>
+</p>
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:00ffcc&height=120&section=footer"/>
 
 --- 
 
