@@ -55,16 +55,14 @@
 ---
 
 <h2 align="center">Cybersecurity Tools</h2>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/crowdstrike.png" width="80" height="115" alt="CrowdStrike">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/azuresentinel.png" height="80" height="115" alt="Microsoft Sentinel">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/splunk.png" width="80" height="115" alt="Splunk">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/qradar.png" width="80" height="115" alt="QRadar">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wazuh.png" width="80" height="115" alt="Wazuh">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/thehive.png" width="80" height="115" alt="TheHive">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/wireshark.png" width="80" height="115" alt="Wireshark">
-  <img src="https://raw.githubusercontent.com/DRA3V50/ICONS/main/security/nessus.png" width="80" height="115" alt="Nessus">
-</p>
+![CrowdStrike](https://img.shields.io/badge/CrowdStrike-EDR-red?style=flat&logo=crowdstrike)
+![Microsoft Sentinel](https://img.shields.io/badge/Sentinel-SIEM-blue?style=flat&logo=microsoft)
+![Splunk](https://img.shields.io/badge/Splunk-Analytics-black?style=flat&logo=splunk)
+![QRadar](https://img.shields.io/badge/QRadar-SIEM-green?style=flat)
+![Wazuh](https://img.shields.io/badge/Wazuh-XDR-red?style=flat)
+![TheHive](https://img.shields.io/badge/TheHive-Incident%20Response-yellow?style=flat)
+![Wireshark](https://img.shields.io/badge/Wireshark-Network-blue?style=flat&logo=wireshark)
+![Nessus](https://img.shields.io/badge/Nessus-Vulnerability%20Scanner-green?style=flat)
 
 --- 
 
