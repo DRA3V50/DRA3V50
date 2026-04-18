@@ -56,38 +56,36 @@
 
 <h2>  Cybersecurity Tools </h2>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1f3b73&height=6"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00ffcc,100:0f172a&height=120&section=header"/>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Splunk-Analytics-black?style=for-the-badge&logo=splunk"/>
+  <img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-blue?style=for-the-badge&logo=microsoft"/>
+  <img src="https://img.shields.io/badge/IBM_QRadar-SIEM-green?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Splunk-SIEM-black?style=for-the-badge&logo=splunk"/>
-<img src="https://img.shields.io/badge/Microsoft_Sentinel-SIEM-blue?style=for-the-badge&logo=microsoft"/>
-<img src="https://img.shields.io/badge/IBM_QRadar-SIEM-darkgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CrowdStrike-EDR-red?style=for-the-badge&logo=crowdstrike"/>
+  <img src="https://img.shields.io/badge/Wazuh-XDR-darkred?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/CrowdStrike-EDR-red?style=for-the-badge&logo=crowdstrike"/>
-<img src="https://img.shields.io/badge/Wazuh-XDR-darkred?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/TheHive-Incident-yellow?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/TheHive-IR-yellow?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Wireshark-Network-blue?style=for-the-badge&logo=wireshark"/>
+  <img src="https://img.shields.io/badge/Nessus-Scanner-green?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Wireshark-Network-blue?style=for-the-badge&logo=wireshark"/>
-<img src="https://img.shields.io/badge/Nmap-Recon-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Nmap-Recon-black?style=for-the-badge"/>
+  
+  <img src="https://img.shields.io/badge/Python-Automation-grey?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/SQL-Queries-lightgrey?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-black?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Nessus-Vulnerability-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/C%23-Tools-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/HTML/CSS-Web-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Ruby-Scripting-darkred?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Python-Automation-grey?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SQL-Data_Query-lightgrey?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/PowerShell-Endpoint_Control-black?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/C%23-Tools-darkblue?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/HTML/CSS-Web_Layer-blue?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Ruby-Scripting-darkred?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Excel-Analysis-black?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/PowerBI-Visualization-blue?style=for-the-badge"/>
-
+  <img src="https://img.shields.io/badge/Excel-Analysis-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PowerBI-Visualization-blue?style=for-the-badge"/>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1f3b73,100:0f172a&height=6"/>
-
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:00ffcc&height=120&section=footer"/>
 
 --- 
 
