@@ -64,38 +64,24 @@
 
 <p align="center">
 
-<!-- 🔵 SIEM / DETECTION -->
+<!-- SIEM -->
 <img src="https://img.shields.io/badge/Splunk-0B5ED7?style=for-the-badge&logo=splunk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Microsoft%20Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white"/>
+<img src="https://img.shields.io/badge/Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white"/>
 <img src="https://img.shields.io/badge/QRadar-1B2A4A?style=for-the-badge"/>
 
-<br><br>
-
-<!-- 🔴 EDR / XDR -->
+<!-- EDR -->
 <img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
-<img src="https://img.shields.io/badge/Microsoft%20Defender-2B579A?style=for-the-badge&logo=microsoft&logoColor=white"/>
+<img src="https://img.shields.io/badge/Defender-2B579A?style=for-the-badge&logo=microsoft&logoColor=white"/>
 <img src="https://img.shields.io/badge/Wazuh-5A0B0B?style=for-the-badge"/>
 
-<br><br>
-
-<!-- 🟣 SOAR / AUTOMATION -->
-<img src="https://img.shields.io/badge/Shuffle-6A5ACD?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Playbooks-4B0082?style=for-the-badge"/>
-
-<br><br>
-
-<!-- 🟡 NETWORK / ANALYSIS -->
+<!-- NETWORK -->
 <img src="https://img.shields.io/badge/Wireshark-00B8D4?style=for-the-badge&logo=wireshark&logoColor=white"/>
 <img src="https://img.shields.io/badge/Nmap-263238?style=for-the-badge"/>
 
-<br><br>
-
-<!-- 🟢 VULNERABILITY MANAGEMENT -->
+<!-- VULN -->
 <img src="https://img.shields.io/badge/Nessus-1B7F3A?style=for-the-badge"/>
 
-<br><br>
-
-<!-- ⚪ ANALYTICS / REPORTING (SEPARATED INTENTIONALLY) -->
+<!-- ANALYTICS -->
 <img src="https://img.shields.io/badge/Excel-0F9D58?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/PowerPoint-D24726?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
@@ -103,7 +89,6 @@
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
-
 ---
 
 ###  ⚙️ What I Build & Secure 🚨
