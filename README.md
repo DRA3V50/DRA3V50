@@ -64,22 +64,38 @@
 
 <p align="center">
 
-<!-- SIEM (BLUE = detection systems) -->
+<!-- 🔵 SIEM / DETECTION -->
 <img src="https://img.shields.io/badge/Splunk-0B5ED7?style=for-the-badge&logo=splunk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Microsoft%20Sentinel-0078D4?style=for-the-badge&logo=microsoft&logoColor=white"/>
 <img src="https://img.shields.io/badge/QRadar-1B2A4A?style=for-the-badge"/>
 
-<!-- EDR (RED = response / containment) -->
+<br><br>
+
+<!-- 🔴 EDR / XDR -->
 <img src="https://img.shields.io/badge/CrowdStrike-B22222?style=for-the-badge&logo=crowdstrike&logoColor=white"/>
+<img src="https://img.shields.io/badge/Microsoft%20Defender-2B579A?style=for-the-badge&logo=microsoft&logoColor=white"/>
 <img src="https://img.shields.io/badge/Wazuh-5A0B0B?style=for-the-badge"/>
 
-<!-- NETWORK (CYAN vs DARK SLATE = separation enforced) -->
+<br><br>
+
+<!-- 🟣 SOAR / AUTOMATION -->
+<img src="https://img.shields.io/badge/Shuffle-6A5ACD?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Playbooks-4B0082?style=for-the-badge"/>
+
+<br><br>
+
+<!-- 🟡 NETWORK / ANALYSIS -->
 <img src="https://img.shields.io/badge/Wireshark-00B8D4?style=for-the-badge&logo=wireshark&logoColor=white"/>
 <img src="https://img.shields.io/badge/Nmap-263238?style=for-the-badge"/>
 
-<!-- VULN (GREEN = unique identity, not close to Excel) -->
+<br><br>
+
+<!-- 🟢 VULNERABILITY MANAGEMENT -->
 <img src="https://img.shields.io/badge/Nessus-1B7F3A?style=for-the-badge"/>
 
-<!-- ANALYTICS (FORCED SEPARATION COLORS) -->
+<br><br>
+
+<!-- ⚪ ANALYTICS / REPORTING (SEPARATED INTENTIONALLY) -->
 <img src="https://img.shields.io/badge/Excel-0F9D58?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/PowerPoint-D24726?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"/>
