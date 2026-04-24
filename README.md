@@ -89,6 +89,7 @@
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:1e90ff,100:061a2b&height=170&section=footer"/>
+
 ---
 
 ###  ⚙️ What I Build & Secure 🚨
