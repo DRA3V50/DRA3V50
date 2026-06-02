@@ -11,7 +11,7 @@
    <a href="https://github.com/DRA3V50/SOC-Simulation">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=ocean_dark" />
   </a>
-    <a href="https://github.com/DRA3V50/Network-Threat-Intelligence-Analysis">
+    <a href="https://github.com/DRA3V50/Network-Threat-Intelligence">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence-Analysis&theme=ocean_dark" />
   </a>
    <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
