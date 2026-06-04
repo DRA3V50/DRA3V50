@@ -3,7 +3,7 @@
 <p align="center">
    </a>
    <a href="https://github.com/DRA3V50/Firmware-Sentinel-Exposure">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Firmware-Sentinel-Exposure&theme=ocean_dark" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Firmware-SentinelExposure&theme=ocean_dark" />
   </a>
     <a href="https://github.com/DRA3V50/CyberVector-Linux">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=CyberVector-Linux&theme=ocean_dark" />
