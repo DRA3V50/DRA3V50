@@ -2,8 +2,8 @@
 <h3 align="center">( In Progress... )</h3>
 <p align="center">
    </a>
-      <a href="https://github.com/DRA3V50/BioDefense-Intelligence-Division">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Firmware-Sentinel-Exposure&theme=ocean_dark" />
+    <a href="https://github.com/DRA3V50/BioDefense-Intelligence-Division">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=BioDefense-Intelligence-Division&theme=ocean_dark" />
   </a>
     <a href="https://github.com/DRA3V50/CyberVector-Linux">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=CyberVector-Linux&theme=ocean_dark" />
