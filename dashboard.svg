@@ -34,13 +34,13 @@
 
   <!-- Numbers -->
   <text x="40" y="110" class="label critical pulse">Critical: 10138</text>
-  <text x="40" y="170" class="label abnormal pulse">Abnormal: 15591</text>
-  <text x="40" y="230" class="label medium pulse">Medium: 5315</text>
-  <text x="40" y="290" class="label investigated pulse">Investigated: 10380</text>
+  <text x="40" y="170" class="label abnormal pulse">Abnormal: 15594</text>
+  <text x="40" y="230" class="label medium pulse">Medium: 5316</text>
+  <text x="40" y="290" class="label investigated pulse">Investigated: 10381</text>
 
   <!-- Footer -->
   <text x="40" y="360" class="label" style="font-size: 14px; fill: #78909c;">
-    Last Update: 2026-07-16 21:41:27 EST
+    Last Update: 2026-07-16 22:37:38 EST
   </text>
 
   <!-- Magnifying glass emoji top-right -->
