@@ -1,0 +1,59 @@
+name: Update Security Intelligence Matrix
+
+on:
+  schedule:
+    - cron: "0 0,8,16 * * *"
+      timezone: "America/New_York"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_security_matrix.py"
+      - ".github/workflows/update-security-matrix.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: security-intelligence-matrix
+  cancel-in-progress: false
+
+jobs:
+  update-matrix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: python -m pip install "Pillow==11.3.0"
+      - name: Generate matrix
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: DRA3V50
+          CARD_OUTPUT_GIF: assets/security-intelligence-matrix.gif
+          CARD_OUTPUT_JSON: data/security_matrix.json
+        run: python scripts/generate_security_matrix.py
+      - name: Validate GIF
+        run: |
+          python - <<'PY'
+          from PIL import Image
+          p='assets/security-intelligence-matrix.gif'
+          with Image.open(p) as im:
+              assert im.size==(820,280), im.size
+              assert getattr(im,'n_frames',1)==48
+          print('Matrix validation passed')
+          PY
+      - name: Commit updated matrix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/security-intelligence-matrix.gif data/security_matrix.json
+          if git diff --staged --quiet; then
+            echo "Matrix already current."
+          else
+            git commit -m "Update security intelligence matrix"
+            git push
+          fi
