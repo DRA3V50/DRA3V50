@@ -155,29 +155,35 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
 
 <h2 align="center">Git Activity & Languages</h2>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
-    width="400"
-    height="180"
-    alt="Dany.A GitHub Statistics"
-  />
-
-  <img
-    src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
-    width="400"
-    height="180"
-    alt="Most Used Languages"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="./assets/security-intelligence-matrix.gif"
-    width="820"
-    alt="Animated Security Intelligence Matrix"
-  />
-</p>
+<table align="center">
+  <tr>
+    <td align="center" valign="top">
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
+        width="400"
+        height="180"
+        alt="Dany.A GitHub Statistics"
+      />
+    </td>
+    <td align="center" valign="top">
+      <img
+        src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
+        width="400"
+        height="180"
+        alt="Most Used Languages"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img
+        src="./assets/security-intelligence-matrix.gif"
+        width="820"
+        alt="Animated Security Intelligence Matrix"
+      />
+    </td>
+  </tr>
+</table>
 
 ---
 <h2 align="center">🌐 Cyber Defense Simulations 🕵️‍♂️</h2>
