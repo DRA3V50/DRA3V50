@@ -1,27 +1,34 @@
-<h1 align="center">Cybersecurity Projects!</h1>
-<h3 align="center">( In Progress... )</h3>
-<h3 align="center">( Would really appreciate if you gave stars! )</h3>
+<h1 align="center">Selected Cybersecurity Projects</h1>
+
+<h3 align="center">
+Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Data Analysis
+</h3>
 
 <p align="center">
-   </a>
-    <a href="https://github.com/DRA3V50/BioDefense-Intelligence-Division">
+  <a href="https://github.com/DRA3V50/BioDefense-Intelligence-Division">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=BioDefense-Intelligence-Division&theme=ocean_dark" />
   </a>
-    <a href="https://github.com/DRA3V50/CyberVector-Linux">
+
+  <a href="https://github.com/DRA3V50/CyberVector-Linux">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=CyberVector-Linux&theme=ocean_dark" />
   </a>
-   <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
+
+  <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=ocean_dark" />
   </a>
-   <a href="https://github.com/DRA3V50/SOC-Simulation">
+
+  <a href="https://github.com/DRA3V50/SOC-Simulation">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=SOC-Simulation&theme=ocean_dark" />
   </a>
-    <a href="https://github.com/DRA3V50/Network-Threat-Intelligence">
+
+  <a href="https://github.com/DRA3V50/Network-Threat-Intelligence">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Network-Threat-Intelligence&theme=ocean_dark" />
   </a>
-   <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
+
+  <a href="https://github.com/DRA3V50/XDR-EDR-Analytics">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=ocean_dark" />
   </a>
+
   <a href="https://github.com/DRA3V50/Follow-Audit-Log">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Follow-Audit-Log&theme=ocean_dark" />
   </a>
