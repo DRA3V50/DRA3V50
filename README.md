@@ -156,26 +156,28 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
 <h2 align="center">Git Activity & Languages</h2>
 
 <p align="center">
+
   <img
     src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
-    width="400"
-    height="180"
+    width="270"
+    height="122"
     alt="Dany.A GitHub Statistics"
   />
 
   <img
     src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
-    width="400"
-    height="180"
+    width="270"
+    height="122"
     alt="Most Used Languages"
   />
 
   <img
     src="./assets/security-research-diagnostics.svg"
-    width="400"
-    height="180"
+    width="270"
+    height="122"
     alt="Integrated Security Research and Diagnostics"
   />
+
 </p>
 
 ---
