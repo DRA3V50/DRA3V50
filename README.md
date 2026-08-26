@@ -160,7 +160,7 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
     width="400"
     height="180"
-    alt="GitHub Statistics"
+    alt="Dany.A GitHub Statistics"
   />
 
   <img
@@ -171,10 +171,10 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
   />
 
   <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DRA3V50&theme=tokyonight&utcOffset=-4"
+    src="./assets/security-research-diagnostics.svg"
     width="400"
     height="180"
-    alt="GitHub Activity"
+    alt="Integrated Security Research and Diagnostics"
   />
 </p>
 
