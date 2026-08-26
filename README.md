@@ -162,6 +162,7 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     height="180"
     alt="Dany.A GitHub Statistics"
   />
+
   <img
     src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=DRA3V50&layout=compact&langs_count=8&theme=tokyonight"
     width="400"
@@ -172,9 +173,9 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
 
 <p align="center">
   <img
-    src="./assets/security-research-diagnostics.svg"
-    width="800"
-    alt="Integrated Security Research and Diagnostics"
+    src="./assets/security-intelligence-matrix.gif"
+    width="820"
+    alt="Animated Security Intelligence Matrix"
   />
 </p>
 
