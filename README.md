@@ -160,7 +160,7 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     src="https://github-readme-stats-fast.vercel.app/api?username=DRA3V50&show_icons=true&theme=tokyonight"
     width="400"
     height="180"
-    alt="Dany.A GitHub Statistics"
+    alt="GitHub Statistics"
   />
 
   <img
@@ -169,22 +169,13 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     height="180"
     alt="Most Used Languages"
   />
-</p>
 
-<h3 align="center">Current Focus</h3>
-
-<p align="center">
-  Digital Forensics • Cyber Intelligence • Intelligence Analysis • Data Analysis • Cybersecurity Engineering • Mechanical Engineering
-</p>
-
-<p align="center">
-  <a href="https://github.com/DRA3V50/BioDefense-Intelligence-Division/releases/tag/v1.0.0">
-    <img src="https://img.shields.io/badge/Featured%20Release-BioDefense%20v1.0.0-2f81f7?style=flat-square" />
-  </a>
-
-  <a href="https://github.com/DRA3V50?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-View%20Projects-2f81f7?style=flat-square" />
-  </a>
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DRA3V50&theme=tokyonight&utcOffset=-4"
+    width="400"
+    height="180"
+    alt="GitHub Activity"
+  />
 </p>
 
 ---
