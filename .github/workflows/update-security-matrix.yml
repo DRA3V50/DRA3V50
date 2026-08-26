@@ -4,9 +4,12 @@ on:
   schedule:
     - cron: "0 0,8,16 * * *"
       timezone: "America/New_York"
+
   workflow_dispatch:
+
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - "scripts/generate_security_matrix.py"
       - ".github/workflows/update-security-matrix.yml"
@@ -20,39 +23,102 @@ concurrency:
 
 jobs:
   update-matrix:
+    name: Generate Security Intelligence Matrix
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout Profile Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Pillow
+
+      - name: Install Renderer Dependency
         run: python -m pip install "Pillow==11.3.0"
-      - name: Generate matrix
+
+      - name: Generate Dynamic Matrix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: DRA3V50
           CARD_OUTPUT_GIF: assets/security-intelligence-matrix.gif
           CARD_OUTPUT_JSON: data/security_matrix.json
         run: python scripts/generate_security_matrix.py
-      - name: Validate GIF
+
+      - name: Validate Generated Matrix
         run: |
           python - <<'PY'
+          from pathlib import Path
           from PIL import Image
-          p='assets/security-intelligence-matrix.gif'
-          with Image.open(p) as im:
-              assert im.size==(820,280), im.size
-              assert getattr(im,'n_frames',1)==48
-          print('Matrix validation passed')
+
+          gif_path = Path(
+              "assets/security-intelligence-matrix.gif"
+          )
+
+          if not gif_path.exists():
+              raise SystemExit(
+                  "Matrix validation failed: GIF is missing."
+              )
+
+          with Image.open(gif_path) as image:
+              if image.format != "GIF":
+                  raise SystemExit(
+                      "Matrix validation failed: output is not GIF."
+                  )
+
+              if image.size != (820, 280):
+                  raise SystemExit(
+                      "Matrix validation failed: "
+                      f"unexpected size {image.size}."
+                  )
+
+              if getattr(image, "n_frames", 1) != 120:
+                  raise SystemExit(
+                      "Matrix validation failed: "
+                      "expected 120 animation frames."
+                  )
+
+              durations = []
+
+              for frame_index in range(
+                  image.n_frames
+              ):
+                  image.seek(frame_index)
+                  durations.append(
+                      image.info.get(
+                          "duration",
+                          0,
+                      )
+                  )
+
+              if any(
+                  duration != 50
+                  for duration in durations
+              ):
+                  raise SystemExit(
+                      "Matrix validation failed: "
+                      "not every frame is 50 ms."
+                  )
+
+          print(
+              "Security intelligence matrix validation passed: "
+              "820x280, 120 frames, 50 ms/frame."
+          )
           PY
-      - name: Commit updated matrix
+
+      - name: Commit Updated Matrix
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/security-intelligence-matrix.gif data/security_matrix.json
+
+          git add \
+            assets/security-intelligence-matrix.gif \
+            data/security_matrix.json
+
           if git diff --staged --quiet; then
-            echo "Matrix already current."
+            echo "Security intelligence matrix is already current."
           else
             git commit -m "Update security intelligence matrix"
             git push
