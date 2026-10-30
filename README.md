@@ -33,10 +33,6 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=XDR-EDR-Analytics&theme=ocean_dark" />
   </a>
 
-  <a href="https://github.com/DRA3V50/Follow-Audit-Log">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Follow-Audit-Log&theme=ocean_dark" />
-  </a>
-</p>
 
 ---
 
