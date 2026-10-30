@@ -13,10 +13,6 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=CyberVector-Linux&theme=ocean_dark" />
   </a>
 
-  <a href="https://github.com/DRA3V50/Technical-Operations-Support-System">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Technical-Operations-Support-System&theme=ocean_dark" />
-  </a>
-
   <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=ZeroTrust-Dashboard&theme=ocean_dark" />
   </a>
@@ -227,3 +223,11 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
 
 ---
+<h3 align="center">
+Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Data Analysis
+</h3>
+<p align="center">
+<a href="https://github.com/DRA3V50/Technical-Operations-Support-System">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Technical-Operations-Support-System&theme=ocean_dark" />
+  </a>
+</p>
