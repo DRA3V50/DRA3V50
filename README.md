@@ -227,4 +227,3 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
 
 ---
-    <img src="https://img.shields.io/badge/Technical--Operations--Support--System-View%20Repo-1f6feb?style=for-the-badge&logo=github" />
