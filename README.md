@@ -14,7 +14,7 @@ Cybersecurity Engineering • Digital Forensics • Intelligence Analysis • Da
   </a>
 
   <a href="https://github.com/DRA3V50/Technical-Operations-Support-System">
-    <img src="https://img.shields.io/badge/Technical--Operations--Support--System-View%20Repo-1f6feb?style=for-the-badge&logo=github" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=DRA3V50&repo=Technical--Operations--Support--System-View&theme=ocean_dark" />
   </a>
 
   <a href="https://github.com/DRA3V50/ZeroTrust-Dashboard">
@@ -227,3 +227,4 @@ Thanks for visiting! Feel free to explore my projects or reach out, I’m always
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRA3V50&theme=tokyo-night" />
 
 ---
+    <img src="https://img.shields.io/badge/Technical--Operations--Support--System-View%20Repo-1f6feb?style=for-the-badge&logo=github" />
